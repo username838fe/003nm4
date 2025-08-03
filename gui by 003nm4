@@ -421,3 +421,13 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jLn0n/beckdeer-skenner/main/src/main.lua"))()
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = "C00lgui by 007n7 (client-sided)",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
+   end,
+})
