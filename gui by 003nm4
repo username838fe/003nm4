@@ -389,3 +389,25 @@ else
 end
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = "Fake Lag",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Biem6ondo/FAKELAG/refs/heads/main/Fakelag"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Roblox Profile copy",
+   Callback = function()
+   if setclipboard then
+    setclipboard("003nm4")
+    print("✅ Clipboard set to 003nm4")
+else
+    warn("❌ Clipboard function not supported in this executor")
+end
+   end,
+})
