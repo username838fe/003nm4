@@ -37,11 +37,11 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("client", nil) -- Title, Image
+local MainTab = Window:CreateTab("Client", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("scripts")
 
 local Button =MainTab:CreateButton({
-   Name = "speed gui",
+   Name = "Speed gui",
    Callback = function()
             -- Create the ScreenGui
 local gui = Instance.new("ScreenGui")
@@ -102,7 +102,7 @@ end)
 })
 
 local Button = MainTab:CreateButton({
-   Name = "jumppower gui",
+   Name = "Jumppower gui",
    Callback = function()
   -- Create the ScreenGui
 local gui = Instance.new("ScreenGui")
@@ -264,4 +264,128 @@ end)
 
 local Tab = Window:CreateTab("Server", nil) -- Title, Image
 
-local Section = Tab:CreateSection("Coming soon!")
+local Section = Tab:CreateSection("Server")
+
+local Button = Tab:CreateButton({
+   Name = "I dont know how to make server exploits I am new to making scripts.",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Fly GUI v3",
+   Callback = function()
+  --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Set Skybox",
+   Callback = function()
+  -- Client-sided skybox changer
+local Lighting = game:GetService("Lighting")
+local sky = Instance.new("Sky")
+sky.Name = "CustomSky"
+
+-- Replace these with your own decal IDs
+sky.SkyboxBk = "rbxassetid://79747788891645"
+sky.SkyboxDn = "rbxassetid://79747788891645"
+sky.SkyboxFt = "rbxassetid://79747788891645"
+sky.SkyboxLf = "rbxassetid://79747788891645"
+sky.SkyboxRt = "rbxassetid://79747788891645"
+sky.SkyboxUp = "rbxassetid://79747788891645"
+
+-- Remove existing skyboxes if needed
+for _, obj in ipairs(Lighting:GetChildren()) do
+    if obj:IsA("Sky") then obj:Destroy() end
+end
+
+-- Apply the new skybox
+sky.Parent = Lighting
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "FE Chat bypass (set languange to Shqipe)",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/randomizedcomponent/UC/refs/heads/main/3307468c285f4fe535fb5d87b4b053e6.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Fling GUI",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Destroy GUI",
+   Callback = function()
+            Rayfield:Destroy()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "ESP (toggles off when clicked again)",
+   Callback = function()
+   local Players = game:GetService("Players")
+local CoreGui = game:GetService("CoreGui")
+
+local ESP_NAME = "ESPBox"
+
+-- Function to apply red ESP
+local function applyESP()
+    for _, player in ipairs(Players:GetPlayers()) do
+        if player ~= Players.LocalPlayer and player.Character then
+            for _, part in ipairs(player.Character:GetChildren()) do
+                if part:IsA("BasePart") then
+                    local box = Instance.new("BoxHandleAdornment")
+                    box.Adornee = part
+                    box.Size = part.Size
+                    box.Color3 = Color3.fromRGB(255, 0, 0)
+                    box.Transparency = 0.3
+                    box.AlwaysOnTop = true
+                    box.ZIndex = 10
+                    box.Name = ESP_NAME
+                    box.Parent = CoreGui
+                end
+            end
+        end
+    end
+end
+
+-- Function to clear red ESP
+local function clearESP()
+    for _, obj in ipairs(CoreGui:GetChildren()) do
+        if obj.Name == ESP_NAME then
+            obj:Destroy()
+        end
+    end
+end
+
+-- Toggle logic
+local found = false
+for _, obj in ipairs(CoreGui:GetChildren()) do
+    if obj.Name == ESP_NAME then
+        found = true
+        break
+    end
+end
+
+if found then
+    clearESP()
+    print("🔻 ESP disabled")
+else
+    applyESP()
+    print("🔺 ESP enabled")
+end
+   end,
+})
