@@ -411,3 +411,13 @@ else
 end
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "Backdoor scanner (NOT MINE)",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jLn0n/beckdeer-skenner/main/src/main.lua"))()
+   end,
+})
