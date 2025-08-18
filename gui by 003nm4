@@ -1,3 +1,6 @@
+local message = "GUI By 003nm4 loaded successfully!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -462,5 +465,16 @@ print("Scanned:", total)
 print("Vulnerable:", hits)
 print("Secure/Unhandled:", total - hits)
 print("======================\n")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "FE Chat Rickroll",
+   Callback = function()
+   local message = "Never gonna give you up!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+            wait(2)
+            local message = "Never gonna let you down!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
    end,
 })
