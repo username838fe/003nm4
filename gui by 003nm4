@@ -1,13 +1,13 @@
-local message = "Updated GUI by 003nm4 loaded!"
+local message = "Updated GUI loaded!"
 game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "gui by 003nm4",
+   Name = "gui by H2O2838 and 003nm4",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "gui",
-   LoadingSubtitle = "by 003nm4",
+   LoadingSubtitle = "by 003nm4 and H2O2838",
    ShowText = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -476,5 +476,22 @@ game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
             wait(2)
             local message = "Never gonna let you down!"
 game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "C00LCLAN V1",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Kick Yourself (idk why i made this)",
+   Callback = function()
+   local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+player:Kick("u kicked urself u fucking brainless shit")
    end,
 })
