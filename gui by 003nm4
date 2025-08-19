@@ -495,3 +495,58 @@ local player = Players.LocalPlayer
 player:Kick("u kicked urself u fucking brainless shit")
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local root = character:WaitForChild("HumanoidRootPart")
+
+local orbitRadius = 70
+local scanRadius = 100
+local orbitParts = {}
+local angleMap = {}
+
+-- Scan for orbitable parts
+local function scanParts()
+	orbitParts = {}
+	for _, part in ipairs(workspace:GetDescendants()) do
+		if part:IsA("BasePart") and part.Anchored then
+			local dist = (part.Position - root.Position).Magnitude
+			if dist <= scanRadius then
+				table.insert(orbitParts, part)
+				angleMap[part] = math.random() * math.pi * 2
+			end
+		end
+	end
+end
+
+-- Initial scan
+scanParts()
+
+-- Orbit loop
+RunService.Heartbeat:Connect(function()
+	for _, part in ipairs(orbitParts) do
+		local angle = angleMap[part] or 0
+		angle += 0.03
+		angleMap[part] = angle
+
+		local x = root.Position.X + math.cos(angle) * orbitRadius
+		local z = root.Position.Z + math.sin(angle) * orbitRadius
+		local y = root.Position.Y + 5
+
+		part.Position = Vector3.new(x, y, z)
+	end
+end)
+
+-- Rescan every few seconds in case new parts spawn
+while true do
+	task.wait(5)
+	scanParts()
+end
+   end,
+})
