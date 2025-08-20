@@ -1,5 +1,4 @@
-local message = "GUI by H2O2838 loaded successfully!"
-game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
@@ -496,8 +495,8 @@ player:Kick("u kicked urself u fucking brainless shit")
    end,
 })
 
-local Button = MainTab:CreateButton({
-   Name = "Orbit parts",
+local Button = Tab:CreateButton({
+   Name = "Button Example",
    Callback = function()
    local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
