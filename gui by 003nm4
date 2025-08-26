@@ -1,13 +1,13 @@
-local message = "GUI loaded!"
+local message = "GUI by B3dkidd_0 loaded successfully! Enjoy!"
 game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "gui",
+   Name = "GUI by B3dkidd_0",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "gui",
-   LoadingSubtitle = "by no one.",
+   LoadingTitle = "GUI",
+   LoadingSubtitle = "by B3dkidd_0",
    ShowText = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -295,12 +295,12 @@ local sky = Instance.new("Sky")
 sky.Name = "CustomSky"
 
 -- Replace these with your own decal IDs
-sky.SkyboxBk = "rbxassetid://79747788891645"
-sky.SkyboxDn = "rbxassetid://79747788891645"
-sky.SkyboxFt = "rbxassetid://79747788891645"
-sky.SkyboxLf = "rbxassetid://79747788891645"
-sky.SkyboxRt = "rbxassetid://79747788891645"
-sky.SkyboxUp = "rbxassetid://79747788891645"
+sky.SkyboxBk = "rbxassetid://106987959514485"
+sky.SkyboxDn = "rbxassetid://106987959514485"
+sky.SkyboxFt = "rbxassetid://106987959514485"
+sky.SkyboxLf = "rbxassetid://106987959514485"
+sky.SkyboxRt = "rbxassetid://106987959514485"
+sky.SkyboxUp = "rbxassetid://106987959514485"
 
 -- Remove existing skyboxes if needed
 for _, obj in ipairs(Lighting:GetChildren()) do
