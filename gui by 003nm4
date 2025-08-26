@@ -1,13 +1,13 @@
-local message = "gui by H2O2838 loaded"
+local message = "GUI loaded!"
 game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "gui by H2O2838",
+   Name = "gui",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "gui",
-   LoadingSubtitle = "by H2O2838",
+   LoadingSubtitle = "by no one.",
    ShowText = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -265,12 +265,12 @@ end)
    end,
 })
 
-local Tab = Window:CreateTab("Server", nil) -- Title, Image
+local Tab = Window:CreateTab("FUN", nil) -- Title, Image
 
-local Section = Tab:CreateSection("Server")
+local Section = Tab:CreateSection("Fun")
 
 local Button = Tab:CreateButton({
-   Name = "I dont know how to make server exploits I am new to making scripts.",
+   Name = "FUN",
    Callback = function()
    -- The function that takes place when the button is pressed
    end,
@@ -576,5 +576,121 @@ for _, accessory in pairs(character:GetChildren()) do
         accessory.Handle.Transparency = _G.isInvisible and 1 or 0
     end
 end
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Music Player (Client-only)",
+   Callback = function()
+   -- Create the ScreenGui
+local gui = Instance.new("ScreenGui")
+gui.Name = "MusicPlayer"
+gui.ResetOnSpawn = false
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create the main Frame
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 240)
+frame.Position = UDim2.new(0.5, -150, 0.5, -120)
+frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Draggable = true
+frame.Parent = gui
+
+-- Title Label
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, 0, 0, 30)
+title.BackgroundTransparency = 1
+title.Text = "🎃 Music Player"
+title.Font = Enum.Font.Code
+title.TextSize = 18
+title.TextColor3 = Color3.new(1, 1, 1)
+title.Parent = frame
+
+-- Sound ID TextBox
+local soundBox = Instance.new("TextBox")
+soundBox.Size = UDim2.new(1, -20, 0, 30)
+soundBox.Position = UDim2.new(0, 10, 0, 40)
+soundBox.PlaceholderText = "Sound ID (e.g. 123456789)"
+soundBox.Font = Enum.Font.Code
+soundBox.TextSize = 16
+soundBox.TextColor3 = Color3.new(1, 1, 1)
+soundBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+soundBox.Parent = frame
+
+-- Speed TextBox
+local speedBox = Instance.new("TextBox")
+speedBox.Size = UDim2.new(1, -20, 0, 30)
+speedBox.Position = UDim2.new(0, 10, 0, 80)
+speedBox.PlaceholderText = "Playback Speed (e.g. 1)"
+speedBox.Font = Enum.Font.Code
+speedBox.TextSize = 16
+speedBox.TextColor3 = Color3.new(1, 1, 1)
+speedBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+speedBox.Parent = frame
+
+-- Volume TextBox
+local volumeBox = Instance.new("TextBox")
+volumeBox.Size = UDim2.new(1, -20, 0, 30)
+volumeBox.Position = UDim2.new(0, 10, 0, 120)
+volumeBox.PlaceholderText = "Volume (0 to 10)"
+volumeBox.Font = Enum.Font.Code
+volumeBox.TextSize = 16
+volumeBox.TextColor3 = Color3.new(1, 1, 1)
+volumeBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+volumeBox.Parent = frame
+
+-- Play Button
+local playButton = Instance.new("TextButton")
+playButton.Size = UDim2.new(0.48, -10, 0, 30)
+playButton.Position = UDim2.new(0, 10, 0, 170)
+playButton.Text = "▶️ Play"
+playButton.Font = Enum.Font.Code
+playButton.TextSize = 18
+playButton.TextColor3 = Color3.new(1, 1, 1)
+playButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+playButton.Parent = frame
+
+-- Stop Button
+local stopButton = Instance.new("TextButton")
+stopButton.Size = UDim2.new(0.48, -10, 0, 30)
+stopButton.Position = UDim2.new(0.52, 0, 0, 170)
+stopButton.Text = "⏹️ Stop"
+stopButton.Font = Enum.Font.Code
+stopButton.TextSize = 18
+stopButton.TextColor3 = Color3.new(1, 1, 1)
+stopButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+stopButton.Parent = frame
+
+-- Sound Object
+local sound = Instance.new("Sound")
+sound.Name = "SkeletonSound"
+sound.Looped = true
+sound.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Play Button Logic
+playButton.MouseButton1Click:Connect(function()
+	local id = tonumber(soundBox.Text)
+	local speed = tonumber(speedBox.Text) or 1
+	local volume = tonumber(volumeBox.Text) or 1
+
+	if id then
+		sound.SoundId = "rbxassetid://" .. id
+		sound.PlaybackSpeed = speed
+		sound.Volume = math.clamp(volume, 0, 10)
+		sound.Looped = true
+		sound:Play()
+	else
+		warn("Invalid Sound ID")
+	end
+end)
+
+-- Stop Button Logic
+stopButton.MouseButton1Click:Connect(function()
+	if sound.IsPlaying then
+		sound:Stop()
+	end
+end)
    end,
 })
