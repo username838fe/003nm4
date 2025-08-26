@@ -550,3 +550,31 @@ while true do
 end
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "Invisibility (toggle)",
+   Callback = function()
+   -- Toggle invisibility script for Roblox
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Store toggle state
+_G.isInvisible = not _G.isInvisible
+
+for _, part in pairs(character:GetDescendants()) do
+    if part:IsA("BasePart") then
+        part.Transparency = _G.isInvisible and 1 or 0
+        part.CanCollide = not _G.isInvisible
+    elseif part:IsA("Decal") then
+        part.Transparency = _G.isInvisible and 1 or 0
+    end
+end
+
+-- Optional: hide accessories
+for _, accessory in pairs(character:GetChildren()) do
+    if accessory:IsA("Accessory") and accessory:FindFirstChild("Handle") then
+        accessory.Handle.Transparency = _G.isInvisible and 1 or 0
+    end
+end
+   end,
+})
