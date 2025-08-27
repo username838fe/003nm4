@@ -693,3 +693,45 @@ stopButton.MouseButton1Click:Connect(function()
 end)
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "Decal Spam",
+   Callback = function()
+   local imageId = "rbxassetid://103157789766561" -- Replace with your desired image ID
+
+for _, part in ipairs(workspace:GetDescendants()) do
+    if part:IsA("BasePart") then
+        for _, child in ipairs(part:GetChildren()) do
+            if child:IsA("Decal") then
+                child.Texture = imageId
+            end
+        end
+    end
+end
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Spooky Scary Skeletons Loop",
+   Callback = function()
+   local SoundService = game:GetService("SoundService")
+
+-- Stop existing sound if present
+local existing = SoundService:FindFirstChild("RitualSound")
+if existing and existing:IsA("Sound") then
+    existing:Stop()
+    existing:Destroy()
+end
+
+-- Create and play new sound
+local sound = Instance.new("Sound")
+sound.Name = "RitualSound"
+sound.SoundId = "rbxassetid://95156028272944"
+sound.PlaybackSpeed = 0.2
+sound.Volume = 1
+sound.Looped = true
+sound.Parent = SoundService
+
+sound:Play()
+   end,
+})
