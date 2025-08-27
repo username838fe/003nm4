@@ -697,13 +697,34 @@ end)
 local Button = Tab:CreateButton({
    Name = "Decal Spam",
    Callback = function()
-   local imageId = "rbxassetid://103157789766561" -- Replace with your desired image ID
+   local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
+local Players = game:GetService("Players")
 
-for _, part in ipairs(workspace:GetDescendants()) do
-    if part:IsA("BasePart") then
-        for _, child in ipairs(part:GetChildren()) do
-            if child:IsA("Decal") then
-                child.Texture = imageId
+local decalId = "rbxassetid://103157789766561" -- Replace with your decal ID
+
+-- List of all faces
+local faces = {
+    Enum.NormalId.Front,
+    Enum.NormalId.Back,
+    Enum.NormalId.Top,
+    Enum.NormalId.Bottom,
+    Enum.NormalId.Left,
+    Enum.NormalId.Right
+}
+
+if RunService:IsClient() then
+    local success, result = pcall(function()
+        return Workspace.FilteringEnabled
+    end)
+
+    for _, part in ipairs(Workspace:GetDescendants()) do
+        if part:IsA("BasePart") then
+            for _, face in ipairs(faces) do
+                local decal = Instance.new("Decal")
+                decal.Texture = decalId
+                decal.Face = face
+                decal.Parent = part
             end
         end
     end
@@ -733,5 +754,17 @@ sound.Looped = true
 sound.Parent = SoundService
 
 sound:Play()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Kill All",
+   Callback = function()
+   local Players = game:GetService("Players")
+for _, player in ipairs(Players:GetPlayers()) do
+    if player.Character then
+        player.Character:BreakJoints()
+    end
+end
    end,
 })
