@@ -1,5 +1,4 @@
-local message = "GUI by B3dkidd_0 loaded successfully! Enjoy!"
-game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
