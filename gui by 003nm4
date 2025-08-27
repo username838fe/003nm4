@@ -3,10 +3,10 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "GUI by B3dkidd_0",
+   Name = "l0stgui",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "GUI",
-   LoadingSubtitle = "by B3dkidd_0",
+   LoadingTitle = "l0stgui",
+   LoadingSubtitle = "by l0stk1dd88",
    ShowText = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -294,12 +294,12 @@ local sky = Instance.new("Sky")
 sky.Name = "CustomSky"
 
 -- Replace these with your own decal IDs
-sky.SkyboxBk = "rbxassetid://106987959514485"
-sky.SkyboxDn = "rbxassetid://106987959514485"
-sky.SkyboxFt = "rbxassetid://106987959514485"
-sky.SkyboxLf = "rbxassetid://106987959514485"
-sky.SkyboxRt = "rbxassetid://106987959514485"
-sky.SkyboxUp = "rbxassetid://106987959514485"
+sky.SkyboxBk = "rbxassetid://103157789766561"
+sky.SkyboxDn = "rbxassetid://103157789766561"
+sky.SkyboxFt = "rbxassetid://103157789766561"
+sky.SkyboxLf = "rbxassetid://103157789766561"
+sky.SkyboxRt = "rbxassetid://103157789766561"
+sky.SkyboxUp = "rbxassetid://103157789766561"
 
 -- Remove existing skyboxes if needed
 for _, obj in ipairs(Lighting:GetChildren()) do
