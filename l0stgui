@@ -294,12 +294,12 @@ local sky = Instance.new("Sky")
 sky.Name = "CustomSky"
 
 -- Replace these with your own decal IDs
-sky.SkyboxBk = "rbxassetid://103157789766561"
-sky.SkyboxDn = "rbxassetid://103157789766561"
-sky.SkyboxFt = "rbxassetid://103157789766561"
-sky.SkyboxLf = "rbxassetid://103157789766561"
-sky.SkyboxRt = "rbxassetid://103157789766561"
-sky.SkyboxUp = "rbxassetid://103157789766561"
+sky.SkyboxBk = "rbxassetid://135910981906620"
+sky.SkyboxDn = "rbxassetid://135910981906620"
+sky.SkyboxFt = "rbxassetid://135910981906620"
+sky.SkyboxLf = "rbxassetid://135910981906620"
+sky.SkyboxRt = "rbxassetid://135910981906620"
+sky.SkyboxUp = "rbxassetid://135910981906620"
 
 -- Remove existing skyboxes if needed
 for _, obj in ipairs(Lighting:GetChildren()) do
