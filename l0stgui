@@ -701,7 +701,7 @@ local Button = Tab:CreateButton({
 local Workspace = game:GetService("Workspace")
 local Players = game:GetService("Players")
 
-local decalId = "rbxassetid://127490068715537" -- Replace with your decal ID
+local decalId = "rbxassetid://103157789766561" -- Replace with your decal ID
 
 -- List of all faces
 local faces = {
