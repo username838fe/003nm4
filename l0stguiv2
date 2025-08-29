@@ -1,4 +1,5 @@
-
+local message = "L0stGUI V2 loaded! (deadly in non-FE games)"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
@@ -799,5 +800,22 @@ else
         end
     end
 end
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Spam TEAM L0stk1dd88",
+   Callback = function()
+   local message = "join team l0stk1dd88 today!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+            wait(0.3)
+            local message = "join team l0stk1dd88 today!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+            wait(0.3)
+            local message = "join team l0stk1dd88 today!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+            wait(0.3)
+            local message = "join team l0stk1dd88 today!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
    end,
 })
