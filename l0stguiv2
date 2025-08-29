@@ -1,0 +1,803 @@
+
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "l0stgui V2",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "l0stgui V2",
+   LoadingSubtitle = "by l0stk1dd88",
+   ShowText = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Client", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("scripts")
+
+local Button =MainTab:CreateButton({
+   Name = "Speed GUI",
+   Callback = function()
+            -- Create the ScreenGui
+local gui = Instance.new("ScreenGui")
+gui.ResetOnSpawn = false
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create the Frame
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 200, 0, 120)
+frame.Position = UDim2.new(0.5, -100, 0.5, -60)
+frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Draggable = true
+frame.Parent = gui
+
+-- Create the TextBox
+local textbox = Instance.new("TextBox")
+textbox.Size = UDim2.new(1, -20, 0, 40)
+textbox.Position = UDim2.new(0, 10, 0, 10)
+textbox.PlaceholderText = "Enter speed..."
+textbox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+textbox.TextColor3 = Color3.new(1, 1, 1)
+textbox.BorderSizePixel = 0
+textbox.Parent = frame
+
+-- Create the Button
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(1, -20, 0, 30)
+button.Position = UDim2.new(0, 10, 0, 60)
+button.Text = "Set Walkspeed"
+button.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+button.TextColor3 = Color3.new(1, 1, 1)
+button.BorderSizePixel = 0
+button.Parent = frame
+
+-- Speed loop
+local loopActive = false
+
+button.MouseButton1Click:Connect(function()
+	local speed = tonumber(textbox.Text)
+	if speed and speed > 0 then
+		loopActive = true
+		task.spawn(function()
+			while loopActive do
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+				task.wait(0.2)
+			end
+		end)
+	end
+end)
+
+-- Optional: Stop loop if GUI is removed
+gui.AncestryChanged:Connect(function()
+	loopActive = false
+end)
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Jumppower GUI",
+   Callback = function()
+  -- Create the ScreenGui
+local gui = Instance.new("ScreenGui")
+gui.ResetOnSpawn = false
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create the Frame
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 200, 0, 120)
+frame.Position = UDim2.new(0.5, -100, 0.5, -60)
+frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Draggable = true
+frame.Parent = gui
+
+-- Create the TextBox
+local textbox = Instance.new("TextBox")
+textbox.Size = UDim2.new(1, -20, 0, 40)
+textbox.Position = UDim2.new(0, 10, 0, 10)
+textbox.PlaceholderText = "Enter jump power..."
+textbox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+textbox.TextColor3 = Color3.new(1, 1, 1)
+textbox.BorderSizePixel = 0
+textbox.Parent = frame
+
+-- Create the Button
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(1, -20, 0, 30)
+button.Position = UDim2.new(0, 10, 0, 60)
+button.Text = "Set Jumppower"
+button.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+button.TextColor3 = Color3.new(1, 1, 1)
+button.BorderSizePixel = 0
+button.Parent = frame
+
+-- Loop set JumpPower
+local loopActive = false
+
+button.MouseButton1Click:Connect(function()
+	local power = tonumber(textbox.Text)
+	if power and power > 0 then
+		loopActive = true
+		task.spawn(function()
+			while loopActive do
+				local character = game.Players.LocalPlayer.Character
+				if character and character:FindFirstChildOfClass("Humanoid") then
+					character:FindFirstChildOfClass("Humanoid").JumpPower = power
+				end
+				task.wait(0.2)
+			end
+		end)
+	end
+end)
+
+-- Optional: Stop loop if GUI is removed
+gui.AncestryChanged:Connect(function()
+	loopActive = false
+end)
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Execute FE IY",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "CTRL click TP",
+   Callback = function()
+ --[[local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
+ 
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+if not Mouse.Target then return end
+Plr.Character:MoveTo(Mouse.Hit.p)
+end)
+--]]
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "CTRL click tp",
+Text = "Hold Ctrl then press click to a place you want to teleport to.",
+Duration = 6,
+    })
+local speed = 100 -- set this lower to make it slower
+local bodyvelocityenabled = true -- set this to false if you are getting kicked
+ 
+local Imput = game:GetService("UserInputService")
+local Plr = game.Players.LocalPlayer
+local Mouse = Plr:GetMouse()
+ 
+function To(position)
+local Chr = Plr.Character
+if Chr ~= nil then
+local ts = game:GetService("TweenService")
+local char = game.Players.LocalPlayer.Character
+local hm = char.HumanoidRootPart
+local dist = (hm.Position - Mouse.Hit.p).magnitude
+local tweenspeed = dist/tonumber(speed)
+local ti = TweenInfo.new(tonumber(tweenspeed), Enum.EasingStyle.Linear)
+local tp = {CFrame = CFrame.new(position)}
+ts:Create(hm, ti, tp):Play()
+if bodyvelocityenabled == true then
+local bv = Instance.new("BodyVelocity")
+bv.Parent = hm
+bv.MaxForce = Vector3.new(100000,100000,100000)
+bv.Velocity = Vector3.new(0,0,0)
+wait(tonumber(tweenspeed))
+bv:Destroy()
+end
+end
+end
+ 
+Imput.InputBegan:Connect(function(input)
+   if input.UserInputType == Enum.UserInputType.MouseButton1 and Imput:IsKeyDown(Enum.KeyCode.LeftControl) then
+       To(Mouse.Hit.p)
+   end
+end)
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Shift to run (R15)",
+   Callback = function()
+   -- Place this LocalScript inside StarterPlayerScripts
+
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- default speed
+local NORMAL_SPEED = 16
+local SPRINT_SPEED = 23
+
+-- update speed function
+local function updateSpeed(speed)
+	humanoid.WalkSpeed = speed
+end
+
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if gameProcessed then return end
+	if input.KeyCode == Enum.KeyCode.LeftShift then
+		updateSpeed(SPRINT_SPEED)
+	end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.Space then
+		updateSpeed(NORMAL_SPEED)
+	end
+end)
+   end,
+})
+
+local Tab = Window:CreateTab("FUN", nil) -- Title, Image
+
+local Section = Tab:CreateSection("Fun")
+
+local Button = Tab:CreateButton({
+   Name = "FUN",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Fly GUI v3",
+   Callback = function()
+  --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Set Skybox",
+   Callback = function()
+  -- Client-sided skybox changer
+local Lighting = game:GetService("Lighting")
+local sky = Instance.new("Sky")
+sky.Name = "CustomSky"
+
+-- Replace these with your own decal IDs
+sky.SkyboxBk = "rbxassetid://135910981906620"
+sky.SkyboxDn = "rbxassetid://135910981906620"
+sky.SkyboxFt = "rbxassetid://135910981906620"
+sky.SkyboxLf = "rbxassetid://135910981906620"
+sky.SkyboxRt = "rbxassetid://135910981906620"
+sky.SkyboxUp = "rbxassetid://135910981906620"
+
+-- Remove existing skyboxes if needed
+for _, obj in ipairs(Lighting:GetChildren()) do
+    if obj:IsA("Sky") then obj:Destroy() end
+end
+
+-- Apply the new skybox
+sky.Parent = Lighting
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "FE Chat bypass (set languange to Shqipe)",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/randomizedcomponent/UC/refs/heads/main/3307468c285f4fe535fb5d87b4b053e6.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Fling GUI",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Destroy GUI",
+   Callback = function()
+            Rayfield:Destroy()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "ESP (toggles off when clicked again)",
+   Callback = function()
+   local Players = game:GetService("Players")
+local CoreGui = game:GetService("CoreGui")
+
+local ESP_NAME = "ESPBox"
+
+-- Function to apply red ESP
+local function applyESP()
+    for _, player in ipairs(Players:GetPlayers()) do
+        if player ~= Players.LocalPlayer and player.Character then
+            for _, part in ipairs(player.Character:GetChildren()) do
+                if part:IsA("BasePart") then
+                    local box = Instance.new("BoxHandleAdornment")
+                    box.Adornee = part
+                    box.Size = part.Size
+                    box.Color3 = Color3.fromRGB(255, 0, 0)
+                    box.Transparency = 0.3
+                    box.AlwaysOnTop = true
+                    box.ZIndex = 10
+                    box.Name = ESP_NAME
+                    box.Parent = CoreGui
+                end
+            end
+        end
+    end
+end
+
+-- Function to clear red ESP
+local function clearESP()
+    for _, obj in ipairs(CoreGui:GetChildren()) do
+        if obj.Name == ESP_NAME then
+            obj:Destroy()
+        end
+    end
+end
+
+-- Toggle logic
+local found = false
+for _, obj in ipairs(CoreGui:GetChildren()) do
+    if obj.Name == ESP_NAME then
+        found = true
+        break
+    end
+end
+
+if found then
+    clearESP()
+    print("🔻 ESP disabled")
+else
+    applyESP()
+    print("🔺 ESP enabled")
+end
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Fake Lag",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Biem6ondo/FAKELAG/refs/heads/main/Fakelag"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Roblox Profile copy",
+   Callback = function()
+   if setclipboard then
+    setclipboard("l0stk1dd88")
+    print("✅ Clipboard set to l0stk1dd88")
+else
+    warn("❌ Clipboard function not supported in this executor")
+end
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Backdoor scanner (NOT MINE)",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jLn0n/beckdeer-skenner/main/src/main.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "C00lgui",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Vulnerable RemoteEvent scanner (results in console)",
+   Callback = function()
+   local player = game:GetService("Players").LocalPlayer
+local rs = game:GetService("ReplicatedStorage")
+local total = 0
+local hits = 0
+
+print("\n=== RemoteEvent Scanner (ReplicatedStorage) ===\n")
+
+for _, obj in ipairs(rs:GetDescendants()) do
+    if obj:IsA("RemoteEvent") then
+        total += 1
+        local success, err = pcall(function()
+            obj:FireServer("003nm4_payload_test", player)
+        end)
+        if success then
+            hits += 1
+            print("[✔] Payload accepted by:", obj:GetFullName())
+        else
+            print("[✘] Rejected or errored:", obj:GetFullName())
+        end
+    end
+end
+
+print("\n=== Scan Complete ===")
+print("Scanned:", total)
+print("Vulnerable:", hits)
+print("Secure/Unhandled:", total - hits)
+print("======================\n")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "FE Chat Rickroll",
+   Callback = function()
+   local message = "Never gonna give you up!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+            wait(2)
+            local message = "Never gonna let you down!"
+game.TextChatService.TextChannels.RBXGeneral:SendAsync(message)
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "C00LCLAN V1",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Kick Yourself (idk why i made this)",
+   Callback = function()
+   local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+player:Kick("u kicked urself u fucking brainless shit")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Orbit all part",
+   Callback = function()
+   local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local root = character:WaitForChild("HumanoidRootPart")
+
+local orbitRadius = 70
+local scanRadius = 100
+local orbitParts = {}
+local angleMap = {}
+
+-- Scan for orbitable parts
+local function scanParts()
+	orbitParts = {}
+	for _, part in ipairs(workspace:GetDescendants()) do
+		if part:IsA("BasePart") and part.Anchored then
+			local dist = (part.Position - root.Position).Magnitude
+			if dist <= scanRadius then
+				table.insert(orbitParts, part)
+				angleMap[part] = math.random() * math.pi * 2
+			end
+		end
+	end
+end
+
+-- Initial scan
+scanParts()
+
+-- Orbit loop
+RunService.Heartbeat:Connect(function()
+	for _, part in ipairs(orbitParts) do
+		local angle = angleMap[part] or 0
+		angle += 0.03
+		angleMap[part] = angle
+
+		local x = root.Position.X + math.cos(angle) * orbitRadius
+		local z = root.Position.Z + math.sin(angle) * orbitRadius
+		local y = root.Position.Y + 5
+
+		part.Position = Vector3.new(x, y, z)
+	end
+end)
+
+-- Rescan every few seconds in case new parts spawn
+while true do
+	task.wait(5)
+	scanParts()
+end
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Invisibility (toggle)",
+   Callback = function()
+   -- Toggle invisibility script for Roblox
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Store toggle state
+_G.isInvisible = not _G.isInvisible
+
+for _, part in pairs(character:GetDescendants()) do
+    if part:IsA("BasePart") then
+        part.Transparency = _G.isInvisible and 1 or 0
+        part.CanCollide = not _G.isInvisible
+    elseif part:IsA("Decal") then
+        part.Transparency = _G.isInvisible and 1 or 0
+    end
+end
+
+-- Optional: hide accessories
+for _, accessory in pairs(character:GetChildren()) do
+    if accessory:IsA("Accessory") and accessory:FindFirstChild("Handle") then
+        accessory.Handle.Transparency = _G.isInvisible and 1 or 0
+    end
+end
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Music Player (Client-only)",
+   Callback = function()
+   -- Create the ScreenGui
+local gui = Instance.new("ScreenGui")
+gui.Name = "MusicPlayer"
+gui.ResetOnSpawn = false
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create the main Frame
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 240)
+frame.Position = UDim2.new(0.5, -150, 0.5, -120)
+frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Draggable = true
+frame.Parent = gui
+
+-- Title Label
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, 0, 0, 30)
+title.BackgroundTransparency = 1
+title.Text = "🎃 Music Player"
+title.Font = Enum.Font.Code
+title.TextSize = 18
+title.TextColor3 = Color3.new(1, 1, 1)
+title.Parent = frame
+
+-- Sound ID TextBox
+local soundBox = Instance.new("TextBox")
+soundBox.Size = UDim2.new(1, -20, 0, 30)
+soundBox.Position = UDim2.new(0, 10, 0, 40)
+soundBox.PlaceholderText = "Sound ID (e.g. 123456789)"
+soundBox.Font = Enum.Font.Code
+soundBox.TextSize = 16
+soundBox.TextColor3 = Color3.new(1, 1, 1)
+soundBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+soundBox.Parent = frame
+
+-- Speed TextBox
+local speedBox = Instance.new("TextBox")
+speedBox.Size = UDim2.new(1, -20, 0, 30)
+speedBox.Position = UDim2.new(0, 10, 0, 80)
+speedBox.PlaceholderText = "Playback Speed (e.g. 1)"
+speedBox.Font = Enum.Font.Code
+speedBox.TextSize = 16
+speedBox.TextColor3 = Color3.new(1, 1, 1)
+speedBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+speedBox.Parent = frame
+
+-- Volume TextBox
+local volumeBox = Instance.new("TextBox")
+volumeBox.Size = UDim2.new(1, -20, 0, 30)
+volumeBox.Position = UDim2.new(0, 10, 0, 120)
+volumeBox.PlaceholderText = "Volume (0 to 10)"
+volumeBox.Font = Enum.Font.Code
+volumeBox.TextSize = 16
+volumeBox.TextColor3 = Color3.new(1, 1, 1)
+volumeBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+volumeBox.Parent = frame
+
+-- Play Button
+local playButton = Instance.new("TextButton")
+playButton.Size = UDim2.new(0.48, -10, 0, 30)
+playButton.Position = UDim2.new(0, 10, 0, 170)
+playButton.Text = "▶️ Play"
+playButton.Font = Enum.Font.Code
+playButton.TextSize = 18
+playButton.TextColor3 = Color3.new(1, 1, 1)
+playButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+playButton.Parent = frame
+
+-- Stop Button
+local stopButton = Instance.new("TextButton")
+stopButton.Size = UDim2.new(0.48, -10, 0, 30)
+stopButton.Position = UDim2.new(0.52, 0, 0, 170)
+stopButton.Text = "⏹️ Stop"
+stopButton.Font = Enum.Font.Code
+stopButton.TextSize = 18
+stopButton.TextColor3 = Color3.new(1, 1, 1)
+stopButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+stopButton.Parent = frame
+
+-- Sound Object
+local sound = Instance.new("Sound")
+sound.Name = "SkeletonSound"
+sound.Looped = true
+sound.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Play Button Logic
+playButton.MouseButton1Click:Connect(function()
+	local id = tonumber(soundBox.Text)
+	local speed = tonumber(speedBox.Text) or 1
+	local volume = tonumber(volumeBox.Text) or 1
+
+	if id then
+		sound.SoundId = "rbxassetid://" .. id
+		sound.PlaybackSpeed = speed
+		sound.Volume = math.clamp(volume, 0, 10)
+		sound.Looped = true
+		sound:Play()
+	else
+		warn("Invalid Sound ID")
+	end
+end)
+
+-- Stop Button Logic
+stopButton.MouseButton1Click:Connect(function()
+	if sound.IsPlaying then
+		sound:Stop()
+	end
+end)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Decal Spam",
+   Callback = function()
+   local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
+local Players = game:GetService("Players")
+
+local decalId = "rbxassetid://103157789766561" -- Replace with your decal ID
+
+-- List of all faces
+local faces = {
+    Enum.NormalId.Front,
+    Enum.NormalId.Back,
+    Enum.NormalId.Top,
+    Enum.NormalId.Bottom,
+    Enum.NormalId.Left,
+    Enum.NormalId.Right
+}
+
+if RunService:IsClient() then
+    local success, result = pcall(function()
+        return Workspace.FilteringEnabled
+    end)
+
+    for _, part in ipairs(Workspace:GetDescendants()) do
+        if part:IsA("BasePart") then
+            for _, face in ipairs(faces) do
+                local decal = Instance.new("Decal")
+                decal.Texture = decalId
+                decal.Face = face
+                decal.Parent = part
+            end
+        end
+    end
+end
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Spooky Scary Skeletons Loop",
+   Callback = function()
+   local SoundService = game:GetService("SoundService")
+
+-- Stop existing sound if present
+local existing = SoundService:FindFirstChild("RitualSound")
+if existing and existing:IsA("Sound") then
+    existing:Stop()
+    existing:Destroy()
+end
+
+-- Create and play new sound
+local sound = Instance.new("Sound")
+sound.Name = "RitualSound"
+sound.SoundId = "rbxassetid://95156028272944"
+sound.PlaybackSpeed = 0.2
+sound.Volume = 1
+sound.Looped = true
+sound.Parent = SoundService
+
+sound:Play()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Kill All",
+   Callback = function()
+   local Players = game:GetService("Players")
+for _, player in ipairs(Players:GetPlayers()) do
+    if player.Character then
+        player.Character:BreakJoints()
+    end
+end
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fling",
+   Callback = function()
+   local plr = game:GetService("Players").LocalPlayer
+local char = plr.Character or plr.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+local spinning = not hrp:FindFirstChild("SpinForce")
+
+if spinning then
+    local bg = Instance.new("BodyAngularVelocity")
+    bg.Name = "SpinForce"
+    bg.AngularVelocity = Vector3.new(0, 500, 0)
+    bg.MaxTorque = Vector3.new(0, math.huge, 0)
+    bg.P = math.huge
+    bg.Parent = hrp
+
+    for _, part in ipairs(char:GetDescendants()) do
+        if part:IsA("BasePart") then
+            part.CanCollide = false
+        end
+    end
+else
+    hrp:FindFirstChild("SpinForce"):Destroy()
+
+    for _, part in ipairs(char:GetDescendants()) do
+        if part:IsA("BasePart") then
+            part.CanCollide = true
+        end
+    end
+end
+   end,
+})
