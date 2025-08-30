@@ -707,6 +707,7 @@ local decalId = "rbxassetid://103157789766561" -- Replace with your decal ID
 -- List of all faces
 local faces = {
     Enum.NormalId.Front,
+    Enum.NormalId.Top
 
 }
 
