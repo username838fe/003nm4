@@ -7,12 +7,11 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 46 | Scripts: 18 | Modules: 0 | Tags: 0
+-- Instances: 48 | Scripts: 19 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"))
-
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 
@@ -445,7 +444,7 @@ G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["29"]["Size"] = UDim2.new(0, 265, 0, 38);
 G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["29"]["Text"] = [[ESP Toggle]];
-G2L["29"]["Position"] = UDim2.new(0.03374, 0, 0.43789, 0);
+G2L["29"]["Position"] = UDim2.new(0.04064, 0, 0.43553, 0);
 
 
 -- StarterGui.ScreenGui.MainFrame.Frame.TextButton.LocalScript
@@ -453,49 +452,69 @@ G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
 
 
 
--- StarterGui.ScreenGui.MainFrame.TextLabel
-G2L["2b"] = Instance.new("TextLabel", G2L["2"]);
+-- StarterGui.ScreenGui.MainFrame.Frame.TextButton
+G2L["2b"] = Instance.new("TextButton", G2L["22"]);
 G2L["2b"]["TextWrapped"] = true;
 G2L["2b"]["BorderSizePixel"] = 0;
 G2L["2b"]["TextSize"] = 14;
 G2L["2b"]["TextScaled"] = true;
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["BackgroundTransparency"] = 1;
-G2L["2b"]["Size"] = UDim2.new(0, 264, 0, 180);
+G2L["2b"]["Size"] = UDim2.new(0, 265, 0, 38);
 G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Text"] = [[Thank you for using L0stGUI V3! This was made in ROBLOX Studio then converted into a code that can be ran by a local script executor.]];
-G2L["2b"]["Position"] = UDim2.new(1.03145, 0, 0.54626, 0);
+G2L["2b"]["Text"] = [[Stat Shower]];
+G2L["2b"]["Position"] = UDim2.new(0.04064, 0, 0.54847, 0);
+
+
+-- StarterGui.ScreenGui.MainFrame.Frame.TextButton.LocalScript
+G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+
+
+
+-- StarterGui.ScreenGui.MainFrame.Frame.TextLabel
+G2L["2d"] = Instance.new("TextLabel", G2L["22"]);
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["TextScaled"] = true;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["BackgroundTransparency"] = 1;
+G2L["2d"]["Size"] = UDim2.new(0, 266, 0, 130);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Text"] = [[Thank you for using L0stGUI v3! This script was made in ROBLOX studio then converted into a lua code that can be ran by exploiters just like you! I try my best to make this GUI support every executor!]];
+G2L["2d"]["Position"] = UDim2.new(0.03448, 0, 0.66588, 0);
 
 
 -- StarterGui.ScreenGui.MinimizeFrame
-G2L["2c"] = Instance.new("Frame", G2L["1"]);
-G2L["2c"]["BorderSizePixel"] = 0;
-G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["Size"] = UDim2.new(0, 318, 0, 19);
-G2L["2c"]["Position"] = UDim2.new(0.00534, 0, 0.74874, 0);
-G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Name"] = [[MinimizeFrame]];
-G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2e"] = Instance.new("Frame", G2L["1"]);
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["Size"] = UDim2.new(0, 318, 0, 19);
+G2L["2e"]["Position"] = UDim2.new(0.00534, 0, 0.74874, 0);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Name"] = [[MinimizeFrame]];
+G2L["2e"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.ScreenGui.MinimizeFrame.MinimizeButton
-G2L["2d"] = Instance.new("TextButton", G2L["2c"]);
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextSize"] = 14;
-G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(21, 217, 255);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d"]["Size"] = UDim2.new(0, 318, 0, 19);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[Open/Minimize]];
-G2L["2d"]["Name"] = [[MinimizeButton]];
-G2L["2d"]["Position"] = UDim2.new(0, 0, 2.31579, 0);
+G2L["2f"] = Instance.new("TextButton", G2L["2e"]);
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextSize"] = 14;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(21, 217, 255);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["Size"] = UDim2.new(0, 318, 0, 19);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[Open/Minimize]];
+G2L["2f"]["Name"] = [[MinimizeButton]];
+G2L["2f"]["Position"] = UDim2.new(0, 0, 2.31579, 0);
 
 
 -- StarterGui.ScreenGui.MinimizeFrame.MinimizeButton.LocalScript
-G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
+G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
 
 
 
@@ -805,9 +824,76 @@ local script = G2L["2a"];
 	end)
 end;
 task.spawn(C_2a);
+-- StarterGui.ScreenGui.MainFrame.Frame.TextButton.LocalScript
+local function C_2c()
+local script = G2L["2c"];
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Create GUI
+		local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+		gui.Name = "StatShower"
+		gui.ResetOnSpawn = false
+	
+		-- Create Frame
+		local frame = Instance.new("Frame")
+		frame.Size = UDim2.new(0, 220, 0, 120)
+		frame.Position = UDim2.new(0.5, -110, 0.5, -60)
+		frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+		frame.BorderSizePixel = 0
+		frame.Active = true
+		frame.Draggable = true
+		frame.Parent = gui
+	
+		-- Create Button
+		local button = Instance.new("TextButton")
+		button.Size = UDim2.new(1, 0, 0.4, 0)
+		button.Position = UDim2.new(0, 0, 0, 0)
+		button.Text = "Show Stats"
+		button.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+		button.TextColor3 = Color3.new(1, 1, 1)
+		button.Font = Enum.Font.GothamBold
+		button.TextSize = 14
+		button.Parent = frame
+	
+		-- Create Label
+		local label = Instance.new("TextLabel")
+		label.Size = UDim2.new(1, -10, 0.6, -10)
+		label.Position = UDim2.new(0, 5, 0.4, 5)
+		label.Text = "Stats will appear here"
+		label.BackgroundTransparency = 1
+		label.TextColor3 = Color3.new(1, 1, 1)
+		label.Font = Enum.Font.Gotham
+		label.TextSize = 13
+		label.TextWrapped = true
+		label.TextXAlignment = Enum.TextXAlignment.Left
+		label.TextYAlignment = Enum.TextYAlignment.Top
+		label.Parent = frame
+	
+		-- Snapshot logic
+		button.MouseButton1Click:Connect(function()
+			local character = player.Character or player.CharacterAdded:Wait()
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			local root = character:FindFirstChild("HumanoidRootPart")
+	
+			if humanoid and root then
+				local gravity = root.CustomPhysicalProperties and root.CustomPhysicalProperties.Density or "Default"
+				label.Text = string.format("WalkSpeed: %d\nJumpPower: %d\nGravity: %s",
+					humanoid.WalkSpeed,
+					humanoid.JumpPower,
+					tostring(gravity)
+				)
+			else
+				label.Text = "Stats unavailable"
+			end
+		end)
+	end)
+end;
+task.spawn(C_2c);
 -- StarterGui.ScreenGui.MinimizeFrame.MinimizeButton.LocalScript
-local function C_2e()
-local script = G2L["2e"];
+local function C_30()
+local script = G2L["30"];
 	local button = script.Parent
 	local mainFrame = button.Parent.Parent:WaitForChild("MainFrame")
 	local TweenService = game:GetService("TweenService")
@@ -834,6 +920,6 @@ local script = G2L["2e"];
 		minimized = not minimized
 	end)
 end;
-task.spawn(C_2e);
+task.spawn(C_30);
 
 return G2L["1"], require;
