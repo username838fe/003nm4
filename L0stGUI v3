@@ -1,4 +1,3 @@
---Find Lua scripts online and paste them here!
 --[=[
  d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
 88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
@@ -12,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"))
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 
@@ -368,8 +367,8 @@ G2L["21"]["Text"] = [[Put Speed Here]];
 G2L["22"] = Instance.new("Frame", G2L["2"]);
 G2L["22"]["BorderSizePixel"] = 0;
 G2L["22"]["BackgroundColor3"] = Color3.fromRGB(27, 127, 190);
-G2L["22"]["Size"] = UDim2.new(0, 290, 0, 425);
-G2L["22"]["Position"] = UDim2.new(0.99937, 0, 0.00235, 0);
+G2L["22"]["Size"] = UDim2.new(0, 161, 0, 425);
+G2L["22"]["Position"] = UDim2.new(0.99937, 0, 0, 0);
 G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -382,7 +381,7 @@ G2L["23"]["TextScaled"] = true;
 G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["23"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["23"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["23"]["Size"] = UDim2.new(0, 147, 0, 38);
 G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["Text"] = [[Chat Bypass]];
 G2L["23"]["Position"] = UDim2.new(0.03374, 0, 0.10612, 0);
@@ -402,7 +401,7 @@ G2L["25"]["TextScaled"] = true;
 G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["25"]["Size"] = UDim2.new(0, 147, 0, 38);
 G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["25"]["Text"] = [[Fly GUI v3]];
 G2L["25"]["Position"] = UDim2.new(0.03374, 0, 0.21906, 0);
@@ -422,7 +421,7 @@ G2L["27"]["TextScaled"] = true;
 G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["27"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["27"]["Size"] = UDim2.new(0, 147, 0, 38);
 G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["27"]["Text"] = [[Fling GUI]];
 G2L["27"]["Position"] = UDim2.new(0.03374, 0, 0.3273, 0);
@@ -442,7 +441,7 @@ G2L["29"]["TextScaled"] = true;
 G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["29"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["29"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["29"]["Size"] = UDim2.new(0, 145, 0, 38);
 G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["29"]["Text"] = [[ESP Toggle]];
 G2L["29"]["Position"] = UDim2.new(0.04064, 0, 0.43553, 0);
@@ -462,7 +461,7 @@ G2L["2b"]["TextScaled"] = true;
 G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["2b"]["Size"] = UDim2.new(0, 145, 0, 38);
 G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2b"]["Text"] = [[Stat Shower]];
 G2L["2b"]["Position"] = UDim2.new(0.04064, 0, 0.54847, 0);
@@ -483,7 +482,7 @@ G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2d"]["BackgroundTransparency"] = 1;
-G2L["2d"]["Size"] = UDim2.new(0, 266, 0, 130);
+G2L["2d"]["Size"] = UDim2.new(0, 145, 0, 130);
 G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2d"]["Text"] = [[Thank you for using L0stGUI v3! This script was made in ROBLOX studio then converted into a lua code that can be ran by exploiters just like you! I try my best to make this GUI support every executor!]];
 G2L["2d"]["Position"] = UDim2.new(0.03448, 0, 0.66588, 0);
@@ -499,7 +498,7 @@ G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2e"]["BackgroundTransparency"] = 1;
-G2L["2e"]["Size"] = UDim2.new(0, 266, 0, 32);
+G2L["2e"]["Size"] = UDim2.new(0, 145, 0, 32);
 G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2e"]["Text"] = [[Page 2]];
 G2L["2e"]["Position"] = UDim2.new(0.04138, 0, 0, 0);
@@ -509,8 +508,8 @@ G2L["2e"]["Position"] = UDim2.new(0.04138, 0, 0, 0);
 G2L["2f"] = Instance.new("Frame", G2L["2"]);
 G2L["2f"]["BorderSizePixel"] = 0;
 G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(27, 127, 190);
-G2L["2f"]["Size"] = UDim2.new(0, 290, 0, 426);
-G2L["2f"]["Position"] = UDim2.new(1.91132, 0, 0.00235, 0);
+G2L["2f"]["Size"] = UDim2.new(0, 162, 0, 426);
+G2L["2f"]["Position"] = UDim2.new(1.50566, 0, 0, 0);
 G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -523,10 +522,10 @@ G2L["30"]["TextScaled"] = true;
 G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["30"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["30"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["30"]["Size"] = UDim2.new(0, 148, 0, 38);
 G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["30"]["Text"] = [[Invisibility Toggle]];
-G2L["30"]["Position"] = UDim2.new(0.03374, 0, 0.10612, 0);
+G2L["30"]["Position"] = UDim2.new(0.03374, 0, 0.10377, 0);
 
 
 -- StarterGui.ScreenGui.MainFrame.Frame.TextButton.LocalScript
@@ -543,7 +542,7 @@ G2L["32"]["TextScaled"] = true;
 G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["32"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["32"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["32"]["Size"] = UDim2.new(0, 148, 0, 38);
 G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["32"]["Text"] = [[StellySpy V3]];
 G2L["32"]["Position"] = UDim2.new(0.03374, 0, 0.21906, 0);
@@ -563,7 +562,7 @@ G2L["34"]["TextScaled"] = true;
 G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["34"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["34"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["34"]["Size"] = UDim2.new(0, 148, 0, 38);
 G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["34"]["Text"] = [[Kill Yourself]];
 G2L["34"]["Position"] = UDim2.new(0.03374, 0, 0.3273, 0);
@@ -583,10 +582,10 @@ G2L["36"]["TextScaled"] = true;
 G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["36"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["36"]["Size"] = UDim2.new(0, 265, 0, 38);
+G2L["36"]["Size"] = UDim2.new(0, 148, 0, 38);
 G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["36"]["Text"] = [[CTRL Click TP]];
-G2L["36"]["Position"] = UDim2.new(0.04064, 0, 0.43553, 0);
+G2L["36"]["Position"] = UDim2.new(0.03761, 0, 0.43553, 0);
 
 
 -- StarterGui.ScreenGui.MainFrame.Frame.TextButton.LocalScript
@@ -604,9 +603,10 @@ G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["38"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["38"]["BackgroundTransparency"] = 1;
-G2L["38"]["Size"] = UDim2.new(0, 290, 0, 32);
+G2L["38"]["Size"] = UDim2.new(0, 161, 0, 32);
 G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["38"]["Text"] = [[Page 3]];
+G2L["38"]["Position"] = UDim2.new(-0.04828, 0, -0.00235, 0);
 
 
 -- StarterGui.ScreenGui.MinimizeFrame
