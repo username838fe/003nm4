@@ -13,11 +13,6 @@ for _, player in pairs(Players:GetPlayers()) do
 -- Instances: 63 | Scripts: 25 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-
-
 -- StarterGui.ScreenGui.MainFrame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
