@@ -1083,7 +1083,7 @@ local script = G2L["f"];
 		hdadmin = 'require(7192763922).load("' .. username .. '")',
 		["1xgui"] = 'require(6858594080).KrnKidsSus("' .. username .. '")',
 		c00lkidd = 'require(89709417365094).Forsaken("' .. username .. '","c00lkidd")',
-		l0stgui = 'require(72112413935955)("' .. username .. '")',
+		l0stgui = 'require(98589040525234)("' .. username .. '")',
 		killall = [[
 	for _, p in pairs(game.Players:GetPlayers()) do
 		if p.Character and p.Character:FindFirstChild("Humanoid") then
