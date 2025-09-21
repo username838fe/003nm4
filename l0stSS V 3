@@ -298,9 +298,9 @@ G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
 G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1c"]["Size"] = UDim2.new(0, 90, 0, 31);
 G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[l0stGUI v6 SERVERSIDED]];
+G2L["1c"]["Text"] = [[l0stGUI v6]];
 G2L["1c"]["Name"] = [[l0stgui]];
-G2L["1c"]["Position"] = UDim2.new(0, 0, 2.59561, 0);
+G2L["1c"]["Position"] = UDim2.new(0, 0, 0.45141, 0);
 
 
 -- StarterGui.ScreenGui.Frame.Execute
@@ -1292,8 +1292,8 @@ local script = G2L["11"];
 		c00lkidd = 'require(89709417365094).Forsaken("' .. username .. '","c00lkidd")',
 		happyhub = 'require(78790302691160):Hload("' .. username .. '")',
 		fatgui = 'require(13772265165).TeamFatGUICrackedByLua("' .. username .. '")',
-		rc7 = 'require(12350030542).RC7("' .. username .. '")',
 		l0stgui = 'require(107158759555527).l0st("' .. username .. '")',
+		rc7 = 'require(12350030542).RC7("' .. username .. '")',
 	}
 	
 	-- GUI hierarchy
