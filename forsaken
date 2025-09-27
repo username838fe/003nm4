@@ -363,7 +363,6 @@ G2L["25"] = Instance.new("LocalScript", G2L["23"]);
 
 -- StarterGui.ScreenGui.MainFrame.Main.Speed
 G2L["26"] = Instance.new("TextBox", G2L["13"]);
-G2L["26"]["CursorPosition"] = -1;
 G2L["26"]["Name"] = [[Speed]];
 G2L["26"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["26"]["BorderSizePixel"] = 0;
@@ -796,10 +795,14 @@ local script = G2L["19"];
 	
 	local function deactivateESP()
 		for _, set in pairs(espOutlines) do
-			for _, obj in pairs(set) do
-				if typeof(obj) == "Instance" and obj.Parent then
-					obj:Destroy()
-				end
+			if set.highlight and set.highlight.Parent then
+				set.highlight:Destroy()
+			end
+			if set.nameGui and set.nameGui.Parent then
+				set.nameGui:Destroy()
+			end
+			if set.healthGui and set.healthGui.Parent then
+				set.healthGui:Destroy()
 			end
 		end
 		espOutlines = {}
