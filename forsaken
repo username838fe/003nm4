@@ -13,6 +13,7 @@ local G2L = {};
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
 
 
 -- StarterGui.ScreenGui.MainFrame
@@ -842,17 +843,23 @@ local script = G2L["20"];
 					if _G.AutoGeneral then
 						local map = workspace:FindFirstChild("Map")
 						if map and map:FindFirstChild("Ingame") and map.Ingame:FindFirstChild("Map") then
-							for _, generator in pairs(map.Ingame.Map:GetChildren()) do
-								if generator.Name == "Generator" then
-									local remotes = generator:FindFirstChild("Remotes")
-									if remotes and remotes:FindFirstChild("RE") then
-										remotes.RE:FireServer()
-									end
+							local generators = {}
+							for _, obj in pairs(map.Ingame.Map:GetChildren()) do
+								if obj.Name == "Generator" then
+									table.insert(generators, obj)
+								end
+							end
+	
+							for _, generator in ipairs(generators) do
+								local remotes = generator:FindFirstChild("Remotes")
+								if remotes and remotes:FindFirstChild("RE") then
+									remotes.RE:FireServer()
+									task.wait(3.5) -- Delay between each puzzle
 								end
 							end
 						end
 					end
-					wait(3.5)
+					task.wait(0.1) -- Keeps loop responsive
 				end
 			end)
 		end
