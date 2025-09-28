@@ -850,16 +850,18 @@ local script = G2L["20"];
 								end
 							end
 	
+							-- Complete each puzzle one by one with 3.5s delay between
 							for _, generator in ipairs(generators) do
+								if not _G.AutoGeneral then break end -- stop mid-sequence if toggled off
 								local remotes = generator:FindFirstChild("Remotes")
 								if remotes and remotes:FindFirstChild("RE") then
 									remotes.RE:FireServer()
-									task.wait(3.5) -- Delay between each puzzle
+									task.wait(3.5)
 								end
 							end
 						end
 					end
-					task.wait(0.1) -- Keeps loop responsive
+					task.wait(0.1) -- keeps loop responsive
 				end
 			end)
 		end
