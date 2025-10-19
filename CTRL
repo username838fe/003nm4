@@ -76,7 +76,6 @@ G2L["8"] = Instance.new("UIStroke", G2L["7"]);
 
 -- StarterGui.ScreenGui.Frame.page1
 G2L["9"] = Instance.new("Frame", G2L["2"]);
-G2L["9"]["Visible"] = false;
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
 G2L["9"]["Size"] = UDim2.new(0, 361, 0, 260);
@@ -1202,6 +1201,7 @@ G2L["92"] = Instance.new("LocalScript", G2L["90"]);
 
 -- StarterGui.ScreenGui.Frame.page4
 G2L["93"] = Instance.new("Frame", G2L["2"]);
+G2L["93"]["Visible"] = false;
 G2L["93"]["BorderSizePixel"] = 0;
 G2L["93"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
 G2L["93"]["Size"] = UDim2.new(0, 361, 0, 260);
