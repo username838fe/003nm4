@@ -951,7 +951,7 @@ G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["76"]["BackgroundTransparency"] = 1;
 G2L["76"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["76"]["Text"] = [[Aureus]];
+G2L["76"]["Text"] = [[Grab Knife]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
