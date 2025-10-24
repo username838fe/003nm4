@@ -108,7 +108,6 @@ G2L["d"] = Instance.new("UICorner", G2L["a"]);
 
 -- StarterGui.ScreenGui.Frame.page1
 G2L["e"] = Instance.new("Frame", G2L["3"]);
-G2L["e"]["Visible"] = false;
 G2L["e"]["BorderSizePixel"] = 0;
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
 G2L["e"]["Size"] = UDim2.new(0, 361, 0, 260);
@@ -249,7 +248,7 @@ G2L["1b"]["Size"] = UDim2.new(0, 353, 0, 34);
 G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1b"]["Text"] = [[Status: NOT Injected]];
 G2L["1b"]["Name"] = [[Status]];
-G2L["1b"]["Position"] = UDim2.new(0.02216, 0, 0.69615, 0);
+G2L["1b"]["Position"] = UDim2.new(0.02216, 0, 0.67692, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page1.Status.UIStroke
@@ -286,6 +285,7 @@ G2L["1f"] = Instance.new("UIStroke", G2L["1d"]);
 
 -- StarterGui.ScreenGui.Frame.page3
 G2L["20"] = Instance.new("Frame", G2L["3"]);
+G2L["20"]["Visible"] = false;
 G2L["20"]["BorderSizePixel"] = 0;
 G2L["20"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
 G2L["20"]["Size"] = UDim2.new(0, 361, 0, 260);
@@ -320,7 +320,6 @@ G2L["23"] = Instance.new("ScrollingFrame", G2L["20"]);
 G2L["23"]["Active"] = true;
 G2L["23"]["BorderSizePixel"] = 0;
 G2L["23"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["23"]["CanvasPosition"] = Vector2.new(0, 550);
 G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["23"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
 G2L["23"]["Size"] = UDim2.new(0, 361, 0, 231);
