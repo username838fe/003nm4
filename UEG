@@ -1,12 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-Rayfield:Notify({
-   Title = "UEG (Untitled Exploit GUI)",
-   Content = "UEG Has been loaded! Happy exploiting!",
-   Duration = 4,
-   Image = 4483362458,
-})
-
 local Window = Rayfield:CreateWindow({
    Name = "Untitled Exploit GUI",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
@@ -32,27 +25,28 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Untitled",
+      Title = "Untitled Exploit GUI",
       Subtitle = "Key System",
-      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      Note = "Key is l0stk1dd88", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-
-      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"l0stk1dd88"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 
 local Tab = Window:CreateTab("LocalPlayer/Client", nil) -- Title, Image
 local uTab = Window:CreateTab("Universal", nil) -- Title, Image
 local sTab = Window:CreateTab("Server-Sides", nil) -- Title, Image
+local gTab = Window:CreateTab("Hubs for games", nil) -- Title, Image
 
-local Section = Tab:CreateSection("LocalPlayer")
+local Section = Tab:CreateSection("LocalPlayer adjustments")
 
 local Slider = Tab:CreateSlider({
    Name = "Walkspeed",
-   Range = {0, 450},
+   Range = {0, 1000},
    Increment = 10,
    Suffix = "Walkspeed",
    CurrentValue = 10,
@@ -65,9 +59,9 @@ local Slider = Tab:CreateSlider({
 
 local Slider = Tab:CreateSlider({
    Name = "Jumppower",
-   Range = {0, 100},
+   Range = {0, 1000},
    Increment = 10,
-   Suffix = "JumpHeight",
+   Suffix = "Jumppower",
    CurrentValue = 10,
    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -79,109 +73,42 @@ local Slider = Tab:CreateSlider({
 local Section = Tab:CreateSection("Client-side/FE")
 
 local Button = Tab:CreateButton({
-   Name = "Infinite Yield FE",
+   Name = "Infinite Yield",
    Callback = function()
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
    end,
 })
 
 local Button = Tab:CreateButton({
-   Name = "Fling GUI",
+   Name = "Chat Bypass",
    Callback = function()
-   --[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
-   end,
-})
-
-local Button = Tab:CreateButton({
-   Name = "Simple Spy",
-   Callback = function()
-   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
+   loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a675d4a69c2e1d8e301a4af260fb719b.lua"))()
    end,
 })
 
 local Button = Tab:CreateButton({
    Name = "Remote Spy",
    Callback = function()
-   --[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JaoExploiter/StellySpyV3/refs/heads/main/StellySpyV3.txt"))()
+   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
    end,
 })
 
 local Button = Tab:CreateButton({
-   Name = "l0stGUI v5",
+   Name = "c00lgui",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/username838fe/003nm4/refs/heads/main/v5",true))()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
    end,
 })
 
-local Button = uTab:CreateButton({
-   Name = "Aimbot",
+local Button = Tab:CreateButton({
+   Name = "c00lgui",
    Callback = function()
-   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Universal-For-Mobile-and-PC-29153"))()
-   end,
-})
-
-local Toggle = uTab:CreateToggle({
-   Name = "Toggle Example",
-   CurrentValue = false,
-   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   local Players = game:GetService("Players")
-local CoreGui = game:GetService("CoreGui")
-
-local ESP_NAME = "ESPBox"
-
--- Function to apply red ESP
-local function applyESP()
-    for _, player in ipairs(Players:GetPlayers()) do
-        if player ~= Players.LocalPlayer and player.Character then
-            for _, part in ipairs(player.Character:GetChildren()) do
-                if part:IsA("BasePart") then
-                    local box = Instance.new("BoxHandleAdornment")
-                    box.Adornee = part
-                    box.Size = part.Size
-                    box.Color3 = Color3.fromRGB(255, 0, 0)
-                    box.Transparency = 0.3
-                    box.AlwaysOnTop = true
-                    box.ZIndex = 10
-                    box.Name = ESP_NAME
-                    box.Parent = CoreGui
-                end
-            end
-        end
-    end
-end
-
--- Function to clear red ESP
-local function clearESP()
-    for _, obj in ipairs(CoreGui:GetChildren()) do
-        if obj.Name == ESP_NAME then
-            obj:Destroy()
-        end
-    end
-end
-
--- Toggle logic
-local found = false
-for _, obj in ipairs(CoreGui:GetChildren()) do
-    if obj.Name == ESP_NAME then
-        found = true
-        break
-    end
-end
-
-if found then
-    clearESP()
-    print("🔻 ESP disabled")
-else
-    applyESP()
-    print("🔺 ESP enabled")
-end
-   -- The variable (Value) is a boolean on whether the toggle is true or false
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
    end,
 })
