@@ -356,6 +356,7 @@ G2L["28"] = Instance.new("ScrollingFrame", G2L["25"]);
 G2L["28"]["Active"] = true;
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["28"]["CanvasPosition"] = Vector2.new(0, 550);
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
 G2L["28"]["Size"] = UDim2.new(0, 361, 0, 231);
