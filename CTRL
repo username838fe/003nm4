@@ -1477,7 +1477,7 @@ G2L["bb"]["BorderSizePixel"] = 0;
 G2L["bb"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
 G2L["bb"]["BackgroundColor3"] = Color3.fromRGB(113, 113, 113);
 G2L["bb"]["Name"] = [[Text]];
-G2L["bb"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["bb"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
 G2L["bb"]["Size"] = UDim2.new(1, 0, 0.83077, 0);
 G2L["bb"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
@@ -1535,7 +1535,7 @@ G2L["c1"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["c1"]["BackgroundColor3"] = Color3.fromRGB(101, 101, 101);
 G2L["c1"]["RichText"] = true;
 G2L["c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c1"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["c1"]["AutomaticSize"] = Enum.AutomaticSize.XY;
 G2L["c1"]["MultiLine"] = true;
 G2L["c1"]["ClearTextOnFocus"] = false;
 G2L["c1"]["PlaceholderText"] = [[-- require here]];
@@ -1574,6 +1574,7 @@ G2L["c6"]["Name"] = [[y]];
 
 -- StarterGui.ScreenGui.Frame.page2.Text.Syntax
 G2L["c7"] = Instance.new("TextLabel", G2L["bb"]);
+G2L["c7"]["LineHeight"] = 1.01;
 G2L["c7"]["BorderSizePixel"] = 0;
 G2L["c7"]["TextSize"] = 14;
 G2L["c7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
@@ -1586,6 +1587,7 @@ G2L["c7"]["RichText"] = true;
 G2L["c7"]["Size"] = UDim2.new(0, 332, 0, 216);
 G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c7"]["Text"] = [[]];
+G2L["c7"]["AutomaticSize"] = Enum.AutomaticSize.XY;
 G2L["c7"]["Name"] = [[Syntax]];
 G2L["c7"]["Position"] = UDim2.new(0.078, 0, -0.005, 0);
 
