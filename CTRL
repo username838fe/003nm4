@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 214 | Scripts: 46 | Modules: 0 | Tags: 0
+-- Instances: 216 | Scripts: 47 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -356,7 +356,6 @@ G2L["28"] = Instance.new("ScrollingFrame", G2L["25"]);
 G2L["28"]["Active"] = true;
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["28"]["CanvasPosition"] = Vector2.new(0, 550);
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
 G2L["28"]["Size"] = UDim2.new(0, 361, 0, 231);
@@ -1525,6 +1524,7 @@ G2L["c0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox
 G2L["c1"] = Instance.new("TextBox", G2L["bb"]);
+G2L["c1"]["CursorPosition"] = -1;
 G2L["c1"]["LineHeight"] = 1.01;
 G2L["c1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["c1"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
@@ -1534,7 +1534,7 @@ G2L["c1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c1"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["c1"]["BackgroundColor3"] = Color3.fromRGB(101, 101, 101);
 G2L["c1"]["RichText"] = true;
-G2L["c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["c1"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["c1"]["MultiLine"] = true;
 G2L["c1"]["ClearTextOnFocus"] = false;
@@ -1572,148 +1572,166 @@ G2L["c6"] = Instance.new("UIStroke", G2L["c1"]);
 G2L["c6"]["Name"] = [[y]];
 
 
--- StarterGui.ScreenGui.Frame.page2.Execute
-G2L["c7"] = Instance.new("TextButton", G2L["ba"]);
-G2L["c7"]["TextWrapped"] = true;
+-- StarterGui.ScreenGui.Frame.page2.Text.Syntax
+G2L["c7"] = Instance.new("TextLabel", G2L["bb"]);
 G2L["c7"]["BorderSizePixel"] = 0;
 G2L["c7"]["TextSize"] = 14;
-G2L["c7"]["TextScaled"] = true;
-G2L["c7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["c7"]["TextYAlignment"] = Enum.TextYAlignment.Top;
 G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c7"]["BackgroundTransparency"] = 1;
-G2L["c7"]["Size"] = UDim2.new(0, 89, 0, 41);
+G2L["c7"]["RichText"] = true;
+G2L["c7"]["Size"] = UDim2.new(0, 332, 0, 216);
 G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c7"]["Text"] = [[Execute]];
-G2L["c7"]["Name"] = [[Execute]];
-G2L["c7"]["Position"] = UDim2.new(0, 0, 0.83846, 0);
+G2L["c7"]["Text"] = [[]];
+G2L["c7"]["Name"] = [[Syntax]];
+G2L["c7"]["Position"] = UDim2.new(0.078, 0, -0.005, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.SyntaxScript
+G2L["c8"] = Instance.new("LocalScript", G2L["bb"]);
+G2L["c8"]["Name"] = [[SyntaxScript]];
+
+
+-- StarterGui.ScreenGui.Frame.page2.Execute
+G2L["c9"] = Instance.new("TextButton", G2L["ba"]);
+G2L["c9"]["TextWrapped"] = true;
+G2L["c9"]["BorderSizePixel"] = 0;
+G2L["c9"]["TextSize"] = 14;
+G2L["c9"]["TextScaled"] = true;
+G2L["c9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c9"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["c9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c9"]["Size"] = UDim2.new(0, 89, 0, 41);
+G2L["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c9"]["Text"] = [[Execute]];
+G2L["c9"]["Name"] = [[Execute]];
+G2L["c9"]["Position"] = UDim2.new(0, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
-G2L["c8"] = Instance.new("UIStroke", G2L["c7"]);
+G2L["ca"] = Instance.new("UIStroke", G2L["c9"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
-G2L["c9"] = Instance.new("UIStroke", G2L["c7"]);
-G2L["c9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["c9"]["Thickness"] = 2;
+G2L["cb"] = Instance.new("UIStroke", G2L["c9"]);
+G2L["cb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["cb"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Clear
-G2L["ca"] = Instance.new("TextButton", G2L["ba"]);
-G2L["ca"]["TextWrapped"] = true;
-G2L["ca"]["BorderSizePixel"] = 0;
-G2L["ca"]["TextSize"] = 14;
-G2L["ca"]["TextScaled"] = true;
-G2L["ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ca"]["BackgroundTransparency"] = 1;
-G2L["ca"]["Size"] = UDim2.new(0, 94, 0, 41);
-G2L["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ca"]["Text"] = [[Clear]];
-G2L["ca"]["Name"] = [[Clear]];
-G2L["ca"]["Position"] = UDim2.new(0.24654, 0, 0.83846, 0);
+G2L["cc"] = Instance.new("TextButton", G2L["ba"]);
+G2L["cc"]["TextWrapped"] = true;
+G2L["cc"]["BorderSizePixel"] = 0;
+G2L["cc"]["TextSize"] = 14;
+G2L["cc"]["TextScaled"] = true;
+G2L["cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cc"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cc"]["Size"] = UDim2.new(0, 94, 0, 41);
+G2L["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cc"]["Text"] = [[Clear]];
+G2L["cc"]["Name"] = [[Clear]];
+G2L["cc"]["Position"] = UDim2.new(0.24654, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
-G2L["cb"] = Instance.new("UIStroke", G2L["ca"]);
+G2L["cd"] = Instance.new("UIStroke", G2L["cc"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
-G2L["cc"] = Instance.new("UIStroke", G2L["ca"]);
-G2L["cc"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["cc"]["Thickness"] = 2;
+G2L["ce"] = Instance.new("UIStroke", G2L["cc"]);
+G2L["ce"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["ce"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Inject
-G2L["cd"] = Instance.new("TextButton", G2L["ba"]);
-G2L["cd"]["TextWrapped"] = true;
-G2L["cd"]["BorderSizePixel"] = 0;
-G2L["cd"]["TextSize"] = 14;
-G2L["cd"]["TextScaled"] = true;
-G2L["cd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["cd"]["BackgroundTransparency"] = 1;
-G2L["cd"]["Size"] = UDim2.new(0, 75, 0, 41);
-G2L["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cd"]["Text"] = [[Attach]];
-G2L["cd"]["Name"] = [[Inject]];
-G2L["cd"]["Position"] = UDim2.new(0.50693, 0, 0.83846, 0);
+G2L["cf"] = Instance.new("TextButton", G2L["ba"]);
+G2L["cf"]["TextWrapped"] = true;
+G2L["cf"]["BorderSizePixel"] = 0;
+G2L["cf"]["TextSize"] = 14;
+G2L["cf"]["TextScaled"] = true;
+G2L["cf"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cf"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cf"]["Size"] = UDim2.new(0, 75, 0, 41);
+G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cf"]["Text"] = [[Attach]];
+G2L["cf"]["Name"] = [[Inject]];
+G2L["cf"]["Position"] = UDim2.new(0.50693, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
-G2L["ce"] = Instance.new("UIStroke", G2L["cd"]);
+G2L["d0"] = Instance.new("UIStroke", G2L["cf"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
-G2L["cf"] = Instance.new("UIStroke", G2L["cd"]);
-G2L["cf"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["cf"]["Thickness"] = 2;
+G2L["d1"] = Instance.new("UIStroke", G2L["cf"]);
+G2L["d1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["d1"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.RE
-G2L["d0"] = Instance.new("TextButton", G2L["ba"]);
-G2L["d0"]["TextWrapped"] = true;
-G2L["d0"]["BorderSizePixel"] = 0;
-G2L["d0"]["TextSize"] = 14;
-G2L["d0"]["TextScaled"] = true;
-G2L["d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d0"]["BackgroundTransparency"] = 1;
-G2L["d0"]["Size"] = UDim2.new(0, 58, 0, 41);
-G2L["d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d0"]["Text"] = [[SPAWN]];
-G2L["d0"]["Name"] = [[RE]];
-G2L["d0"]["Position"] = UDim2.new(0.71468, 0, 0.83846, 0);
+G2L["d2"] = Instance.new("TextButton", G2L["ba"]);
+G2L["d2"]["TextWrapped"] = true;
+G2L["d2"]["BorderSizePixel"] = 0;
+G2L["d2"]["TextSize"] = 14;
+G2L["d2"]["TextScaled"] = true;
+G2L["d2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d2"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d2"]["Size"] = UDim2.new(0, 58, 0, 41);
+G2L["d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d2"]["Text"] = [[SPAWN]];
+G2L["d2"]["Name"] = [[RE]];
+G2L["d2"]["Position"] = UDim2.new(0.71468, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
-G2L["d1"] = Instance.new("UIStroke", G2L["d0"]);
+G2L["d3"] = Instance.new("UIStroke", G2L["d2"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
-G2L["d2"] = Instance.new("UIStroke", G2L["d0"]);
-G2L["d2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["d2"]["Thickness"] = 2;
+G2L["d4"] = Instance.new("UIStroke", G2L["d2"]);
+G2L["d4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["d4"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.R6
-G2L["d3"] = Instance.new("TextButton", G2L["ba"]);
-G2L["d3"]["TextWrapped"] = true;
-G2L["d3"]["BorderSizePixel"] = 0;
-G2L["d3"]["TextSize"] = 14;
-G2L["d3"]["TextScaled"] = true;
-G2L["d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d3"]["BackgroundTransparency"] = 1;
-G2L["d3"]["Size"] = UDim2.new(0, 44, 0, 41);
-G2L["d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d3"]["Text"] = [[R6]];
-G2L["d3"]["Name"] = [[R6]];
-G2L["d3"]["Position"] = UDim2.new(0.87535, 0, 0.83846, 0);
+G2L["d5"] = Instance.new("TextButton", G2L["ba"]);
+G2L["d5"]["TextWrapped"] = true;
+G2L["d5"]["BorderSizePixel"] = 0;
+G2L["d5"]["TextSize"] = 14;
+G2L["d5"]["TextScaled"] = true;
+G2L["d5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d5"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d5"]["Size"] = UDim2.new(0, 44, 0, 41);
+G2L["d5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d5"]["Text"] = [[R6]];
+G2L["d5"]["Name"] = [[R6]];
+G2L["d5"]["Position"] = UDim2.new(0.87535, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
-G2L["d4"] = Instance.new("UIStroke", G2L["d3"]);
+G2L["d6"] = Instance.new("UIStroke", G2L["d5"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
-G2L["d5"] = Instance.new("UIStroke", G2L["d3"]);
-G2L["d5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["d5"]["Thickness"] = 2;
+G2L["d7"] = Instance.new("UIStroke", G2L["d5"]);
+G2L["d7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["d7"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.UICorner
-G2L["d6"] = Instance.new("UICorner", G2L["3"]);
+G2L["d8"] = Instance.new("UICorner", G2L["3"]);
 
 
 
@@ -3333,5 +3351,190 @@ local script = G2L["c4"];
 	script.Parent.Text = 'print("project transparent SS")'
 end;
 task.spawn(C_c4);
+-- StarterGui.ScreenGui.Frame.page2.Text.SyntaxScript
+local function C_c8()
+local script = G2L["c8"];
+	local textBox = script.Parent.TextBox
+	local highlighter = script.Parent.Syntax
+	
+	textBox.RichText = false
+	highlighter.RichText = true
+	
+	local stringColor = Color3.fromRGB(56, 241, 87) -- bright green for strings
+	local functionColor = Color3.fromRGB(255, 255, 0) -- yellow for local function names
+	
+	local rememberedFunctions = {}
+	
+	local colors = {
+		[Color3.fromRGB(255, 0, 0)] = {
+			"and",
+			"break",
+			"do",
+			"else",
+			"elseif",
+			"end",
+			"false",
+			"for",
+			"function",
+			"if",
+			"in",
+			"nil",
+			"not",
+			"or",
+			"repeat",
+			"return",
+			"then",
+			"true",
+			"until",
+			"while"
+		},
+		[Color3.fromRGB(255, 255, 0)] = {
+			"Connect",
+			"Disconnect",
+			"IsA",
+			"Clone",
+			"Destroy",
+			"FindFirstChild",
+			"FindFirstAncestor",
+			"FindFirstAncestorOfClass",
+			"FindFirstAncestorWhichIsA",
+			"FindFirstChildOfClass",
+			"FindFirstChildWhichIsA",
+			"GetChildren",
+			"GetDescendants",
+			"GetFullName",
+			"GetPropertyChangedSignal",
+			"WaitForChild",
+			"ClearAllChildren",
+			"GetMouse",
+			"GetService",
+			"Invoke",
+			"InvokeServer",
+			"Fire",
+			"FireServer",
+			"Destroy",
+			"Remove",
+			"Play",
+			"Stop",
+			"Pause",
+			"Resume",
+			"TweenSize",
+			"TweenPosition",
+			"TweenSizeAndPosition",
+			"TweenService:Create",
+			"GetAsync",
+			"SetAsync",
+			"UpdateAsync",
+			"RemoveAsync",
+			"IncrementAsync",
+			"GetPlayerFromCharacter",
+			"GetPlayers",
+			"Kick",
+			"LoadAnimation",
+			"LoadCharacter",
+			"MoveTo",
+			"SetPrimaryPartCFrame",
+			"SetAttribute",
+			"GetAttribute",
+			"GetAttributes",
+			"HasTag",
+			"AddTag",
+			"RemoveTag",
+			"GetTags",
+			"GetRankInGroup",
+			"IsInGroup",
+			"PromptProductPurchase",
+			"PromptGamePassPurchase",
+			"PromptPurchase",
+			"PromptPremiumPurchase",
+			"PromptGroupPurchase",
+			"PromptAvatarEditor",
+			"PromptBundlePurchase",
+			"PromptItemPurchase",
+			"PromptSubscriptionPurchase",
+			"PromptNativePurchase",
+			"PromptRobloxPurchase"
+		},
+		[Color3.fromRGB(0, 149, 223)] = {
+			"game", "script", "Workspace", "Players", "Lighting",
+			"ReplicatedStorage", "ReplicatedFirst", "ServerScriptService",
+			"ServerStorage", "StarterGui", "StarterPack", "StarterPlayer",
+			"SoundService", "Chat", "LocalizationService", "MarketplaceService",
+			"HttpService", "UserInputService", "ContextActionService", "RunService",
+			"TweenService", "PathfindingService", "InsertService", "TestService",
+			"VirtualInputManager", "VRService", "MessagingService", "NotificationService",
+			"SocialService", "DataStoreService", "MemoryStoreService", "AssetService",
+			"AdService", "AnalyticsService", "ScriptContext", "Selection",
+			"GuiService", "InputService", "KeyframeSequenceProvider", "NavigationService",
+			"Terrain", "Teams", "CollectionService", "ContentProvider", "Stats",
+			"SoundscapeService", "ThumbnailGenerator", "TranslationService",
+			"VoiceChatService", "ProximityPromptService", "TextChatService",
+			"MaterialService", "FaceAnimatorService", "AnimationClipProvider",
+			"AssetManagerService", "PluginDebugService", "StudioData", "StudioService",
+			"SelectionService", "ToolboxService", "Draggers", "TemporaryScriptService",
+			"getmetatable", "load", "getgenv()"
+		},
+		[Color3.fromRGB(0, 170, 255)] = {
+			"workspace", "loadstring", "require", "print", "task.wait", "PlayerAdded", "wait", "pairs", "ipairs", "Instance.new", "Parent", "task"
+		},
+		
+		[Color3.fromRGB(166, 0, 255)] = {
+			"local"
+		}
+	}
+	
+	local ColorizePattern = '<font color="rgb(%d, %d, %d)">%s</font>'
+	
+	local function Colorize(text, color)
+		return string.format(ColorizePattern, color.R * 255, color.G * 255, color.B * 255, text)
+	end
+	
+	local function escapeHTML(text)
+		return text:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;")
+	end
+	
+	local function ProcessText(text)
+		text = escapeHTML(text)
+		rememberedFunctions = {}
+		
+		-- Highlight strings first
+		text = text:gsub("(['\"])(.-)%1", function(quote, content)
+			local full = quote .. content .. quote
+			return Colorize(full, stringColor)
+		end)
+		
+		-- Highlight and remember local function names
+		text = text:gsub("local%s+function%s+([%a_][%w_]*)%s*%(", function(funcName)
+			table.insert(rememberedFunctions, funcName)
+			return "local function " .. Colorize(funcName, functionColor) .. "("
+		end)
+		
+		-- Highlight remembered function names when used later
+		for _, funcName in ipairs(rememberedFunctions) do
+			text = text:gsub("(%f[%w])(" .. funcName .. ")(%f[%W])", function(a, b, c)
+				return a .. Colorize(b, functionColor) .. c
+			end)
+		end
+		
+		-- Highlight keywords
+		for color, keywords in pairs(colors) do
+			for _, keyword in pairs(keywords) do
+				local escaped = keyword:gsub("([%(%)%.%%%+%-%*%?%[%]%^%$])", "%%%1")
+				text = text:gsub("(%f[%w])(" .. escaped .. ")(%f[%W])", function(a, b, c)
+					return a .. Colorize(b, color) .. c
+				end)
+			end
+		end
+		
+		return text
+	end
+	
+	local function InputChanged()
+		highlighter.Text = ProcessText(textBox.Text)
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(InputChanged)
+end;
+task.spawn(C_c8);
 
 return G2L["1"], require;
