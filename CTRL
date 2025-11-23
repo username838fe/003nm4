@@ -322,6 +322,7 @@ G2L["24"] = Instance.new("UIStroke", G2L["23"]);
 
 -- StarterGui.ScreenGui.Frame.page3
 G2L["25"] = Instance.new("Frame", G2L["3"]);
+G2L["25"]["Visible"] = false;
 G2L["25"]["BorderSizePixel"] = 0;
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
 G2L["25"]["Size"] = UDim2.new(0, 361, 0, 260);
@@ -356,7 +357,6 @@ G2L["28"] = Instance.new("ScrollingFrame", G2L["25"]);
 G2L["28"]["Active"] = true;
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["28"]["CanvasPosition"] = Vector2.new(0, 584);
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
 G2L["28"]["Size"] = UDim2.new(0, 361, 0, 231);
@@ -1080,7 +1080,7 @@ G2L["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["87"]["BackgroundTransparency"] = 0.7;
 G2L["87"]["Size"] = UDim2.new(0, 361, 0, 33);
 G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["87"]["Text"] = [[USSR ]];
+G2L["87"]["Text"] = [[USSR]];
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
