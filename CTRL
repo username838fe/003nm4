@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 220 | Scripts: 48 | Modules: 0 | Tags: 0
+-- Instances: 225 | Scripts: 49 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -26,7 +26,7 @@ G2L["3"] = Instance.new("Frame", G2L["1"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["Size"] = UDim2.new(0, 407, 0, 296);
-G2L["3"]["Position"] = UDim2.new(0.32772, 0, 0.28788, 0);
+G2L["3"]["Position"] = UDim2.new(0.35744, 0, 0.26808, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["BackgroundTransparency"] = 0.5;
 
@@ -1767,6 +1767,42 @@ G2L["dc"] = Instance.new("UICorner", G2L["3"]);
 
 
 
+-- StarterGui.ScreenGui.TextButton
+G2L["dd"] = Instance.new("TextButton", G2L["1"]);
+G2L["dd"]["TextWrapped"] = true;
+G2L["dd"]["BorderSizePixel"] = 0;
+G2L["dd"]["TextSize"] = 14;
+G2L["dd"]["TextScaled"] = true;
+G2L["dd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dd"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dd"]["Size"] = UDim2.new(0.14903, 0, 0.06188, 0);
+G2L["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["dd"]["Text"] = [[Open UI]];
+G2L["dd"]["Position"] = UDim2.new(0.45189, 0, 0.01485, 0);
+
+
+-- StarterGui.ScreenGui.TextButton.UICorner
+G2L["de"] = Instance.new("UICorner", G2L["dd"]);
+
+
+
+-- StarterGui.ScreenGui.TextButton.UIStroke
+G2L["df"] = Instance.new("UIStroke", G2L["dd"]);
+
+
+
+-- StarterGui.ScreenGui.TextButton.UIStroke
+G2L["e0"] = Instance.new("UIStroke", G2L["dd"]);
+G2L["e0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["e0"]["Thickness"] = 3;
+
+
+-- StarterGui.ScreenGui.TextButton.LocalScript
+G2L["e1"] = Instance.new("LocalScript", G2L["dd"]);
+
+
+
 -- StarterGui.ScreenGui.Scanner
 local function C_2()
 local script = G2L["2"];
@@ -1941,7 +1977,8 @@ task.spawn(C_4);
 local function C_b()
 local script = G2L["b"];
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent:Destroy()
+		script.Parent.Parent.Parent.Parent.Frame.Visible = false
+		script.Parent.Parent.Parent.Parent.TextButton.Visible = true
 	end)
 end;
 task.spawn(C_b);
@@ -3539,5 +3576,14 @@ local script = G2L["c9"];
 	end)
 end;
 task.spawn(C_c9);
+-- StarterGui.ScreenGui.TextButton.LocalScript
+local function C_e1()
+local script = G2L["e1"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Visible = false
+	end)
+end;
+task.spawn(C_e1);
 
 return G2L["1"], require;
