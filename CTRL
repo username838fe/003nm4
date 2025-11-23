@@ -1765,7 +1765,7 @@ local script = G2L["2"];
 	getgenv().confirmedType = nil
 	
 	injectButton.MouseButton1Click:Connect(function()
-		local testPayload = 'local m = Instance.new("Part") m.Parent = game.Workspace m.Name = "backdoor"'
+		local testPayload = 'local m = Instance.new("Part") m.Parent = game.Lighting m.Name = "backdoormodulepart"'
 		local found = false
 		
 		for _, obj in ipairs(replicatedStorage:GetDescendants()) do
@@ -1789,8 +1789,8 @@ local script = G2L["2"];
 				wait(0.5)
 				
 				-- Check for the test part
-				for _, p in ipairs(workspace:GetChildren()) do
-					if p:IsA("BasePart") and p.Name == "backdoor" then
+				for _, p in ipairs(game.Lighting:GetChildren()) do
+					if p:IsA("BasePart") and p.Name == "backdoormodulepart" then
 						print("backdoor confirmed through " .. obj.ClassName .. ": " .. obj:GetFullName())
 						getgenv().confirmedBackdoor = obj
 						getgenv().confirmedType = obj.ClassName
@@ -1798,18 +1798,12 @@ local script = G2L["2"];
 						
 						pcall(function()
 							starterGui:SetCore("SendNotification", {
-								Title = "backdoor Found",
+								Title = "Project Transparent",
 								Text = "backdoor found: " .. obj:GetFullName() .. " (" .. obj.ClassName .. ")",
 								Duration = 5
 							})
 							
 							-- Client-side hint (only visible to local player)
-							local hint = Instance.new("Hint")
-							hint.Text = "Backdoor: " .. obj:GetFullName() .. " (" .. obj.ClassName .. "), no one else sees this hint!"
-							hint.Parent = workspace
-							delay(5, function()
-								hint:Destroy()
-							end)
 						end)
 						
 						statusLabel.Text = "status: injected"
@@ -1826,6 +1820,12 @@ local script = G2L["2"];
 			print("no backdoor confirmed, better luck next time!")
 			statusLabel.Text = "status: no backdoor detected."
 			statusLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+			
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Project Transparent",
+				Text = "no backdoor found.",
+				Duration = 5
+			})
 		end
 	end)
 	
@@ -3164,7 +3164,6 @@ local script = G2L["bd"];
 			"else",
 			"elseif",
 			"end",
-			"false",
 			"for",
 			"function",
 			"if",
@@ -3175,13 +3174,14 @@ local script = G2L["bd"];
 			"repeat",
 			"return",
 			"then",
-			"true",
 			"until",
 			"while"
 		},
 		[Color3.fromRGB(255, 255, 0)] = {
 			"Connect",
 			"Disconnect",
+			"false",
+			"true",
 			"IsA",
 			"Clone",
 			"Destroy",
