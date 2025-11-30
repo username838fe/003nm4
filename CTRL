@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 176 | Scripts: 38 | Modules: 1 | Tags: 0
+-- Instances: 181 | Scripts: 39 | Modules: 1 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -26,7 +26,7 @@ G2L["3"] = Instance.new("Frame", G2L["1"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["Size"] = UDim2.new(0, 407, 0, 296);
-G2L["3"]["Position"] = UDim2.new(0.32772, 0, 0.28788, 0);
+G2L["3"]["Position"] = UDim2.new(0.33455, 0, 0.28788, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3"]["BackgroundTransparency"] = 0.5;
 
@@ -1385,9 +1385,9 @@ G2L["ab"] = Instance.new("UIStroke", G2L["aa"]);
 
 
 
--- StarterGui.ScreenGui.Notify.MainNotifier
+-- StarterGui.ScreenGui.Notify.CoreFunctionsNotifier
 G2L["ac"] = Instance.new("LocalScript", G2L["a0"]);
-G2L["ac"]["Name"] = [[MainNotifier]];
+G2L["ac"]["Name"] = [[CoreFunctionsNotifier]];
 
 
 -- StarterGui.ScreenGui.Notify.ExecuteEvent
@@ -1410,6 +1410,43 @@ G2L["b0"] = Instance.new("BindableEvent", G2L["a0"]);
 G2L["b0"]["Name"] = [[TextClear]];
 
 
+-- StarterGui.ScreenGui.TextButton
+G2L["b1"] = Instance.new("TextButton", G2L["1"]);
+G2L["b1"]["TextWrapped"] = true;
+G2L["b1"]["BorderSizePixel"] = 0;
+G2L["b1"]["TextSize"] = 14;
+G2L["b1"]["TextScaled"] = true;
+G2L["b1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b1"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b1"]["Size"] = UDim2.new(0.2126, 0, 0.0396, 0);
+G2L["b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b1"]["Text"] = [[Open PTSS]];
+G2L["b1"]["Visible"] = false;
+G2L["b1"]["Position"] = UDim2.new(0.40519, 0, 0.00866, 0);
+
+
+-- StarterGui.ScreenGui.TextButton.UICorner
+G2L["b2"] = Instance.new("UICorner", G2L["b1"]);
+
+
+
+-- StarterGui.ScreenGui.TextButton.UIStroke
+G2L["b3"] = Instance.new("UIStroke", G2L["b1"]);
+
+
+
+-- StarterGui.ScreenGui.TextButton.UIStroke
+G2L["b4"] = Instance.new("UIStroke", G2L["b1"]);
+G2L["b4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["b4"]["Thickness"] = 2;
+
+
+-- StarterGui.ScreenGui.TextButton.LocalScript
+G2L["b5"] = Instance.new("LocalScript", G2L["b1"]);
+
+
+
 -- Require G2L wrapper
 local G2L_REQUIRE = require;
 local G2L_MODULES = {};
@@ -1427,69 +1464,80 @@ end
 
 G2L_MODULES[G2L["7c"]] = {
 Closure = function()
-    local script = G2L["7c"];-- NotificationModule
+    local script = G2L["7c"];--// NotificationModule – FINAL PERFECT VERSION (Full Override + Fixed 4 Seconds)
+--// ModuleScript (place anywhere, e.g. ReplicatedStorage)
+
 local TweenService = game:GetService("TweenService")
 
 local Notification = {}
 
 -- Config
 local TWEEN_INFO = TweenInfo.new(0.35, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
-local HIDDEN  = UDim2.new(1, 0, 0.856, 0)
-local VISIBLE = UDim2.new(0.752, 0, 0.861, 0)
+local HIDDEN     = UDim2.new(1, 0, 0.856, 0)
+local VISIBLE    = UDim2.new(0.752, 0, 0.861, 0)
 
--- State
-local currentTween = nil
-local hideConnection = nil
-local sound = Instance.new("Sound", game.SoundService)
+-- Shared sound (one instance, reused)
+local sound = Instance.new("Sound", game:GetService("SoundService"))
 sound.SoundId = "rbxassetid://7383525713"
 sound.Volume = 1
+
+-- Per-frame state tracking
+local activeFrames = {}  -- [frame] = {currentTween, hideTask}
 
 -- Private helpers
 local function setText(frame, text)
 	local main = frame:FindFirstChild("Main")
-	if main then
-		local label = main:FindFirstChild("TextBox") or main:FindFirstChild("Text") or main:FindFirstChild("TextLabel")
-		if label then
-			label.Text = text
-		end
+	if not main then return end
+	local label = main:FindFirstChild("TextBox") or main:FindFirstChild("Text") or main:FindFirstChild("TextLabel")
+	if label then
+		label.Text = text
 	end
 end
 
-local function startHideTimer(frame)
-	if hideConnection then
-		hideConnection:Disconnect()
+local function cancelExisting(frame)
+	local state = activeFrames[frame]
+	if not state then return end
+	
+	if state.currentTween then
+		state.currentTween:Cancel()
 	end
-	hideConnection = task.delay(4, function()
-		if currentTween then currentTween:Cancel() end
-		currentTween = TweenService:Create(frame, TWEEN_INFO, {Position = HIDDEN})
-		currentTween:Play()
-		currentTween.Completed:Wait()
-		currentTween = nil
-		hideConnection = nil
-	end)
+	if state.hideTask then
+		task.cancel(state.hideTask)
+	end
+	
+	activeFrames[frame] = nil
 end
 
-local function showNotification(frame, message)
+-- Public function
+function Notification.Notify(frame, message)
+	if not frame or not frame:IsA("GuiObject") then return end
+	
+	-- FULL OVERRIDE: kill anything currently happening on this frame
+	cancelExisting(frame)
+	
+	-- Update text instantly
 	setText(frame, message)
 	
-	if currentTween then
-		currentTween:Cancel()
-		currentTween = nil
-	end
-	
+	-- Always start from hidden → clean slide-in
 	frame.Position = HIDDEN
-	currentTween = TweenService:Create(frame, TWEEN_INFO, {Position = VISIBLE})
-	currentTween:Play()
 	
-	-- Play sound
+	-- Slide in
+	local tweenIn = TweenService:Create(frame, TWEEN_INFO, {Position = VISIBLE})
+	tweenIn:Play()
 	sound:Play()
 	
-	startHideTimer(frame)
-end
-
--- Public API
-function Notification.Notify(frame, message)
-	showNotification(frame, message)
+	-- Start fresh 4-second timer (never extends)
+	local hideTask = task.delay(4, function()
+		local tweenOut = TweenService:Create(frame, TWEEN_INFO, {Position = HIDDEN})
+		tweenOut:Play()
+		activeFrames[frame] = nil
+	end)
+	
+	-- Store state
+	activeFrames[frame] = {
+		currentTween = tweenIn,
+		hideTask = hideTask
+	}
 end
 
 return Notification
@@ -1667,7 +1715,8 @@ task.spawn(C_4);
 local function C_b()
 local script = G2L["b"];
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent:Destroy()
+		script.Parent.Parent.Parent.Parent.Frame.Visible = false
+		script.Parent.Parent.Parent.Parent.TextButton.Visible = true
 	end)
 end;
 task.spawn(C_b);
@@ -2680,10 +2729,10 @@ local script = G2L["8c"];
 	end)
 end;
 task.spawn(C_8c);
--- StarterGui.ScreenGui.Notify.MainNotifier
+-- StarterGui.ScreenGui.Notify.CoreFunctionsNotifier
 local function C_ac()
 local script = G2L["ac"];
-	--// ULTIMATE NOTIFICATION SCRIPT – FINAL FIXED VERSION
+	--// FINAL NOTIFICATION SCRIPT – FULL OVERRIDE + FIXED 4 SECONDS (NO EXTENDING)
 	--// LocalScript in your ScreenGui
 	
 	local frame = script.Parent.Frame
@@ -2700,84 +2749,75 @@ local script = G2L["ac"];
 	local HIDDEN  = UDim2.new(1, 0, 0.856, 0)
 	local VISIBLE = UDim2.new(0.752, 0, 0.861, 0)
 	
-	local sound = Instance.new("Sound", game.SoundService)
+	local sound = Instance.new("Sound", game:GetService("SoundService"))
 	sound.SoundId = "rbxassetid://7383525713"
 	sound.Volume = 1
 	
-	-- Tracking variables
 	local currentTween = nil
-	local hideConnection = nil  -- this is the key fix
+	local hideTask = nil
 	
 	local function setText(text)
 		local main = frame:FindFirstChild("Main")
 		if main then
 			local label = main:FindFirstChild("TextBox") or main:FindFirstChild("Text") or main:FindFirstChild("TextLabel")
-			if label then
-				label.Text = text
-			end
+			if label then label.Text = text end
 		end
 	end
 	
-	local function startHideTimer()
-		-- Cancel any previous timer
-		if hideConnection then
-			hideConnection:Disconnect()
-		end
-		-- Start new 4-second timer
-		hideConnection = task.delay(4, function()
+	local function notify(message)
+		-- FULL OVERRIDE: cancel everything old
+		if currentTween then currentTween:Cancel() end
+		if hideTask     then task.cancel(hideTask) end
+		
+		currentTween = nil
+		hideTask = nil
+		
+		-- Update text instantly
+		setText(message)
+		
+		-- Always start from hidden → clean slide-in every time
+		frame.Position = HIDDEN
+		
+		-- Slide in fresh
+		currentTween = TweenService:Create(frame, TWEEN_INFO, {Position = VISIBLE})
+		currentTween:Play()
+		sound:Play()
+		
+		-- Start a brand new 4-second timer (NOT resettable by spam)
+		hideTask = task.delay(4, function()
 			if currentTween then currentTween:Cancel() end
 			currentTween = TweenService:Create(frame, TWEEN_INFO, {Position = HIDDEN})
 			currentTween:Play()
-			currentTween.Completed:Wait()
-			currentTween = nil
-			hideConnection = nil
+			hideTask = nil
 		end)
 	end
 	
-	local function showNotification(message)
-		-- Instantly change text
-		setText(message)
-		
-		-- Cancel any running tween
-		if currentTween then
-			currentTween:Cancel()
-			currentTween = nil
-		end
-		
-		-- Force start from hidden (prevents stuttering)
-		frame.Position = HIDDEN
-		
-		-- Slide in
-		currentTween = TweenService:Create(frame, TWEEN_INFO, {Position = VISIBLE})
-		currentTween:Play()
-		
-		-- Play sound only on the very first show of a "session"
-		if frame.Position ~= VISIBLE then
-			sound:Play()
-		end
-		
-		-- Critical: always restart the 4-second hide timer
-		startHideTimer()
-	end
-	
-	-- All events → one function
-	local function notify(msg) showNotification(msg) end
-	
+	-- All your events
 	SuccessEvent.Event:Connect(function(backdoor)
 		local name = typeof(backdoor) == "Instance" and backdoor:GetFullName() or tostring(backdoor)
 		notify("Backdoor found! Backdoor name: " .. name)
 	end)
 	
-	UnSuccessEvent.Event:Connect(function()   notify("No backdoor detected. Join a backdoored game!") end)
-	ScriptRanEvent.Event:Connect(function()   notify("Server-side script ran successfully!") end)
-	ExecuteEvent.Event:Connect(function()     notify("Executed script successfully!") end)
-	script.Parent.TextClear.Event:Connect(function() notify("Cleared script box successfully!") end)
-	script.Parent.SpawnEvent.Event:Connect(function() notify("Respawned successfully!") end)
-	script.Parent.R6Event.Event:Connect(function()    notify("Converted to R6 successfully!") end)
+	UnSuccessEvent.Event:Connect(function() notify("No backdoor detected. Join a backdoored game!") end)
+	ScriptRanEvent.Event:Connect(function() notify("Server-side script ran successfully!") end)
+	ExecuteEvent.Event:Connect(function() notify("Executed script successfully!") end)
+	
+	NotifyFolder.TextClear.Event:Connect(function() notify("Cleared script box successfully!") end)
+	NotifyFolder.SpawnEvent.Event:Connect(function() notify("Respawned successfully!") end)
+	NotifyFolder.R6Event.Event:Connect(function() notify("Converted to R6 successfully!") end)
 	
 	-- Start hidden
 	frame.Position = HIDDEN
 end;
 task.spawn(C_ac);
+-- StarterGui.ScreenGui.TextButton.LocalScript
+local function C_b5()
+local script = G2L["b5"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Visible = false
+	end)
+end;
+task.spawn(C_b5);
 
 return G2L["1"], require;
