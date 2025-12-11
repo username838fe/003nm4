@@ -305,23 +305,23 @@ G2L["21"]["Text"] = [[Untitled SS Hub]];
 G2L["21"]["Position"] = UDim2.new(0.02216, 0, 0.43077, 0);
 
 
--- StarterGui.ScreenGui.Frame.page1.TextButton.UIStroke
-G2L["22"] = Instance.new("UIStroke", G2L["21"]);
+-- StarterGui.ScreenGui.Frame.page1.TextButton.LocalScript
+G2L["22"] = Instance.new("LocalScript", G2L["21"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page1.TextButton.UIStroke
 G2L["23"] = Instance.new("UIStroke", G2L["21"]);
-G2L["23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+
+-- StarterGui.ScreenGui.Frame.page1.TextButton.UIStroke
+G2L["24"] = Instance.new("UIStroke", G2L["21"]);
+G2L["24"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page1.TextButton.UICorner
-G2L["24"] = Instance.new("UICorner", G2L["21"]);
-
-
-
--- StarterGui.ScreenGui.Frame.page1.TextButton.LocalScript
-G2L["25"] = Instance.new("LocalScript", G2L["21"]);
+G2L["25"] = Instance.new("UICorner", G2L["21"]);
 
 
 
@@ -428,19 +428,19 @@ G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["30"]["Text"] = [[Custom chat]];
 
 
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
-G2L["31"] = Instance.new("UIStroke", G2L["30"]);
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
 G2L["32"] = Instance.new("UIStroke", G2L["30"]);
-G2L["32"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-G2L["33"] = Instance.new("LocalScript", G2L["30"]);
 
+-- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.UIStroke
+G2L["33"] = Instance.new("UIStroke", G2L["30"]);
+G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton
@@ -1740,6 +1740,7 @@ local script = G2L["2"];
 	
 	-- === INJECT / SCAN BUTTON ===
 	injectBtn.MouseButton1Click:Connect(function()
+		notify("Trying to inject...", "Warn")
 		if scanning then return end
 		scanning = true
 		injectBtn.Text = "Scanning..."
@@ -1835,7 +1836,7 @@ local script = G2L["2"];
 	-- === R6 BUTTON ===
 	r6Btn.MouseButton1Click:Connect(function()
 		if not getgenv().confirmedBackdoor then
-			notify("No backdoor detected!", "Error")
+			notify("Scan for a backdoor first!", "Error")
 			return
 		end
 		
@@ -1853,7 +1854,7 @@ local script = G2L["2"];
 	-- === RESPAWN (RE) BUTTON ===
 	reBtn.MouseButton1Click:Connect(function()
 		if not getgenv().confirmedBackdoor then
-			notify("No backdoor detected!", "Error")
+			notify("Scan for a bacdoor first!", "Error")
 			return
 		end
 		
@@ -1983,8 +1984,8 @@ local script = G2L["1d"];
 end;
 task.spawn(C_1d);
 -- StarterGui.ScreenGui.Frame.page1.TextButton.LocalScript
-local function C_25()
-local script = G2L["25"];
+local function C_22()
+local script = G2L["22"];
 	--// FIXED: Sound plays only ONCE + safer parent lookup
 	--// LocalScript inside your TextButton/ImageButton
 	
@@ -2048,7 +2049,7 @@ local script = G2L["25"];
 		debounce = false
 	end)
 end;
-task.spawn(C_25);
+task.spawn(C_22);
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_2d()
 local script = G2L["2d"];
@@ -2117,8 +2118,8 @@ local script = G2L["2d"];
 end;
 task.spawn(C_2d);
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
-local function C_33()
-local script = G2L["33"];
+local function C_31()
+local script = G2L["31"];
 	--// FIXED: Sound plays only ONCE + safer parent lookup
 	--// LocalScript inside your TextButton/ImageButton
 	
@@ -2181,7 +2182,7 @@ local script = G2L["33"];
 		debounce = false
 	end)
 end;
-task.spawn(C_33);
+task.spawn(C_31);
 -- StarterGui.ScreenGui.Frame.page3.ScrollingFrame.TextButton.LocalScript
 local function C_35()
 local script = G2L["35"];
