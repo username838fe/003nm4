@@ -7,7 +7,8 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 232 | Scripts: 48 | Modules: 2 | Tags: 0
+-- Instances: 261 | Scripts: 52 | Modules: 12 | Tags: 1
+local CollectionService = game:GetService("CollectionService");
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -354,9 +355,9 @@ G2L["29"]["BorderSizePixel"] = 0;
 G2L["29"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
 G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["29"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["29"]["Size"] = UDim2.new(0, 361, 0, 224);
+G2L["29"]["Size"] = UDim2.new(0, 361, 0, 228);
 G2L["29"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Position"] = UDim2.new(0, 0, 0.13846, 0);
+G2L["29"]["Position"] = UDim2.new(0, 0, 0.12308, 0);
 G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["29"]["ScrollBarThickness"] = 3;
 G2L["29"]["BackgroundTransparency"] = 11;
@@ -934,9 +935,9 @@ G2L["7b"]["TextSize"] = 14;
 G2L["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7b"]["TextScaled"] = true;
 G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
-G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["7b"]["PlaceholderText"] = [[Search for a script]];
-G2L["7b"]["Size"] = UDim2.new(0, 360, 0, 29);
+G2L["7b"]["Size"] = UDim2.new(0, 360, 0, 32);
 G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7b"]["Text"] = [[]];
 G2L["7b"]["BackgroundTransparency"] = 0.5;
@@ -949,6 +950,7 @@ G2L["7c"] = Instance.new("UIStroke", G2L["7b"]);
 
 -- StarterGui.ScreenGui.Frame.page3.TextBox.UIStroke
 G2L["7d"] = Instance.new("UIStroke", G2L["7b"]);
+G2L["7d"]["Enabled"] = false;
 G2L["7d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
@@ -1349,448 +1351,660 @@ G2L["b3"] = Instance.new("UIStroke", G2L["af"]);
 G2L["b3"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["b4"] = Instance.new("ImageButton", G2L["3"]);
--- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+-- StarterGui.ScreenGui.Frame.page5.TextLabel
+G2L["b4"] = Instance.new("TextLabel", G2L["8f"]);
+G2L["b4"]["TextWrapped"] = true;
 G2L["b4"]["BorderSizePixel"] = 0;
-G2L["b4"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["b4"]["TextSize"] = 14;
+G2L["b4"]["TextScaled"] = true;
 G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b4"]["Image"] = [[rbxassetid://484211948]];
-G2L["b4"]["Size"] = UDim2.new(0, 43, 0, 43);
-G2L["b4"]["HoverImage"] = [[rbxassetid://%lld]];
+G2L["b4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["BackgroundTransparency"] = 1;
+G2L["b4"]["Size"] = UDim2.new(0, 120, 0, 25);
 G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b4"]["Position"] = UDim2.new(0, 0, 0.7027, 0);
+G2L["b4"]["Text"] = [[Theme]];
+G2L["b4"]["Position"] = UDim2.new(-0.00831, 0, 0.38077, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextLabel.UIStroke
+G2L["b5"] = Instance.new("UIStroke", G2L["b4"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextLabel.UIStroke
+G2L["b6"] = Instance.new("UIStroke", G2L["b4"]);
+G2L["b6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton
+G2L["b7"] = Instance.new("TextButton", G2L["8f"]);
+G2L["b7"]["BorderSizePixel"] = 0;
+G2L["b7"]["TextSize"] = 14;
+G2L["b7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b7"]["BackgroundTransparency"] = 1;
+G2L["b7"]["Size"] = UDim2.new(0, 90, 0, 25);
+G2L["b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b7"]["Text"] = [[Default]];
+G2L["b7"]["Position"] = UDim2.new(0.3241, 0, 0.38077, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+G2L["b8"] = Instance.new("LocalScript", G2L["b7"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.Notifier
+G2L["b9"] = Instance.new("LocalScript", G2L["b7"]);
+G2L["b9"]["Name"] = [[Notifier]];
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["ba"] = Instance.new("UIStroke", G2L["b7"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["bb"] = Instance.new("UIStroke", G2L["b7"]);
+G2L["bb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton
+G2L["bc"] = Instance.new("TextButton", G2L["8f"]);
+G2L["bc"]["BorderSizePixel"] = 0;
+G2L["bc"]["TextSize"] = 14;
+G2L["bc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bc"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["bc"]["BackgroundTransparency"] = 1;
+G2L["bc"]["Size"] = UDim2.new(0, 90, 0, 25);
+G2L["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bc"]["Text"] = [[Liquid Glass]];
+G2L["bc"]["Position"] = UDim2.new(0.57341, 0, 0.38077, 0);
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+G2L["bd"] = Instance.new("LocalScript", G2L["bc"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.Notifier
+G2L["be"] = Instance.new("LocalScript", G2L["bc"]);
+G2L["be"]["Name"] = [[Notifier]];
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["bf"] = Instance.new("UIStroke", G2L["bc"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.page5.TextButton.UIStroke
+G2L["c0"] = Instance.new("UIStroke", G2L["bc"]);
+G2L["c0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["c1"] = Instance.new("ImageButton", G2L["3"]);
+-- [ERROR] cannot convert HoverImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["c1"]["BorderSizePixel"] = 0;
+G2L["c1"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c1"]["Image"] = [[rbxassetid://484211948]];
+G2L["c1"]["Size"] = UDim2.new(0, 43, 0, 43);
+G2L["c1"]["HoverImage"] = [[rbxassetid://%lld]];
+G2L["c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c1"]["Position"] = UDim2.new(0, 0, 0.7027, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["b5"] = Instance.new("LocalScript", G2L["b4"]);
+G2L["c2"] = Instance.new("LocalScript", G2L["c1"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["b6"] = Instance.new("UIStroke", G2L["b4"]);
+G2L["c3"] = Instance.new("UIStroke", G2L["c1"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["b7"] = Instance.new("UIStroke", G2L["b4"]);
-G2L["b7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["c4"] = Instance.new("UIStroke", G2L["c1"]);
+G2L["c4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page2
-G2L["b8"] = Instance.new("Frame", G2L["3"]);
-G2L["b8"]["Visible"] = false;
-G2L["b8"]["BorderSizePixel"] = 0;
-G2L["b8"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
-G2L["b8"]["Size"] = UDim2.new(0, 361, 0, 260);
-G2L["b8"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
-G2L["b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b8"]["Name"] = [[page2]];
-G2L["b8"]["BackgroundTransparency"] = 0.5;
+G2L["c5"] = Instance.new("Frame", G2L["3"]);
+G2L["c5"]["Visible"] = false;
+G2L["c5"]["BorderSizePixel"] = 0;
+G2L["c5"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+G2L["c5"]["Size"] = UDim2.new(0, 361, 0, 260);
+G2L["c5"]["Position"] = UDim2.new(0.11302, 0, 0.12162, 0);
+G2L["c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c5"]["Name"] = [[page2]];
+G2L["c5"]["BackgroundTransparency"] = 0.5;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text
-G2L["b9"] = Instance.new("ScrollingFrame", G2L["b8"]);
-G2L["b9"]["Active"] = true;
-G2L["b9"]["BorderSizePixel"] = 0;
-G2L["b9"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["b9"]["BackgroundColor3"] = Color3.fromRGB(113, 113, 113);
-G2L["b9"]["Name"] = [[Text]];
-G2L["b9"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
-G2L["b9"]["Size"] = UDim2.new(1, 0, 0.83077, 0);
-G2L["b9"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b9"]["ScrollBarThickness"] = 5;
-G2L["b9"]["BackgroundTransparency"] = 1;
+G2L["c6"] = Instance.new("ScrollingFrame", G2L["c5"]);
+G2L["c6"]["Active"] = true;
+G2L["c6"]["BorderSizePixel"] = 0;
+G2L["c6"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["c6"]["BackgroundColor3"] = Color3.fromRGB(113, 113, 113);
+G2L["c6"]["Name"] = [[Text]];
+G2L["c6"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
+G2L["c6"]["Size"] = UDim2.new(1, 0, 0.83077, 0);
+G2L["c6"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c6"]["ScrollBarThickness"] = 5;
+G2L["c6"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.LocalScript
-G2L["ba"] = Instance.new("LocalScript", G2L["b9"]);
+G2L["c7"] = Instance.new("LocalScript", G2L["c6"]);
 
-
-
--- StarterGui.ScreenGui.Frame.page2.Text.SyntaxScript
-G2L["bb"] = Instance.new("LocalScript", G2L["b9"]);
-G2L["bb"]["Name"] = [[SyntaxScript]];
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.UIStroke
-G2L["bc"] = Instance.new("UIStroke", G2L["b9"]);
+G2L["c8"] = Instance.new("UIStroke", G2L["c6"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextLabel
-G2L["bd"] = Instance.new("TextLabel", G2L["b9"]);
-G2L["bd"]["LineHeight"] = 1.01;
-G2L["bd"]["BorderSizePixel"] = 0;
-G2L["bd"]["TextSize"] = 14;
-G2L["bd"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
-G2L["bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["bd"]["TextColor3"] = Color3.fromRGB(191, 191, 191);
-G2L["bd"]["BackgroundTransparency"] = 1;
-G2L["bd"]["Size"] = UDim2.new(0, 28, 0, 216);
-G2L["bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bd"]["Text"] = [[1]];
-G2L["bd"]["AutomaticSize"] = Enum.AutomaticSize.Y;
-G2L["bd"]["Position"] = UDim2.new(0, 0, -0.00477, 0);
+G2L["c9"] = Instance.new("TextLabel", G2L["c6"]);
+G2L["c9"]["LineHeight"] = 1.01;
+G2L["c9"]["BorderSizePixel"] = 0;
+G2L["c9"]["TextSize"] = 14;
+G2L["c9"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["c9"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
+G2L["c9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c9"]["TextColor3"] = Color3.fromRGB(191, 191, 191);
+G2L["c9"]["BackgroundTransparency"] = 1;
+G2L["c9"]["Size"] = UDim2.new(0, 28, 0, 216);
+G2L["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c9"]["Text"] = [[1]];
+G2L["c9"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["c9"]["Position"] = UDim2.new(0, 0, -0.00477, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextLabel.y
-G2L["be"] = Instance.new("UIStroke", G2L["bd"]);
-G2L["be"]["Name"] = [[y]];
+G2L["ca"] = Instance.new("UIStroke", G2L["c9"]);
+G2L["ca"]["Name"] = [[y]];
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextLabel.UIStroke
-G2L["bf"] = Instance.new("UIStroke", G2L["bd"]);
-G2L["bf"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["cb"] = Instance.new("UIStroke", G2L["c9"]);
+G2L["cb"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox
-G2L["c0"] = Instance.new("TextBox", G2L["b9"]);
-G2L["c0"]["LineHeight"] = 1.01;
-G2L["c0"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["c0"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c0"]["BorderSizePixel"] = 0;
-G2L["c0"]["TextSize"] = 14;
-G2L["c0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c0"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["c0"]["BackgroundColor3"] = Color3.fromRGB(101, 101, 101);
-G2L["c0"]["RichText"] = true;
-G2L["c0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c0"]["AutomaticSize"] = Enum.AutomaticSize.XY;
-G2L["c0"]["MultiLine"] = true;
-G2L["c0"]["ClearTextOnFocus"] = false;
-G2L["c0"]["PlaceholderText"] = [[-- require here]];
-G2L["c0"]["Size"] = UDim2.new(0, 332, 0, 216);
-G2L["c0"]["Position"] = UDim2.new(0.07756, 0, -0.00477, 0);
-G2L["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c0"]["Text"] = [[]];
-G2L["c0"]["BackgroundTransparency"] = 1;
+G2L["cc"] = Instance.new("TextBox", G2L["c6"]);
+G2L["cc"]["LineHeight"] = 1.01;
+G2L["cc"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["cc"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cc"]["BorderSizePixel"] = 0;
+G2L["cc"]["TextSize"] = 14;
+G2L["cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cc"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["cc"]["BackgroundColor3"] = Color3.fromRGB(101, 101, 101);
+G2L["cc"]["RichText"] = true;
+G2L["cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["cc"]["AutomaticSize"] = Enum.AutomaticSize.XY;
+G2L["cc"]["MultiLine"] = true;
+G2L["cc"]["ClearTextOnFocus"] = false;
+G2L["cc"]["PlaceholderText"] = [[-- require here]];
+G2L["cc"]["Size"] = UDim2.new(0, 332, 0, 216);
+G2L["cc"]["Position"] = UDim2.new(0.07756, 0, -0.00477, 0);
+G2L["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cc"]["Text"] = [[]];
+G2L["cc"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
-G2L["c1"] = Instance.new("LocalScript", G2L["c0"]);
+G2L["cd"] = Instance.new("LocalScript", G2L["cc"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
-G2L["c2"] = Instance.new("LocalScript", G2L["c0"]);
+G2L["ce"] = Instance.new("LocalScript", G2L["cc"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Completor
-G2L["c3"] = Instance.new("LocalScript", G2L["c0"]);
-G2L["c3"]["Name"] = [[Completor]];
+G2L["cf"] = Instance.new("LocalScript", G2L["cc"]);
+G2L["cf"]["Name"] = [[Completor]];
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.UIStroke
-G2L["c4"] = Instance.new("UIStroke", G2L["c0"]);
-G2L["c4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["c4"]["Thickness"] = 2;
+G2L["d0"] = Instance.new("UIStroke", G2L["cc"]);
+G2L["d0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["d0"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.y
-G2L["c5"] = Instance.new("UIStroke", G2L["c0"]);
-G2L["c5"]["Name"] = [[y]];
+G2L["d1"] = Instance.new("UIStroke", G2L["cc"]);
+G2L["d1"]["Name"] = [[y]];
 
 
--- StarterGui.ScreenGui.Frame.page2.Text.Syntax
-G2L["c6"] = Instance.new("TextLabel", G2L["b9"]);
-G2L["c6"]["LineHeight"] = 1.01;
-G2L["c6"]["BorderSizePixel"] = 0;
-G2L["c6"]["TextSize"] = 14;
-G2L["c6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["c6"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["c6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c6"]["BackgroundTransparency"] = 1;
-G2L["c6"]["RichText"] = true;
-G2L["c6"]["Size"] = UDim2.new(0, 332, 0, 216);
-G2L["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c6"]["Text"] = [[]];
-G2L["c6"]["AutomaticSize"] = Enum.AutomaticSize.XY;
-G2L["c6"]["Name"] = [[Syntax]];
-G2L["c6"]["Position"] = UDim2.new(0.078, 0, -0.005, 0);
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Highlighter(Put in TextBox)
+G2L["d2"] = Instance.new("LocalScript", G2L["cc"]);
+G2L["d2"]["Name"] = [[Highlighter(Put in TextBox)]];
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Highlighter(Put in TextBox).Highlighter
+G2L["d3"] = Instance.new("ModuleScript", G2L["d2"]);
+G2L["d3"]["Name"] = [[Highlighter]];
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Highlighter(Put in TextBox).Highlighter.lexer
+G2L["d4"] = Instance.new("ModuleScript", G2L["d3"]);
+G2L["d4"]["Name"] = [[lexer]];
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Highlighter(Put in TextBox).Highlighter.lexer.language
+G2L["d5"] = Instance.new("ModuleScript", G2L["d4"]);
+G2L["d5"]["Name"] = [[language]];
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Highlighter(Put in TextBox).Highlighter.theme
+G2L["d6"] = Instance.new("ModuleScript", G2L["d3"]);
+G2L["d6"]["Name"] = [[theme]];
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Highlighter(Put in TextBox).Highlighter.types
+G2L["d7"] = Instance.new("ModuleScript", G2L["d3"]);
+G2L["d7"]["Name"] = [[types]];
+
+
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Highlighter(Put in TextBox).Highlighter.utility
+G2L["d8"] = Instance.new("ModuleScript", G2L["d3"]);
+G2L["d8"]["Name"] = [[utility]];
 
 
 -- StarterGui.ScreenGui.Frame.page2.Execute
-G2L["c7"] = Instance.new("TextButton", G2L["b8"]);
-G2L["c7"]["TextWrapped"] = true;
-G2L["c7"]["BorderSizePixel"] = 0;
-G2L["c7"]["TextSize"] = 14;
-G2L["c7"]["TextScaled"] = true;
-G2L["c7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
-G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c7"]["BackgroundTransparency"] = 1;
-G2L["c7"]["Size"] = UDim2.new(0, 89, 0, 41);
-G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c7"]["Text"] = [[Execute]];
-G2L["c7"]["Name"] = [[Execute]];
-G2L["c7"]["Position"] = UDim2.new(0, 0, 0.83846, 0);
+G2L["d9"] = Instance.new("TextButton", G2L["c5"]);
+G2L["d9"]["TextWrapped"] = true;
+G2L["d9"]["BorderSizePixel"] = 0;
+G2L["d9"]["TextSize"] = 14;
+G2L["d9"]["TextScaled"] = true;
+G2L["d9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d9"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["d9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d9"]["BackgroundTransparency"] = 1;
+G2L["d9"]["Size"] = UDim2.new(0, 89, 0, 41);
+G2L["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d9"]["Text"] = [[Execute]];
+G2L["d9"]["Name"] = [[Execute]];
+G2L["d9"]["Position"] = UDim2.new(0, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
-G2L["c8"] = Instance.new("UIStroke", G2L["c7"]);
+G2L["da"] = Instance.new("UIStroke", G2L["d9"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Execute.UIStroke
-G2L["c9"] = Instance.new("UIStroke", G2L["c7"]);
-G2L["c9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["c9"]["Thickness"] = 2;
+G2L["db"] = Instance.new("UIStroke", G2L["d9"]);
+G2L["db"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["db"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Clear
-G2L["ca"] = Instance.new("TextButton", G2L["b8"]);
-G2L["ca"]["TextWrapped"] = true;
-G2L["ca"]["BorderSizePixel"] = 0;
-G2L["ca"]["TextSize"] = 14;
-G2L["ca"]["TextScaled"] = true;
-G2L["ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
-G2L["ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ca"]["BackgroundTransparency"] = 1;
-G2L["ca"]["Size"] = UDim2.new(0, 94, 0, 41);
-G2L["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ca"]["Text"] = [[Clear]];
-G2L["ca"]["Name"] = [[Clear]];
-G2L["ca"]["Position"] = UDim2.new(0.24654, 0, 0.83846, 0);
+G2L["dc"] = Instance.new("TextButton", G2L["c5"]);
+G2L["dc"]["TextWrapped"] = true;
+G2L["dc"]["BorderSizePixel"] = 0;
+G2L["dc"]["TextSize"] = 14;
+G2L["dc"]["TextScaled"] = true;
+G2L["dc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dc"]["BackgroundTransparency"] = 1;
+G2L["dc"]["Size"] = UDim2.new(0, 94, 0, 41);
+G2L["dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["dc"]["Text"] = [[Clear]];
+G2L["dc"]["Name"] = [[Clear]];
+G2L["dc"]["Position"] = UDim2.new(0.24654, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
-G2L["cb"] = Instance.new("UIStroke", G2L["ca"]);
+G2L["dd"] = Instance.new("UIStroke", G2L["dc"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Clear.UIStroke
-G2L["cc"] = Instance.new("UIStroke", G2L["ca"]);
-G2L["cc"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["cc"]["Thickness"] = 2;
+G2L["de"] = Instance.new("UIStroke", G2L["dc"]);
+G2L["de"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["de"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.Inject
-G2L["cd"] = Instance.new("TextButton", G2L["b8"]);
-G2L["cd"]["TextWrapped"] = true;
-G2L["cd"]["BorderSizePixel"] = 0;
-G2L["cd"]["TextSize"] = 14;
-G2L["cd"]["TextScaled"] = true;
-G2L["cd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cd"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
-G2L["cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["cd"]["BackgroundTransparency"] = 1;
-G2L["cd"]["Size"] = UDim2.new(0, 75, 0, 41);
-G2L["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cd"]["Text"] = [[Attach]];
-G2L["cd"]["Name"] = [[Inject]];
-G2L["cd"]["Position"] = UDim2.new(0.50693, 0, 0.83846, 0);
+G2L["df"] = Instance.new("TextButton", G2L["c5"]);
+G2L["df"]["TextWrapped"] = true;
+G2L["df"]["BorderSizePixel"] = 0;
+G2L["df"]["TextSize"] = 14;
+G2L["df"]["TextScaled"] = true;
+G2L["df"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["df"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["df"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["df"]["BackgroundTransparency"] = 1;
+G2L["df"]["Size"] = UDim2.new(0, 75, 0, 41);
+G2L["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["df"]["Text"] = [[Attach]];
+G2L["df"]["Name"] = [[Inject]];
+G2L["df"]["Position"] = UDim2.new(0.50693, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
-G2L["ce"] = Instance.new("UIStroke", G2L["cd"]);
+G2L["e0"] = Instance.new("UIStroke", G2L["df"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.Inject.UIStroke
-G2L["cf"] = Instance.new("UIStroke", G2L["cd"]);
-G2L["cf"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["cf"]["Thickness"] = 2;
+G2L["e1"] = Instance.new("UIStroke", G2L["df"]);
+G2L["e1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["e1"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.RE
-G2L["d0"] = Instance.new("TextButton", G2L["b8"]);
-G2L["d0"]["TextWrapped"] = true;
-G2L["d0"]["BorderSizePixel"] = 0;
-G2L["d0"]["TextSize"] = 14;
-G2L["d0"]["TextScaled"] = true;
-G2L["d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d0"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
-G2L["d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d0"]["BackgroundTransparency"] = 1;
-G2L["d0"]["Size"] = UDim2.new(0, 58, 0, 41);
-G2L["d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d0"]["Text"] = [[SPAWN]];
-G2L["d0"]["Name"] = [[RE]];
-G2L["d0"]["Position"] = UDim2.new(0.71468, 0, 0.83846, 0);
+G2L["e2"] = Instance.new("TextButton", G2L["c5"]);
+G2L["e2"]["TextWrapped"] = true;
+G2L["e2"]["BorderSizePixel"] = 0;
+G2L["e2"]["TextSize"] = 14;
+G2L["e2"]["TextScaled"] = true;
+G2L["e2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e2"]["BackgroundTransparency"] = 1;
+G2L["e2"]["Size"] = UDim2.new(0, 58, 0, 41);
+G2L["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e2"]["Text"] = [[SPAWN]];
+G2L["e2"]["Name"] = [[RE]];
+G2L["e2"]["Position"] = UDim2.new(0.71468, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
-G2L["d1"] = Instance.new("UIStroke", G2L["d0"]);
+G2L["e3"] = Instance.new("UIStroke", G2L["e2"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.RE.UIStroke
-G2L["d2"] = Instance.new("UIStroke", G2L["d0"]);
-G2L["d2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["d2"]["Thickness"] = 2;
+G2L["e4"] = Instance.new("UIStroke", G2L["e2"]);
+G2L["e4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["e4"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.page2.R6
-G2L["d3"] = Instance.new("TextButton", G2L["b8"]);
-G2L["d3"]["TextWrapped"] = true;
-G2L["d3"]["BorderSizePixel"] = 0;
-G2L["d3"]["TextSize"] = 14;
-G2L["d3"]["TextScaled"] = true;
-G2L["d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d3"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
-G2L["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d3"]["BackgroundTransparency"] = 1;
-G2L["d3"]["Size"] = UDim2.new(0, 44, 0, 41);
-G2L["d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d3"]["Text"] = [[R6]];
-G2L["d3"]["Name"] = [[R6]];
-G2L["d3"]["Position"] = UDim2.new(0.87535, 0, 0.83846, 0);
+G2L["e5"] = Instance.new("TextButton", G2L["c5"]);
+G2L["e5"]["TextWrapped"] = true;
+G2L["e5"]["BorderSizePixel"] = 0;
+G2L["e5"]["TextSize"] = 14;
+G2L["e5"]["TextScaled"] = true;
+G2L["e5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e5"]["BackgroundColor3"] = Color3.fromRGB(84, 84, 84);
+G2L["e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e5"]["BackgroundTransparency"] = 1;
+G2L["e5"]["Size"] = UDim2.new(0, 44, 0, 41);
+G2L["e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e5"]["Text"] = [[R6]];
+G2L["e5"]["Name"] = [[R6]];
+G2L["e5"]["Position"] = UDim2.new(0.87535, 0, 0.83846, 0);
 
 
 -- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
-G2L["d4"] = Instance.new("UIStroke", G2L["d3"]);
+G2L["e6"] = Instance.new("UIStroke", G2L["e5"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.page2.R6.UIStroke
-G2L["d5"] = Instance.new("UIStroke", G2L["d3"]);
-G2L["d5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["d5"]["Thickness"] = 2;
+G2L["e7"] = Instance.new("UIStroke", G2L["e5"]);
+G2L["e7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["e7"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.Frame.UICorner
-G2L["d6"] = Instance.new("UICorner", G2L["3"]);
+G2L["e8"] = Instance.new("UICorner", G2L["3"]);
 
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler
+G2L["e9"] = Instance.new("ModuleScript", G2L["3"]);
+G2L["e9"]["Name"] = [[LiquidGlassHandler]];
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Settings
+G2L["ea"] = Instance.new("ModuleScript", G2L["e9"]);
+G2L["ea"]["Name"] = [[Settings]];
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Version
+G2L["eb"] = Instance.new("ModuleScript", G2L["e9"]);
+G2L["eb"]["Name"] = [[Version]];
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.VisibilityChecker
+G2L["ec"] = Instance.new("ModuleScript", G2L["e9"]);
+G2L["ec"]["Name"] = [[VisibilityChecker]];
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Overlay
+G2L["ed"] = Instance.new("Folder", G2L["e9"]);
+G2L["ed"]["Name"] = [[Overlay]];
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Overlay.Edge
+G2L["ee"] = Instance.new("MeshPart", G2L["ed"]);
+G2L["ee"]["CFrame"] = CFrame.new(Vector3.new(13.31045, 130.69086, 44.35587), Vector3.new(0, -0, -1));
+G2L["ee"]["CanCollide"] = false;
+G2L["ee"]["MeshId"] = [[rbxassetid://71901416013578]];
+G2L["ee"]["Transparency"] = 2;
+-- [ERROR] cannot convert MeshContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["ee"]["CanQuery"] = false;
+G2L["ee"]["Material"] = Enum.Material.Glass;
+G2L["ee"]["Size"] = Vector3.new(0.01, 1, 1);
+G2L["ee"]["CanTouch"] = false;
+-- [ERROR] cannot convert BrickColor, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["ee"]["Color"] = Color3.fromRGB(0, 0, 0);
+G2L["ee"]["Anchored"] = true;
+G2L["ee"]["Name"] = [[Edge]];
+G2L["ee"]["AudioCanCollide"] = false;
+G2L["ee"]["CastShadow"] = false;
+G2L["ee"]["PivotOffset"] = CFrame.new(Vector3.new(0, -0.5, -0.5), Vector3.new(0, 1, 0));
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Overlay.Edge.Weld
+G2L["ef"] = Instance.new("Weld", G2L["ee"]);
+-- [ERROR] cannot convert Part0, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["ef"]["C0"] = CFrame.new(Vector3.new(0, -0.5, 0), Vector3.new(0, 1, 0));
+G2L["ef"]["C1"] = CFrame.new(Vector3.new(1.88399, 0.5, 0.04254), Vector3.new(0, 1, 0));
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Overlay.Corner
+G2L["f0"] = Instance.new("MeshPart", G2L["ed"]);
+G2L["f0"]["CFrame"] = CFrame.new(Vector3.new(13.31045, 130.69086, 43.35587), Vector3.new(0, -0, -1));
+G2L["f0"]["CanCollide"] = false;
+G2L["f0"]["MeshId"] = [[rbxassetid://87705720216841]];
+G2L["f0"]["Transparency"] = 2;
+-- [ERROR] cannot convert MeshContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["f0"]["CanQuery"] = false;
+G2L["f0"]["Material"] = Enum.Material.Glass;
+G2L["f0"]["Size"] = Vector3.new(0.01, 1, 1);
+G2L["f0"]["CanTouch"] = false;
+-- [ERROR] cannot convert BrickColor, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["f0"]["Color"] = Color3.fromRGB(0, 0, 0);
+G2L["f0"]["Anchored"] = true;
+G2L["f0"]["Name"] = [[Corner]];
+G2L["f0"]["AudioCanCollide"] = false;
+G2L["f0"]["CastShadow"] = false;
+G2L["f0"]["PivotOffset"] = CFrame.new(Vector3.new(0, -0.5, 0.5), Vector3.new(0, 1, 0));
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Overlay.Corner.Weld
+G2L["f1"] = Instance.new("Weld", G2L["f0"]);
+-- [ERROR] cannot convert Part0, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["f1"]["C0"] = CFrame.new(Vector3.new(0, -0.5, 0), Vector3.new(0, 1, 0));
+G2L["f1"]["C1"] = CFrame.new(Vector3.new(1.88399, 0.5, 1.04254), Vector3.new(0, 1, 0));
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Overlay.Center
+G2L["f2"] = Instance.new("MeshPart", G2L["ed"]);
+G2L["f2"]["CFrame"] = CFrame.new(Vector3.new(13.31045, 129.69086, 44.35587), Vector3.new(0, -0, -1));
+G2L["f2"]["CanCollide"] = false;
+G2L["f2"]["MeshId"] = [[rbxassetid://124254578783606]];
+G2L["f2"]["Transparency"] = 2;
+-- [ERROR] cannot convert MeshContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["f2"]["CanQuery"] = false;
+G2L["f2"]["Material"] = Enum.Material.Glass;
+G2L["f2"]["Size"] = Vector3.new(0.01, 1, 1);
+G2L["f2"]["CanTouch"] = false;
+-- [ERROR] cannot convert BrickColor, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["f2"]["Color"] = Color3.fromRGB(0, 0, 0);
+G2L["f2"]["Anchored"] = true;
+G2L["f2"]["Name"] = [[Center]];
+G2L["f2"]["AudioCanCollide"] = false;
+G2L["f2"]["CastShadow"] = false;
+G2L["f2"]["PivotOffset"] = CFrame.new(Vector3.new(0, 0.5, -0.5), Vector3.new(0, 1, 0));
+
+
+-- StarterGui.ScreenGui.Frame.LiquidGlassHandler.Overlay.Center.Weld
+G2L["f3"] = Instance.new("Weld", G2L["f2"]);
+-- [ERROR] cannot convert Part0, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["f3"]["C0"] = CFrame.new(Vector3.new(0, -0.5, 0), Vector3.new(0, 1, 0));
+G2L["f3"]["C1"] = CFrame.new(Vector3.new(-0.88399, 8, -0.04254), Vector3.new(-0, 1, -0));
 
 
 -- StarterGui.ScreenGui.TextButton
-G2L["d7"] = Instance.new("TextButton", G2L["1"]);
-G2L["d7"]["TextWrapped"] = true;
-G2L["d7"]["BorderSizePixel"] = 0;
-G2L["d7"]["TextSize"] = 14;
-G2L["d7"]["TextScaled"] = true;
-G2L["d7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d7"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-G2L["d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d7"]["BackgroundTransparency"] = 0.5;
-G2L["d7"]["Size"] = UDim2.new(0.2126, 0, 0.0396, 0);
-G2L["d7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d7"]["Text"] = [[Toggle UI]];
-G2L["d7"]["Visible"] = false;
-G2L["d7"]["Position"] = UDim2.new(0.40519, 0, 0.00866, 0);
+G2L["f4"] = Instance.new("TextButton", G2L["1"]);
+G2L["f4"]["TextWrapped"] = true;
+G2L["f4"]["BorderSizePixel"] = 0;
+G2L["f4"]["TextSize"] = 14;
+G2L["f4"]["TextScaled"] = true;
+G2L["f4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f4"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["f4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f4"]["BackgroundTransparency"] = 0.5;
+G2L["f4"]["Size"] = UDim2.new(0.2126, 0, 0.0396, 0);
+G2L["f4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f4"]["Text"] = [[Toggle UI]];
+G2L["f4"]["Visible"] = false;
+G2L["f4"]["Position"] = UDim2.new(0.40519, 0, 0.00866, 0);
 
 
 -- StarterGui.ScreenGui.TextButton.LocalScript
-G2L["d8"] = Instance.new("LocalScript", G2L["d7"]);
+G2L["f5"] = Instance.new("LocalScript", G2L["f4"]);
 
 
 
 -- StarterGui.ScreenGui.TextButton.Notifier
-G2L["d9"] = Instance.new("LocalScript", G2L["d7"]);
-G2L["d9"]["Name"] = [[Notifier]];
+G2L["f6"] = Instance.new("LocalScript", G2L["f4"]);
+G2L["f6"]["Name"] = [[Notifier]];
 
 
 -- StarterGui.ScreenGui.TextButton.UICorner
-G2L["da"] = Instance.new("UICorner", G2L["d7"]);
+G2L["f7"] = Instance.new("UICorner", G2L["f4"]);
 
 
 
 -- StarterGui.ScreenGui.TextButton.UIStroke
-G2L["db"] = Instance.new("UIStroke", G2L["d7"]);
+G2L["f8"] = Instance.new("UIStroke", G2L["f4"]);
 
 
 
 -- StarterGui.ScreenGui.TextButton.UIStroke
-G2L["dc"] = Instance.new("UIStroke", G2L["d7"]);
-G2L["dc"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["dc"]["Thickness"] = 2;
+G2L["f9"] = Instance.new("UIStroke", G2L["f4"]);
+G2L["f9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["f9"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.NotifySystem
-G2L["dd"] = Instance.new("Folder", G2L["1"]);
-G2L["dd"]["Name"] = [[NotifySystem]];
+G2L["fa"] = Instance.new("Folder", G2L["1"]);
+G2L["fa"]["Name"] = [[NotifySystem]];
 
 
 -- StarterGui.ScreenGui.NotifySystem.NotifierExample
-G2L["de"] = Instance.new("LocalScript", G2L["dd"]);
-G2L["de"]["Name"] = [[NotifierExample]];
+G2L["fb"] = Instance.new("LocalScript", G2L["fa"]);
+G2L["fb"]["Name"] = [[NotifierExample]];
 
 
 -- StarterGui.ScreenGui.NotifySystem.NotifierModule
-G2L["df"] = Instance.new("ModuleScript", G2L["dd"]);
-G2L["df"]["Name"] = [[NotifierModule]];
+G2L["fc"] = Instance.new("ModuleScript", G2L["fa"]);
+G2L["fc"]["Name"] = [[NotifierModule]];
 
 
 -- StarterGui.ScreenGui.NotifySystem.Frame
-G2L["e0"] = Instance.new("Frame", G2L["dd"]);
-G2L["e0"]["BorderSizePixel"] = 0;
-G2L["e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e0"]["Size"] = UDim2.new(0.23857, 0, 0.12376, 0);
-G2L["e0"]["Position"] = UDim2.new(0.75207, 0, 0.86124, 0);
-G2L["e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e0"]["BackgroundTransparency"] = 0.6;
+G2L["fd"] = Instance.new("Frame", G2L["fa"]);
+G2L["fd"]["BorderSizePixel"] = 0;
+G2L["fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fd"]["Size"] = UDim2.new(0.23857, 0, 0.12376, 0);
+G2L["fd"]["Position"] = UDim2.new(0.75207, 0, 0.86124, 0);
+G2L["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fd"]["BackgroundTransparency"] = 0.6;
 
+-- Tags
+CollectionService:AddTag(G2L["fd"], [[LiquidGlass]]);
 
 -- StarterGui.ScreenGui.NotifySystem.Frame.UICorner
-G2L["e1"] = Instance.new("UICorner", G2L["e0"]);
+G2L["fe"] = Instance.new("UICorner", G2L["fd"]);
 
 
 
 -- StarterGui.ScreenGui.NotifySystem.Frame.vffgdfdsewrdfge
-G2L["e2"] = Instance.new("UIStroke", G2L["e0"]);
-G2L["e2"]["Name"] = [[vffgdfdsewrdfge]];
-G2L["e2"]["Thickness"] = 2;
+G2L["ff"] = Instance.new("UIStroke", G2L["fd"]);
+G2L["ff"]["Name"] = [[vffgdfdsewrdfge]];
+G2L["ff"]["Thickness"] = 2;
 
 
 -- StarterGui.ScreenGui.NotifySystem.Frame.Main
-G2L["e3"] = Instance.new("Folder", G2L["e0"]);
-G2L["e3"]["Name"] = [[Main]];
+G2L["100"] = Instance.new("Folder", G2L["fd"]);
+G2L["100"]["Name"] = [[Main]];
 
 
 -- StarterGui.ScreenGui.NotifySystem.Frame.Main.Title
-G2L["e4"] = Instance.new("TextLabel", G2L["e3"]);
-G2L["e4"]["TextWrapped"] = true;
-G2L["e4"]["BorderSizePixel"] = 0;
-G2L["e4"]["TextSize"] = 14;
-G2L["e4"]["TextScaled"] = true;
-G2L["e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e4"]["BackgroundTransparency"] = 1;
-G2L["e4"]["Size"] = UDim2.new(1.01656, 0, 0.2, 0);
-G2L["e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e4"]["Text"] = [[Project Transparent SS]];
-G2L["e4"]["Name"] = [[Title]];
+G2L["101"] = Instance.new("TextLabel", G2L["100"]);
+G2L["101"]["TextWrapped"] = true;
+G2L["101"]["BorderSizePixel"] = 0;
+G2L["101"]["TextSize"] = 14;
+G2L["101"]["TextScaled"] = true;
+G2L["101"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["101"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["101"]["BackgroundTransparency"] = 1;
+G2L["101"]["Size"] = UDim2.new(1.01656, 0, 0.2, 0);
+G2L["101"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["101"]["Text"] = [[Project Transparent SS]];
+G2L["101"]["Name"] = [[Title]];
 
 
 -- StarterGui.ScreenGui.NotifySystem.Frame.Main.Title.UIStroke
-G2L["e5"] = Instance.new("UIStroke", G2L["e4"]);
+G2L["102"] = Instance.new("UIStroke", G2L["101"]);
 
 
 
 -- StarterGui.ScreenGui.NotifySystem.Frame.Main.TextBox
-G2L["e6"] = Instance.new("TextLabel", G2L["e3"]);
-G2L["e6"]["TextWrapped"] = true;
-G2L["e6"]["BorderSizePixel"] = 0;
-G2L["e6"]["TextSize"] = 14;
-G2L["e6"]["TextScaled"] = true;
-G2L["e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e6"]["BackgroundTransparency"] = 1;
-G2L["e6"]["Size"] = UDim2.new(1, 0, 0.8, 0);
-G2L["e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e6"]["Text"] = [[This is a notification!]];
-G2L["e6"]["Name"] = [[TextBox]];
-G2L["e6"]["Position"] = UDim2.new(0, 0, 0.2, 0);
+G2L["103"] = Instance.new("TextLabel", G2L["100"]);
+G2L["103"]["TextWrapped"] = true;
+G2L["103"]["BorderSizePixel"] = 0;
+G2L["103"]["TextSize"] = 14;
+G2L["103"]["TextScaled"] = true;
+G2L["103"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["103"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["103"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["103"]["BackgroundTransparency"] = 1;
+G2L["103"]["Size"] = UDim2.new(1, 0, 0.8, 0);
+G2L["103"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["103"]["Text"] = [[This is a notification!]];
+G2L["103"]["Name"] = [[TextBox]];
+G2L["103"]["Position"] = UDim2.new(0, 0, 0.2, 0);
 
 
 -- StarterGui.ScreenGui.NotifySystem.Frame.Main.TextBox.UIStroke
-G2L["e7"] = Instance.new("UIStroke", G2L["e6"]);
+G2L["104"] = Instance.new("UIStroke", G2L["103"]);
 
 
 
 -- StarterGui.ScreenGui.NotifySystem.Frame.UIGradient
-G2L["e8"] = Instance.new("UIGradient", G2L["e0"]);
-G2L["e8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 86, 255)),ColorSequenceKeypoint.new(0.310, Color3.fromRGB(0, 86, 255)),ColorSequenceKeypoint.new(0.784, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["105"] = Instance.new("UIGradient", G2L["fd"]);
+G2L["105"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 86, 255)),ColorSequenceKeypoint.new(0.310, Color3.fromRGB(0, 86, 255)),ColorSequenceKeypoint.new(0.784, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
 -- Require G2L wrapper
@@ -1929,9 +2143,1879 @@ end
 return Notification
 end;
 };
-G2L_MODULES[G2L["df"]] = {
+G2L_MODULES[G2L["d3"]] = {
 Closure = function()
-    local script = G2L["df"];--// NotificationModule – FINAL STACKING VERSION (Transparency Tween Only)
+    local script = G2L["d3"];local types = require(script.types)
+local utility = require(script.utility)
+local theme = require(script.theme)
+
+local Highlighter = {
+	defaultLexer = require(script.lexer) :: types.Lexer,
+
+	_textObjectData = {} :: { [types.TextObject]: types.ObjectData },
+	_cleanups = {} :: { [types.TextObject]: () -> () },
+}
+
+--[[
+	Gathers the info that is needed in order to set up a line label.
+]]
+function Highlighter._getLabelingInfo(textObject: types.TextObject)
+	local data = Highlighter._textObjectData[textObject]
+	if not data then
+		return
+	end
+
+	local src = utility.convertTabsToSpaces(utility.removeControlChars(textObject.Text))
+	local numLines = #string.split(src, "\n")
+	if numLines == 0 then
+		return
+	end
+
+	local textBounds = utility.getTextBounds(textObject)
+	local textHeight = textBounds.Y / numLines
+
+	return {
+		data = data,
+		numLines = numLines,
+		textBounds = textBounds,
+		textHeight = textHeight,
+		innerAbsoluteSize = utility.getInnerAbsoluteSize(textObject),
+		textColor = theme.getColor("iden"),
+		textFont = textObject.FontFace,
+		textSize = textObject.TextSize,
+		labelSize = UDim2.new(1, 0, 0, math.ceil(textHeight)),
+	}
+end
+
+--[[
+	Aligns and matches the line labels to the textObject.
+]]
+function Highlighter._alignLabels(textObject: types.TextObject)
+	local labelingInfo = Highlighter._getLabelingInfo(textObject)
+	if not labelingInfo then
+		return
+	end
+
+	for lineNumber, lineLabel in labelingInfo.data.Labels do
+		-- Align line label
+		lineLabel.TextColor3 = labelingInfo.textColor
+		lineLabel.FontFace = labelingInfo.textFont
+		lineLabel.TextSize = labelingInfo.textSize
+		lineLabel.Size = labelingInfo.labelSize
+		lineLabel.Position =
+			UDim2.fromScale(0, labelingInfo.textHeight * (lineNumber - 1) / labelingInfo.innerAbsoluteSize.Y)
+	end
+end
+
+--[[
+	Creates and populates the line labels with the appropriate rich text.
+]]
+function Highlighter._populateLabels(props: types.HighlightProps)
+	-- Gather props
+	local textObject = props.textObject
+	local src = utility.convertTabsToSpaces(utility.removeControlChars(props.src or textObject.Text))
+	local lexer = props.lexer or Highlighter.defaultLexer
+	local customLang = props.customLang
+	local forceUpdate = props.forceUpdate
+
+	-- Avoid updating when unnecessary
+	local data = Highlighter._textObjectData[textObject]
+	if (data == nil) or (data.Text == src) then
+		if forceUpdate ~= true then
+			return
+		end
+	end
+
+	-- Ensure textObject matches sanitized src
+	textObject.Text = src
+
+	local lineLabels = data.Labels
+	local previousLines = data.Lines
+
+	local lines = string.split(src, "\n")
+
+	data.Lines = lines
+	data.Text = src
+	data.Lexer = lexer
+	data.CustomLang = customLang
+
+	-- Shortcut empty textObjects
+	if src == "" then
+		for l = 1, #lineLabels do
+			if lineLabels[l].Text == "" then
+				continue
+			end
+			lineLabels[l].Text = ""
+		end
+		return
+	end
+
+	local idenColor = theme.getColor("iden")
+	local labelingInfo = Highlighter._getLabelingInfo(textObject)
+
+	local richTextBuffer, bufferIndex, lineNumber = table.create(5), 0, 1
+	for token: types.TokenName, content: string in lexer.scan(src) do
+		local Color = if customLang and customLang[content]
+			then theme.getColor("custom")
+			else theme.getColor(token) or idenColor
+
+		local tokenLines = string.split(utility.sanitizeRichText(content), "\n")
+
+		for l, tokenLine in tokenLines do
+			-- Find line label
+			local lineLabel = lineLabels[lineNumber]
+			if not lineLabel then
+				local newLabel = Instance.new("TextLabel")
+				newLabel.Name = "Line_" .. lineNumber
+				newLabel.AutoLocalize = false
+				newLabel.RichText = true
+				newLabel.BackgroundTransparency = 1
+				newLabel.Text = ""
+				newLabel.TextXAlignment = Enum.TextXAlignment.Left
+				newLabel.TextYAlignment = Enum.TextYAlignment.Top
+				newLabel.TextColor3 = labelingInfo.textColor
+				newLabel.FontFace = labelingInfo.textFont
+				newLabel.TextSize = labelingInfo.textSize
+				newLabel.Size = labelingInfo.labelSize
+				newLabel.Position =
+					UDim2.fromScale(0, labelingInfo.textHeight * (lineNumber - 1) / labelingInfo.innerAbsoluteSize.Y)
+
+				newLabel.Parent = textObject.SyntaxHighlights
+				lineLabels[lineNumber] = newLabel
+				lineLabel = newLabel
+			end
+
+			-- If multiline token, then set line & move to next
+			if l > 1 then
+				if forceUpdate or lines[lineNumber] ~= previousLines[lineNumber] then
+					-- Set line
+					lineLabels[lineNumber].Text = table.concat(richTextBuffer)
+				end
+				-- Move to next line
+				lineNumber += 1
+				bufferIndex = 0
+				table.clear(richTextBuffer)
+			end
+
+			-- If changed, add token to line
+			if forceUpdate or lines[lineNumber] ~= previousLines[lineNumber] then
+				bufferIndex += 1
+				-- Only add RichText tags when the color is non-default and the characters are non-whitespace
+				if Color ~= idenColor and string.find(tokenLine, "[%S%C]") then
+					richTextBuffer[bufferIndex] = theme.getColoredRichText(Color, tokenLine)
+				else
+					richTextBuffer[bufferIndex] = tokenLine
+				end
+			end
+		end
+	end
+
+	-- Set final line
+	if richTextBuffer[1] and lineLabels[lineNumber] then
+		lineLabels[lineNumber].Text = table.concat(richTextBuffer)
+	end
+
+	-- Clear unused line labels
+	for l = lineNumber + 1, #lineLabels do
+		if lineLabels[l].Text == "" then
+			continue
+		end
+		lineLabels[l].Text = ""
+	end
+end
+
+--[[
+	Builds rich text lines from the given source code.
+	Useful for cases where you want to render the labels yourself for something.
+]]
+function Highlighter.buildRichTextLines(props: types.BuildRichTextLinesProps): { string }
+	-- Gather props
+	local src = utility.convertTabsToSpaces(utility.removeControlChars(props.src))
+	local lexer = props.lexer or Highlighter.defaultLexer
+	local customLang = props.customLang
+	local idenColor = theme.getColor("iden")
+
+	local richTextLines = table.create(select(2, string.gsub(src, "\n", "\n")) + 1)
+	local richTextBuffer, bufferIndex = table.create(5), 0
+	local lineNumber = 1
+
+	for token: types.TokenName, content: string in lexer.scan(src) do
+		local Color = if customLang and customLang[content]
+			then theme.getColor("custom")
+			else theme.getColor(token) or idenColor
+
+		local tokenLines = string.split(utility.sanitizeRichText(content), "\n")
+
+		for l, tokenLine in tokenLines do
+			-- If multiline token, then set line & move to next
+			if l > 1 then
+				-- Set line
+				richTextLines[lineNumber] = table.concat(richTextBuffer)
+				-- Move to next line
+				lineNumber += 1
+				bufferIndex = 0
+				table.clear(richTextBuffer)
+			end
+
+			bufferIndex += 1
+			-- Only add RichText tags when the characters are non-whitespace
+			if string.find(tokenLine, "[%S%C]") then
+				richTextBuffer[bufferIndex] = theme.getColoredRichText(Color, tokenLine)
+			else
+				richTextBuffer[bufferIndex] = tokenLine
+			end
+		end
+	end
+
+	-- Set final line
+	richTextLines[lineNumber] = table.concat(richTextBuffer)
+
+	return richTextLines
+end
+
+--[[
+	Highlights the given textObject with the given props and returns a cleanup function.
+	Highlighting will automatically update when needed, so the cleanup function will disconnect
+	those connections and remove all labels.
+]]
+function Highlighter.highlight(props: types.HighlightProps): () -> ()
+	-- Gather props
+	local textObject = props.textObject
+	local src = utility.convertTabsToSpaces(utility.removeControlChars(props.src or textObject.Text))
+	local lexer = props.lexer or Highlighter.defaultLexer
+	local customLang = props.customLang
+
+	-- Avoid updating when unnecessary
+	if Highlighter._cleanups[textObject] then
+		-- Already been initialized, so just update
+		Highlighter._populateLabels(props)
+		Highlighter._alignLabels(textObject)
+		return Highlighter._cleanups[textObject]
+	end
+
+	-- Ensure valid object properties
+	textObject.RichText = false
+	textObject.Text = src
+	textObject.TextXAlignment = Enum.TextXAlignment.Left
+	textObject.TextYAlignment = Enum.TextYAlignment.Top
+	textObject.BackgroundColor3 = theme.getColor("background")
+	textObject.TextColor3 = theme.getColor("iden")
+	textObject.TextTransparency = 0.5
+
+	-- Build the highlight labels
+	local lineFolder = textObject:FindFirstChild("SyntaxHighlights")
+	if lineFolder == nil then
+		local newLineFolder = Instance.new("Folder")
+		newLineFolder.Name = "SyntaxHighlights"
+		newLineFolder.Parent = textObject
+
+		lineFolder = newLineFolder
+	end
+
+	local data = {
+		Text = "",
+		Labels = {},
+		Lines = {},
+		Lexer = lexer,
+		CustomLang = customLang,
+	}
+	Highlighter._textObjectData[textObject] = data
+
+	-- Add a cleanup handler for this textObject
+	local connections: { [string]: RBXScriptConnection } = {}
+	local function cleanup()
+		lineFolder:Destroy()
+
+		Highlighter._textObjectData[textObject] = nil
+		Highlighter._cleanups[textObject] = nil
+
+		for _key, connection in connections do
+			connection:Disconnect()
+		end
+		table.clear(connections)
+	end
+	Highlighter._cleanups[textObject] = cleanup
+
+	connections["AncestryChanged"] = textObject.AncestryChanged:Connect(function()
+		if textObject.Parent then
+			return
+		end
+
+		cleanup()
+	end)
+	connections["TextChanged"] = textObject:GetPropertyChangedSignal("Text"):Connect(function()
+		Highlighter._populateLabels(props)
+	end)
+	connections["TextBoundsChanged"] = textObject:GetPropertyChangedSignal("TextBounds"):Connect(function()
+		Highlighter._alignLabels(textObject)
+	end)
+	connections["AbsoluteSizeChanged"] = textObject:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
+		Highlighter._alignLabels(textObject)
+	end)
+	connections["FontFaceChanged"] = textObject:GetPropertyChangedSignal("FontFace"):Connect(function()
+		Highlighter._alignLabels(textObject)
+	end)
+
+	-- Populate the labels
+	Highlighter._populateLabels(props)
+	Highlighter._alignLabels(textObject)
+
+	return cleanup
+end
+
+--[[
+	Refreshes all highlighted textObjects. Used when the theme changes.
+]]
+function Highlighter.refresh(): ()
+	-- Rehighlight existing labels using latest colors
+	for textObject, data in Highlighter._textObjectData do
+		for _, lineLabel in data.Labels do
+			lineLabel.TextColor3 = theme.getColor("iden")
+		end
+
+		Highlighter.highlight({
+			textObject = textObject,
+			forceUpdate = true,
+			src = data.Text,
+			lexer = data.Lexer,
+			customLang = data.CustomLang,
+		})
+	end
+end
+
+--[[
+	Sets the token colors to the given colors and refreshes all highlighted textObjects.
+]]
+function Highlighter.setTokenColors(colors: types.TokenColors): ()
+	theme.setColors(colors)
+
+	Highlighter.refresh()
+end
+
+--[[
+	Gets a token color by name.
+	Mainly useful for setting "background" token color on other UI objects behind your text.
+]]
+function Highlighter.getTokenColor(tokenName: types.TokenName): Color3
+	return theme.getColor(tokenName)
+end
+
+--[[
+	Matches the token colors to the Studio theme settings and refreshes all highlighted textObjects.
+	Does nothing when not run in a Studio plugin.
+]]
+function Highlighter.matchStudioSettings(): ()
+	local applied = theme.matchStudioSettings(Highlighter.refresh)
+	if applied then
+		Highlighter.refresh()
+	end
+end
+
+return Highlighter
+
+end;
+};
+G2L_MODULES[G2L["d4"]] = {
+Closure = function()
+    local script = G2L["d4"];--[=[
+	Lexical scanner for creating a sequence of tokens from Lua source code.
+	This is a heavily modified and Roblox-optimized version of
+	the original Penlight Lexer module:
+		https://github.com/stevedonovan/Penlight
+	Authors:
+		stevedonovan <https://github.com/stevedonovan> ----------- Original Penlight lexer author
+		ryanjmulder <https://github.com/ryanjmulder> ------------- Penlight lexer contributer
+		mpeterv <https://github.com/mpeterv> --------------------- Penlight lexer contributer
+		Tieske <https://github.com/Tieske> ----------------------- Penlight lexer contributer
+		boatbomber <https://github.com/boatbomber> --------------- Roblox port, added builtin token,
+		                                                           added patterns for incomplete syntax, bug fixes,
+		                                                           behavior changes, token optimization, thread optimization
+		                                                           Added lexer.navigator() for non-sequential reads
+		Sleitnick <https://github.com/Sleitnick> ----------------- Roblox optimizations
+		howmanysmall <https://github.com/howmanysmall> ----------- Lua + Roblox optimizations
+
+	List of possible tokens:
+		- iden
+		- keyword
+		- builtin
+		- string
+		- number
+		- comment
+		- operator
+--]=]
+
+local lexer = {}
+
+local Prefix, Suffix, Cleaner = "^[%c%s]*", "[%c%s]*", "[%c%s]+"
+local UNICODE = "[%z\x01-\x7F\xC2-\xF4][\x80-\xBF]+"
+local NUMBER_A = "0[xX][%da-fA-F_]+"
+local NUMBER_B = "0[bB][01_]+"
+local NUMBER_C = "%d+%.?%d*[eE][%+%-]?%d+"
+local NUMBER_D = "%d+[%._]?[%d_eE]*"
+local OPERATORS = "[:;<>/~%*%(%)%-={},%.#%^%+%%]+"
+local BRACKETS = "[%[%]]+" -- needs to be separate pattern from other operators or it'll mess up multiline strings
+local IDEN = "[%a_][%w_]*"
+local STRING_EMPTY = "(['\"])%1" --Empty String
+local STRING_PLAIN = "(['\"])[^\n]-([^\\]%1)" --TODO: Handle escaping escapes
+local STRING_INTER = "`[^\n]-`"
+local STRING_INCOMP_A = "(['\"]).-\n" --Incompleted String with next line
+local STRING_INCOMP_B = "(['\"])[^\n]*" --Incompleted String without next line
+local STRING_MULTI = "%[(=*)%[.-%]%1%]" --Multiline-String
+local STRING_MULTI_INCOMP = "%[=*%[.-.*" --Incompleted Multiline-String
+local COMMENT_MULTI = "%-%-%[(=*)%[.-%]%1%]" --Completed Multiline-Comment
+local COMMENT_MULTI_INCOMP = "%-%-%[=*%[.-.*" --Incompleted Multiline-Comment
+local COMMENT_PLAIN = "%-%-.-\n" --Completed Singleline-Comment
+local COMMENT_INCOMP = "%-%-.*" --Incompleted Singleline-Comment
+-- local TYPED_VAR = ":%s*([%w%?%| \t]+%s*)" --Typed variable, parameter, function
+
+local lang = require(script.language)
+local lua_keyword = lang.keyword
+local lua_builtin = lang.builtin
+local lua_libraries = lang.libraries
+
+lexer.language = lang
+
+local lua_matches = {
+	-- Indentifiers
+	{ Prefix .. IDEN .. Suffix, "var" },
+
+	-- Numbers
+	{ Prefix .. NUMBER_A .. Suffix, "number" },
+	{ Prefix .. NUMBER_B .. Suffix, "number" },
+	{ Prefix .. NUMBER_C .. Suffix, "number" },
+	{ Prefix .. NUMBER_D .. Suffix, "number" },
+
+	-- Strings
+	{ Prefix .. STRING_EMPTY .. Suffix, "string" },
+	{ Prefix .. STRING_PLAIN .. Suffix, "string" },
+	{ Prefix .. STRING_INCOMP_A .. Suffix, "string" },
+	{ Prefix .. STRING_INCOMP_B .. Suffix, "string" },
+	{ Prefix .. STRING_MULTI .. Suffix, "string" },
+	{ Prefix .. STRING_MULTI_INCOMP .. Suffix, "string" },
+	{ Prefix .. STRING_INTER .. Suffix, "string_inter" },
+
+	-- Comments
+	{ Prefix .. COMMENT_MULTI .. Suffix, "comment" },
+	{ Prefix .. COMMENT_MULTI_INCOMP .. Suffix, "comment" },
+	{ Prefix .. COMMENT_PLAIN .. Suffix, "comment" },
+	{ Prefix .. COMMENT_INCOMP .. Suffix, "comment" },
+
+	-- Operators
+	{ Prefix .. OPERATORS .. Suffix, "operator" },
+	{ Prefix .. BRACKETS .. Suffix, "operator" },
+
+	-- Unicode
+	{ Prefix .. UNICODE .. Suffix, "iden" },
+
+	-- Unknown
+	{ "^.", "iden" },
+}
+
+-- To reduce the amount of table indexing during lexing, we separate the matches now
+local PATTERNS, TOKENS = {}, {}
+for i, m in lua_matches do
+	PATTERNS[i] = m[1]
+	TOKENS[i] = m[2]
+end
+
+--- Create a plain token iterator from a string.
+-- @tparam string s a string.
+-- @tparam number? startIndex a start index, assumed to be properly aligned to the tokens.
+
+function lexer.scan(s: string, startIndex: number?)
+	local index = startIndex or 1
+	local size = #s
+	local previousContent1, previousContent2, previousContent3, previousToken = "", "", "", ""
+
+	local thread = coroutine.create(function()
+		while index <= size do
+			local matched = false
+			for tokenType, pattern in ipairs(PATTERNS) do
+				-- Find match
+				local start, finish = string.find(s, pattern, index)
+				if start == nil then
+					continue
+				end
+
+				-- Move head
+				index = finish + 1
+				matched = true
+
+				-- Gather results
+				local content = string.sub(s, start, finish)
+				local rawToken = TOKENS[tokenType]
+				local processedToken = rawToken
+
+				-- Process token
+				if rawToken == "var" then
+					-- Since we merge spaces into the tok, we need to remove them
+					-- in order to check the actual word it contains
+					local cleanContent = string.gsub(content, Cleaner, "")
+
+					if lua_keyword[cleanContent] then
+						processedToken = "keyword"
+					elseif lua_builtin[cleanContent] then
+						processedToken = "builtin"
+					elseif string.find(previousContent1, "%.[%s%c]*$") and previousToken ~= "comment" then
+						-- The previous was a . so we need to special case indexing things
+						local parent = string.gsub(previousContent2, Cleaner, "")
+						local lib = lua_libraries[parent]
+						if lib and lib[cleanContent] and not string.find(previousContent3, "%.[%s%c]*$") then
+							-- Indexing a builtin lib with existing item, treat as a builtin
+							processedToken = "builtin"
+						else
+							-- Indexing a non builtin, can't be treated as a keyword/builtin
+							processedToken = "iden"
+						end
+						-- print("indexing",parent,"with",cleanTok,"as",t2)
+					else
+						processedToken = "iden"
+					end
+				elseif rawToken == "string_inter" then
+					if not string.find(content, "[^\\]{") then
+						-- This inter string doesnt actually have any inters
+						processedToken = "string"
+					else
+						-- We're gonna do our own yields, so the main loop won't need to
+						-- Our yields will be a mix of string and whatever is inside the inters
+						processedToken = nil
+
+						local isString = true
+						local subIndex = 1
+						local subSize = #content
+						while subIndex <= subSize do
+							-- Find next brace
+							local subStart, subFinish = string.find(content, "^.-[^\\][{}]", subIndex)
+							if subStart == nil then
+								-- No more braces, all string
+								coroutine.yield("string", string.sub(content, subIndex))
+								break
+							end
+
+							if isString then
+								-- We are currently a string
+								subIndex = subFinish + 1
+								coroutine.yield("string", string.sub(content, subStart, subFinish))
+
+								-- This brace opens code
+								isString = false
+							else
+								-- We are currently in code
+								subIndex = subFinish
+								local subContent = string.sub(content, subStart, subFinish - 1)
+								for innerToken, innerContent in lexer.scan(subContent) do
+									coroutine.yield(innerToken, innerContent)
+								end
+
+								-- This brace opens string/closes code
+								isString = true
+							end
+						end
+					end
+				end
+
+				-- Record last 3 tokens for the indexing context check
+				previousContent3 = previousContent2
+				previousContent2 = previousContent1
+				previousContent1 = content
+				previousToken = processedToken or rawToken
+				if processedToken then
+					coroutine.yield(processedToken, content)
+				end
+				break
+			end
+
+			-- No matches found
+			if not matched then
+				return
+			end
+		end
+
+		-- Completed the scan
+		return
+	end)
+
+	return function()
+		if coroutine.status(thread) == "dead" then
+			return
+		end
+
+		local success, token, content = coroutine.resume(thread)
+		if success and token then
+			return token, content
+		end
+
+		return
+	end
+end
+
+function lexer.navigator()
+	local nav = {
+		Source = "",
+		TokenCache = table.create(50),
+
+		_RealIndex = 0,
+		_UserIndex = 0,
+		_ScanThread = nil,
+	}
+
+	function nav:_createScanThread(StartPosition)
+		self._ScanThread = coroutine.create(function()
+			for Token, Src in lexer.scan(self.Source, StartPosition) do
+				self._RealIndex += 1
+				self.TokenCache[self._RealIndex] = { Token, Src }
+				coroutine.yield(Token, Src)
+			end
+		end)
+	end
+
+	function nav:Destroy()
+		self.Source = nil
+		self._RealIndex = nil
+		self._UserIndex = nil
+		self.TokenCache = nil
+		self._ScanThread = nil
+	end
+
+	function nav:SetSource(SourceString)
+		self.Source = SourceString
+
+		self._RealIndex = 0
+		self._UserIndex = 0
+		table.clear(self.TokenCache)
+
+		self:_createScanThread()
+	end
+
+	function nav:HotswapSource(SourceString)
+		local previousSource = self.Source
+
+		if
+			not previousSource
+			or #previousSource == 0
+			or #SourceString == 0
+			or string.byte(previousSource, 1) ~= string.byte(SourceString, 1)
+		then
+			-- No common tokens to share, just set normally
+			self:SetSource(SourceString)
+			return
+		end
+
+		self.Source = SourceString
+
+		local minimumLength, maximumLength = 0, math.min(#previousSource, #SourceString)
+		while minimumLength < maximumLength do
+			local mid = (minimumLength + maximumLength + 1) // 2
+
+			if
+				string.byte(previousSource, mid) == string.byte(SourceString, mid) -- cheap check of last character
+				and string.sub(previousSource, 1, mid - 1) == string.sub(SourceString, 1, mid - 1) -- expensive check of all previous characters
+			then
+				minimumLength = mid
+			else
+				maximumLength = mid - 1
+			end
+		end
+
+		local lastSharedTokenIndex = 0
+		local sourcePosition = 0
+
+		-- find position of the last common token that is cached
+		for tokenIndex, cachedToken in self.TokenCache do
+			local sourceLength = #cachedToken[2]
+
+			if sourcePosition + sourceLength <= minimumLength then
+				lastSharedTokenIndex = tokenIndex
+				sourcePosition += sourceLength
+			else
+				break
+			end
+		end
+
+		self._RealIndex = math.min(self._RealIndex, lastSharedTokenIndex)
+		self._UserIndex = 0
+
+		-- clear outdated tokens from the cache
+		for index = self._RealIndex + 1, #self.TokenCache do
+			self.TokenCache[index] = nil
+		end
+
+		self:_createScanThread(sourcePosition + 1)
+	end
+
+	function nav.Next()
+		nav._UserIndex += 1
+
+		if nav._RealIndex >= nav._UserIndex then
+			-- Already scanned, return cached
+			return table.unpack(nav.TokenCache[nav._UserIndex])
+		else
+			if coroutine.status(nav._ScanThread) == "dead" then
+				-- Scan thread dead
+				return
+			else
+				local success, token, src = coroutine.resume(nav._ScanThread)
+				if success and token then
+					-- Scanned new data
+					return token, src
+				else
+					-- Lex completed
+					return
+				end
+			end
+		end
+	end
+
+	function nav.Peek(PeekAmount)
+		local GoalIndex = nav._UserIndex + PeekAmount
+
+		if nav._RealIndex >= GoalIndex then
+			-- Already scanned, return cached
+			if GoalIndex > 0 then
+				return table.unpack(nav.TokenCache[GoalIndex])
+			else
+				-- Invalid peek
+				return
+			end
+		else
+			if coroutine.status(nav._ScanThread) == "dead" then
+				-- Scan thread dead
+				return
+			else
+				local IterationsAway = GoalIndex - nav._RealIndex
+
+				local success, token, src = nil, nil, nil
+
+				for _ = 1, IterationsAway do
+					success, token, src = coroutine.resume(nav._ScanThread)
+					if not (success or token) then
+						-- Lex completed
+						break
+					end
+				end
+
+				return token, src
+			end
+		end
+	end
+
+	return nav
+end
+
+return lexer
+
+end;
+};
+G2L_MODULES[G2L["d5"]] = {
+Closure = function()
+    local script = G2L["d5"];local language = {
+	keyword = {
+		["and"] = "keyword",
+		["break"] = "keyword",
+		["continue"] = "keyword",
+		["do"] = "keyword",
+		["else"] = "keyword",
+		["elseif"] = "keyword",
+		["end"] = "keyword",
+		["export"] = "keyword",
+		["false"] = "keyword",
+		["for"] = "keyword",
+		["function"] = "keyword",
+		["if"] = "keyword",
+		["in"] = "keyword",
+		["local"] = "keyword",
+		["nil"] = "keyword",
+		["not"] = "keyword",
+		["or"] = "keyword",
+		["repeat"] = "keyword",
+		["return"] = "keyword",
+		["self"] = "keyword",
+		["then"] = "keyword",
+		["true"] = "keyword",
+		["type"] = "keyword",
+		["typeof"] = "keyword",
+		["until"] = "keyword",
+		["while"] = "keyword",
+	},
+
+	builtin = {
+		-- Luau Functions
+		["assert"] = "function",
+		["error"] = "function",
+		["getfenv"] = "function",
+		["getmetatable"] = "function",
+		["ipairs"] = "function",
+		["loadstring"] = "function",
+		["newproxy"] = "function",
+		["next"] = "function",
+		["pairs"] = "function",
+		["pcall"] = "function",
+		["print"] = "function",
+		["rawequal"] = "function",
+		["rawget"] = "function",
+		["rawlen"] = "function",
+		["rawset"] = "function",
+		["select"] = "function",
+		["setfenv"] = "function",
+		["setmetatable"] = "function",
+		["tonumber"] = "function",
+		["tostring"] = "function",
+		["unpack"] = "function",
+		["xpcall"] = "function",
+
+		-- Luau Functions (Deprecated)
+		["collectgarbage"] = "function",
+
+		-- Luau Variables
+		["_G"] = "table",
+		["_VERSION"] = "string",
+
+		-- Luau Tables
+		["bit32"] = "table",
+		["buffer"] = "table",
+		["coroutine"] = "table",
+		["debug"] = "table",
+		["math"] = "table",
+		["os"] = "table",
+		["string"] = "table",
+		["table"] = "table",
+		["utf8"] = "table",
+		["vector"] = "table",
+
+		-- Roblox Functions
+		["DebuggerManager"] = "function",
+		["delay"] = "function",
+		["gcinfo"] = "function",
+		["PluginManager"] = "function",
+		["require"] = "function",
+		["settings"] = "function",
+		["spawn"] = "function",
+		["tick"] = "function",
+		["time"] = "function",
+		["UserSettings"] = "function",
+		["wait"] = "function",
+		["warn"] = "function",
+
+		-- Roblox Functions (Deprecated)
+		["Delay"] = "function",
+		["ElapsedTime"] = "function",
+		["elapsedTime"] = "function",
+		["printidentity"] = "function",
+		["Spawn"] = "function",
+		["Stats"] = "function",
+		["stats"] = "function",
+		["Version"] = "function",
+		["version"] = "function",
+		["Wait"] = "function",
+		["ypcall"] = "function",
+
+		-- Roblox Variables
+		["game"] = "Instance",
+		["plugin"] = "Instance",
+		["script"] = "Instance",
+		["shared"] = "Instance",
+		["workspace"] = "Instance",
+
+		-- Roblox Variables (Deprecated)
+		["Game"] = "Instance",
+		["Workspace"] = "Instance",
+
+		-- Roblox Tables
+		["Axes"] = "table",
+		["BrickColor"] = "table",
+		["CatalogSearchParams"] = "table",
+		["CFrame"] = "table",
+		["Color3"] = "table",
+		["ColorSequence"] = "table",
+		["ColorSequenceKeypoint"] = "table",
+		["DateTime"] = "table",
+		["DockWidgetPluginGuiInfo"] = "table",
+		["Enum"] = "table",
+		["Faces"] = "table",
+		["FloatCurveKey"] = "table",
+		["Font"] = "table",
+		["Instance"] = "table",
+		["NumberRange"] = "table",
+		["NumberSequence"] = "table",
+		["NumberSequenceKeypoint"] = "table",
+		["OverlapParams"] = "table",
+		["PathWaypoint"] = "table",
+		["PhysicalProperties"] = "table",
+		["Random"] = "table",
+		["Ray"] = "table",
+		["RaycastParams"] = "table",
+		["Rect"] = "table",
+		["Region3"] = "table",
+		["Region3int16"] = "table",
+		["RotationCurveKey"] = "table",
+		["SharedTable"] = "table",
+		["task"] = "table",
+		["TweenInfo"] = "table",
+		["UDim"] = "table",
+		["UDim2"] = "table",
+		["Vector2"] = "table",
+		["Vector2int16"] = "table",
+		["Vector3"] = "table",
+		["Vector3int16"] = "table",
+	},
+
+	libraries = {
+
+		-- Luau Libraries
+		bit32 = {
+			arshift = "function",
+			band = "function",
+			bnot = "function",
+			bor = "function",
+			btest = "function",
+			bxor = "function",
+			countlz = "function",
+			countrz = "function",
+			extract = "function",
+			lrotate = "function",
+			lshift = "function",
+			replace = "function",
+			rrotate = "function",
+			rshift = "function",
+		},
+
+		buffer = {
+			copy = "function",
+			create = "function",
+			fill = "function",
+			fromstring = "function",
+			len = "function",
+			readf32 = "function",
+			readf64 = "function",
+			readi8 = "function",
+			readi16 = "function",
+			readi32 = "function",
+			readu16 = "function",
+			readu32 = "function",
+			readu8 = "function",
+			readstring = "function",
+			tostring = "function",
+			writef32 = "function",
+			writef64 = "function",
+			writei16 = "function",
+			writei32 = "function",
+			writei8 = "function",
+			writestring = "function",
+			writeu16 = "function",
+			writeu32 = "function",
+			writeu8 = "function",
+		},
+
+		coroutine = {
+			close = "function",
+			create = "function",
+			isyieldable = "function",
+			resume = "function",
+			running = "function",
+			status = "function",
+			wrap = "function",
+			yield = "function",
+		},
+
+		debug = {
+			dumpheap = "function",
+			getmemorycategory = "function",
+			info = "function",
+			loadmodule = "function",
+			profilebegin = "function",
+			profileend = "function",
+			resetmemorycategory = "function",
+			setmemorycategory = "function",
+			traceback = "function",
+		},
+
+		math = {
+			abs = "function",
+			acos = "function",
+			asin = "function",
+			atan2 = "function",
+			atan = "function",
+			ceil = "function",
+			clamp = "function",
+			cos = "function",
+			cosh = "function",
+			deg = "function",
+			exp = "function",
+			floor = "function",
+			fmod = "function",
+			frexp = "function",
+			ldexp = "function",
+			log10 = "function",
+			log = "function",
+			max = "function",
+			min = "function",
+			modf = "function",
+			noise = "function",
+			pow = "function",
+			rad = "function",
+			random = "function",
+			randomseed = "function",
+			round = "function",
+			sign = "function",
+			sin = "function",
+			sinh = "function",
+			sqrt = "function",
+			tan = "function",
+			tanh = "function",
+
+			huge = "number",
+			pi = "number",
+		},
+
+		os = {
+			clock = "function",
+			date = "function",
+			difftime = "function",
+			time = "function",
+		},
+
+		string = {
+			byte = "function",
+			char = "function",
+			find = "function",
+			format = "function",
+			gmatch = "function",
+			gsub = "function",
+			len = "function",
+			lower = "function",
+			match = "function",
+			pack = "function",
+			packsize = "function",
+			rep = "function",
+			reverse = "function",
+			split = "function",
+			sub = "function",
+			unpack = "function",
+			upper = "function",
+		},
+
+		table = {
+			clear = "function",
+			clone = "function",
+			concat = "function",
+			create = "function",
+			find = "function",
+			foreach = "function",
+			foreachi = "function",
+			freeze = "function",
+			getn = "function",
+			insert = "function",
+			isfrozen = "function",
+			maxn = "function",
+			move = "function",
+			pack = "function",
+			remove = "function",
+			sort = "function",
+			unpack = "function",
+		},
+
+		utf8 = {
+			char = "function",
+			codepoint = "function",
+			codes = "function",
+			graphemes = "function",
+			len = "function",
+			nfcnormalize = "function",
+			nfdnormalize = "function",
+			offset = "function",
+
+			charpattern = "string",
+		},
+
+		vector = {
+			abs = "function",
+			angle = "function",
+			ceil = "function",
+			clamp = "function",
+			create = "function",
+			cross = "function",
+			dot = "function",
+			floor = "function",
+			magnitude = "function",
+			max = "function",
+			min = "function",
+			normalize = "function",
+			sign = "function",
+
+			one = "vector",
+			zero = "vector",
+		},
+
+		-- Roblox Libraries
+		Axes = {
+			new = "function",
+		},
+
+		BrickColor = {
+			Black = "function",
+			Blue = "function",
+			DarkGray = "function",
+			Gray = "function",
+			Green = "function",
+			new = "function",
+			New = "function",
+			palette = "function",
+			Random = "function",
+			random = "function",
+			Red = "function",
+			White = "function",
+			Yellow = "function",
+		},
+
+		CatalogSearchParams = {
+			new = "function",
+		},
+
+		CFrame = {
+			Angles = "function",
+			fromAxisAngle = "function",
+			fromEulerAngles = "function",
+			fromEulerAnglesXYZ = "function",
+			fromEulerAnglesYXZ = "function",
+			fromMatrix = "function",
+			fromOrientation = "function",
+			lookAt = "function",
+			new = "function",
+
+			identity = "CFrame",
+		},
+
+		Color3 = {
+			fromHex = "function",
+			fromHSV = "function",
+			fromRGB = "function",
+			new = "function",
+			toHSV = "function",
+		},
+
+		ColorSequence = {
+			new = "function",
+		},
+
+		ColorSequenceKeypoint = {
+			new = "function",
+		},
+
+		DateTime = {
+			fromIsoDate = "function",
+			fromLocalTime = "function",
+			fromUniversalTime = "function",
+			fromUnixTimestamp = "function",
+			fromUnixTimestampMillis = "function",
+			now = "function",
+		},
+
+		DockWidgetPluginGuiInfo = {
+			new = "function",
+		},
+
+		Enum = {},
+
+		Faces = {
+			new = "function",
+		},
+
+		FloatCurveKey = {
+			new = "function",
+		},
+
+		Font = {
+			fromEnum = "function",
+			fromId = "function",
+			fromName = "function",
+			new = "function",
+		},
+
+		Instance = {
+			new = "function",
+		},
+
+		NumberRange = {
+			new = "function",
+		},
+
+		NumberSequence = {
+			new = "function",
+		},
+
+		NumberSequenceKeypoint = {
+			new = "function",
+		},
+
+		OverlapParams = {
+			new = "function",
+		},
+
+		PathWaypoint = {
+			new = "function",
+		},
+
+		PhysicalProperties = {
+			new = "function",
+		},
+
+		Random = {
+			new = "function",
+		},
+
+		Ray = {
+			new = "function",
+		},
+
+		RaycastParams = {
+			new = "function",
+		},
+
+		Rect = {
+			new = "function",
+		},
+
+		Region3 = {
+			new = "function",
+		},
+
+		Region3int16 = {
+			new = "function",
+		},
+
+		RotationCurveKey = {
+			new = "function",
+		},
+
+		SharedTable = {
+			clear = "function",
+			clone = "function",
+			cloneAndFreeze = "function",
+			increment = "function",
+			isFrozen = "function",
+			new = "function",
+			size = "function",
+			update = "function",
+		},
+
+		task = {
+			cancel = "function",
+			defer = "function",
+			delay = "function",
+			desynchronize = "function",
+			spawn = "function",
+			synchronize = "function",
+			wait = "function",
+		},
+
+		TweenInfo = {
+			new = "function",
+		},
+
+		UDim = {
+			new = "function",
+		},
+
+		UDim2 = {
+			fromOffset = "function",
+			fromScale = "function",
+			new = "function",
+		},
+
+		Vector2 = {
+			new = "function",
+
+			one = "Vector2",
+			xAxis = "Vector2",
+			yAxis = "Vector2",
+			zero = "Vector2",
+		},
+
+		Vector2int16 = {
+			new = "function",
+		},
+
+		Vector3 = {
+			fromAxis = "function",
+			FromAxis = "function",
+			fromNormalId = "function",
+			FromNormalId = "function",
+			new = "function",
+
+			one = "Vector3",
+			xAxis = "Vector3",
+			yAxis = "Vector3",
+			zAxis = "Vector3",
+			zero = "Vector3",
+		},
+
+		Vector3int16 = {
+			new = "function",
+		},
+	},
+}
+
+-- Filling up language.libraries.Enum table
+local enumLibraryTable = language.libraries.Enum
+
+for _, enum in ipairs(Enum:GetEnums()) do
+	--TODO: Remove tostring from here once there is a better way to get the name of an Enum
+	enumLibraryTable[tostring(enum)] = "Enum"
+end
+
+return language
+
+end;
+};
+G2L_MODULES[G2L["d6"]] = {
+Closure = function()
+    local script = G2L["d6"];local DEFAULT_TOKEN_COLORS = {
+	["background"] = Color3.fromRGB(47, 47, 47),
+	["iden"] = Color3.fromRGB(234, 234, 234),
+	["keyword"] = Color3.fromRGB(215, 174, 255),
+	["builtin"] = Color3.fromRGB(131, 206, 255),
+	["string"] = Color3.fromRGB(196, 255, 193),
+	["number"] = Color3.fromRGB(255, 125, 125),
+	["comment"] = Color3.fromRGB(140, 140, 155),
+	["operator"] = Color3.fromRGB(255, 239, 148),
+	["custom"] = Color3.fromRGB(119, 122, 255),
+}
+
+local types = require(script.Parent.types)
+
+local Theme = {
+	tokenColors = {},
+	tokenRichTextFormatter = {},
+}
+
+function Theme.setColors(tokenColors: types.TokenColors)
+	assert(type(tokenColors) == "table", "Theme.updateColors expects a table")
+
+	for tokenName, color in tokenColors do
+		Theme.tokenColors[tokenName] = color
+	end
+end
+
+function Theme.getColoredRichText(color: Color3, text: string): string
+	return '<font color="#' .. color:ToHex() .. '">' .. text .. "</font>"
+end
+
+function Theme.getColor(tokenName: types.TokenName): Color3
+	return Theme.tokenColors[tokenName]
+end
+
+function Theme.matchStudioSettings(refreshCallback: () -> ()): boolean
+	local success = pcall(function()
+		-- When not used in a Studio plugin, this will error
+		-- and the pcall will just silently return
+		local studio = settings().Studio
+		local studioTheme = studio.Theme
+
+		local function getTokens()
+			return {
+				["background"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptBackground),
+				["iden"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptText),
+				["keyword"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptKeyword),
+				["builtin"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptBuiltInFunction),
+				["string"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptString),
+				["number"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptNumber),
+				["comment"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptComment),
+				["operator"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptOperator),
+				["custom"] = studioTheme:GetColor(Enum.StudioStyleGuideColor.ScriptBool),
+			}
+		end
+
+		Theme.setColors(getTokens())
+		studio.ThemeChanged:Connect(function()
+			studioTheme = studio.Theme
+			Theme.setColors(getTokens())
+			refreshCallback()
+		end)
+	end)
+	return success
+end
+
+-- Initialize
+Theme.setColors(DEFAULT_TOKEN_COLORS)
+
+return Theme
+
+end;
+};
+G2L_MODULES[G2L["d7"]] = {
+Closure = function()
+    local script = G2L["d7"];export type TextObject = TextLabel | TextBox
+
+export type TokenName =
+	"background"
+	| "iden"
+	| "keyword"
+	| "builtin"
+	| "string"
+	| "number"
+	| "comment"
+	| "operator"
+	| "custom"
+
+export type TokenColors = {
+	["background"]: Color3?,
+	["iden"]: Color3?,
+	["keyword"]: Color3?,
+	["builtin"]: Color3?,
+	["string"]: Color3?,
+	["number"]: Color3?,
+	["comment"]: Color3?,
+	["operator"]: Color3?,
+	["custom"]: Color3?,
+}
+
+export type HighlightProps = {
+	textObject: TextObject,
+	src: string?,
+	forceUpdate: boolean?,
+	lexer: Lexer?,
+	customLang: { [string]: string }?,
+}
+
+export type BuildRichTextLinesProps = {
+	src: string,
+	lexer: Lexer?,
+	customLang: { [string]: string }?,
+}
+
+export type Lexer = {
+	scan: (src: string) -> () -> (string, string),
+	navigator: () -> any,
+	finished: boolean?,
+}
+
+export type ObjectData = {
+	Text: string,
+	Labels: { TextLabel },
+	Lines: { string },
+	Lexer: Lexer?,
+	CustomLang: { [string]: string }?,
+}
+
+return nil
+
+end;
+};
+G2L_MODULES[G2L["d8"]] = {
+Closure = function()
+    local script = G2L["d8"];local types = require(script.Parent.types)
+
+local Utility = {}
+
+function Utility.sanitizeRichText(s: string): string
+	return string.gsub(
+		string.gsub(string.gsub(string.gsub(string.gsub(s, "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), '"', "&quot;"),
+		"'",
+		"&apos;"
+	)
+end
+
+function Utility.convertTabsToSpaces(s: string): string
+	return string.gsub(s, "\t", "    ")
+end
+
+function Utility.removeControlChars(s: string): string
+	return string.gsub(s, "[\0\1\2\3\4\5\6\7\8\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25\26\27\28\29\30\31]+", "")
+end
+
+function Utility.getInnerAbsoluteSize(textObject: types.TextObject): Vector2
+	local fullSize = textObject.AbsoluteSize
+
+	local padding: UIPadding? = textObject:FindFirstChildWhichIsA("UIPadding")
+	if padding then
+		local offsetX = padding.PaddingLeft.Offset + padding.PaddingRight.Offset
+		local scaleX = (fullSize.X * padding.PaddingLeft.Scale) + (fullSize.X * padding.PaddingRight.Scale)
+		local offsetY = padding.PaddingTop.Offset + padding.PaddingBottom.Offset
+		local scaleY = (fullSize.Y * padding.PaddingTop.Scale) + (fullSize.Y * padding.PaddingBottom.Scale)
+		return Vector2.new(fullSize.X - (scaleX + offsetX), fullSize.Y - (scaleY + offsetY))
+	else
+		return fullSize
+	end
+end
+
+function Utility.getTextBounds(textObject: types.TextObject): Vector2
+	if textObject.ContentText == "" then
+		return Vector2.zero
+	end
+
+	local textBounds = textObject.TextBounds
+
+	-- Wait for TextBounds to be non-NaN and non-zero because Roblox
+	while (textBounds.Y ~= textBounds.Y) or (textBounds.Y < 1) do
+		task.wait()
+		textBounds = textObject.TextBounds
+	end
+	return textBounds
+end
+
+return Utility
+
+end;
+};
+G2L_MODULES[G2L["e9"]] = {
+Closure = function()
+    local script = G2L["e9"];--[[
+	LiquidGlassHandler 1.0
+	Copyright (c) 2026 @7eoeb, @UNIVERSECORNUCOPIA
+
+	All rights reserved.
+
+	This code and its associated assets are the intellectual property of @7eoeb
+	and @UNIVERSECORNUCOPIA. Unauthorized copying, modification, distribution,
+	or use of this code, in whole or in part, without explicit permission is
+	strictly prohibited.
+
+	Created: 2026
+]]
+
+local LiquidGlassHandler = {}
+local RunService = game:GetService("RunService")
+local CollectionService = game:GetService("CollectionService")
+local Players = game:GetService("Players")
+local GuiService = game:GetService("GuiService")
+local HttpService = game:GetService("HttpService")
+
+if not RunService:IsStudio() then
+	print(require(script.Version))
+end
+
+local VisibilityChecker = require(script.VisibilityChecker)
+local Settings = require(script.Settings)
+
+
+local tag = Settings.Tag
+local padding = Settings.Padding
+local templateContainer = script.Overlay
+
+local parentFolder = Instance.new("Folder")
+parentFolder.Name = "LiquidGlassObjects"
+parentFolder.Parent = workspace
+
+local rotationOffset = CFrame.Angles(0, math.rad(-90), 0)
+
+local function createHighlight()
+	local h = Instance.new("Highlight")
+	for k, v in pairs(Settings.Highlight) do
+		h[k] = v
+	end
+	return h
+end
+
+function LiquidGlassHandler.new(guiObject: GuiObject)
+	if not guiObject:IsDescendantOf(Players.LocalPlayer) then return end
+
+	local renderName = `LiquidGlass_{HttpService:GenerateGUID(false)}`
+
+	local container = Instance.new("Model")
+	container.Name = renderName
+	container.Parent = parentFolder
+
+	local highlight = createHighlight()
+	highlight.Parent = container
+
+	local pixels = {}
+	local lastSize = Vector2.zero
+	local lastRadius = -1
+	local currentLayoutMode = "None"
+	local depth = 2
+	
+	local function getCornerRadius()
+		local currentSize = guiObject.AbsoluteSize
+		local uiCorner = guiObject:FindFirstChildWhichIsA("UICorner")
+		local radius = uiCorner and (uiCorner.CornerRadius.Offset + (uiCorner.CornerRadius.Scale * math.min(currentSize.X, currentSize.Y))) or 0
+		local maxPossibleRadius = math.min(currentSize.X, currentSize.Y) / 2
+		radius = math.clamp(radius, 0, maxPossibleRadius)
+		return radius
+	end
+
+	local function rebuildGrid()
+		local currentSize = guiObject.AbsoluteSize
+		if currentSize.X < 1 or currentSize.Y < 1 then return end
+
+		local radius = getCornerRadius()
+		
+		if currentSize == lastSize and radius == lastRadius then return end
+		lastSize = currentSize
+		lastRadius = radius
+
+		local targetMode = (radius <= 0) and "Flat" or "Rounded"
+		local needsRebuild = (targetMode ~= currentLayoutMode)
+
+		if needsRebuild then
+			for _, data in pairs(pixels) do
+				data.Part:Destroy()
+			end
+			table.clear(pixels)
+			currentLayoutMode = targetMode
+		end
+
+		local partIndex = 1
+		local function updateOrAddPart(templateName, relX, relY, relSizeX, relSizeY, localRot, swapAxes)
+			if needsRebuild then
+				local p = templateContainer:FindFirstChild(templateName):Clone()
+				p.Parent = container
+				table.insert(pixels, {
+					Part = p,
+					RelX = relX,
+					RelY = relY,
+					RelSizeX = relSizeX,
+					RelSizeY = relSizeY,
+					LocalRot = localRot or CFrame.new(),
+					SwapAxes = swapAxes or false,
+				})
+			else
+				local data = pixels[partIndex]
+				data.RelX = relX
+				data.RelY = relY
+				data.RelSizeX = relSizeX
+				data.RelSizeY = relSizeY
+				data.LocalRot = localRot or CFrame.new()
+				data.SwapAxes = swapAxes or false
+			end
+			partIndex += 1
+		end
+
+		if radius <= 0 then
+			updateOrAddPart("Center", 0, 0, 1, 1)
+		else
+			local relRadX = radius / currentSize.X
+			local relRadY = radius / currentSize.Y
+			local innerW = (currentSize.X - 2 * radius) / currentSize.X
+			local innerH = (currentSize.Y - 2 * radius) / currentSize.Y
+			local diamX = relRadX
+			local diamY = relRadY
+
+			updateOrAddPart("Center", 0, 0, innerW, innerH)
+
+			updateOrAddPart("Edge", 0, -0.5 + (relRadY / 2), innerW, relRadY, CFrame.Angles(0, 0, 0))
+			updateOrAddPart("Edge", 0, 0.5 - (relRadY / 2), innerW, relRadY, CFrame.Angles(0, 0, math.rad(180)))
+
+			updateOrAddPart("Edge", -0.5 + (relRadX / 2), 0, relRadX, innerH, CFrame.Angles(0, 0, math.rad(90)), true)
+			updateOrAddPart("Edge", 0.5 - (relRadX / 2), 0, relRadX, innerH, CFrame.Angles(0, 0, math.rad(-90)), true)
+
+			local halfDiamX = diamX / 2
+			local halfDiamY = diamY / 2
+			
+			updateOrAddPart("Corner", -0.5 + halfDiamX, -0.5 + halfDiamY, diamX, diamY, CFrame.Angles(0, 0, math.rad(90)), true)
+			updateOrAddPart("Corner", 0.5 - halfDiamX, -0.5 + halfDiamY, diamX, diamY, CFrame.Angles(0, 0, 0))
+			updateOrAddPart("Corner", -0.5 + halfDiamX, 0.5 - halfDiamY, diamX, diamY, CFrame.Angles(0, 0, math.rad(180)))
+			updateOrAddPart("Corner", 0.5 - halfDiamX, 0.5 - halfDiamY, diamX, diamY, CFrame.Angles(0, 0, math.rad(-90)), true)
+		end
+	end
+
+	rebuildGrid()
+	
+	RunService:BindToRenderStep(renderName, Enum.RenderPriority.Camera.Value + 1, function()
+		local camera = workspace.CurrentCamera
+		if not camera then return end
+		
+		if guiObject.AbsoluteSize ~= lastSize or getCornerRadius() ~= lastRadius then
+			rebuildGrid()
+		end
+
+		local isVisible = VisibilityChecker.isPotentiallyVisible(guiObject)
+		container.Parent = isVisible and parentFolder or nil
+		if not isVisible then return end
+
+		local visibleRect = VisibilityChecker.getTrueRenderBounds(guiObject)
+		local visibleSize = Vector2.new(visibleRect.Width, visibleRect.Height)
+
+		if visibleSize.X <= 0 or visibleSize.Y <= 0 then
+			container.Parent = nil
+			return
+		else
+			container.Parent = parentFolder
+		end
+
+		local inset, _ = GuiService:GetGuiInset()
+		local centerScreenPos = visibleRect.Min + (visibleSize / 2) + inset
+
+		local function getPlanePos(pixelX, pixelY)
+			local ray = camera:ViewportPointToRay(pixelX, pixelY)
+			local dist = depth / ray.Direction:Dot(camera:GetRenderCFrame().LookVector)
+			return ray.Origin + ray.Direction * dist
+		end
+
+		local centerWorldPos = getPlanePos(centerScreenPos.X, centerScreenPos.Y)
+		local rightEdge = getPlanePos(centerScreenPos.X + (visibleSize.X / 2), centerScreenPos.Y)
+		local leftEdge = getPlanePos(centerScreenPos.X - (visibleSize.X / 2), centerScreenPos.Y)
+		local topEdge = getPlanePos(centerScreenPos.X, centerScreenPos.Y - (visibleSize.Y / 2))
+		local bottomEdge = getPlanePos(centerScreenPos.X, centerScreenPos.Y + (visibleSize.Y / 2))
+
+		local worldW = (rightEdge - leftEdge).Magnitude
+		local worldH = (topEdge - bottomEdge).Magnitude
+
+		local camCF = camera:GetRenderCFrame()
+		local guiRotCF = CFrame.Angles(0, 0, math.rad(-guiObject.AbsoluteRotation))
+
+		local absTransparency = VisibilityChecker.getAbsoluteTransparency(guiObject)
+
+		for _, data in ipairs(pixels) do
+			local localOffset = Vector3.new(data.RelX * worldW, -data.RelY * worldH, 0)
+			local rotatedOffset = guiRotCF * localOffset
+
+			local worldOffset = (camCF.RightVector * rotatedOffset.X) + (camCF.UpVector * rotatedOffset.Y)
+
+			if data.SwapAxes then
+				data.Part.Size = Vector3.new(0.01, data.RelSizeX * worldW + padding, data.RelSizeY * worldH + padding)
+			else
+				data.Part.Size = Vector3.new(0.01, data.RelSizeY * worldH + padding, data.RelSizeX * worldW + padding)
+			end
+
+			highlight.FillTransparency = Settings.Highlight.FillTransparency + (1 - Settings.Highlight.FillTransparency) * absTransparency
+			data.Part.Transparency = Settings.Mesh.Transparency + (1 - Settings.Mesh.Transparency) * absTransparency
+
+			data.Part.CFrame = CFrame.new(centerWorldPos + worldOffset) * camCF.Rotation * guiRotCF * data.LocalRot * rotationOffset
+		end
+	end)
+	
+	local function cleanup()
+		container:Destroy()
+		RunService:UnbindFromRenderStep(renderName)
+		return 1
+	end
+
+	guiObject.AncestryChanged:Connect(function(_, n)
+		if n then return end
+		cleanup()
+	end)
+	
+	CollectionService:GetInstanceRemovedSignal(tag):Connect(function(v)
+		if v ~= guiObject then return end
+		cleanup()
+	end)
+	
+	return {
+		destroy = cleanup
+	}
+end
+
+CollectionService:GetInstanceAddedSignal(tag):Connect(LiquidGlassHandler.new)
+for _, v in ipairs(CollectionService:GetTagged(tag)) do LiquidGlassHandler.new(v) end
+
+return LiquidGlassHandler
+end;
+};
+G2L_MODULES[G2L["ea"]] = {
+Closure = function()
+    local script = G2L["ea"];return {
+	Highlight = {
+		FillColor = Color3.fromRGB(0, 0, 0),
+		OutlineTransparency = 1,
+		FillTransparency = 0.9
+	},
+	Mesh = {
+		Material = Enum.Material.Glass,
+		Color = Color3.fromRGB(0, 0, 0),
+		Transparency = 1,
+		Anchored = true,
+		CastShadow = false,
+		CanCollide = false,
+		CanTouch = false,
+		CanQuery = false,
+		AudioCanCollide = false
+	},
+	Tag = "LiquidGlass",
+	Padding = 0.001
+}
+end;
+};
+G2L_MODULES[G2L["eb"]] = {
+Closure = function()
+    local script = G2L["eb"];return `{game.Name} is using LiquidGlassHandler by @7eoeb and @UNIVERSECORNUCOPIA. Learn more on the Developer Forum at https://devforum.roblox.com/t/4416219`
+end;
+};
+G2L_MODULES[G2L["ec"]] = {
+Closure = function()
+    local script = G2L["ec"];local VisibilityChecker = {}
+local Players = game:GetService("Players")
+local GuiService = game:GetService("GuiService")
+
+local function areAncestorsVisible(guiObject)
+	local current = guiObject
+	while current do
+		if current:IsA("GuiObject") and not current.Visible then
+			return false
+		elseif current:IsA("ScreenGui") and not current.Enabled then
+			return false
+		end
+		current = current.Parent
+	end
+	return true
+end
+
+function VisibilityChecker.isPotentiallyVisible(guiObject)
+	if not guiObject or not guiObject.Parent then
+		return false
+	end
+	return areAncestorsVisible(guiObject)
+end
+
+function VisibilityChecker.getAbsoluteTransparency(guiObject)
+	local current = guiObject
+	local combinedOpacity = 1
+
+	while current do
+		if current:IsA("CanvasGroup") then
+			combinedOpacity = combinedOpacity * (1 - current.GroupTransparency)
+		end
+		current = current.Parent
+	end
+
+	return math.round((1 - combinedOpacity) * 1000) / 1000
+end
+
+function VisibilityChecker.getTrueRenderBounds(guiObject: GuiObject)
+	local absPos = guiObject.AbsolutePosition
+	local absSize = guiObject.AbsoluteSize
+	local absRot = guiObject.AbsoluteRotation
+
+	local minX, minY = absPos.X, absPos.Y
+	local maxX, maxY = absPos.X + absSize.X, absPos.Y + absSize.Y
+
+	if absRot == 0 then
+		local current = guiObject.Parent
+		while current and current:IsA("GuiObject") do
+			if current.AbsoluteRotation ~= 0 then
+				break
+			end
+
+			if current.ClipsDescendants then
+				local cPos = current.AbsolutePosition
+				local cSize = current.AbsoluteSize
+
+				minX = math.max(minX, cPos.X)
+				minY = math.max(minY, cPos.Y)
+				maxX = math.min(maxX, cPos.X + cSize.X)
+				maxY = math.min(maxY, cPos.Y + cSize.Y)
+			end
+			current = current.Parent
+		end
+	end
+
+	local width = math.max(0, maxX - minX)
+	local height = math.max(0, maxY - minY)
+
+	return {
+		Min = Vector2.new(minX, minY),
+		Max = Vector2.new(maxX, maxY),
+		Width = width,
+		Height = height,
+		IsFullyClipped = (width <= 0 or height <= 0)
+	}
+end
+
+return VisibilityChecker
+end;
+};
+G2L_MODULES[G2L["fc"]] = {
+Closure = function()
+    local script = G2L["fc"];--// NotificationModule – FINAL STACKING VERSION (Transparency Tween Only)
 --// ModuleScript (place in ReplicatedStorage or StarterPlayerScripts)
 local TweenService = game:GetService("TweenService")
 local SoundService = game:GetService("SoundService")
@@ -3575,9 +5659,98 @@ local script = G2L["b1"];
 	end)
 end;
 task.spawn(C_b1);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+local function C_b8()
+local script = G2L["b8"];
+	local CollectionService = game:GetService("CollectionService")
+	
+	local button = script.Parent
+	local tagName = "LiquidGlass"
+	
+	-- 1. Define your two frames here
+	local frame1 = button.Parent.Parent
+	local frame2 = frame1.Parent.NotifySystem.Frame
+	
+	-- 2. Store them in a table
+	local framesToToggle = {frame1, frame2}
+	
+	button.MouseButton1Click:Connect(function()
+		for _, frame in ipairs(framesToToggle) do
+			if frame then
+				-- Toggle the tag based on whether it currently exists
+				if CollectionService:HasTag(frame, tagName) then
+					CollectionService:RemoveTag(frame, tagName)
+					print("Tag '" .. tagName .. "' was successfully removed from " .. frame.Name)
+				else
+					CollectionService:AddTag(frame, tagName)
+					print("Tag '" .. tagName .. "' was successfully added to " .. frame.Name)
+				end
+			else
+				warn("One of the defined frames does not exist.")
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_b8);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.Notifier
+local function C_b9()
+local script = G2L["b9"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Notification = require(script.Parent:FindFirstAncestorOfClass("ScreenGui"):WaitForChild("NotifySystem"):WaitForChild("NotifierModule"))
+		
+		local frame = script.Parent:FindFirstAncestorOfClass("ScreenGui"):WaitForChild("NotifySystem"):WaitForChild("Frame")
+		
+		-- Start hidden
+		frame.Position = UDim2.new(1, 0, 0.856, 0)
+		
+		-- Call notifications whenever you want:
+		Notification.Notify(frame, "Changed background color to Purple!", "Success")
+	end)
+end;
+task.spawn(C_b9);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.LocalScript
+local function C_bd()
+local script = G2L["bd"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local CollectionService = game:GetService("CollectionService")
+	
+		-- References the Frame object the script is inside of
+		local frame = script.Parent.Parent.Parent
+	
+		-- The name of the tag you want to assign to this Frame
+		local tagName = "LiquidGlass"
+	
+		-- Apply the tag to the Frame object
+		if frame and frame:IsA("Frame") then
+			CollectionService:AddTag(frame, tagName)
+			print(frame.Name .. " was successfully tagged with: " .. tagName)
+		else
+			warn("The parent of this script is not a Frame!")
+		end
+	
+	end)
+end;
+task.spawn(C_bd);
+-- StarterGui.ScreenGui.Frame.page5.TextButton.Notifier
+local function C_be()
+local script = G2L["be"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local Notification = require(script.Parent:FindFirstAncestorOfClass("ScreenGui"):WaitForChild("NotifySystem"):WaitForChild("NotifierModule"))
+		
+		local frame = script.Parent:FindFirstAncestorOfClass("ScreenGui"):WaitForChild("NotifySystem"):WaitForChild("Frame")
+		
+		-- Start hidden
+		frame.Position = UDim2.new(1, 0, 0.856, 0)
+		
+		-- Call notifications whenever you want:
+		Notification.Notify(frame, "Changed background color to Purple!", "Success")
+	end)
+end;
+task.spawn(C_be);
 -- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_b5()
-local script = G2L["b5"];
+local function C_c2()
+local script = G2L["c2"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.page1.Visible = false
 		script.Parent.Parent.page2.Visible = false
@@ -3586,10 +5759,10 @@ local script = G2L["b5"];
 		script.Parent.Parent.page5.Visible = true
 	end)
 end;
-task.spawn(C_b5);
+task.spawn(C_c2);
 -- StarterGui.ScreenGui.Frame.page2.Text.LocalScript
-local function C_ba()
-local script = G2L["ba"];
+local function C_c7()
+local script = G2L["c7"];
 	local scrollingFrame = script.Parent
 	local lastY = scrollingFrame.CanvasSize.Y.Offset
 	
@@ -3603,255 +5776,10 @@ local script = G2L["ba"];
 		end
 	end)
 end;
-task.spawn(C_ba);
--- StarterGui.ScreenGui.Frame.page2.Text.SyntaxScript
-local function C_bb()
-local script = G2L["bb"];
-	local textBox = script.Parent.TextBox
-	local highlighter = script.Parent.Syntax
-	
-	textBox.RichText = false
-	highlighter.RichText = true
-	
-	local stringColor = Color3.fromRGB(0, 255, 0) -- bright green for strings
-	local functionColor = Color3.fromRGB(217, 217, 0) -- yellow for local function names
-	
-	local rememberedFunctions = {}
-	
-	local colors = {
-		[Color3.fromRGB(255, 0, 0)] = {
-			"and",
-			"break",
-			"do",
-			"else",
-			"elseif",
-			"end",
-			"for",
-			"function",
-			"if",
-			"in",
-			"nil",
-			"not",
-			"or",
-			"repeat",
-			"return",
-			"then",
-			"until",
-			"while"
-		},
-		[Color3.fromRGB(255, 255, 0)] = {
-			"Connect",
-			"Disconnect",
-			"false",
-			"true",
-			"IsA",
-			"Clone",
-			"Destroy",
-			"FindFirstChild",
-			"FindFirstAncestor",
-			"FindFirstAncestorOfClass",
-			"FindFirstAncestorWhichIsA",
-			"FindFirstChildOfClass",
-			"FindFirstChildWhichIsA",
-			"GetChildren",
-			"GetDescendants",
-			"GetFullName",
-			"GetPropertyChangedSignal",
-			"WaitForChild",
-			"ClearAllChildren",
-			"GetMouse",
-			"GetService",
-			"Invoke",
-			"InvokeServer",
-			"Fire",
-			"FireServer",
-			"Destroy",
-			"Remove",
-			"Play",
-			"Stop",
-			"Pause",
-			"Resume",
-			"TweenSize",
-			"TweenPosition",
-			"TweenSizeAndPosition",
-			"TweenService:Create",
-			"GetAsync",
-			"SetAsync",
-			"UpdateAsync",
-			"RemoveAsync",
-			"IncrementAsync",
-			"GetPlayerFromCharacter",
-			"GetPlayers",
-			"Kick",
-			"LoadAnimation",
-			"LoadCharacter",
-			"MoveTo",
-			"SetPrimaryPartCFrame",
-			"SetAttribute",
-			"GetAttribute",
-			"GetAttributes",
-			"HasTag",
-			"AddTag",
-			"RemoveTag",
-			"GetTags",
-			"GetRankInGroup",
-			"IsInGroup",
-			"PromptProductPurchase",
-			"PromptGamePassPurchase",
-			"PromptPurchase",
-			"PromptPremiumPurchase",
-			"PromptGroupPurchase",
-			"PromptAvatarEditor",
-			"PromptBundlePurchase",
-			"PromptItemPurchase",
-			"PromptSubscriptionPurchase",
-			"PromptNativePurchase",
-			"PromptRobloxPurchase"
-		},
-		[Color3.fromRGB(0, 149, 223)] = {
-			"game", "script", "Workspace", "Players", "Lighting",
-			"ReplicatedStorage", "ReplicatedFirst", "ServerScriptService",
-			"ServerStorage", "StarterGui", "StarterPack", "StarterPlayer",
-			"SoundService", "Chat", "LocalizationService", "MarketplaceService",
-			"HttpService", "UserInputService", "ContextActionService", "RunService",
-			"TweenService", "PathfindingService", "InsertService", "TestService",
-			"VirtualInputManager", "VRService", "MessagingService", "NotificationService",
-			"SocialService", "DataStoreService", "MemoryStoreService", "AssetService",
-			"AdService", "AnalyticsService", "ScriptContext", "Selection",
-			"GuiService", "InputService", "KeyframeSequenceProvider", "NavigationService",
-			"Terrain", "Teams", "CollectionService", "ContentProvider", "Stats",
-			"SoundscapeService", "ThumbnailGenerator", "TranslationService",
-			"VoiceChatService", "ProximityPromptService", "TextChatService",
-			"MaterialService", "FaceAnimatorService", "AnimationClipProvider",
-			"AssetManagerService", "PluginDebugService", "StudioData", "StudioService",
-			"SelectionService", "ToolboxService", "Draggers", "TemporaryScriptService",
-			"getmetatable", "load", "getgenv()"
-		},
-		[Color3.fromRGB(0, 170, 255)] = {
-			"workspace", "loadstring", "require", "print", "task.wait", "PlayerAdded", "wait", "pairs", "ipairs", "Instance.new", "Parent", "task", "UDim2", "new",
-			"Vector3", "Vector2"
-		},
-		
-		[Color3.fromRGB(166, 0, 255)] = {
-			"local"
-		},
-		
-		[Color3.fromRGB(0, 170, 255)] = {
-			"AbsoluteContentSize", "AbsolutePosition", "AbsoluteRotation", "AbsoluteSize", "AbsoluteWindowSize",
-			"AccessoryType", "AccountAge", "AccountId", "Accuracy", "ActionCount", "ActionName", "Active", "Adornee",
-			"AllowAmbientOcclusion", "AllowCollision", "AllowTeamChangeOnTouch", "AlwaysOnTop", "Anchored", "AngularVelocity",
-			"AnimationId", "ApplyAtCenterOfMass", "Archivable", "AssetId", "Attachment0", "Attachment1", "AutoButtonColor",
-			"AutoRotate", "AutomaticCanvasSize", "AutomaticSize", "BackgroundColor3", "BackgroundTransparency", "BaseTextureId",
-			"Behavior", "BillboardSize", "BodyPart", "BorderColor3", "BorderMode", "BorderSizePixel", "BottomImage",
-			"Brightness", "BrushSize", "Camera", "CameraOffset", "CameraTransparency", "CanCollide", "CanQuery", "CanTouch",
-			"CastShadow", "CFrame", "ClassName", "ClipsDescendants", "CollisionEnabled", "CollisionGroup", "CollisionGroupId",
-			"Color", "Color3", "ColorMap", "CommunicationEnabled", "Completeness", "CompletenessColor3", "Constraint",
-			"Contrast", "ConversationId", "ConversationStatus", "Cooldown", "CornerRadius", "Count", "CountryRegionCode",
-			"CreatorId", "CreatorType", "CurrencyType", "CurrentCamera", "CursorIcon", "CustomPhysicalProperties",
-			"CycleOffset", "DataCost", "DataLimit", "DataReady", "Deprecated", "DepthMode", "Description", "DeviceGravity",
-			"Direction", "DisplayDistanceType", "DisplayName", "DisplayOrder", "Distance", "Duration", "EaseDirection",
-			"EaseStyle", "EasingDirection", "EasingStyle", "EmissionDirection", "Enabled", "EnvironmentDiffuseScale",
-			"EnvironmentSpecularScale", "ExperienceId", "ExperienceName", "ExtentSize", "ExtentsOffset", "ExtentsOffsetWorldSpace",
-			"ExtentsSize", "Face", "FaceId", "Faces", "FadeIn", "FadeOut", "FallBackImage", "FieldOfView", "FieldOfViewMode",
-			"Filled", "FocusDistance", "FocusDistanceMode", "Font", "FontFace", "Force", "ForceLimitMode", "ForceLimitsEnabled",
-			"ForcePlayMode", "ForwardDirection", "FrameRate", "Friction", "FrictionWeight", "From", "GameId", "GearGenreId",
-			"GenreId", "Gravity", "GroupId", "Handles", "HasEverUsed", "HeadColor", "HeadScale", "Health", "HeightScale",
-			"HighGain", "Hit", "HoverImage", "HumanoidDescription", "HumanoidRootPart", "Icon", "Id", "Image", "ImageColor3",
-			"ImageRectOffset", "ImageRectSize", "ImageTransparency", "InUse", "InitialPrompt", "InputBegan", "InputChanged",
-			"InputEnded", "InstanceId", "Intensity", "Interest", "IsActive", "IsClient", "IsLoaded", "IsPaused", "IsPlaying",
-			"IsServer", "ItemId", "JobId", "JumpPower", "JumpHeight", "KeyCode", "KeyboardEnabled", "LayoutOrder", "Leaderstats",
-			"LeftArm", "LeftArmColor", "LeftLeg", "LeftLegColor", "Level", "LicenseType", "LightDirection", "LightEmission",
-			"LineHeight", "LinkedSource", "Loaded", "LocalTransparencyModifier", "Location", "Loop", "LoopRegion", "LoopStart",
-			"LoopEnd", "Looped", "LowerAngle", "Mag", "Material", "MaterialVariant", "MaxActivationDistance", "MaxAngularVelocity",
-			"MaxAxes", "MaxDistance", "MaxForce", "MaxFrictionTorque", "MaxHealth", "MaxPlayers", "MaxSlopeAngle", "MaxSpeed",
-			"MaxStrength", "MaxThrust", "MaxTorque", "MaxValue", "MaxZoom", "MembershipType", "MeshId", "MeshPartHeadsAndAccessories",
-			"MeshType", "MidImage", "MinDistance", "MinValue", "Modal", "Mode", "MouseButton1Down", "MouseButton1Up",
-			"MouseButton2Down", "MouseButton2Up", "MouseDeltaSensitivity", "MouseIcon", "MouseLock", "MoveDirection",
-			"MovementEnabled", "Name", "NameOcclusion", "NetworkOwner", "Neutral", "NormalId", "NumPlayers", "Offset",
-			"Opacity", "Orientation", "Origin", "OriginalPosition", "OverlayTextureId", "OverlayTextureSize", "OverlapParams",
-			"OwnerId", "P", "PackageId", "Parent", "Part0", "Part1", "ParticleEmitterRate", "Pitch", "PlaceId", "PlaceVersion",
-			"PlatformStand", "PlayCount", "PlayOnRemove", "PlaybackLoudness", "PlaybackSpeed", "PlaybackState", "Player",
-			"PlayerId", "PlayerToHideFrom", "Port", "Position", "PreferredPlayers", "PressedImage", "PrimaryAxis", "PrimaryPart",
-			"PrivateServerId", "PrivateServerOwnerId", "ProductId", "ProximityPromptStyle", "QualityLevel", "Range", "Rate",
-			"RawValue", "ReadOnly", "ReceiveAge", "ReflectionEnabled", "Reflectance", "Region", "RenderFidelity", "RenderPriority",
-			"RepeatCount", "RequireHandle", "RequiresHandle", "ResampleMode", "RespawnLocation", "RespawnTime", "Responsiveness",
-			"Result", "RichText", "RightArm", "RightArmColor", "RightLeg", "RightLegColor", "RiseTime", "RobloxLocked",
-			"RollOffMaxDistance", "RollOffMinDistance", "RollOffMode", "RootPart", "RootPriority", "Rotation", "RotationType",
-			"RuntimeEditable", "Scale", "ScreenInset", "ScrollBarThickness", "ScrollingDirection", "ScrollingEnabled",
-			"SecondaryAxis", "Selected", "ServerSize", "ServerStorage", "ShadowEnabled", "Shape", "ShowDeprecatedObjects",
-			"Side", "Size", "SizeConstraint", "SizeOffset", "SliceCenter", "SliceScale", "Smooth", "SoundGroup", "SoundId",
-			"Source", "SourceAssetId", "Speaker", "Specular", "Speed", "SpreadAngle", "StudsBetweenTextures", "StudsPerTileU",
-			"StudsPerTileV", "Style", "SubjectType", "Supports", "SurfaceAppearance", "Target", "TargetOffset", "TargetPoint",
-			"TargetSurface", "TeamColor", "TeleportData", "TerrainRegion", "Text", "TextBounds", "TextColor3", "TextDirection",
-			"TextEditable", "TextFits", "TextInputType", "TextScaled", "TextSize", "TextStrokeColor3", "TextStrokeTransparency",
-			"TextTransparency", "TextTruncate", "TextWrapped", "TextXAlignment", "TextYAlignment", "Texture", "TextureId",
-			"TextureLength", "TextureMode", "TextureSpeed", "TimeOfDay", "TimePosition", "To", "Tone", "ToolTip", "TopImage",
-			"TorsoColor", "TouchEnabled", "TouchInputEnabled", "Transparency", "TriggerCooldown", "TriggerDelayTime",
-			"TriggerKeyCode", "TwistLowerLimit", "TwistUpperLimit", "Type", "UIAspectRatioConstraint", "UICorner", "UIGradient",
-			"UIPadding", "UIScale", "UIStroke", "Uniformity", "Unit", "UpperAngle", "UseJumpPower", "UserDialog", "UserId",
-			"Value", "Velocity", "Version", "VertexColor", "VerticalScrollBarInset", "VerticalScrollBarPosition", "Video",
-			"ViewSizeX", "ViewSizeY", "Visible", "Volume", "WalkSpeed", "WalkToPart", "WalkToPoint", "WaterReflectiveness",
-			"WaterTransparency", "WaterWaveSize", "WaterWaveSpeed", "Weight", "WidthScale", "WorldPivot", "WorldPosition",
-			"WrapLayer", "WrapTarget", "ZIndex", "ZIndexBehavior", "ResetOnSpawn"
-		}
-	}
-	
-	local ColorizePattern = '<font color="rgb(%d, %d, %d)">%s</font>'
-	
-	local function Colorize(text, color)
-		return string.format(ColorizePattern, color.R * 255, color.G * 255, color.B * 255, text)
-	end
-	
-	local function escapeHTML(text)
-		return text:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;")
-	end
-	
-	local function ProcessText(text)
-		text = escapeHTML(text)
-		rememberedFunctions = {}
-		
-		-- Highlight strings first
-		text = text:gsub("(['\"])(.-)%1", function(quote, content)
-			local full = quote .. content .. quote
-			return Colorize(full, stringColor)
-		end)
-		
-		-- Highlight and remember local function names
-		text = text:gsub("local%s+function%s+([%a_][%w_]*)%s*%(", function(funcName)
-			table.insert(rememberedFunctions, funcName)
-			return "local function " .. Colorize(funcName, functionColor) .. "("
-		end)
-		
-		-- Highlight remembered function names when used later
-		for _, funcName in ipairs(rememberedFunctions) do
-			text = text:gsub("(%f[%w])(" .. funcName .. ")(%f[%W])", function(a, b, c)
-				return a .. Colorize(b, functionColor) .. c
-			end)
-		end
-		
-		-- Highlight keywords
-		for color, keywords in pairs(colors) do
-			for _, keyword in pairs(keywords) do
-				local escaped = keyword:gsub("([%(%)%.%%%+%-%*%?%[%]%^%$])", "%%%1")
-				text = text:gsub("(%f[%w])(" .. escaped .. ")(%f[%W])", function(a, b, c)
-					return a .. Colorize(b, color) .. c
-				end)
-			end
-		end
-		
-		return text
-	end
-	
-	local function InputChanged()
-		highlighter.Text = ProcessText(textBox.Text)
-	end
-	
-	textBox:GetPropertyChangedSignal("Text"):Connect(InputChanged)
-end;
-task.spawn(C_bb);
+task.spawn(C_c7);
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
-local function C_c1()
-local script = G2L["c1"];
+local function C_cd()
+local script = G2L["cd"];
 	local textBox = script.Parent
 	local parent = textBox.Parent
 	local textLabel = parent:FindFirstChild("TextLabel")
@@ -3873,16 +5801,16 @@ local script = G2L["c1"];
 	
 	updateLineNumbers()
 end;
-task.spawn(C_c1);
+task.spawn(C_cd);
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.LocalScript
-local function C_c2()
-local script = G2L["c2"];
-	script.Parent.Text = 'print("project transparent SS")'
+local function C_ce()
+local script = G2L["ce"];
+	script.Parent.Text = "-- Welcome to Project Transparent SS\nprint(\"project transparent SS\")"
 end;
-task.spawn(C_c2);
+task.spawn(C_ce);
 -- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Completor
-local function C_c3()
-local script = G2L["c3"];
+local function C_cf()
+local script = G2L["cf"];
 	local textBox = script.Parent
 	local lastText = ""
 	
@@ -3930,28 +5858,61 @@ local script = G2L["c3"];
 		lastText = textBox.Text
 	end)
 end;
-task.spawn(C_c3);
+task.spawn(C_cf);
+-- StarterGui.ScreenGui.Frame.page2.Text.TextBox.Highlighter(Put in TextBox)
+local function C_d2()
+local script = G2L["d2"];
+	local Highlighter = require(script:WaitForChild("Highlighter"))  -- Adjust path if needed
+	
+	local textBox = script.Parent  -- Your TextBox
+	
+	-- Enable necessary properties
+	textBox.RichText = false  -- Highlighter manages its own labels, so disable on the main TextBox
+	textBox.BackgroundColor3 = Highlighter.getTokenColor("background")  -- Optional: match background
+	
+	-- First: Match Studio's current Script Editor theme (gets correct colors for everything)
+	Highlighter.matchStudioSettings()
+	
+	-- Then: Override ONLY the keyword color to red
+	Highlighter.setTokenColors({
+		keyword = Color3.fromRGB(255, 0, 0),   -- Bright red (adjust if you want darker/softer)
+		-- You can override others here if needed, but we only change keywords
+		number = Color3.fromRGB(255, 170, 0),
+		string = Color3.fromRGB(0, 255, 0),
+		
+		builtin = Color3.fromRGB(0, 170, 255),
+	})
+	
+	-- Apply highlighting
+	local cleanup = Highlighter.highlight({
+		textObject = textBox,
+	})
+	
+	-- Optional: cleanup() when you're done (e.g., on GUI destroy)
+	
+end;
+task.spawn(C_d2);
 -- StarterGui.ScreenGui.TextButton.LocalScript
-local function C_d8()
-local script = G2L["d8"];
+local function C_f5()
+local script = G2L["f5"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Frame.Visible = true
 		script.Parent.Visible = false
 	end)
 end;
-task.spawn(C_d8);
+task.spawn(C_f5);
 -- StarterGui.ScreenGui.TextButton.Notifier
-local function C_d9()
-local script = G2L["d9"];
+local function C_f6()
+local script = G2L["f6"];
 	while true do
 		script.Parent.BackgroundColor3 = script.Parent.Parent.Frame.BackgroundColor3
 		task.wait(0.1)
 	end
 end;
-task.spawn(C_d9);
+task.spawn(C_f6);
 -- StarterGui.ScreenGui.NotifySystem.NotifierExample
-local function C_de()
-local script = G2L["de"];
+local function C_fb()
+local script = G2L["fb"];
 	local Notification = require(script.Parent.NotifierModule)
 		
 		local frame = script.Parent.Frame
@@ -3962,6 +5923,6 @@ local script = G2L["de"];
 		
 		Notification.Notify(frame, "Project Transparent SS loaded successfully!", "Information")
 end;
-task.spawn(C_de);
+task.spawn(C_fb);
 
 return G2L["1"], require;
