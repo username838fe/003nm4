@@ -1,0 +1,564 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 31 | Scripts: 4 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+G2L["2"]["Size"] = UDim2.new(0, 410, 0, 271);
+G2L["2"]["Position"] = UDim2.new(0.3481, 0, 0.32913, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.UIStroke
+G2L["3"] = Instance.new("UIStroke", G2L["2"]);
+G2L["3"]["Color"] = Color3.fromRGB(212, 212, 212);
+
+
+-- StarterGui.ScreenGui.Frame.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["2"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Size"] = UDim2.new(0, 200, 0, 35);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[Light Fling GUI]];
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel.UIStroke
+G2L["6"] = Instance.new("UIStroke", G2L["5"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame
+G2L["7"] = Instance.new("Frame", G2L["2"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(212, 212, 212);
+G2L["7"]["Size"] = UDim2.new(0, 410, 0, 1);
+G2L["7"]["Position"] = UDim2.new(0, 0, 0.12915, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame
+G2L["8"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["8"]["Active"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["8"]["Size"] = UDim2.new(0, 410, 0, 190);
+G2L["8"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Position"] = UDim2.new(0, 0, 0.15867, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["ScrollBarThickness"] = 0;
+G2L["8"]["BackgroundTransparency"] = 0.99;
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template
+G2L["9"] = Instance.new("Frame", G2L["8"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(50, 50, 50);
+G2L["9"]["Size"] = UDim2.new(0, 397, 0, 41);
+G2L["9"]["Position"] = UDim2.new(0.01707, 0, 0.04255, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Name"] = [[Template]];
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.UIStroke
+G2L["b"] = Instance.new("UIStroke", G2L["9"]);
+G2L["b"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.ImageLabel
+G2L["c"] = Instance.new("ImageLabel", G2L["9"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["Size"] = UDim2.new(0, 41, 0, 41);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.ImageLabel.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.ImageLabel.UIStroke
+G2L["e"] = Instance.new("UIStroke", G2L["c"]);
+G2L["e"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.TextLabel
+G2L["f"] = Instance.new("TextLabel", G2L["9"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 30;
+G2L["f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["Size"] = UDim2.new(0, 217, 0, 41);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[PlayerXYZ]];
+G2L["f"]["Position"] = UDim2.new(0.11587, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.TextLabel.UIStroke
+G2L["10"] = Instance.new("UIStroke", G2L["f"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.TextButton
+G2L["11"] = Instance.new("TextButton", G2L["9"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(25, 255, 98);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 134, 0, 41);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[NOT FLINGING]];
+G2L["11"]["Position"] = UDim2.new(0.66247, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.TextButton.UICorner
+G2L["12"] = Instance.new("UICorner", G2L["11"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.TextButton.UIStroke
+G2L["13"] = Instance.new("UIStroke", G2L["11"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.Template.TextButton.UIStroke
+G2L["14"] = Instance.new("UIStroke", G2L["11"]);
+G2L["14"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.UIListLayout
+G2L["15"] = Instance.new("UIListLayout", G2L["8"]);
+G2L["15"]["Padding"] = UDim.new(0, 5);
+G2L["15"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.ScreenGui.Frame.ScrollingFrame.UIPadding
+G2L["16"] = Instance.new("UIPadding", G2L["8"]);
+G2L["16"]["PaddingTop"] = UDim.new(0, 2);
+G2L["16"]["PaddingLeft"] = UDim.new(0, 7);
+
+
+-- StarterGui.ScreenGui.Frame.LocalScript
+G2L["17"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Dragify
+G2L["18"] = Instance.new("LocalScript", G2L["2"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["18"]["Sandboxed"] = true;
+G2L["18"]["Name"] = [[Dragify]];
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton
+G2L["19"] = Instance.new("ImageButton", G2L["2"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(171, 0, 0);
+G2L["19"]["Image"] = [[rbxassetid://130629964514885]];
+G2L["19"]["Size"] = UDim2.new(0, 34, 0, 35);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Position"] = UDim2.new(0.91707, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.ImageButton.UICorner
+G2L["1b"] = Instance.new("UICorner", G2L["19"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L["1c"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Size"] = UDim2.new(0, 410, 0, 37);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Light Fling GUI is designed to be light and be able to run on lower end devices.]];
+G2L["1c"]["Position"] = UDim2.new(0, 0, 0.86347, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel.UIStroke
+G2L["1d"] = Instance.new("UIStroke", G2L["1c"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame
+G2L["1e"] = Instance.new("Frame", G2L["2"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(212, 212, 212);
+G2L["1e"]["Size"] = UDim2.new(0, 410, 0, 1);
+G2L["1e"]["Position"] = UDim2.new(0, 0, 0.85978, 0);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.ScreenGui.LocalScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.LocalScript
+local function C_17()
+local script = G2L["17"];
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local Camera = workspace.CurrentCamera
+	
+	-- UI Configurations
+	local ScrollingFrame = script.Parent:WaitForChild("ScrollingFrame")
+	local Template = ScrollingFrame:WaitForChild("Template")
+	Template.Visible = false
+	
+	local ActiveFlings = {}
+	local CurrentTarget = nil
+	local FlingConnection = nil
+	
+	local CameraAngleX = 0
+	local CameraAngleY = 0
+	local CameraDistance = 15
+	
+	local function resetCamera()
+		if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") then
+			Camera.CameraSubject = LocalPlayer.Character.Humanoid
+		end
+		Camera.CameraType = Enum.CameraType.Custom
+	end
+	
+	local function updateCamera(targetRoot)
+		if not targetRoot then return end
+	
+		local offset = CFrame.fromEulerAnglesYXZ(math.rad(CameraAngleY), math.rad(CameraAngleX), 0) 
+			* CFrame.new(0, 0, CameraDistance)
+	
+		Camera.CFrame = CFrame.new(targetRoot.Position) * offset
+	end
+	
+	local function spectateTarget(targetRoot)
+		if targetRoot then
+			Camera.CameraType = Enum.CameraType.Scriptable
+			CameraAngleX = 0
+			CameraAngleY = 20
+			CameraDistance = 15
+			updateCamera(targetRoot)
+		end
+	end
+	
+	local function clearOldFrames()
+		for _, child in pairs(ScrollingFrame:GetChildren()) do
+			if child:IsA("Frame") and child.Name ~= "Template" then
+				child:Destroy()
+			end
+		end
+	end
+	
+	local function cleanCharacterPhysics(character)
+		if not character then return end
+		local root = character:FindFirstChild("HumanoidRootPart")
+		if root then
+			for _, name in pairs({"FlingAttachment", "FlingLV", "FlingAV"}) do
+				local obj = root:FindFirstChild(name)
+				if obj then obj:Destroy() end
+			end
+		end
+		for _, v in pairs(character:GetDescendants()) do
+			if v:IsA("BasePart") then
+				v.CanCollide = true
+				v.Massless = false
+			end
+		end
+	end
+	
+	local function manageFlingState(targetPlayer, button)
+		local targetName = targetPlayer.Name
+	
+		-- STOP FLINGING
+		if ActiveFlings[targetName] then
+			ActiveFlings[targetName] = nil
+			CurrentTarget = nil
+	
+			if FlingConnection then
+				FlingConnection:Disconnect()
+				FlingConnection = nil
+			end
+	
+			resetCamera()
+			cleanCharacterPhysics(LocalPlayer.Character)
+	
+			button.Text = "NOT FLINGING"
+			button.BackgroundColor3 = Color3.fromRGB(255, 80, 80)
+			return
+		end
+	
+		-- START FLINGING
+		local Character = LocalPlayer.Character
+		local RootPart = Character and Character:FindFirstChild("HumanoidRootPart")
+		local TargetChar = targetPlayer.Character
+		local TargetRoot = TargetChar and TargetChar:FindFirstChild("HumanoidRootPart")
+	
+		if not RootPart or not TargetRoot then
+			warn("Character or Target not found!")
+			return
+		end
+	
+		CurrentTarget = targetPlayer
+		ActiveFlings[targetName] = true
+		button.Text = "FLINGING"
+		button.BackgroundColor3 = Color3.fromRGB(24, 255, 97)
+	
+		cleanCharacterPhysics(Character)
+	
+		-- Physics Setup
+		for _, v in pairs(Character:GetDescendants()) do
+			if v:IsA("BasePart") then
+				v.CanCollide = true
+				v.Massless = true
+			end
+		end
+	
+		local Attachment = Instance.new("Attachment", RootPart)
+		Attachment.Name = "FlingAttachment"
+	
+		local LV = Instance.new("LinearVelocity", RootPart)
+		LV.Name = "FlingLV"
+		LV.MaxForce = math.huge
+		LV.VectorVelocity = Vector3.new(9999, 9999, 9999)
+		LV.Attachment0 = Attachment
+		LV.RelativeTo = Enum.ActuatorRelativeTo.World
+	
+		local AV = Instance.new("AngularVelocity", RootPart)
+		AV.Name = "FlingAV"
+		AV.MaxTorque = math.huge
+		AV.AngularVelocity = Vector3.new(0, 9999, 0)
+		AV.Attachment0 = Attachment
+		AV.RelativeTo = Enum.ActuatorRelativeTo.Attachment0
+	
+		-- Start Spectating
+		spectateTarget(TargetRoot)
+	
+		-- Fling Loop + Camera Update
+		FlingConnection = RunService.PostSimulation:Connect(function()
+			if not ActiveFlings[targetName] or not RootPart or not TargetRoot then
+				if FlingConnection then FlingConnection:Disconnect() end
+				return
+			end
+	
+			local targetVelocity = TargetRoot.AssemblyLinearVelocity
+			local predictionOffset = targetVelocity * 0.1
+	
+			RootPart.CFrame = CFrame.new(TargetRoot.Position + predictionOffset) 
+				* CFrame.Angles(math.rad(math.random(0,360)), math.rad(math.random(0,360)), math.rad(math.random(0,360)))
+	
+			updateCamera(TargetRoot)
+		end)
+	
+		-- Right Click Drag Camera (like normal Roblox)
+		local dragConnections = {}
+	
+		table.insert(dragConnections, UserInputService.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton2 then
+				UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter
+			end
+		end))
+	
+		table.insert(dragConnections, UserInputService.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton2 then
+				UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+			end
+		end))
+	
+		table.insert(dragConnections, UserInputService.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement and 
+				UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton2) then
+				CameraAngleX -= input.Delta.X * 0.4
+				CameraAngleY = math.clamp(CameraAngleY - input.Delta.Y * 0.4, -80, 80)
+			end
+		end))
+	
+		-- Cleanup when fling ends
+		task.spawn(function()
+			while ActiveFlings[targetName] do task.wait(0.5) end
+			for _, conn in ipairs(dragConnections) do
+				if conn then conn:Disconnect() end
+			end
+		end)
+	end
+	
+	-- Player List (Template Section)
+	local function updatePlayerList()
+		clearOldFrames()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer then
+				local card = Template:Clone()
+				card.Name = player.Name
+				card.Visible = true
+				card.Parent = ScrollingFrame
+	
+				local imgLabel = card:FindFirstChild("ImageLabel")
+				local txtLabel = card:FindFirstChild("TextLabel")
+				local txtButton = card:FindFirstChild("TextButton")
+	
+				if txtLabel then 
+					txtLabel.Text = player.Name 
+				end
+	
+				if txtButton then
+					local isActive = ActiveFlings[player.Name]
+					txtButton.Text = isActive and "FLINGING" or "NOT FLINGING"
+					txtButton.BackgroundColor3 = isActive and 
+						Color3.fromRGB(24, 255, 97) or Color3.fromRGB(255, 80, 80)
+	
+					txtButton.MouseButton1Click:Connect(function()
+						manageFlingState(player, txtButton)
+					end)
+				end
+	
+				if imgLabel then
+					task.spawn(function()
+						local success, content = pcall(function()
+							return Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+						end)
+						if success then
+							imgLabel.Image = content
+							imgLabel.ImageTransparency = 0
+						end
+					end)
+				end
+			end
+		end
+	end
+	
+	Players.PlayerAdded:Connect(updatePlayerList)
+	Players.PlayerRemoving:Connect(updatePlayerList)
+	LocalPlayer.CharacterAdded:Connect(function()
+		task.wait(1)
+		resetCamera()
+	end)
+	
+	updatePlayerList()
+end;
+task.spawn(C_17);
+-- StarterGui.ScreenGui.Frame.Dragify
+local function C_18()
+local script = G2L["18"];
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end;
+task.spawn(C_18);
+-- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
+local function C_1a()
+local script = G2L["1a"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Enabled = false
+	end)
+end;
+task.spawn(C_1a);
+-- StarterGui.ScreenGui.LocalScript
+local function C_1f()
+local script = G2L["1f"];
+	local UserInputService = game:GetService("UserInputService")
+	local targetScript = script.Parent
+	
+	UserInputService.InputBegan:Connect(function(input, isProcessed)
+		-- Check if the player pressed Left Control or Right Control
+		if input.KeyCode == Enum.KeyCode.LeftControl or input.KeyCode == Enum.KeyCode.RightControl then
+			-- Toggle the .Enabled state (true becomes false, false becomes true)
+			targetScript.Enabled = not targetScript.Enabled
+			print("Target script enabled state: " .. tostring(targetScript.Enabled))
+		end
+	end)
+	
+end;
+task.spawn(C_1f);
+
+return G2L["1"], require;
