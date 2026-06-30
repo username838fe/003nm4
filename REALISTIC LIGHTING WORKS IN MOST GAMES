@@ -1,0 +1,108 @@
+local l = game:GetService("Lighting")
+local runService = game:GetService("RunService")
+
+pcall(function()
+	settings().Rendering.QualityLevel = Enum.QualityLevel.Level21
+end)
+
+l.Ambient = Color3.fromRGB(15, 18, 24)
+l.Brightness = 2.4
+l.ColorShift_Top = Color3.fromRGB(255, 250, 240)
+l.ColorShift_Bottom = Color3.fromRGB(180, 195, 215)
+l.EnvironmentDiffuseScale = 1.0
+l.EnvironmentSpecularScale = 1.0
+l.OutdoorAmbient = Color3.fromRGB(45, 60, 60)
+l.ShadowSoftness = 0.05
+l.ExposureCompensation = -0.12
+l.FogStart = 700
+
+for _, i in ipairs(l:GetChildren()) do
+	if i:IsA("SunRaysEffect") then i:Destroy() end
+end
+
+local s = Instance.new("SunRaysEffect")
+s.Spread = 0.01
+s.Intensity = 0.05
+s.Parent = l 
+
+local sky = l:FindFirstChildOfClass("Sky")
+if sky then sky.SunAngularSize = 0 end
+
+local dayColor = Color3.fromRGB(135, 175, 210) 
+local nightColor = Color3.fromRGB(40, 44, 52)
+
+local existingCc = l:FindFirstChildOfClass("ColorCorrectionEffect")
+if existingCc then
+	existingCc.Enabled = true
+	existingCc.Saturation = -0.06 
+	existingCc.Contrast = 0.3 
+	existingCc.Brightness = 0.015
+else
+	local c = Instance.new("ColorCorrectionEffect", l)
+	c.Enabled = true
+	c.Saturation = -0.06
+	c.Contrast = 0.18
+	c.Brightness = -0.01
+end
+
+local bloom = l:FindFirstChildOfClass("BloomEffect")
+if not bloom then bloom = Instance.new("BloomEffect", l) end
+bloom.Enabled = true
+bloom.Intensity = 0.2
+bloom.Size = 8
+bloom.Threshold = 0.87 
+
+local dof = l:FindFirstChildOfClass("DepthOfFieldEffect")
+if not dof then dof = Instance.new("DepthOfFieldEffect", l) end
+dof.Enabled = true
+dof.FarIntensity = 0.2 
+dof.FocusDistance = 45
+dof.InFocusRadius = 55
+dof.NearIntensity = 5
+
+runService.RenderStepped:Connect(function()
+	local t = l.ClockTime
+	local alpha = 0 
+	
+	if t >= 17 and t <= 20 then
+		alpha = (t - 17) / 3
+	elseif t > 20 or t < 5 then
+		alpha = 1
+	elseif t >= 5 and t <= 8 then
+		alpha = 1 - ((t - 5) / 3)
+	end
+	
+	local clampedAlpha = math.clamp(alpha, 0, 1)
+	
+	l.FogColor = dayColor:Lerp(nightColor, clampedAlpha)
+	l.FogEnd = 3000 - (1800 * clampedAlpha) 
+end)
+
+for _, i in ipairs(workspace.Terrain:GetChildren()) do
+	if i:IsA("Clouds") then
+		i:Destroy()
+	end
+end
+
+local clouds = Instance.new("Clouds")
+clouds.Parent = workspace.Terrain
+clouds.Cover = 0.6
+clouds.Density = 0.4
+
+for _, i in ipairs(l:GetChildren()) do
+    if i:IsA("Sky") then
+	   i:Destroy()
+    end
+end
+
+local g = Instance.new("Sky")
+g.Parent = l
+g.SkyboxBk = 'rbxassetid://6444884337'
+g.SkyboxDn = 'rbxassetid://6444884785'
+g.SkyboxFt = 'rbxassetid://6444884337'
+g.SkyboxLf = 'rbxassetid://6444884337'
+g.SkyboxRt = 'rbxassetid://6444884337'
+g.SkyboxUp = 'rbxassetid://6412503613'
+g.SunAngularSize = 15
+
+workspace.GlobalWind = Vector3.new(250,0,0)
