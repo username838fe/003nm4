@@ -87,7 +87,7 @@ end
 local clouds = Instance.new("Clouds")
 clouds.Parent = workspace.Terrain
 clouds.Cover = 0.6
-clouds.Density = 0.4
+clouds.Density = .8
 
 for _, i in ipairs(l:GetChildren()) do
     if i:IsA("Sky") then
@@ -105,4 +105,4 @@ g.SkyboxRt = 'rbxassetid://6444884337'
 g.SkyboxUp = 'rbxassetid://6412503613'
 g.SunAngularSize = 15
 
-workspace.GlobalWind = Vector3.new(250,0,0)
+workspace.GlobalWind = Vector3.new(567,0,0)
