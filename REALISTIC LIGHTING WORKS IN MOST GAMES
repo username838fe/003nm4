@@ -14,7 +14,7 @@ l.EnvironmentSpecularScale = 1.0
 l.OutdoorAmbient = Color3.fromRGB(45, 60, 60)
 l.ShadowSoftness = 0.05
 l.ExposureCompensation = -0.12
-l.FogStart = 700
+l.FogStart = 2500
 
 for _, i in ipairs(l:GetChildren()) do
 	if i:IsA("SunRaysEffect") then i:Destroy() end
@@ -75,7 +75,7 @@ runService.RenderStepped:Connect(function()
 	local clampedAlpha = math.clamp(alpha, 0, 1)
 	
 	l.FogColor = dayColor:Lerp(nightColor, clampedAlpha)
-	l.FogEnd = 3000 - (1800 * clampedAlpha) 
+	l.FogEnd = 10000 - (1800 * clampedAlpha) 
 end)
 
 for _, i in ipairs(workspace.Terrain:GetChildren()) do
