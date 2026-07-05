@@ -251,126 +251,123 @@ local script = G2L["2"];
 	local LocalPlayer = Players.LocalPlayer
 	local RunService = game:GetService("RunService")
 	
-	-- ==================== SAFE DELETE OLD VERSIONS ====================
-	local currentGui = script.Parent
+	local ScreenGui = script.Parent
+	ScreenGui.Name = "FlingGui"
+	ScreenGui.ResetOnSpawn = false
 	
-	-- Delete old versions but protect the current one
+	-- Delete old versions
 	for _, oldGui in ipairs(LocalPlayer.PlayerGui:GetChildren()) do
-		if oldGui:IsA("ScreenGui") and oldGui ~= currentGui then
-			if oldGui.Name == "FlingGui" or 
-				(oldGui:FindFirstChild("Frame") and oldGui.Frame:FindFirstChild("ScrollingFrame")) then
+		if oldGui:IsA("ScreenGui") and oldGui ~= ScreenGui then
+			if oldGui.Name == "FlingGui" or (oldGui:FindFirstChild("Frame") and oldGui.Frame:FindFirstChild("ScrollingFrame")) then
 				oldGui:Destroy()
 			end
 		end
 	end
 	
-	local ScreenGui = currentGui
-	ScreenGui.Name = "FlingGui"
-	ScreenGui.ResetOnSpawn = false
-	
-	
-	
-	
-	
-	
-	
-	-- LocalScript → Inside ScreenGui
-	local Players = game:GetService("Players")
-	local LocalPlayer = Players.LocalPlayer
-	local RunService = game:GetService("RunService")
-	
-	local ScreenGui = script.Parent
 	local MainFrame = ScreenGui:WaitForChild("Frame")
 	local ScrollingFrame = MainFrame:WaitForChild("ScrollingFrame")
 	local Template = ScrollingFrame:WaitForChild("Template")
 	
 	local ActiveFlings = {}
-	local FlingConnections = {}
 	
-	-- ==================== STRONGER FLING ====================
+	-- ==================== FIXED FOR MOVING PLAYERS ====================
 	local function startFling(targetPlayer)
 		if ActiveFlings[targetPlayer] then return end
+		if not targetPlayer or targetPlayer == LocalPlayer then return end
 	
-		local character = LocalPlayer.Character
-		local root = character and character:FindFirstChild("HumanoidRootPart")
-		if not root then return end
+		local char = LocalPlayer.Character
+		local hrp = char and char:FindFirstChild("HumanoidRootPart")
+		local hum = char and char:FindFirstChildOfClass("Humanoid")
 	
-		local targetChar = targetPlayer.Character
-		local targetRoot = targetChar and targetChar:FindFirstChild("HumanoidRootPart")
-		if not targetRoot then return end
+		if not hrp or not hum then return end
 	
-		-- Physics setup
-		for _, v in pairs(character:GetDescendants()) do
-			if v:IsA("BasePart") then
-				v.CanCollide = false
-				v.Massless = true
-				v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
+		ActiveFlings[targetPlayer] = true
+	
+		for _, part in pairs(char:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.CanCollide = false
+				part.Massless = true
 			end
 		end
 	
-		local Spin = Instance.new("BodyAngularVelocity")
-		Spin.Name = "FlingSpin"
-		Spin.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
-		Spin.AngularVelocity = Vector3.new(0, 67000, 0) -- Stronger spin
-		Spin.Parent = root
+		hum.PlatformStand = true
 	
-		local BV = Instance.new("BodyVelocity")
-		BV.Name = "FlingBV"
-		BV.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-		BV.Velocity = Vector3.new(0, 0, 0)
-		BV.Parent = root
-	
-		ActiveFlings[targetPlayer] = {Spin = Spin, BV = BV}
-	
-		-- SUPER JITTERY / SPASMY LOOP
 		local connection = RunService.Heartbeat:Connect(function()
-			if not ActiveFlings[targetPlayer] or not root or not targetRoot then
+			if not ActiveFlings[targetPlayer] then return end
+	
+			local targetChar = targetPlayer.Character
+			local targetHRP = targetChar and targetChar:FindFirstChild("HumanoidRootPart")
+			if not targetHRP then
 				stopFling(targetPlayer)
 				return
 			end
 	
-			-- Much more aggressive random offsets for better flinging
-			local x = math.random(-350, 350) / 100
-			local y = math.random(-180, 250) / 100
-			local z = math.random(-400, 150) / 100
+			-- Teleport + velocity compensation for moving players
+			hrp.CFrame = targetHRP.CFrame
 	
-			root.CFrame = targetRoot.CFrame * CFrame.new(x, y, z)
+			local targetVel = targetHRP.Velocity
+			local extraForce = targetVel * 1.8   -- push in their movement direction + extra
+	
+			local megaFling = Vector3.new(
+				math.random(-900,900) + extraForce.X, 
+				3200 + extraForce.Y, 
+				math.random(-900,900) + extraForce.Z
+			)
+	
+			hrp.AssemblyLinearVelocity = megaFling
+			hrp.Velocity = megaFling * 2.2
+			hrp.AssemblyAngularVelocity = Vector3.new(0, 90000, 0)
+	
+			pcall(function() hum:Move(Vector3.new(0, 2500, 0)) end)
+			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", targetHRP) end)
 		end)
 	
-		FlingConnections[targetPlayer] = connection
+		ActiveFlings[targetPlayer] = connection
 	end
 	
 	local function stopFling(targetPlayer)
-		if FlingConnections[targetPlayer] then
-			FlingConnections[targetPlayer]:Disconnect()
-			FlingConnections[targetPlayer] = nil
+		if ActiveFlings[targetPlayer] and typeof(ActiveFlings[targetPlayer]) == "RBXScriptConnection" then
+			ActiveFlings[targetPlayer]:Disconnect()
+		end
+		ActiveFlings[targetPlayer] = nil
+	
+		local char = LocalPlayer.Character
+		if not char then return end
+	
+		local hum = char:FindFirstChildOfClass("Humanoid")
+		local hrp = char:FindFirstChild("HumanoidRootPart")
+	
+		if hum then hum.PlatformStand = false end
+	
+		task.wait(0.1)
+	
+		if hrp then
+			hrp.AssemblyLinearVelocity = Vector3.zero
+			hrp.AssemblyAngularVelocity = Vector3.zero
+			hrp.Velocity = Vector3.zero
+			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", nil) end)
+			hrp.CFrame = hrp.CFrame + Vector3.new(0, 12, 0)
 		end
 	
-		local data = ActiveFlings[targetPlayer]
-		if data then
-			if data.Spin then data.Spin:Destroy() end
-			if data.BV then data.BV:Destroy() end
-			ActiveFlings[targetPlayer] = nil
-		end
+		task.wait(0.2)
 	
-		local character = LocalPlayer.Character
-		if character then
-			for _, v in pairs(character:GetDescendants()) do
-				if v:IsA("BasePart") then
-					v.CanCollide = true
-					v.Massless = false
-					v.CustomPhysicalProperties = nil
-				end
+		for _, part in pairs(char:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.CanCollide = true
+				part.Massless = false
 			end
+		end
+	
+		if hum then
+			hum:ChangeState(Enum.HumanoidStateType.Running)
 		end
 	end
 	
-	-- ==================== PLAYER LIST (Fixed - no duplicate template) ====================
+	-- ==================== PLAYER LIST ====================
 	local function setupPlayerEntry(player, clone)
 		clone.Name = player.Name
-	
 		local ImageLabel = clone:FindFirstChild("ImageLabel")
-		local TextLabel  = clone:FindFirstChild("TextLabel")
+		local TextLabel = clone:FindFirstChild("TextLabel")
 		local TextButton = clone:FindFirstChild("TextButton")
 	
 		if TextLabel then TextLabel.Text = player.Name end
@@ -415,7 +412,6 @@ local script = G2L["2"];
 			end
 		end
 	
-		-- Clear extra clones (except the original Template)
 		for _, child in pairs(ScrollingFrame:GetChildren()) do
 			if child ~= Template and child:IsA("Frame") then
 				child:Destroy()
@@ -424,11 +420,9 @@ local script = G2L["2"];
 	
 		if #playerList == 0 then return end
 	
-		-- Use Template for the first player
 		setupPlayerEntry(playerList[1], Template)
 		Template.Visible = true
 	
-		-- Clone for the rest
 		for i = 2, #playerList do
 			local clone = Template:Clone()
 			clone.Parent = ScrollingFrame
@@ -436,12 +430,8 @@ local script = G2L["2"];
 		end
 	end
 	
-	-- Events
 	Players.PlayerAdded:Connect(function(plr)
-		if plr ~= LocalPlayer then
-			task.wait(0.5)
-			refreshList()
-		end
+		if plr ~= LocalPlayer then task.wait(0.5) refreshList() end
 	end)
 	
 	Players.PlayerRemoving:Connect(function(plr)
@@ -450,7 +440,6 @@ local script = G2L["2"];
 		refreshList()
 	end)
 	
-	-- Initial load
 	refreshList()
 end;
 task.spawn(C_2);
