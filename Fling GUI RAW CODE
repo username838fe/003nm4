@@ -255,7 +255,6 @@ local script = G2L["2"];
 	ScreenGui.Name = "FlingGui"
 	ScreenGui.ResetOnSpawn = false
 	
-	-- Delete old versions
 	for _, oldGui in ipairs(LocalPlayer.PlayerGui:GetChildren()) do
 		if oldGui:IsA("ScreenGui") and oldGui ~= ScreenGui then
 			if oldGui.Name == "FlingGui" or (oldGui:FindFirstChild("Frame") and oldGui.Frame:FindFirstChild("ScrollingFrame")) then
@@ -270,7 +269,6 @@ local script = G2L["2"];
 	
 	local ActiveFlings = {}
 	
-	-- ==================== FIXED FOR MOVING PLAYERS ====================
 	local function startFling(targetPlayer)
 		if ActiveFlings[targetPlayer] then return end
 		if not targetPlayer or targetPlayer == LocalPlayer then return end
@@ -302,23 +300,16 @@ local script = G2L["2"];
 				return
 			end
 	
-			-- Teleport + velocity compensation for moving players
 			hrp.CFrame = targetHRP.CFrame
 	
 			local targetVel = targetHRP.Velocity
-			local extraForce = targetVel * 1.8   -- push in their movement direction + extra
+			local force = targetVel * 4 + Vector3.new(math.random(-1400,1400), 4200, math.random(-1400,1400))
 	
-			local megaFling = Vector3.new(
-				math.random(-900,900) + extraForce.X, 
-				3200 + extraForce.Y, 
-				math.random(-900,900) + extraForce.Z
-			)
+			hrp.AssemblyLinearVelocity = force
+			hrp.Velocity = force * 3
+			hrp.AssemblyAngularVelocity = Vector3.new(0, 150000, 0)
 	
-			hrp.AssemblyLinearVelocity = megaFling
-			hrp.Velocity = megaFling * 2.2
-			hrp.AssemblyAngularVelocity = Vector3.new(0, 90000, 0)
-	
-			pcall(function() hum:Move(Vector3.new(0, 2500, 0)) end)
+			pcall(function() hum:Move(Vector3.new(0, 3500, 0)) end)
 			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", targetHRP) end)
 		end)
 	
@@ -346,7 +337,7 @@ local script = G2L["2"];
 			hrp.AssemblyAngularVelocity = Vector3.zero
 			hrp.Velocity = Vector3.zero
 			pcall(function() sethiddenproperty(hrp, "PhysicsRepRootPart", nil) end)
-			hrp.CFrame = hrp.CFrame + Vector3.new(0, 12, 0)
+			hrp.CFrame = hrp.CFrame + Vector3.new(0, 15, 0)
 		end
 	
 		task.wait(0.2)
@@ -363,7 +354,7 @@ local script = G2L["2"];
 		end
 	end
 	
-	-- ==================== PLAYER LIST ====================
+	-- Player List (same as before)
 	local function setupPlayerEntry(player, clone)
 		clone.Name = player.Name
 		local ImageLabel = clone:FindFirstChild("ImageLabel")
