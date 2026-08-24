@@ -1,0 +1,336 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 14 | Scripts: 2 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(64, 64, 64);
+G2L["2"]["Size"] = UDim2.new(0, 240, 0, 154);
+G2L["2"]["Position"] = UDim2.new(0.4078, 0, 0.40227, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["BackgroundTransparency"] = 0.4;
+
+
+-- StarterGui.ScreenGui.Frame.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["2"]);
+G2L["4"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.ScreenGui.Frame.TextBox
+G2L["5"] = Instance.new("TextBox", G2L["2"]);
+G2L["5"]["CursorPosition"] = -1;
+G2L["5"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["PlaceholderText"] = [[Set speed here]];
+G2L["5"]["Size"] = UDim2.new(0, 212, 0, 48);
+G2L["5"]["Position"] = UDim2.new(0.05833, 0, 0.07792, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[]];
+G2L["5"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.TextBox.UICorner
+G2L["6"] = Instance.new("UICorner", G2L["5"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextBox.UIStroke
+G2L["7"] = Instance.new("UIStroke", G2L["5"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextBox.UIStroke
+G2L["8"] = Instance.new("UIStroke", G2L["5"]);
+G2L["8"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Sarpanch.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["BackgroundTransparency"] = 0.99;
+G2L["9"]["Size"] = UDim2.new(0, 212, 0, 66);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[FREECAM: OFF]];
+G2L["9"]["Position"] = UDim2.new(0.05833, 0, 0.49351, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L["a"] = Instance.new("UIStroke", G2L["9"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L["b"] = Instance.new("UIStroke", G2L["9"]);
+G2L["b"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["9"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["9"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Dragify
+G2L["e"] = Instance.new("LocalScript", G2L["2"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["e"]["Sandboxed"] = true;
+G2L["e"]["Name"] = [[Dragify]];
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_d()
+local script = G2L["d"];
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local ContextActionService = game:GetService("ContextActionService")
+	
+	local player = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	local button = script.Parent
+	
+	-- NEW: Reference the TextBox sitting next to the button in the hierarchy
+	local uiParent = button.Parent
+	local textBox = uiParent:WaitForChild("TextBox")
+	
+	-- Configuration Defaults
+	local CAMERA_SPEED = 30 
+	local MOUSE_SENSITIVITY = 0.5
+	local ACCELERATION_SPEED = 12 
+	local FREE_CAM_ACTION = "FreecamFreezeMovement"
+	
+	-- State variables
+	local isEnabled = false
+	local isRightMouseDown = false
+	local rotationX = 0
+	local rotationY = 0
+	local cameraCFrame = camera.CFrame
+	local currentVelocity = Vector3.new(0, 0, 0)
+	
+	-- Connections store
+	local renderConnection = nil
+	local inputBeganConnection = nil
+	local inputEndedConnection = nil
+	local inputChangedConnection = nil
+	
+	-- Set initial values on UI items
+	button.Text = "FREECAM: OFF"
+	textBox.Text = tostring(CAMERA_SPEED)
+	
+	-- NEW: Sanitize the TextBox to strip out non-numeric characters and update speed
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local cleanText = string.gsub(textBox.Text, "%D", "") -- Deletes everything that is not a number
+	
+		if cleanText ~= textBox.Text then
+			textBox.Text = cleanText -- Enforce number-only text rule visually
+		end
+	
+		-- Convert clean string to a number object
+		local newSpeedValue = tonumber(cleanText)
+		if newSpeedValue and newSpeedValue > 0 then
+			CAMERA_SPEED = newSpeedValue -- Real-time speed shift applied directly
+		end
+	end)
+	
+	-- Track keystrokes for camera movement
+	local function getMovementVector()
+		local forward = 0
+		local right = 0
+		local up = 0
+	
+		if UserInputService:IsKeyDown(Enum.KeyCode.W) then forward = forward + 1 end
+		if UserInputService:IsKeyDown(Enum.KeyCode.S) then forward = forward - 1 end
+		if UserInputService:IsKeyDown(Enum.KeyCode.D) then right = right + 1 end
+		if UserInputService:IsKeyDown(Enum.KeyCode.A) then right = right - 1 end
+		if UserInputService:IsKeyDown(Enum.KeyCode.E) then up = up + 1 end
+		if UserInputService:IsKeyDown(Enum.KeyCode.Q) then up = up - 1 end
+	
+		local rawVector = Vector3.new(right, up, forward)
+		if rawVector.Magnitude > 0 then
+			return rawVector.Unit
+		end
+		return rawVector
+	end
+	
+	-- Turn Freecam ON
+	local function enableFreecam()
+		cameraCFrame = camera.CFrame
+	
+		local rx, ry, rz = cameraCFrame:ToOrientation()
+		rotationX = math.deg(ry)
+		rotationY = math.deg(rx)
+	
+		ContextActionService:BindAction(
+			FREE_CAM_ACTION,
+			function() return Enum.ContextActionResult.Sink end,
+			false,
+			Enum.KeyCode.W, Enum.KeyCode.A, Enum.KeyCode.S, Enum.KeyCode.D, Enum.KeyCode.Space
+		)
+	
+		camera.CameraType = Enum.CameraType.Scriptable
+	
+		inputBeganConnection = UserInputService.InputBegan:Connect(function(input, gameProcessed)
+			if input.UserInputType == Enum.UserInputType.MouseButton2 then
+				isRightMouseDown = true
+				UserInputService.MouseBehavior = Enum.MouseBehavior.LockCurrentPosition
+				UserInputService.MouseIconEnabled = false
+			end
+		end)
+	
+		inputEndedConnection = UserInputService.InputEnded:Connect(function(input, gameProcessed)
+			if input.UserInputType == Enum.UserInputType.MouseButton2 then
+				isRightMouseDown = false
+				UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+				UserInputService.MouseIconEnabled = true
+			end
+		end)
+	
+		inputChangedConnection = UserInputService.InputChanged:Connect(function(input, gameProcessed)
+			if input.UserInputType == Enum.UserInputType.MouseMovement and isRightMouseDown then
+				local delta = input.Delta
+				rotationX = rotationX - (delta.X * MOUSE_SENSITIVITY)
+				rotationY = rotationY - (delta.Y * MOUSE_SENSITIVITY)
+				rotationY = math.clamp(rotationY, -80, 80)
+			end
+		end)
+	
+		renderConnection = RunService.RenderStepped:Connect(function(deltaTime)
+			-- Reads whatever CAMERA_SPEED currently is in global memory space
+			local maxSpeed = CAMERA_SPEED
+			if UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+				maxSpeed = CAMERA_SPEED * 3 
+			end
+	
+			local finalRotation = CFrame.fromEulerAnglesYXZ(math.rad(rotationY), math.rad(rotationX), 0)
+	
+			local targetVector = getMovementVector()
+			local targetMovement = finalRotation:VectorToWorldSpace(Vector3.new(targetVector.X, 0, -targetVector.Z)) 
+			local targetVertical = Vector3.new(0, targetVector.Y, 0)
+	
+			local totalTargetVelocity = (targetMovement + targetVertical) * maxSpeed
+	
+			local alpha = math.clamp(deltaTime * ACCELERATION_SPEED, 0, 1)
+			currentVelocity = currentVelocity:Lerp(totalTargetVelocity, alpha)
+	
+			local currentPosition = cameraCFrame.Position
+			local newPosition = currentPosition + (currentVelocity * deltaTime)
+	
+			cameraCFrame = CFrame.new(newPosition) * finalRotation
+			camera.CFrame = cameraCFrame
+		end)
+	end
+	
+	-- Turn Freecam OFF
+	local function disableFreecam()
+		ContextActionService:UnbindAction(FREE_CAM_ACTION)
+	
+		if renderConnection then renderConnection:Disconnect() renderConnection = nil end
+		if inputBeganConnection then inputBeganConnection:Disconnect() inputBeganConnection = nil end
+		if inputEndedConnection then inputEndedConnection:Disconnect() inputEndedConnection = nil end
+		if inputChangedConnection then inputChangedConnection:Disconnect() inputChangedConnection = nil end
+	
+		isRightMouseDown = false
+		currentVelocity = Vector3.new(0, 0, 0)
+	
+		UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+		UserInputService.MouseIconEnabled = true
+	
+		camera.CameraType = Enum.CameraType.Custom
+	end
+	
+	-- Trigger click cycle event handler
+	button.Activated:Connect(function()
+		isEnabled = not isEnabled
+	
+		if isEnabled then
+			button.Text = "FREECAM: ON"
+			enableFreecam()
+		else
+			button.Text = "FREECAM: OFF"
+			disableFreecam()
+		end
+	end)
+	
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.Frame.Dragify
+local function C_e()
+local script = G2L["e"];
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end;
+task.spawn(C_e);
+
+return G2L["1"], require;
